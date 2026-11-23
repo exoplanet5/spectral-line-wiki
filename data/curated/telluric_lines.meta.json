@@ -1,0 +1,308 @@
+{
+ "title": "Telluric absorption lines 3000-25000 A (HITRAN2024)",
+ "source": "HITRAN2024 via https://hitran.org/lbl/api (par_line 160-char records)",
+ "selection": "isolated-line central depth >= 0.01 after Gaussian LSF R=100000, airmass 1, observer at sea level, AFGL-1986 U.S. Standard atmosphere (CO2, CH4, N2O profiles scaled to NOAA GML 2025 global annual means: CO2 425.63 ppm, CH4 1935.95 ppb, N2O 338.86 ppb), Voigt profile, line mixing and continua ignored",
+ "atmosphere": {
+  "sl": {
+   "z_obs_km": 0.0,
+   "n_layers": 62,
+   "PWV_mm": 14.17,
+   "p_lowest_layer_mean_hPa": 998.1,
+   "columns_cm2": {
+    "H2O": 4.738e+22,
+    "CO2": 9.1673e+21,
+    "O3": 9.2514e+18,
+    "N2O": 7.0025e+18,
+    "CO": 2.3852e+18,
+    "CH4": 4.043e+19,
+    "O2": 4.5015e+24
+   }
+  },
+  "2p5km": {
+   "z_obs_km": 2.5,
+   "n_layers": 52,
+   "PWV_mm": 4.37,
+   "p_lowest_layer_mean_hPa": 735.1,
+   "columns_cm2": {
+    "H2O": 1.4602e+22,
+    "CO2": 6.7621e+21,
+    "O3": 9.0826e+18,
+    "N2O": 5.0876e+18,
+    "CO": 1.5715e+18,
+    "CH4": 2.949e+19,
+    "O2": 3.3204e+24
+   }
+  }
+ },
+ "scale_factors": {
+  "CO2": 1.2897878787878787,
+  "CH4": 1.1387941176470588,
+  "N2O": 1.0589374999999999
+ },
+ "columns": {
+  "wavenumber_vac_cm-1": "HITRAN transition wavenumber in vacuum at zero pressure, verbatim F12.6 string",
+  "lambda_vac_A": "derived: 1e8 / wavenumber (vacuum, zero pressure), 4 decimals",
+  "lambda_air_A": "derived: lambda_vac / n_air, n from Peck & Reeder 1972 standard air (15 C, 101325 Pa, dry); formula fitted 0.185-1.69 um, extrapolated beyond 1.69 um",
+  "nu_unc_code": "HITRAN position uncertainty code (0 unreported; k: 10^-k <= err < 10^-(k-1) cm^-1)",
+  "lambda_unc_max_mA": "derived upper bound of the position uncertainty from nu_unc_code, in mA",
+  "S296_cm-1/(molec.cm-2)": "HITRAN line intensity at 296 K, weighted by terrestrial isotopic abundance",
+  "S_unc_code": "HITRAN relative uncertainty code for S (3: >=20%, 4: 10-20%, 5: 5-10%, 6: 2-5%, 7: 1-2%, 8: <1%...)",
+  "A_s-1": "Einstein A coefficient",
+  "E_lower_cm-1": "lower-state energy",
+  "gamma_air_cm-1/atm": "air-broadened HWHM at 296 K, 1 atm",
+  "gamma_self_cm-1/atm": "self-broadened HWHM at 296 K, 1 atm",
+  "n_air": "temperature exponent of gamma_air",
+  "delta_air_cm-1/atm": "air pressure shift at 296 K (nu* = nu + delta_air*p); 0.000000 often means unknown",
+  "delta_unc_code": "HITRAN absolute uncertainty code for delta_air (0 = unreported)",
+  "dlam_pshift_1atm_mA": "derived: vacuum-wavelength shift (mA) produced by delta_air at p = 1 atm",
+  "p_eff_atm_sl": "derived: S(T)*column-weighted mean pressure of the absorbing column (sea-level model)",
+  "dlam_pshift_eff_mA_sl": "derived: wavelength shift (mA) of an unsaturated line seen through the sea-level model atmosphere",
+  "lambda_vac_obs_sl_A": "derived: lambda_vac_A + dlam_pshift_eff_mA_sl/1000 = expected (pressure-shifted) vacuum position seen from sea level",
+  "lambda_air_obs_sl_A": "derived: the same converted to standard air (Peck & Reeder 1972)",
+  "depth_R1e5_sl": "derived: central depth of the isolated line after convolution with a Gaussian LSF of FWHM lambda/100000, airmass 1, sea level (selection quantity)",
+  "depth_inf_sl": "derived: central depth 1-exp(-tau0) of the isolated line, airmass 1, sea level, infinite resolution",
+  "EW_mA_sl": "derived: equivalent width (mA) of the isolated line, airmass 1, sea level",
+  "depth_R1e5_2p5km": "derived: as depth_R1e5_sl but observer at 2.5 km altitude (PWV ~4.4 mm)",
+  "depth_inf_2p5km": "derived: as depth_inf_sl but observer at 2.5 km altitude",
+  "region": "derived: contiguous spectral region of selected lines of the molecule (gap > 40 cm^-1 starts a new one), named by median lambda_vac in um",
+  "EW_mA_2p5km": "derived: same as EW_mA_sl but observer at 2.5 km altitude",
+  "band": "vibrational/electronic band from HITRAN global quanta (upper-lower)",
+  "band_group": "band grouping (O2 electronic bands; H2O polyad change dP=2v1+v2+2v3; others by band)",
+  "upper/lower_global/local_quanta": "HITRAN quantum-number strings (whitespace collapsed)"
+ },
+ "stats": {
+  "n_records_downloaded_4000_33333": {
+   "H2O": 362011,
+   "CO2": 161343,
+   "O3": 38484,
+   "N2O": 140910,
+   "CO": 2311,
+   "CH4": 216053,
+   "O2": 2921
+  },
+  "n_prefilter_candidates": 84911,
+  "n_selected": 23976,
+  "n_selected_by_molecule": {
+   "CH4": 3165,
+   "CO": 34,
+   "CO2": 2108,
+   "H2O": 17934,
+   "N2O": 134,
+   "O2": 601
+  },
+  "n_selected_by_isotopologue": {
+   "CH4(211)": 3113,
+   "CH4(311)": 52,
+   "CO(26)": 34,
+   "CO2(626)": 1483,
+   "CO2(627)": 77,
+   "CO2(628)": 286,
+   "CO2(636)": 262,
+   "H2O(161)": 14327,
+   "H2O(162)": 1164,
+   "H2O(171)": 819,
+   "H2O(181)": 1624,
+   "N2O(446)": 134,
+   "O2(66)": 363,
+   "O2(67)": 81,
+   "O2(68)": 157
+  },
+  "n_infinite_res_depth_ge_0p01": 27778,
+  "ew_weak_line_check_median_ratio": 0.9971195320462825,
+  "n_depthR_ge_0p1_sl": 9557,
+  "n_depthR_ge_0p5_sl": 4371,
+  "n_depthR_ge_0p01_2p5km": 17360,
+  "n_selected_by_band_group": {
+   "CH4 1.134um": 3,
+   "CH4 1.142um": 1,
+   "CH4 1.162um": 16,
+   "CH4 1.332um": 61,
+   "CH4 1.391um": 30,
+   "CH4 1.707um": 640,
+   "CH4 2.316um": 2414,
+   "CO 2.344um": 34,
+   "CO2 1.212um": 83,
+   "CO2 1.317um": 28,
+   "CO2 1.339um": 10,
+   "CO2 1.440um": 137,
+   "CO2 1.474um": 33,
+   "CO2 1.538um": 41,
+   "CO2 1.599um": 228,
+   "CO2 1.646um": 43,
+   "CO2 1.882um": 58,
+   "CO2 2.024um": 1395,
+   "CO2 2.154um": 52,
+   "H2O polyad dP=10": 399,
+   "H2O polyad dP=11": 31,
+   "H2O polyad dP=12": 71,
+   "H2O polyad dP=14": 8,
+   "H2O polyad dP=2": 529,
+   "H2O polyad dP=3": 3716,
+   "H2O polyad dP=4": 5731,
+   "H2O polyad dP=5": 2444,
+   "H2O polyad dP=6": 2748,
+   "H2O polyad dP=7": 926,
+   "H2O polyad dP=8": 1065,
+   "H2O polyad dP=9": 266,
+   "N2O 2.113um": 62,
+   "N2O 2.264um": 72,
+   "O2 1.06um a-X(1-0)": 4,
+   "O2 1.27um a-X(0-0)": 136,
+   "O2 A band b-X(0-0)": 256,
+   "O2 B band b-X(1-0)": 124,
+   "O2 b-X(1-1)": 29,
+   "O2 delta band b-X(3-0)": 1,
+   "O2 gamma band b-X(2-0)": 51
+  },
+  "lambda_unc_max_mA_median_by_molecule": {
+   "CH4": 5.391249115766486,
+   "CO": 0.05495683835743626,
+   "CO2": 0.37780784214668356,
+   "H2O": 0.8638002185104181,
+   "N2O": 50.79353871089994,
+   "O2": 0.01599874550632723
+  },
+  "frac_unc_le_1mA_by_molecule": {
+   "CH4": 0.022432859399684046,
+   "CO": 1.0,
+   "CO2": 0.6655597722960152,
+   "H2O": 0.5748299319727891,
+   "N2O": 0.0,
+   "O2": 0.9933444259567388
+  },
+  "frac_unc_le_1mA_depthR_ge_0p1": 0.5508004603955217,
+  "nu_unc_code_counts": {
+   "1": 6,
+   "2": 7,
+   "3": 2468,
+   "4": 13006,
+   "5": 6434,
+   "6": 1304,
+   "7": 351,
+   "8": 68,
+   "9": 332
+  },
+  "frac_lambda_unc_le_1mA": 0.5177677677677678,
+  "frac_lambda_unc_le_0p1mA": 0.12328995662328995,
+  "frac_delta_air_zero": 0.02406573239906573,
+  "pshift_1atm_mA": {
+   "median": 17.83219933258806,
+   "p5": 0.0,
+   "p95": 53.05941150345461,
+   "min": -62.37048350885743,
+   "max": 230.9339434505091
+  },
+  "pshift_eff_by_molecule_median_mA": {
+   "CH4": 22.51959302520845,
+   "CO": 13.112855845974991,
+   "CO2": 10.957154618154163,
+   "H2O": 12.367040660137718,
+   "N2O": 9.86577463481808,
+   "O2": 2.0940514250469278
+  },
+  "p_eff_by_molecule_median_atm": {
+   "CH4": 0.5185044969895843,
+   "CO": 0.5898555404281023,
+   "CO2": 0.5720376960477773,
+   "H2O": 0.8080475776639175,
+   "N2O": 0.5072025660621995,
+   "O2": 0.5139083589647715
+  },
+  "air_formula_diff_mA": {
+   "ciddor450_minus_peckreeder": {
+    "min": -0.3117413980362471,
+    "max": -0.06225226661626948
+   },
+   "morton2000_minus_peckreeder": {
+    "min": -0.45339159260038286,
+    "max": -0.05953827530902345
+   }
+  },
+  "lambda_vac_range_A": [
+   4427.333820270663,
+   24999.58663183504
+  ],
+  "air_formula_diff_grid_mA": {
+   "3000": {
+    "vac_minus_air_PR_A": 0.8744,
+    "ciddor450_minus_PR_mA": -0.038,
+    "morton2000_minus_PR_mA": -0.038
+   },
+   "4000": {
+    "vac_minus_air_PR_A": 1.1307,
+    "ciddor450_minus_PR_mA": -0.053,
+    "morton2000_minus_PR_mA": -0.052
+   },
+   "5000": {
+    "vac_minus_air_PR_A": 1.3944,
+    "ciddor450_minus_PR_mA": -0.073,
+    "morton2000_minus_PR_mA": -0.071
+   },
+   "6000": {
+    "vac_minus_air_PR_A": 1.6614,
+    "ciddor450_minus_PR_mA": -0.088,
+    "morton2000_minus_PR_mA": -0.091
+   },
+   "7000": {
+    "vac_minus_air_PR_A": 1.93,
+    "ciddor450_minus_PR_mA": -0.101,
+    "morton2000_minus_PR_mA": -0.111
+   },
+   "7600": {
+    "vac_minus_air_PR_A": 2.0917,
+    "ciddor450_minus_PR_mA": -0.109,
+    "morton2000_minus_PR_mA": -0.123
+   },
+   "8000": {
+    "vac_minus_air_PR_A": 2.1997,
+    "ciddor450_minus_PR_mA": -0.114,
+    "morton2000_minus_PR_mA": -0.131
+   },
+   "9000": {
+    "vac_minus_air_PR_A": 2.47,
+    "ciddor450_minus_PR_mA": -0.125,
+    "morton2000_minus_PR_mA": -0.151
+   },
+   "10000": {
+    "vac_minus_air_PR_A": 2.7408,
+    "ciddor450_minus_PR_mA": -0.137,
+    "morton2000_minus_PR_mA": -0.171
+   },
+   "12700": {
+    "vac_minus_air_PR_A": 3.4733,
+    "ciddor450_minus_PR_mA": -0.167,
+    "morton2000_minus_PR_mA": -0.223
+   },
+   "15000": {
+    "vac_minus_air_PR_A": 4.0982,
+    "ciddor450_minus_PR_mA": -0.194,
+    "morton2000_minus_PR_mA": -0.266
+   },
+   "16900": {
+    "vac_minus_air_PR_A": 4.6149,
+    "ciddor450_minus_PR_mA": -0.216,
+    "morton2000_minus_PR_mA": -0.302
+   },
+   "20000": {
+    "vac_minus_air_PR_A": 5.4583,
+    "ciddor450_minus_PR_mA": -0.252,
+    "morton2000_minus_PR_mA": -0.36
+   },
+   "25000": {
+    "vac_minus_air_PR_A": 6.8195,
+    "ciddor450_minus_PR_mA": -0.312,
+    "morton2000_minus_PR_mA": -0.453
+   }
+  }
+ },
+ "citations": [
+  "Gordon, I.E., Rothman, L.S., Hargreaves, R.J., Gomez, F.M., Bertin, T., Hill, C., et al. 2026, The HITRAN2024 molecular spectroscopic database, JQSRT 353, 109807, doi:10.1016/j.jqsrt.2026.109807 (data: https://hitran.org, line-by-line API https://hitran.org/lbl/api, downloaded 2026-11-23)",
+  "Kochanov, R.V., Gordon, I.E., Rothman, L.S., Wcislo, P., Hill, C., Wilzewski, J.S. 2016, HAPI, JQSRT 177, 15, doi:10.1016/j.jqsrt.2016.03.005",
+  "Gamache, R.R., Vispoel, B., Tennyson, J., Yurchenko, S.N., Polyansky, O.L., Gordon, I.E., et al. 2025, Partition sums for molecules and their isotopologues for HITRAN2024 (TIPS-2025), JQSRT 345, 109568, doi:10.1016/j.jqsrt.2025.109568 (Q(T) files https://hitran.org/data/Q/q<id>.txt)",
+  "Anderson, G.P., Clough, S.A., Kneizys, F.X., Chetwynd, J.H., Shettle, E.P. 1986, AFGL Atmospheric Constituent Profiles (0-120 km), AFGL-TR-86-0110, ADS 1986afgl.rept.....A (tables as packaged in joseki 2.7.0, https://pypi.org/project/joseki/, data/afgl_1986/table_1f.csv, table_2a.csv)",
+  "NOAA Global Monitoring Laboratory, global annual mean CO2/CH4/N2O (Lan, X., Tans, P., Thoning, K.W., et al.), https://gml.noaa.gov/webdata/ccgg/trends/{co2,ch4,n2o}/*_annmean_gl.txt (downloaded 2026-11-23)",
+  "Peck, E.R., Reeder, K. 1972, Dispersion of air, JOSA 62, 958, doi:10.1364/JOSA.62.000958",
+  "Ciddor, P.E. 1996, Refractive index of air: new equations for the visible and near infrared, Appl. Opt. 35, 1566, doi:10.1364/AO.35.001566 (comparison only)",
+  "Morton, D.C. 2000, ApJS 130, 403, doi:10.1086/317349 (IAU standard formula after Birch & Downs 1994; comparison only)"
+ ]
+}

@@ -1,0 +1,7 @@
+# Raw downloads (papers, archives, HITRAN/NIST dumps, scans) are not redistributed;
+# the scripts under scripts/ re-fetch them into data/raw/.
+data/raw/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/

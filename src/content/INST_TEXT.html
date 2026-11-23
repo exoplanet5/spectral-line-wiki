@@ -1,0 +1,58 @@
+<p>A spectrograph's wavelength scale is borrowed from a reference spectrum that is recorded alongside the science exposure or imprinted on it. For differential work (EPRV, α and μ, redshift drift) the calibrator sets the precision; the rest-wavelength catalogue only fixes the zero point. Lamp and atmospheric references inherit the 10⁻⁴–10⁻³ Å accuracy of laboratory wavelengths. Only the laser frequency comb is traceable to an atomic clock.</p>
+
+<h4>Hollow-cathode lamps: Th-Ar and U-Ne</h4>
+<ul class="tight">
+<li><b>HARPS Th-Ar list</b> (3785–6915 Å; <a class="cite" href="#ref-lovis2007">Lovis &amp; Pepe 2007</a>). Each line position is good to ≈ 10 m/s (0.18 mÅ), and the global HARPS solution is precise to 20 cm/s. Measured centroiding errors are 0.002 px (1.6 m/s) for the strongest unsaturated lines and 0.2 px (160 m/s) for the faintest, with a CCD-inhomogeneity floor of ≈ 0.01 px (8 m/s). The absolute scale is tied to the Palmer &amp; Engleman (1983) Th atlas, whose lines are accurate to 16–82 m/s.</li>
+<li><b>Argon lines</b> shift from lamp to lamp by "a few tens of m/s" (pressure shifts; Whaling et al. 2002, as cited by Lovis &amp; Pepe), i.e. 0.2–0.9 mÅ at 5500 Å, and should be avoided when high precision is needed. Th lines are "individually stable in wavelength at least within the error bars".</li>
+<li><b>Th Ritz wavelengths</b> (<a class="cite" href="#ref-redman2014">Redman, Nave &amp; Sansonetti 2014</a>): 19 874 lines over 250–5500 nm, from globally optimised Th I–III energy levels. The scatter about the Ritz values is 0.82 mÅ for Palmer &amp; Engleman and 1.32 mÅ for Lovis &amp; Pepe, so an internal precision of 0.18 mÅ is not an absolute accuracy. The best Ritz values reach ≈ 0.2 mÅ (e.g. 873.482334 ± 0.000017 nm).</li>
+<li><b>Line selection.</b> The older Th-Ar list left ±30–75 m/s distortions in UVES wavelength solutions. A line-selection algorithm improved the residuals by more than a factor of 3 (<a class="cite" href="#ref-murphy2007a">Murphy et al. 2007a</a>).</li>
+<li><b>Near-IR.</b> The Th-Ar atlas of <a class="cite" href="#ref-kerber2008">Kerber, Nave &amp; Sansonetti 2008</a> (691–5804 nm) "is sufficient for precisions of ≈ 50 m/s on CRIRES". Uranium offers "six times as many calibration lines as thorium in the NIR": 10 100 U I/II lines over 850–4000 nm (both quotations from <a class="cite" href="#ref-redman2011">Redman et al. 2011</a>). In the H band (1454–1638 nm), U-Ne residuals are 50 % larger than those of a modal-noise-limited LFC (<a class="cite" href="#ref-redman2012">Redman et al. 2012</a>).</li>
+</ul>
+
+<h4>Iodine absorption cell</h4>
+<p>An I₂ cell in the stellar beam imprints a dense forest of molecular absorption lines on the spectrum. The wavelength scale and the instrumental profile are then modelled together with the star, which gave 3 m/s Doppler precision (<a class="cite" href="#ref-marcy1992">Marcy &amp; Butler 1992</a>; <a class="cite" href="#ref-butler1996">Butler et al. 1996</a>). The reference is the cell's own high-resolution atlas, not a set of laboratory wavelengths. The method covers only the green–yellow part of the spectrum, where I₂ absorbs strongly, and the I₂ lines contaminate the stellar lines there, so iodine-cell spectra are unsuited to absolute line positions.</p>
+
+<h4>Fabry–Pérot etalons</h4>
+<div class="eq"><span class="tag">(7.9.1)</span><math display="block"><mi>m</mi><mspace width="0.1em"/><msub><mi>λ</mi><mi>m</mi></msub><mo>=</mo><mn>2</mn><mspace width="0.1em"/><mi>n</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mspace width="0.1em"/><mi>L</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.17em"/><mi>θ</mi></math></div>
+<p>An etalon gives a dense, regular comb of peaks of order m. Their absolute positions depend on the cavity length L and its dispersion, so the etalon must be anchored to a lamp or an LFC.</p>
+<ul class="tight">
+<li>A combined hollow-cathode + FP solution removes the 50 m/s distortions of lamp-only solutions and agrees with an LFC to ≤ 10 m/s (<a class="cite" href="#ref-wildi2010">Wildi et al. 2010</a>; <a class="cite" href="#ref-bauer2015">Bauer et al. 2015</a>).</li>
+<li>ESPRESSO's Th-Ar+FP and LFC solutions still differ by up to 24 m/s, depending on wavelength (<a class="cite" href="#ref-schmidt2021">Schmidt et al. 2021</a>).</li>
+<li>Etalons drift chromatically, and the drift must be modelled (<a class="cite" href="#ref-cersullo2019">Cersullo et al. 2019</a>; <a class="cite" href="#ref-terrien2021">Terrien et al. 2021</a>, HPF).</li>
+</ul>
+
+<h4>Laser frequency combs</h4>
+<div class="eq"><span class="tag">(7.9.2)</span><math display="block"><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mo>+</mo><mi>n</mi><mspace width="0.1em"/><msub><mi>f</mi><mtext>rep</mtext></msub></math></div>
+<p>The comb repetition rate f<sub>rep</sub> and offset f<sub>0</sub> are referenced to an atomic clock. Every mode frequency is then known to better than 10⁻¹² (<a class="cite" href="#ref-murphy2007b">Murphy et al. 2007b</a>), i.e. 5 × 10⁻⁹ Å or 0.3 mm/s at 5000 Å (derived). Simulations put the photon limit near 1 cm/s over 4000 Å. Measured performance:</p>
+<ul class="tight">
+<li>First astronomical use: ≈ 9 m/s at 1.5 µm (<a class="cite" href="#ref-steinmetz2008">Steinmetz et al. 2008</a>).</li>
+<li>An "astro-comb" designed for 1 cm/s (<a class="cite" href="#ref-li2008">Li et al. 2008</a>).</li>
+<li>Short-term repeatability of 2.5 cm/s on HARPS (<a class="cite" href="#ref-wilken2012">Wilken et al. 2012</a>).</li>
+<li>Two independent LFCs confirm 1 cm/s stability (<a class="cite" href="#ref-probst2020">Probst et al. 2020</a>).</li>
+<li>≲ 4 cm/s per exposure and 1 cm/s averaged over a few hours, but ≈ 60 cm/s zero-point offsets between combs in the raw data (<a class="cite" href="#ref-milakovic2020">Milaković et al. 2020</a>).</li>
+<li>ANDES assessment: ≈ 50 cm/s inconsistency between the two HARPS LFCs, and flux-dependent LFC shifts of up to ±2 m/s on ESPRESSO (<a class="cite" href="#ref-martins2024">Martins et al. 2024</a>).</li>
+</ul>
+
+<h4>Atmospheric references: telluric O₂ and OH airglow</h4>
+<ul class="tight">
+<li><b>Telluric O₂.</b> HARPS O₂ lines are stable to 10 m/s rms over 6 years. They reach 5 m/s "out of the box" and 1–2 m/s with simple atmospheric modelling (<a class="cite" href="#ref-figueira2010">Figueira et al. 2010</a>). HITRAN2024 O₂ positions have a median uncertainty bound of 0.016 mÅ (<a class="cite" href="#ref-gordon2026">Gordon et al. 2026</a>; §6.3). Observed lines, however, are pressure-shifted: the median is +2.1 mÅ (+81 m/s) through a sea-level atmosphere, derived from the HITRAN δ<sub>air</sub>. Winds shift them too: 10 m/s is 0.25 mÅ at 7600 Å.</li>
+<li><b>OH Meinel lines</b> are computed from laboratory FTS energy levels (<a class="cite" href="#ref-abrams1994">Abrams et al. 1994</a>). They are "secure to about one hundredth of Å" (<a class="cite" href="#ref-rousselot2000">Rousselot et al. 2000</a>), ≈ 190 m/s at 1.6 µm, and HITRAN position codes 2–3 mean 2.5–250 mÅ at 1.58 µm. At low J, independent model lists agree to 1–6 mÅ: <a class="cite" href="#ref-oliva2015">Oliva et al. 2015</a> minus HITRAN has a median of +0.8 mÅ, with 68 % within 2.5 mÅ (§5.4). This is internal consistency, not independent accuracy.</li>
+<li><b>Optical sky atlases.</b> <a class="cite" href="#ref-osterbrock1996">Osterbrock et al. 1996</a> and <a class="cite" href="#ref-osterbrock1997">1997</a> list Keck/HIRES OH lines for echelle calibration. The UVES atlas (<a class="cite" href="#ref-hanuschik2003">Hanuschik 2003</a>) quotes 17 mÅ per line, and its OH lines sit +7 to +17 mÅ from HITRAN and HIRES positions in the red settings (derived; §5.3).</li>
+<li><b>Practical limits.</b> Sky lines are Λ-doublets, often blended. Their thermal FWHM is ≈ 0.038 Å at 1.6 µm (190 K). They check zero points at the 0.1 km/s level, not at m/s.</li>
+</ul>
+
+<h4>Comparison</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Calibrator</th><th>Coverage</th><th>Reported precision / accuracy</th><th>Scale traceable to</th><th>Main systematics</th></tr></thead>
+<tbody>
+<tr><td><b>Th-Ar lamp</b></td><td>UV–near-IR (HARPS list 3785–6915 Å)</td><td>≈ 10 m/s per line (0.18 mÅ); 20 cm/s per HARPS solution</td><td>lab FTS / Ritz (≈ 0.2–1 mÅ)</td><td>Ar pressure shifts (tens of m/s); blends; line-list choice (±30–75 m/s distortions)</td></tr>
+<tr><td><b>U-Ne lamp</b></td><td>850–4000 nm (U lines)</td><td>6 × denser than Th in the NIR; H-band residuals 1.5 × LFC</td><td>lab FTS</td><td>sparse lines, NIR line lists</td></tr>
+<tr><td><b>I₂ cell</b></td><td>green–yellow only</td><td>3 m/s Doppler</td><td>cell atlas (relative)</td><td>contaminates the star; IP modelling</td></tr>
+<tr><td><b>FP etalon</b></td><td>broad (visible–NIR)</td><td>≤ 10 m/s vs LFC (with HCL); ≤ 24 m/s Th-Ar+FP vs LFC (ESPRESSO)</td><td>needs a lamp or LFC anchor</td><td>chromatic drift of L(λ)</td></tr>
+<tr><td><b>Laser frequency comb</b></td><td>visible and NIR</td><td>2.5 cm/s repeatability; 1 cm/s stability between two combs</td><td>atomic clock (&lt; 10⁻¹²)</td><td>≈ 50–60 cm/s comb-to-comb zero points; flux-dependent shifts (±2 m/s)</td></tr>
+<tr><td><b>Telluric O₂</b></td><td>bands near 6300, 6900, 7600 Å</td><td>10 m/s rms (6 yr); 1–2 m/s modelled</td><td>HITRAN (0.016 mÅ median)</td><td>pressure shift (+81 m/s), winds, line mixing</td></tr>
+<tr><td><b>OH airglow</b></td><td>0.6–2.6 µm</td><td>≈ 0.01 Å computed; 17 mÅ per line (UVES atlas)</td><td>lab OH levels via HITRAN</td><td>Λ-doublets, blends, atlas zero points (+7 to +17 mÅ)</td></tr>
+<tr><td><b>Solar FTS atlas</b></td><td>405–1065 nm (IAG)</td><td>±10 m/s (IAG); Kitt Peak tens to 100 m/s; LARS 1 m/s</td><td>FTS (IAG); LFC (LARS)</td><td>intrinsic solar shifts (§6.4)</td></tr>
+</tbody></table></div>
+<p class="small muted">Solar atlases: <a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>; <a class="cite" href="#ref-lohnerbottcher2018">Löhner-Böttcher et al. 2018</a>. The telluric O₂ band ranges are those of §6.3.</p>
+<div class="note"><b>Hierarchy per line, then per exposure:</b> OH airglow ~100 m/s; Th-Ar/U-Ne ~10 m/s per line and 0.1–1 m/s per exposure; telluric O₂ ~10 m/s; I₂ ~1–3 m/s; FP cm/s relative but unanchored; LFC ~1–4 cm/s repeatability on a clock-referenced scale, but with 50–60 cm/s comb-to-comb zero points so far. For lamp-based work the absolute accuracy is limited by the same laboratory wavelengths this page tabulates, 10⁻⁴–10⁻³ Å. Hollow-cathode-lamp laboratory data "currently seem not accurate enough to achieve the 1 m/s accuracy goal" of ANDES (<a class="cite" href="#ref-martins2024">Martins et al. 2024</a>).</div>

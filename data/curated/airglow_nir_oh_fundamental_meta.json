@@ -1,0 +1,119 @@
+{
+ "file": "data/curated/airglow_nir_oh_fundamental.csv",
+ "title": "OH Meinel airglow lines 2.5-4.2 um (Delta v = 1 fundamental plus the Delta v = 2 tail beyond 2.5 um; HITRAN2024 positions, no intensities)",
+ "built_by": "scripts/research/build_airglow_oh_fundamental.py (python -I); parsers in scripts/research/airglow_nir_lib.py",
+ "columns": "identical to data/curated/airglow_nir.csv (see airglow_nir_meta.json \"columns\"); intensity, PALACE and cross-check columns are blank",
+ "caveats": [
+  "No intensities: PALACE v1.0 covers 0.3-2.5 um only, and its Einstein-A corrections for OH were derived for Delta v >= 2 bands.",
+  "HITRAN position codes are interval bounds, not measured errors; at 2.5-4.2 um code 2 means 0.6-1.8 A upper bound.",
+  "Large parts of 2.5-2.9 um and of 4.2-4.4 um are opaque from the ground (H2O, CO2). The L-band sky beyond ~3.5-4 um is increasingly dominated by thermal emission of the atmosphere and telescope.",
+  "Bands (8-7) and (9-8) are cut by the 4.2 um limit (their P branches extend to ~5 um).",
+  "Thermal-IR emitters (NO 5.3 um, CO2 4.3 and 15 um, O3 9.6 um) are out of scope."
+ ],
+ "stats": {
+  "selection": "16OH, v' <= 9, Delta v = 1 (plus Delta v = 2 lines in the window), 25000 < lambda_vac <= 42000 A, N'' <= 20, A >= 0.01 s-1",
+  "hitran2024_files": [
+   "airglow_nir/hitran_lbl_dv1/OH16_2000-2900cm.par",
+   "airglow_nir/hitran_lbl_dv1/OH16_2900-3800cm.par",
+   "airglow_nir/hitran_lbl/OH16_3800-4800cm.par"
+  ],
+  "hitran2024_records_2000-4800cm": 8699,
+  "hitran2024_records_by_dv": {
+   "0": 57,
+   "1": 5901,
+   "2": 2579,
+   "3": 162
+  },
+  "window_records_vu<=9_dv1-2": 4746,
+  "dropped_N_lower>20": 1585,
+  "dropped_A<0.01_with_N_lower<=20": {
+   "satellite": 646,
+   "main": 179
+  },
+  "selected": 2336,
+  "selected_by_band": {
+   "OH(1-0)": 297,
+   "OH(2-1)": 313,
+   "OH(3-2)": 313,
+   "OH(4-3)": 295,
+   "OH(5-4)": 275,
+   "OH(6-5)": 263,
+   "OH(7-6)": 240,
+   "OH(8-7)": 169,
+   "OH(9-8)": 102,
+   "OH(7-5)": 6,
+   "OH(8-6)": 13,
+   "OH(9-7)": 50
+  },
+  "selected_by_type": {
+   "main": 1473,
+   "satellite": 863
+  },
+  "selected_hitran_nu_code": {
+   "1": 86,
+   "2": 1590,
+   "3": 660
+  },
+  "selected_lambda_range_A": [
+   25035.5406,
+   41965.4381
+  ],
+  "selected_A_range_s-1": {
+   "main": [
+    0.01002,
+    123.8
+   ],
+   "satellite": [
+    0.01,
+    0.2913
+   ]
+  },
+  "same_cuts_beyond_4.2um_not_listed": {
+   "OH(3-2)": 12,
+   "OH(4-3)": 32,
+   "OH(5-4)": 56,
+   "OH(6-5)": 62,
+   "OH(7-6)": 88,
+   "OH(8-7)": 95,
+   "OH(9-8)": 134
+  },
+  "note_download_lower_edge": "2000 cm-1 (5.0 um); the 4.2 um window edge lies well inside the downloaded range",
+  "palace_dv2_3_intensity_fraction_retained_by_cuts": {
+   "N''<=10": 0.9552,
+   "N''<=15": 0.9775,
+   "N''<=20": 0.9905,
+   "N''<=25": 0.9972,
+   "N''<=20 and A>=0.01": 0.99042,
+   "brightest_dropped_by_A_cut_R": 3.826,
+   "brightest_line_R": 6682.0,
+   "brightest_beyond_N_cut_R": 85.65,
+   "n_lines": 9630
+  },
+  "consistency_vs_oh48_0-30000.par": {
+   "matched": 2336,
+   "unmatched": 0,
+   "multiple_candidates": 0,
+   "max_abs_dnu_cm": 0.0,
+   "max_abs_dlam_mA": 0.0,
+   "n_position_changed": 0,
+   "A_ratio_minus_1_median": 0.0,
+   "A_ratio_minus_1_p05_p95": [
+    0.0,
+    0.0
+   ]
+  },
+  "air_morton2000_minus_peckreeder1972_5p_mA": {
+   "2.5um": -0.453,
+   "3.0um": -0.546,
+   "3.5um": -0.638,
+   "4.2um": -0.768
+  },
+  "air_morton2000_minus_ciddor1996_mA": {
+   "2.5um": -0.142,
+   "3.0um": -0.175,
+   "3.5um": -0.207,
+   "4.2um": -0.252
+  },
+  "rows_written": 2336
+ }
+}

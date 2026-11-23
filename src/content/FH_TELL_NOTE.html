@@ -1,0 +1,73 @@
+<p>The telluric list holds <b>23 976</b> lines from HITRAN2024 (<a class="cite" href="#ref-gordon2026">Gordon et al. 2026</a>), from 4427.33 to 24999.59 Å (vacuum). A line was kept if, as an isolated line, its central depth is ≥ 1 % after convolution with a Gaussian line-spread function of R = 10⁵, at airmass 1, for an observer at sea level.</p>
+<ul class="tight">
+<li><b>Atmosphere.</b> The model is the 62-layer AFGL-1986 U.S. Standard atmosphere (<a class="cite" href="#ref-anderson1986">Anderson et al. 1986</a>): PWV 14.17 mm and 344 DU of O₃. CO₂, CH₄ and N₂O are scaled to the NOAA GML 2025 global means of 425.63 ppm, 1935.95 ppb and 338.86 ppb (<a class="cite" href="#ref-lan2025">Lan et al. 2025</a>).</li>
+<li><b>Line model.</b> Voigt profiles with HITRAN S(T) and γ(p,T), using the TIPS-2025 partition sums (<a class="cite" href="#ref-gamache2025">Gamache et al. 2025</a>); line mixing and continua are ignored. Weak lines pass a check: equivalent width / (S·column) = 0.997 in the median.</li>
+<li><b>Depths.</b> 9 557 lines reach ≥ 10 % depth and 4 371 reach ≥ 50 %. From a 2.5 km site (PWV 4.37 mm), 17 360 still reach 1 %. These counts use the unrounded depths. The table stores depths to 4 decimals, so filtering it can give a few more lines (about 30 more at 2.5 km).</li>
+</ul>
+<p>Each row keeps the HITRAN vacuum wavenumber verbatim (F12.6, zero pressure), λ<sub>vac</sub> = 10⁸/ν̃, and λ<sub>air</sub> in standard air from <a class="cite" href="#ref-peck1972">Peck &amp; Reeder 1972</a>, the same formula as for the element lines. That formula was fitted only up to 1.69 µm and is extrapolated beyond. Ciddor (450 ppm CO₂) and the IAU/Morton formula give air wavelengths 0.04–0.31 and 0.04–0.45 mÅ shorter over 3000–25000 Å (derived). Many infrared users quote vacuum wavelengths instead.</p>
+
+<div class="tscroll"><table class="t">
+<thead><tr><th>Molecule</th><th class="num">Lines</th><th>Isotopologues (HITRAN code: lines)</th><th class="num">median σ<sub>λ</sub> bound (mÅ)</th><th class="num">σ ≤ 1 mÅ</th><th class="num">median Δλ<sub>p</sub>, sea level</th><th class="num">median Δλ<sub>p</sub>, 1 atm</th></tr></thead>
+<tbody>
+<tr><td>H₂O</td><td class="num">17 934</td><td>161: 14 327; 181: 1 624; 162 (HDO): 1 164; 171: 819</td><td class="num">0.86</td><td class="num">58 %</td><td class="num">+12.4 mÅ (331 m/s)</td><td class="num">+15.3 mÅ</td></tr>
+<tr><td>CH₄</td><td class="num">3 165</td><td>211: 3 113; 311: 52</td><td class="num">5.4</td><td class="num">2 %</td><td class="num">+22.5 mÅ (303 m/s)</td><td class="num">+43.7 mÅ</td></tr>
+<tr><td>CO₂</td><td class="num">2 108</td><td>626: 1 483; 628: 286; 636: 262; 627: 77</td><td class="num">0.38</td><td class="num">67 %</td><td class="num">+11.0 mÅ (177 m/s)</td><td class="num">+19.8 mÅ</td></tr>
+<tr><td>O₂</td><td class="num">601</td><td>66: 363; 68: 157; 67: 81</td><td class="num">0.016</td><td class="num">99 %</td><td class="num">+2.1 mÅ (81 m/s)</td><td class="num">+4.0 mÅ</td></tr>
+<tr><td>N₂O</td><td class="num">134</td><td>446: 134</td><td class="num">51</td><td class="num">0 %</td><td class="num">+9.9 mÅ (135 m/s)</td><td class="num">+19.2 mÅ</td></tr>
+<tr><td>CO</td><td class="num">34</td><td>26: 34 (2–0 band)</td><td class="num">0.055</td><td class="num">100 %</td><td class="num">+13.1 mÅ (168 m/s)</td><td class="num">+21.6 mÅ</td></tr>
+<tr><td>O₃</td><td class="num">0</td><td colspan="5">no line reaches 1 %: ozone absorbs as the Hartley–Huggins and Chappuis continua (table below)</td></tr>
+<tr><td><b>all</b></td><td class="num"><b>23 976</b></td><td></td><td class="num"></td><td class="num">51.8 %</td><td class="num">+13.0 mÅ</td><td class="num">+17.8 mÅ (−62 to +231)</td></tr>
+</tbody></table></div>
+<p class="small muted">σ<sub>λ</sub> bound: the upper end of the HITRAN position-uncertainty code (k: 10⁻ᵏ ≤ σ<sub>ν̃</sub> &lt; 10⁻⁽ᵏ⁻¹⁾ cm⁻¹) converted with Δλ = λ²Δν̃/10⁸. This is a conservative bound, and the real accuracy is often better. Δλ<sub>p</sub>: pressure shift (eq. 6.1), redward when positive. Velocities are at each line's own wavelength. The per-molecule medians at 1 atm and for “all” are derived from the CSV; the other figures come from the build metadata.</p>
+
+<h4>Precision of the positions</h4>
+<ul class="tight">
+<li>HITRAN quotes every wavenumber to 10⁻⁶ cm⁻¹, but the stated uncertainty decides the precision. The commonest code, 4 (10⁻⁴–10⁻³ cm⁻¹; 13 006 lines), guarantees ≤ 1 mÅ only below 1 µm, because the bound scales as λ² (derived).</li>
+<li>O₂, CO and most CO₂ lines are sub-mÅ references. H₂O is borderline: the median bound is 0.86 mÅ and 58 % of lines are ≤ 1 mÅ. CH₄ (median 5.4 mÅ) and N₂O (51 mÅ) do not meet a 1 mÅ requirement.</li>
+<li>Over the whole list, 51.8 % of the lines have a bound ≤ 1 mÅ (55 % of the lines at least 10 % deep) and 12.3 % ≤ 0.1 mÅ.</li>
+<li>No independent check against an observed telluric atlas was made.</li>
+</ul>
+
+<h4>Pressure shifts must be applied</h4>
+<p>HITRAN positions are for zero pressure. In the atmosphere each line moves by δ<sub>air</sub>·p (HITRAN definition ν̃* = ν̃ + δ<sub>air</sub>p). For an unsaturated line seen through the whole column, the relevant pressure is the S·u-weighted mean pressure of the absorbing gas, p<sub>eff</sub>. That is 0.51–0.59 atm for the well-mixed gases and 0.81 atm for H₂O, which is concentrated near the ground.</p>
+<div class="eq"><span class="tag">(6.1)</span><math display="block"><msub><mi>λ</mi><mtext>vac,&#160;obs</mtext></msub><mo>=</mo><mfrac><msup><mn>10</mn><mn>8</mn></msup><mrow><msub><mover accent="true"><mi>ν</mi><mo>~</mo></mover><mn>0</mn></msub><mo>+</mo><msub><mi>δ</mi><mtext>air</mtext></msub><mspace width="0.15em"/><msub><mi>p</mi><mtext>eff</mtext></msub></mrow></mfrac><mspace width="0.3em"/><mtext>Å</mtext><mo>,</mo><mspace width="1.2em"/><mi>Δ</mi><msub><mi>λ</mi><mi>p</mi></msub><mo>≈</mo><mo>−</mo><mfrac><mrow><msup><mi>λ</mi><mn>2</mn></msup><mspace width="0.1em"/><msub><mi>δ</mi><mtext>air</mtext></msub><mspace width="0.1em"/><msub><mi>p</mi><mtext>eff</mtext></msub></mrow><msup><mn>10</mn><mn>8</mn></msup></mfrac><mo>,</mo><mspace width="1.2em"/><msub><mi>p</mi><mtext>eff</mtext></msub><mo>=</mo><mfrac><mrow><mo>∑</mo><mi>S</mi><mspace width="0.1em"/><mi>u</mi><mspace width="0.1em"/><mi>p</mi></mrow><mrow><mo>∑</mo><mi>S</mi><mspace width="0.1em"/><mi>u</mi></mrow></mfrac></math></div>
+<p class="small">ν̃₀ in cm⁻¹, δ<sub>air</sub> in cm⁻¹ atm⁻¹ (mostly negative, i.e. a redshift), p in atm, λ in Å; u is the absorber column per layer.</p>
+<ul class="tight">
+<li><b>Size.</b> The median effective shift is +2.1 mÅ for O₂ and +10 to +23 mÅ for the other molecules. That is 2 to 23 times the 1 mÅ goal, so a zero-pressure list is wrong by that much unless δ<sub>air</sub> is applied. The “λ<sub>air</sub> + P-shift” column of the table applies it with the sea-level p<sub>eff</sub>. From a high site the absorbing column has a lower mean pressure, so the shift is smaller (not tabulated).</li>
+<li><b>δ<sub>air</sub> unknown.</b> It is zero, i.e. unknown, for 577 lines (2.4 %).</li>
+<li><b>δ<sub>air</sub> uncertain.</b> For 71 % of the lines δ<sub>air</sub> carries uncertainty code 3 (10⁻³–10⁻² cm⁻¹ atm⁻¹). That leaves ≥ 0.6 mÅ atm⁻¹ of uncertainty at 7600 Å and ≥ 2.2 mÅ atm⁻¹ at 1.5 µm (derived).</li>
+<li><b>What the single p<sub>eff</sub> neglects.</b> The temperature dependence of δ, speed dependence, line mixing (important in the O₂ A band and the CO₂ bands), and the higher formation altitude, hence lower pressure, of saturated cores.</li>
+</ul>
+
+<h4>Winds, observer frame and solar atlases</h4>
+<ul class="tight">
+<li><b>Frame.</b> Telluric lines are at rest in the air, so they sit in the topocentric frame, displaced by the line-of-sight wind. A 10 m/s wind moves a line 0.25 mÅ at 7600 Å (derived). HARPS measurements found telluric O₂ lines stable to 10 m/s rms over six years: about 5 m/s without any correction for short programmes, and 1–2 m/s once the line-of-sight wind and airmass are modelled (<a class="cite" href="#ref-figueira2010">Figueira et al. 2010</a>).</li>
+<li><b>Barycentric-corrected spectra.</b> Correcting a spectrum to the barycentre moves the telluric lines by −v<sub>B</sub>, up to ±30 km/s (±0.76 Å at 7600 Å).</li>
+<li><b>Solar atlases.</b> Solar atlases are Doppler-corrected to the Sun, so their telluric lines are displaced by the Earth–Sun radial velocity, and their positions differ from atlas to atlas (<a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>; §6.4).</li>
+</ul>
+
+<h4>Nothing below 4427 Å: continua only</h4>
+<p>The bluest selected line is H₂O at 4427.334 Å (vacuum; 4426.091 Å air). Between the ground-based UV cutoff and 4427 Å the atmosphere absorbs only as continua:</p>
+<ul class="tight">
+<li>the O₃ Hartley–Huggins edge: vertical τ = 1 at 3088 Å and 0.01 at 3407 Å (vacuum, 223 K; <a class="cite" href="#ref-serdyuchenko2014">Serdyuchenko et al. 2014</a>);</li>
+<li>O₂–O₂ collision-induced bands at 3439, 3610, 3803, 4465 and 4769 Å (vacuum), each &lt; 1 % deep.</li>
+</ul>
+<p>At longer wavelengths the broad features are:</p>
+<ul class="tight">
+<li>the O₃ Chappuis band, 4.6 % at its 6024 Å peak;</li>
+<li>the O₂–O₂ bands at 5777 and 6302 Å, 1.5 % and 1.0 %;</li>
+<li>the O₂–air CIA at 1.27 µm, 7.0 %, beneath the discrete a–X lines.</li>
+</ul>
+<p>HITRAN lists 38 484 O₃ lines in the range, but none is 1 % deep. The table below summarises each band. Its continuum rows give peak positions limited by the table grid, since these features are tens to hundreds of Å wide.</p>
+
+<h4>Bands and continua</h4>
+<div id="fhTellBands"></div>
+
+<div class="note warn"><b>Model limits.</b>
+<ul class="tight">
+<li>Depths and EWs are for isolated lines in a single standard atmosphere (PWV 14.2 mm at sea level). Real H₂O depths scale strongly with PWV and airmass.</li>
+<li>HDO lines use HITRAN's terrestrial isotopic abundance, but atmospheric water is depleted in HDO, so their depths are overestimated.</li>
+<li>Blends are not combined.</li>
+<li>The 1 % threshold at R = 10⁵ is a design choice: it drops narrow stratospheric O₃ lines and very weak H₂O lines (27 778 lines reach 1 % at infinite resolution).</li>
+<li>Telluric lines in the A and B bands and near 6300 Å (O₂ γ band, overlapping [O I] 6300 airglow, §5) are excellent wavelength references, but only after the pressure shift and the observer frame are accounted for.</li>
+</ul></div>

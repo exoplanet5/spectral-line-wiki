@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spectral Line Wiki</title>
+<meta name="description" content="Precise (1 mÅ) wavelengths of atomic emission lines, airglow, solar Fraunhofer and telluric lines, with a complete wavelength-calibration reference: air/vacuum, barycentric, LSR, Galactic, Local Group, CMB and cosmological frames.">
+<style>/*{{STYLE}}*/</style>
+</head>
+<body>
+<header class="topbar">
+  <button class="navtoggle btn small" id="navBtn" aria-label="table of contents">☰</button>
+  <a class="brand" href="#top"><span class="logo" aria-hidden="true"></span>Spectral Line Wiki <small>1 mÅ edition · {{BUILD_DATE}}</small></a>
+  <span class="grow"></span>
+  <span class="seg" role="group" aria-label="display medium">
+    <button data-med="air" title="standard air above 2000 Å, vacuum below (IAU convention)">Air</button>
+    <button data-med="vac" title="vacuum wavelengths everywhere">Vacuum</button>
+  </span>
+  <label class="quick" title="find lines near a wavelength (Å, in the selected medium); press Enter">λ <input id="topQ" inputmode="decimal" placeholder="e.g. 5577.34"></label>
+  <button class="btn small" id="themeBtn" title="toggle light / dark">◐</button>
+</header>
+
+<div class="layout">
+<nav class="toc" aria-label="contents">
+  <div class="tt">Contents</div>
+  <a href="#overview">1 Overview</a>
+  <a href="#explore">2 Spectrum explorer &amp; finder</a>
+  <a href="#why">3 Why 1 mÅ?</a>
+  <a class="sub" href="#why-v">3.1 Velocity equivalent</a>
+  <a class="sub" href="#why-inst">3.2 What spectrographs resolve</a>
+  <a class="sub" href="#why-phys">3.3 Effects at the mÅ level</a>
+  <a class="sub" href="#why-verdict">3.4 Verdict</a>
+  <a href="#elements">4 Element emission lines</a>
+  <a class="sub" href="#el-table">4.1 Line table</a>
+  <a class="sub" href="#el-method">4.2 Sources &amp; precision</a>
+  <a href="#airglow">5 Airglow (night/day sky)</a>
+  <a class="sub" href="#ag-atomic">5.1 Atomic &amp; ionic lines</a>
+  <a class="sub" href="#ag-bands">5.2 Molecular band systems</a>
+  <a class="sub" href="#ag-optical">5.3 Optical line atlas</a>
+  <a class="sub" href="#ag-nir">5.4 Near-IR OH &amp; O₂ (to 4.2 µm)</a>
+  <a href="#fraunhofer">6 Fraunhofer lines</a>
+  <a class="sub" href="#fh-classic">6.1 Classic designations</a>
+  <a class="sub" href="#fh-solar">6.2 Solar photospheric lines</a>
+  <a class="sub" href="#fh-telluric">6.3 Telluric absorption</a>
+  <a class="sub" href="#fh-shift">6.4 Solar vs laboratory λ</a>
+  <a href="#calib">7 Wavelength calibration</a>
+  <a class="sub" href="#cal-chain">7.1 The correction chain</a>
+  <a class="sub" href="#cal-airvac">7.2 Air ↔ vacuum</a>
+  <a class="sub" href="#cal-doppler">7.3 Doppler conventions</a>
+  <a class="sub" href="#cal-bary">7.4 Earth rotation, orbit, barycentre</a>
+  <a class="sub" href="#cal-time">7.5 Time scales &amp; BJD</a>
+  <a class="sub" href="#cal-gal">7.6 LSR &amp; Galactic rotation</a>
+  <a class="sub" href="#cal-lg">7.7 Local Group, CMB, flows</a>
+  <a class="sub" href="#cal-cosmo">7.8 Cosmology</a>
+  <a class="sub" href="#cal-inst">7.9 Instrumental calibrators</a>
+  <a class="sub" href="#cal-sys">7.10 Line-shift checklist</a>
+  <a href="#refs">8 References &amp; provenance</a>
+</nav>
+
+<main id="top">
+<div class="wrap">
+
+<!-- ============================================================ 1 OVERVIEW -->
+<section id="overview">
+<h1>Spectral Line Wiki</h1>
+<p class="lede">A working reference for precise spectroscopy: laboratory wavelengths of the neutral and singly-ionised atoms of hydrogen through einsteinium, the emission lines of the Earth's upper atmosphere (airglow), the solar and telluric Fraunhofer absorption lines, and every correction needed to put a measured wavelength into a physically meaningful rest frame — from the refractive index of air to the motion of the Local Group through the cosmic microwave background.</p>
+<div class="kpis" id="kpis">{{KPIS}}</div>
+<div class="cols2">
+<div class="card">
+<h4>Conventions used throughout</h4>
+<ul class="tight small">
+<li>Wavelengths in ångström (1 Å = 0.1 nm). <b>Air</b> wavelengths refer to <i>standard air</i> and are quoted above σ = 50 000 cm⁻¹, i.e. λ<sub>vac</sub> ≥ 2000 Å (λ<sub>air</sub> ≥ 1999.35 Å); below that only <b>vacuum</b> wavelengths are given (IAU convention, followed by NIST). Unlike NIST ASD’s default output, which returns to vacuum above 2 µm, this page keeps standard air in the infrared, as the Handbook does (beyond 1.69 µm all air formulas are extrapolations). Toggle <b>Air / Vacuum</b> in the top bar to change what the explorer, finder and sorting use; tables always show both.</li>
+<li>Native values (as published by the source) are printed verbatim. Converted values carry as many decimals as the source supports; digits beyond the source precision are <span class="xd">faded</span>.</li>
+<li>σ<sub>λ</sub> is the source's stated uncertainty (or the bound of a source code, e.g. HITRAN) where one exists; otherwise it is <i>implied</i> as 2.5 units of the last published digit — the lower end of NIST’s guideline that unstated uncertainties are generally 2.5–25 units of the least significant figure. Grades: <span class="badge g-A">A</span> ≤ 1 mÅ, <span class="badge g-B">B</span> ≤ 5 mÅ, <span class="badge g-C">C</span> ≤ 10 mÅ, <span class="badge g-D">D</span> &gt; 10 mÅ.</li>
+<li>Element-line air↔vacuum conversions use Peck &amp; Reeder (1972), the formula that reproduces NIST ASD's own air/vacuum pairs (§4.2); the converter in §7.2 compares all standard formulas.</li>
+</ul>
+</div>
+<div class="card">
+<h4>What is inside</h4>
+<ul class="tight small" id="contentsList">{{CONTENTS}}</ul>
+</div>
+</div>
+</section>
+
+<!-- ============================================================ 2 EXPLORER -->
+<section id="explore">
+<h2><span class="sn">2</span>Spectrum explorer &amp; finding list</h2>
+<p>All catalogues on one wavelength axis. Click a plot, then scroll to zoom (down to a few mÅ; or hold ⌘/Ctrl, or pinch), drag to pan, double-click to zoom in, hover a line for its data. Emission catalogues are drawn upward from each track's baseline; absorption catalogues hang from the top of their track. The coloured band shows the approximate visible colour.</p>
+<div class="plotbar">
+  <span id="exSets" class="legend"></span>
+</div>
+<div class="plotbar small">
+  <label title="Doppler-shift the laboratory catalogues (atomic lines) to match a source: λ_obs = λ_lab (1+z). Terrestrial catalogues (airglow, telluric) and the solar lists stay as observed.">Shift lab lines to a source: v<sub>r</sub> (km/s) <input id="exShiftV" class="num" size="9" value="0" aria-label="source radial velocity"></label>
+  <span class="muted">or z</span> <input id="exShiftZ" class="num" size="9" value="0" aria-label="source redshift">
+  <span class="muted" id="exShiftMsg"></span>
+</div>
+<div class="plotbar">
+  <span class="seg">
+    <button data-exr="3000,10500">3000–10500 Å</button><button data-exr="3920,3980">Ca II H &amp; K</button><button data-exr="5570,5585">[O I] 5577</button><button data-exr="5885,5900">Na D</button><button data-exr="6270,6320">[O I] 6300 + O₂ γ</button><button data-exr="6540,6590">Hα</button><button data-exr="7590,7700">O₂ A band</button><button data-exr="10820,10840">He I 10830</button>
+  </span>
+  <span class="grow"></span>
+  <label class="small">λ <input id="exLo" class="num" size="10" aria-label="λ min"></label>–<input id="exHi" class="num" size="10" aria-label="λ max"> <button id="exGo" class="small">go</button>
+  <button id="exZin" class="small" title="zoom in">＋</button><button id="exZout" class="small" title="zoom out">－</button>
+</div>
+<div id="explorer"></div>
+
+<h3 id="finder">Finding list — what is at this wavelength?</h3>
+<div class="form" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+  <label>Wavelength (Å, current medium)<input id="qWl" value="5889.95" inputmode="decimal"></label>
+  <label>Tolerance<input id="qTol" value="50" inputmode="decimal"></label>
+  <label>Unit<select id="qUnit"><option value="mA" selected>mÅ</option><option value="A">Å</option><option value="kms">km/s</option></select></label>
+  <label>&nbsp;<button id="qGo" class="primary">Find lines</button></label>
+</div>
+<p class="small muted" id="finderMsg"></p>
+<div id="finderOut"></div>
+</section>
+
+<!-- ============================================================ 3 WHY 1 mA -->
+<section id="why">
+<h2><span class="sn">3</span>Why a precision of 10⁻³ Å?</h2>
+<p class="lede">A wavelength is a velocity in disguise. The requirement follows from three numbers that happen to coincide: the velocity equivalent of 1 mÅ in the optical (tens of m/s), the line-centroid precision of modern high-resolution spectrographs, and the size of the physical effects — Earth rotation, solar gravitational redshift, convective blueshift — that must be corrected for.</p>
+
+<h3 id="why-v"><span class="sn">3.1</span>Velocity equivalent</h3>
+<div class="eq"><math display="block"><mi>Δ</mi><mi>v</mi><mo>=</mo><mi>c</mi><mfrac><mrow><mi>Δ</mi><mi>λ</mi></mrow><mi>λ</mi></mfrac><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><mn>1</mn><mtext>&#160;mÅ</mtext><mo>≙</mo><mn>59.96</mn><mtext>&#160;m&#160;s⁻¹&#160;at&#160;5000&#160;Å</mtext><mo>,</mo><mspace width="0.6em"/><mn>246.6</mn><mtext>&#160;m&#160;s⁻¹&#160;at&#160;1215.67&#160;Å</mtext><mo>,</mo><mspace width="0.6em"/><mn>13.6</mn><mtext>&#160;m&#160;s⁻¹&#160;at&#160;2.2&#160;µm</mtext></math></div>
+<div class="card">
+<div class="form" style="grid-template-columns: repeat(auto-fit, minmax(160px,1fr));">
+<label>λ (Å)<input id="pcWl" value="5000"></label>
+<label>Δλ (mÅ)<input id="pcDl" value="1"></label>
+<label>Δv (km/s)<input id="pcDv" value=""></label>
+</div>
+<p class="out small" id="pcOut"></p>
+</div>
+<div id="pcChart" style="margin-top:12px"></div>
+<p class="small muted">Velocity equivalent of fixed wavelength errors versus wavelength. A 0.01 Å catalogue value (the precision of 43 % of the lines in the NIST Handbook as published) is worth 0.6 km/s at 5000 Å — the same size as the solar gravitational redshift.</p>
+
+<h3 id="why-inst"><span class="sn">3.2</span>What spectrographs actually resolve</h3>
+<p>For a resolving power R the resolution element is Δλ = λ/R (≈ 44 mÅ at 5000 Å for R = 115 000). Photon-noise-limited centroiding of a single unblended line reaches a small fraction of it, roughly σ<sub>λ</sub> ≈ FWHM / (SNR·√N<sub>pix</sub>) <a class="cite" href="#ref-bouchy2001">Bouchy et al. 2001</a>; a few thousand lines are then averaged to reach m/s radial velocities. Hence at R ≳ 50 000 and SNR ≈ 100 a <i>single</i> line is located to ≲ 1 mÅ, and laboratory wavelengths must be at least that good for line-by-line work (line identification, blending, wavelength solutions, abundances in crowded spectra, lab-to-sky comparisons).</p>
+<div id="specTable"></div>
+
+<h3 id="why-phys"><span class="sn">3.3</span>Physical effects at the mÅ level (5000 Å)</h3>
+<div id="effTable"></div>
+
+<h3 id="why-verdict"><span class="sn">3.4</span>Verdict</h3>
+<div id="whyVerdict">{{WHY_VERDICT}}</div>
+</section>
+
+<!-- ============================================================ 4 ELEMENTS -->
+<section id="elements">
+<h2><span class="sn">4</span>Element emission lines (H – Es, I and II)</h2>
+<p>Strong lines of the neutral (I) and singly-ionised (II) atoms of all elements Z = 1–99 from the NIST <i>Handbook of Basic Atomic Spectroscopic Data</i> <a class="cite" href="#ref-sansonetti2005">Sansonetti &amp; Martin 2005</a>, each matched to the current NIST Atomic Spectra Database <a class="cite" href="#ref-kramida2024">Kramida et al. 2024</a> to upgrade the wavelength where a more precise laboratory or Ritz value exists. Click an element; click a table row to zoom the spectrum strip to that line.</p>
+<div class="kpis" id="elStats"></div>
+<div class="ptable" id="ptable" role="group" aria-label="periodic table"></div>
+<div class="elhead" id="elHead"></div>
+<div id="elSpec"></div>
+<h3 id="el-table"><span class="sn">4.1</span>Line table</h3>
+<div id="elTable"></div>
+<h3 id="el-method"><span class="sn">4.2</span>Sources, matching and precision</h3>
+<div id="elMethod">{{EL_METHOD}}</div>
+</section>
+
+<!-- ============================================================ 5 AIRGLOW -->
+<section id="airglow">
+<h2><span class="sn">5</span>Earth-atmosphere emission: airglow &amp; aurora</h2>
+<div id="agIntro">{{AG_INTRO}}</div>
+<div id="agSpec"></div>
+<h3 id="ag-atomic"><span class="sn">5.1</span>Atomic and ionic emission lines</h3>
+<div id="agAtomicNote">{{AG_ATOMIC_NOTE}}</div>
+<div id="agAtomic"></div>
+<h3 id="ag-bands"><span class="sn">5.2</span>Molecular band systems</h3>
+<div id="agBandsNote">{{AG_BANDS_NOTE}}</div>
+<div id="agBands"></div>
+<h3 id="ag-optical"><span class="sn">5.3</span>Optical night-sky line atlas</h3>
+<div id="agOpticalNote">{{AG_OPTICAL_NOTE}}</div>
+<h4>(a) Modelled airglow lines 3000–10 500 Å and O I recombination lines to 2.13 µm — PALACE v1.0, laboratory positions (lines also in the HITRAN2024 near-IR list of §5.4 are listed there)</h4>
+<div id="agPalace"></div>
+<h4>(b) Observed UVES/VLT night-sky lines — Hanuschik (2003), with derived identifications</h4>
+<div id="agOptical"></div>
+<h3 id="ag-nir"><span class="sn">5.4</span>Near-infrared OH Meinel and O₂ lines (0.74–4.2 µm)</h3>
+<div id="agNirNote">{{AG_NIR_NOTE}}</div>
+<div id="agNir"></div>
+</section>
+
+<!-- ============================================================ 6 FRAUNHOFER -->
+<section id="fraunhofer">
+<h2><span class="sn">6</span>Fraunhofer absorption lines — Sun and Earth</h2>
+<div id="fhIntro">{{FH_INTRO}}</div>
+<div id="fhSpec"></div>
+<h3 id="fh-classic"><span class="sn">6.1</span>Classic Fraunhofer designations</h3>
+<div id="fhClassic"></div>
+<h3 id="fh-solar"><span class="sn">6.2</span>Solar photospheric line list</h3>
+<div id="fhSolarNote">{{FH_SOLAR_NOTE}}</div>
+<div id="fhSolar"></div>
+<h3 id="fh-telluric"><span class="sn">6.3</span>Telluric absorption (Earth's atmosphere)</h3>
+<div id="fhTellNote">{{FH_TELL_NOTE}}</div>
+<div id="fhTell"></div>
+<h3 id="fh-shift"><span class="sn">6.4</span>Why solar wavelengths are not laboratory wavelengths</h3>
+<div id="fhShift">{{FH_SHIFT}}</div>
+</section>
+
+<!-- ============================================================ 7 CALIBRATION -->
+<section id="calib">
+<h2><span class="sn">7</span>Wavelength calibration and reference frames</h2>
+<p class="lede">An observed wavelength is the product of a laboratory wavelength and a chain of Doppler and gravitational factors. Each link must be removed — multiplicatively — before velocities from different instruments, epochs or objects can be compared.</p>
+
+<h3 id="cal-chain"><span class="sn">7.1</span>The correction chain</h3>
+<div id="chainFig">{{CHAIN_FIG}}</div>
+<div class="eq"><span class="tag">(7.1)</span><math display="block"><mfrac><msub><mi>λ</mi><mtext>obs, air</mtext></msub><msub><mi>λ</mi><mtext>lab, vac</mtext></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>n</mi><mtext>air</mtext></msub><mo>(</mo><mi>λ</mi><mo>,</mo><mi>T</mi><mo>,</mo><mi>P</mi><mo>,</mo><mi>e</mi><mo>,</mo><msub><mi>x</mi><mrow><msub><mtext>CO</mtext><mn>2</mn></msub></mrow></msub><mo>)</mo></mrow></mfrac><mo>·</mo><mfrac><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>src</mtext></msub><mo>)</mo><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>grav,src</mtext></msub><mo>)</mo><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>cos</mtext></msub><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mi>B</mi></msub><mo>)</mo><mo>(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>⊙→frame</mtext></msub><mo>)</mo></mrow></mfrac></math></div>
+<p class="small">z<sub>B</sub> removes the observer's motion relative to the Solar-System barycentre (Earth rotation + orbit + relativistic terms, §7.4); z<sub>⊙→frame</sub> removes the barycentre's motion relative to the chosen frame (LSR, Galactic centre, Local Group or CMB; §7.6–7.7); z<sub>cos</sub> is the cosmological redshift and z<sub>src</sub> the source's peculiar/internal motion. Only products of (1+z) factors are exact; adding velocities is a first-order approximation whose error grows as v<sub>1</sub>v<sub>2</sub>/c (§7.8).</p>
+
+<h3 id="cal-airvac"><span class="sn">7.2</span>Air ↔ vacuum</h3>
+<div id="airvacText">{{AIRVAC_TEXT}}</div>
+<div class="card">
+<h4>Converter</h4>
+<div class="form">
+<label>Wavelength (Å)<input id="avWl" value="6562.8"></label>
+<label>Direction<select id="avDir"><option value="a2v">air → vacuum</option><option value="v2a">vacuum → air</option></select></label>
+<label>T (°C)<input id="avT" value="15"></label>
+<label>P (Pa)<input id="avP" value="101325"></label>
+<label>Relative humidity (%)<input id="avRH" value="0"></label>
+<label>CO₂ (ppm)<input id="avCO2" value="450"></label>
+</div>
+<p class="small" style="margin:8px 0 0">Ambient presets: <button class="small" data-avp="15,101325,0">standard air</button> <button class="small" data-avp="0,61500,20">Mauna Kea (4200 m, 0 °C)</button> <button class="small" data-avp="12,74300,15">Paranal (2635 m)</button> <button class="small" data-avp="20,101325,50">laboratory 20 °C, 50 %</button> <button class="small" data-avp="5,60000,20">Lenghu (4200 m)</button></p>
+<div class="out" id="avOut"></div>
+</div>
+<div class="cols2" style="margin-top:12px">
+<div><div id="avChart"></div><p class="small muted">Differences between standard-air formulas, relative to Ciddor (1996). Between 3000 and 8000 Å the standard-air formulas agree to ≤ 0.15 mÅ, and to ≤ 0.65 mÅ over 2000 Å–2.5 µm (beyond 1.69 µm all are extrapolations). The FITS-WCS formula of Greisen et al. (2006, eq. 65) is omitted: it refers to 0 °C air and sits ≈ −77 mÅ below the others at 5000 Å.</p></div>
+<div><div id="avChart2"></div><p class="small muted">The vacuum–air difference itself is ≈ 1.1–1.9 Å between 4000 and 7000 Å (≈ 83–85 km/s) — confusing media is a far larger error than any choice of formula.</p></div>
+</div>
+
+<h3 id="cal-doppler"><span class="sn">7.3</span>Doppler conventions</h3>
+<div id="dopplerText">{{DOPPLER_TEXT}}</div>
+
+<h3 id="cal-bary"><span class="sn">7.4</span>Earth rotation, Earth orbit and the barycentric correction</h3>
+<div id="baryText">{{BARY_TEXT}}</div>
+<div class="card">
+<h4>Barycentric correction calculator (DE440s, in-browser)</h4>
+<div class="form">
+<label>RA (ICRS; h:m:s or deg)<input id="bcRa" value="10:00:00"></label>
+<label>Dec (ICRS; d:m:s or deg)<input id="bcDec" value="+20:00:00"></label>
+<label>Observatory<select id="bcSite"></select></label>
+<label>East longitude (deg)<input id="bcLon"></label>
+<label>Latitude (deg)<input id="bcLat"></label>
+<label>Height (m, WGS84)<input id="bcH"></label>
+<label>UTC (ISO 8601)<input id="bcT" value="2026-03-20T10:00:00"></label>
+<label>UT1−UTC (s; IERS Bulletin A)<input id="bcDut1" value="0.0571"></label>
+<label>&nbsp;<button id="bcNow" class="small">now</button></label>
+</div>
+<div class="out" id="bcOut"></div>
+<div id="bcChart"></div>
+</div>
+
+<div class="card" style="margin-top:14px">
+<h4>Forward model: where will a line appear on my detector?</h4>
+<p class="small muted">Implements eq. (7.1) end to end for the target, site and time entered in the barycentric calculator above, and the ambient air of the §7.2 converter. λ<sub>obs</sub> = λ<sub>lab,vac</sub> · (1 + z<sub>src</sub>)(1 + z<sub>grav</sub>) / (1 + z<sub>B</sub>), then ÷ n<sub>air</sub> if the spectrograph is in air. If the source velocity is given in another frame, it is first converted to barycentric with the exact boost of §7.7.</p>
+<div class="form">
+<label>λ<sub>lab</sub> vacuum (Å)<input id="fmLam" value="6564.6142"></label>
+<label>Source velocity (km/s, optical cz)<input id="fmV" value="25.000"></label>
+<label>…or redshift z (overrides if ≠ 0)<input id="fmZ" value="0"></label>
+<label>Velocity / z is relative to<select id="fmFrame"></select></label>
+<label>Source gravitational redshift (m/s)<input id="fmGrav" value="0"></label>
+<label>Spectrograph medium<select id="fmMed"><option value="vac">vacuum (sealed / evacuated)</option><option value="std">standard air (Peck &amp; Reeder 1972)</option><option value="amb">ambient air (Ciddor 1996, §7.2 T, P, RH, CO₂)</option></select></label>
+</div>
+<div class="out" id="fmOut"></div>
+</div>
+
+<h3 id="cal-time"><span class="sn">7.5</span>Time scales and barycentric Julian date</h3>
+<div id="timeText">{{TIME_TEXT}}</div>
+
+<h3 id="cal-gal"><span class="sn">7.6</span>Solar motion, the LSR and Galactic rotation</h3>
+<div id="galText">{{GAL_TEXT}}</div>
+
+<h3 id="cal-lg"><span class="sn">7.7</span>Local Group, CMB dipole and large-scale flows</h3>
+<div id="lgText">{{LG_TEXT}}</div>
+<div class="card">
+<h4>Frame calculator (uses the target of §7.4)</h4>
+<div class="form" style="grid-template-columns: repeat(auto-fit, minmax(220px,1fr));">
+<label>Barycentric radial velocity of the source (km/s)<input id="frV" value="0"></label>
+</div>
+<div class="out" id="frOut"></div>
+</div>
+
+<h3 id="cal-cosmo"><span class="sn">7.8</span>Cosmology: composing redshifts, CMB frame, redshift drift</h3>
+<div id="cosmoText">{{COSMO_TEXT}}</div>
+<div class="cols2">
+<div class="card">
+<h4>Redshift composition</h4>
+<div class="form" style="grid-template-columns: repeat(auto-fit, minmax(140px,1fr));">
+<label>z observed (topocentric)<input id="czObs" value="0.05"></label>
+<label><span>v<sub>B</sub> barycentric corr. (km/s)</span><input id="czVb" value="25"></label>
+<label>CMB-frame correction (km/s)<input id="czCmb" value="300"></label>
+</div>
+<p class="out small" id="czOut"></p>
+</div>
+<div class="card">
+<h4>Redshift drift (Sandage–Loeb)</h4>
+<div class="form" style="grid-template-columns: repeat(auto-fit, minmax(100px,1fr));">
+<label>H₀ (km/s/Mpc)<input id="cdH0" value="67.66"></label>
+<label><span>Ω<sub>m</sub></span><input id="cdOm" value="0.3097"></label>
+<label><span>Ω<sub>Λ</sub></span><input id="cdOL" value="0.6903"></label>
+<label>z<input id="cdZ" value="3"></label>
+<label>Δt (yr)<input id="cdYr" value="20"></label>
+</div>
+<p class="out small" id="cdOut"></p>
+<div id="cdChart"></div>
+</div>
+</div>
+
+<h3 id="cal-inst"><span class="sn">7.9</span>Instrumental wavelength calibrators</h3>
+<div id="instText">{{INST_TEXT}}</div>
+
+<h3 id="cal-sys"><span class="sn">7.10</span>Line-shift checklist</h3>
+<div id="sysText">{{SYS_TEXT}}</div>
+</section>
+
+<!-- ============================================================ 8 REFS -->
+<section id="refs">
+<h2><span class="sn">8</span>References and provenance</h2>
+<div id="refList">{{REFS}}</div>
+<footer>Built {{BUILD_DATE}} from local copies of the NIST Handbook (e-book edition), NIST ASD queries, and the catalogues listed above. Ephemeris: JPL DE440s Chebyshev fit, 1990–2066. This page is self-contained and works offline.</footer>
+</section>
+
+</div>
+</main>
+</div>
+<!--{{DATA}}-->
+<script>/*{{SCRIPT}}*/</script>
+</body>
+</html>

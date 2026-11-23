@@ -1,0 +1,83 @@
+[
+ {
+  "key": "sansonetti2005",
+  "citation": "Sansonetti, J. E. & Martin, W. C. 2005, Handbook of Basic Atomic Spectroscopic Data, J. Phys. Chem. Ref. Data 34, 1559",
+  "doi": "10.1063/1.1800011",
+  "url": "https://www.nist.gov/pml/handbook-basic-atomic-spectroscopic-data"
+ },
+ {
+  "key": "kramida2024",
+  "citation": "Kramida, A., Ralchenko, Yu., Reader, J. & NIST ASD Team 2024, NIST Atomic Spectra Database (ver. 5.12), National Institute of Standards and Technology, Gaithersburg, MD (queried 2026-11-23)",
+  "url": "https://physics.nist.gov/asd"
+ },
+ {
+  "key": "peck1972",
+  "citation": "Peck, E. R. & Reeder, K. 1972, Dispersion of Air, J. Opt. Soc. Am. 62, 958",
+  "doi": "10.1364/JOSA.62.000958"
+ },
+ {
+  "key": "wright2014",
+  "citation": "Wright, J. T. & Eastman, J. D. 2014, Barycentric Corrections at 1 cm s−1 for Precise Doppler Velocities, PASP 126, 838",
+  "doi": "10.1086/678541",
+  "bibcode": "2014PASP..126..838W"
+ },
+ {
+  "key": "park2021",
+  "citation": "Park, R. S., Folkner, W. M., Williams, J. G. & Boggs, D. H. 2021, The JPL Planetary and Lunar Ephemerides DE440 and DE441, AJ 161, 105",
+  "doi": "10.3847/1538-3881/abd414",
+  "bibcode": "2021AJ....161..105P"
+ },
+ {
+  "key": "astropy2022",
+  "citation": "Astropy Collaboration (Price-Whelan, A. M. et al.) 2022, The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package, ApJ 935, 167",
+  "doi": "10.3847/1538-4357/ac7c74",
+  "bibcode": "2022ApJ...935..167A"
+ },
+ {
+  "key": "petit2010",
+  "citation": "Petit, G. & Luzum, B. (eds.) 2010, IERS Conventions (2010), IERS Technical Note 36, Frankfurt am Main: Verlag des Bundesamts für Kartographie und Geodäsie",
+  "url": "https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn36.html"
+ },
+ {
+  "key": "kaplan2005",
+  "citation": "Kaplan, G. H. 2005, The IAU Resolutions on Astronomical Reference Systems, Time Scales, and Earth Rotation Models, USNO Circular 179",
+  "url": "https://aa.usno.navy.mil/publications/Circular_179"
+ },
+ {
+  "key": "esa1997",
+  "citation": "ESA 1997, The Hipparcos and Tycho Catalogues, ESA SP-1200, Vol. 1, §1.5.3 (ICRS–Galactic rotation matrix)",
+  "bibcode": "1997ESASP1200.....E"
+ },
+ {
+  "key": "klioner2021",
+  "citation": "Gaia Collaboration, Klioner, S. A., Mignard, F., Lindegren, L., et al. 2021, Gaia Early Data Release 3: Acceleration of the Solar System from Gaia astrometry, A&A 649, A9",
+  "doi": "10.1051/0004-6361/202039734",
+  "bibcode": "2021A&A...649A...9G"
+ },
+ {
+  "key": "deason2019",
+  "citation": "Deason, A. J., Fattahi, A., Belokurov, V., Evans, N. W., Grand, R. J. J., Marinacci, F. & Pakmor, R. 2019, The local high-velocity tail and the Galactic escape speed, MNRAS 485, 3514",
+  "doi": "10.1093/mnras/stz623",
+  "bibcode": "2019MNRAS.485.3514D"
+ },
+ {
+  "key": "secrest2021",
+  "citation": "Secrest, N. J., von Hausegger, S., Rameez, M., Mohayaee, R., Sarkar, S. & Colin, J. 2021, A Test of the Cosmological Principle with Quasars, ApJ 908, L51",
+  "doi": "10.3847/2041-8213/abdd40",
+  "bibcode": "2021ApJ...908L..51S"
+ },
+ {
+  "key": "escalante1992",
+  "citation": "Escalante, V. & Victor, G. A. 1992, Effective radiative recombination coefficients of atomic oxygen, Planet. Space Sci. 40, 1705–1717",
+  "doi": "10.1016/0032-0633(92)90127-A",
+  "bibcode": "1992P&SS...40.1705E",
+  "url": "https://doi.org/10.1016/0032-0633(92)90127-A"
+ },
+ {
+  "key": "sansonetti1996",
+  "citation": "Sansonetti, C. J., Salit, M. L., & Reader, J. 1996, Wavelengths of spectral lines in mercury pencil lamps, Applied Optics 35, 74",
+  "doi": "10.1364/AO.35.000074",
+  "bibcode": "1996ApOpt..35...74S",
+  "url": "https://doi.org/10.1364/AO.35.000074"
+ }
+]

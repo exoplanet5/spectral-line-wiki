@@ -1,0 +1,76 @@
+<p>Precise radial velocities need time in two separate ways, and the two must not be confused:</p>
+<ul class="tight">
+<li><b>The epoch of the correction.</b> v<sub>B</sub> (§7.4) is evaluated at the moment the photons reach the telescope. The ephemeris is read in TDB and the Earth's orientation in UT1.</li>
+<li><b>The time tag of the measurement.</b> For orbit fits and timing, each RV is labelled with the time the light would have reached the SSB, BJD<sub>TDB</sub>. The site arrival time (JD<sub>UTC</sub>) should be quoted as well <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</li>
+</ul>
+
+<h4>Time scales</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Scale</th><th>Definition</th><th>Relation (2026)</th><th>Used for</th></tr></thead>
+<tbody>
+<tr><td><b>UT1</b></td><td>Earth rotation angle θ = 2π(0.7790572732640 + 1.00273781191135448 T<sub>u</sub>), T<sub>u</sub> = JD<sub>UT1</sub> − 2451545.0 <a class="cite" href="#ref-petit2010">Petit &amp; Luzum 2010</a></td><td>UT1 − UTC from IERS Bulletin A; |UT1 − UTC| &lt; 0.9 s</td><td>Earth orientation: hour angle and rotation velocity</td></tr>
+<tr><td><b>UTC</b></td><td>SI seconds of TAI, stepped by leap seconds to stay within 0.9 s of UT1</td><td>UTC = TAI − 37 s since 2017-01-01 0ʰ <a class="cite" href="#ref-iers2026">IERS 2026</a></td><td>civil time, NTP, FITS DATE-OBS</td></tr>
+<tr><td><b>TAI</b></td><td>atomic time, SI second on the geoid</td><td>—</td><td>basis of UTC and TT</td></tr>
+<tr><td><b>TT</b></td><td>TT = TAI + 32.184 s (exact)</td><td>TT − UTC = <b>69.184 s</b></td><td>geocentric ephemerides; input to TDB</td></tr>
+<tr><td><b>TCG</b></td><td>geocentric coordinate time; TT runs slower by L<sub>G</sub> = 6.969290134×10⁻¹⁰</td><td>TCG − TT ≈ 1.08 s at 2026.0 (derived)</td><td>relativistic theory</td></tr>
+<tr><td><b>TCB</b></td><td>barycentric coordinate time (BCRS)</td><td>TCB − TDB ≈ 23.98 s at 2026.0, +0.489 s/yr (derived)</td><td>formal BCRS time scale</td></tr>
+<tr><td><b>TDB</b></td><td>linear rescaling of TCB, eq. (7.5.2)</td><td>TDB − TT periodic, −1.69 … +1.68 ms (derived)</td><td>argument of the JPL ephemerides; BJD<sub>TDB</sub></td></tr>
+</tbody></table></div>
+
+<div class="eq"><span class="tag">(7.5.1)</span><math display="block"><mtext>TT</mtext><mo>=</mo><mtext>TAI</mtext><mo>+</mo><mn>32.184</mn><mtext>&#160;s</mtext><mo>=</mo><mtext>UTC</mtext><mo>+</mo><mi>N</mi><mo>+</mo><mn>32.184</mn><mtext>&#160;s</mtext><mo>,</mo><mspace width="1.2em"/><mi>N</mi><mo>=</mo><mtext>TAI</mtext><mo>−</mo><mtext>UTC</mtext><mo>=</mo><mn>37</mn><mtext>&#160;s (since 2017-01-01)</mtext></math></div>
+<div class="eq"><span class="tag">(7.5.2)</span><math display="block"><mtext>TDB</mtext><mo>=</mo><mtext>TCB</mtext><mo>−</mo><msub><mi>L</mi><mi>B</mi></msub><mo stretchy="false">(</mo><msub><mtext>JD</mtext><mtext>TCB</mtext></msub><mo>−</mo><msub><mi>T</mi><mn>0</mn></msub><mo stretchy="false">)</mo><mo>×</mo><mn>86400</mn><mtext>&#160;s</mtext><mo>+</mo><msub><mtext>TDB</mtext><mn>0</mn></msub><mo>,</mo><mspace width="1.2em"/><msub><mi>L</mi><mi>B</mi></msub><mo>=</mo><mn>1.550519768</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mo>,</mo><mspace width="0.6em"/><msub><mtext>TDB</mtext><mn>0</mn></msub><mo>=</mo><mo>−</mo><mn>6.55</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>5</mn></mrow></msup><mtext>&#160;s</mtext><mo>,</mo><mspace width="0.6em"/><msub><mi>T</mi><mn>0</mn></msub><mo>=</mo><mn>2443144.5003725</mn></math></div>
+<ul class="tight">
+<li><b>Leap seconds.</b> TAI − UTC was 10 s on 1972-01-01; 27 leap seconds have been added since. The last was at the end of 2016, so TAI − UTC = 37 s from 2017 January 1. Bulletin C 72 (July 2026) announced no leap second at the end of December 2026 <a class="cite" href="#ref-iers2026">IERS 2026</a>. The CGPM has decided that the maximum value of UT1 − UTC will be increased in, or before, 2035, which in practice ends leap seconds <a class="cite" href="#ref-cgpm2022">CGPM 2022</a>. UTC is discontinuous, so JD<sub>UTC</sub> and BJD<sub>UTC</sub> cannot be differenced across a leap second.</li>
+<li><b>UT1.</b> Only Earth orientation uses UT1. Ignoring |UT1 − UTC| ≤ 0.9 s costs ≤ 3.1 cm/s in v<sub>B</sub> (derived from ω²a; ≈ 2 cm/s in practice). Without leap seconds this error grows with time, so UT1 − UTC must then always be supplied <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>.</li>
+<li><b>TDB − TT</b> is a periodic relativistic term (time dilation and gravitational redshift of a clock moving with the geocentre). Its dominant annual term has amplitude 1.657 ms <a class="cite" href="#ref-fairhead1990">Fairhead &amp; Bretagnon 1990</a>, <a class="cite" href="#ref-kaplan2005">Kaplan 2005</a>, and the peak-to-peak range is 3.4 ms <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>. The topocentric part is ≤ 2.2 µs (derived). The same physics gives the 4.65 m/s clock term of the velocity correction: L<sub>B</sub> c = 4.648 m/s (§7.4).</li>
+<li><b>Constants</b> L<sub>G</sub> (IAU 2000 B1.9), L<sub>B</sub>, TDB<sub>0</sub> and T<sub>0</sub> (IAU 2006 B3, T<sub>0</sub> = 1977 Jan 1.0 TAI): <a class="cite" href="#ref-petit2010">Petit &amp; Luzum 2010</a>. TDB was redefined in 2006 to agree with the JPL ephemeris time argument T<sub>eph</sub> <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</li>
+</ul>
+
+<h4>Barycentric Julian Date</h4>
+<p>Eastman et al. (2010) eqs. 1–6:</p>
+<div class="eq"><span class="tag">(7.5.3)</span><math display="block"><msub><mtext>BJD</mtext><mtext>TDB</mtext></msub><mo>=</mo><msub><mtext>JD</mtext><mtext>UTC</mtext></msub><mo>+</mo><msub><mi>Δ</mi><mi>C</mi></msub><mo>+</mo><msub><mi>Δ</mi><mrow><mi>R</mi><mo>⊙</mo></mrow></msub><mo>+</mo><msub><mi>Δ</mi><mrow><mi>S</mi><mo>⊙</mo></mrow></msub><mo>+</mo><msub><mi>Δ</mi><mrow><mi>E</mi><mo>⊙</mo></mrow></msub><mo>,</mo><mspace width="1.2em"/><msub><mi>Δ</mi><mi>C</mi></msub><mo>=</mo><mi>N</mi><mo>+</mo><mn>32.184</mn><mtext>&#160;s</mtext><mo>+</mo><mo stretchy="false">(</mo><mtext>TDB</mtext><mo>−</mo><mtext>TT</mtext><mo stretchy="false">)</mo></math></div>
+<div class="eq"><span class="tag">(7.5.4)</span><math display="block"><msub><mi>Δ</mi><mrow><mi>R</mi><mo>⊙</mo></mrow></msub><mo>=</mo><mfrac><mrow><mover accent="true"><mi>r</mi><mo>→</mo></mover><mo>·</mo><mover accent="true"><mi>n</mi><mo>^</mo></mover></mrow><mi>c</mi></mfrac><mo>,</mo><mspace width="1.2em"/><msub><mi>Δ</mi><mrow><mi>S</mi><mo>⊙</mo></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>G</mi><msub><mi>M</mi><mo>⊙</mo></msub></mrow><msup><mi>c</mi><mn>3</mn></msup></mfrac><mspace width="0.17em"/><mi>ln</mi><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>cos</mi><mspace width="0.17em"/><mi>θ</mi><mo stretchy="false">)</mo><mo>,</mo><mspace width="1.2em"/><msub><mi>Δ</mi><mrow><mi>E</mi><mo>⊙</mo></mrow></msub><mo>=</mo><mfrac><mrow><msub><mover accent="true"><mi>r</mi><mo>→</mo></mover><mi>o</mi></msub><mo>·</mo><msub><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>⊕</mo></msub></mrow><msup><mi>c</mi><mn>2</mn></msup></mfrac></math></div>
+<p class="small">Here <b>r</b> is the SSB → observer vector, n̂ the unit vector to the target, θ the target–Sun angle, and <b>r</b><sub>o</sub> the observer's position relative to the geocentre. Δ<sub>E⊙</sub> in (7.5.4) is the topocentric part of the Einstein delay; its geocentric part is already in TDB − TT. Δ<sub>C</sub> alone takes JD<sub>UTC</sub> to JD<sub>TDB</sub> at the telescope.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Term</th><th class="num">Size</th><th>Note</th></tr></thead>
+<tbody>
+<tr><td>Clock correction Δ<sub>C</sub> (UTC → TDB)</td><td class="num">69.184 s ± 1.7 ms</td><td>leaving it out gives BJD<sub>UTC</sub>, which jumps at every leap second</td></tr>
+<tr><td>Rømer delay Δ<sub>R⊙</sub></td><td class="num">≤ 511.5 s</td><td>1 au/c = 499.005 s; Earth 0.975–1.025 au from the SSB in 1990–2066 (derived). Eastman et al. quote "as much as 8.3 minutes" (1 au/c), ≈ 7 min in practice for night-time targets <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a></td></tr>
+<tr><td>Observer vs geocentre in Δ<sub>R⊙</sub></td><td class="num">±21.3 ms</td><td>one sidereal day period <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a></td></tr>
+<tr><td>HJD (Sun as origin) − BJD</td><td class="num">≤ ±4.6 s</td><td>Sun ≤ 1.98 R<sub>⊙</sub> from the SSB (derived). HJD is "only accurate to 8 s" and was deprecated by the IAU in 1991 <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a></td></tr>
+<tr><td>Einstein delay, geocentric (TDB − TT)</td><td class="num">±1.7 ms</td><td>BJD<sub>TT</sub> is adequate to 3.4 ms</td></tr>
+<tr><td>Shapiro delay Δ<sub>S⊙</sub></td><td class="num">≤ 0.11 ms</td><td>at the solar limb; &lt; 20 µs beyond 30° from the Sun <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a> (113 µs and 19.8 µs, derived)</td></tr>
+<tr><td>Einstein delay, topocentric Δ<sub>E⊙</sub></td><td class="num">≤ 2.2 µs</td><td>a v<sub>⊕</sub>/c² (derived)</td></tr>
+</tbody></table></div>
+
+<h4>Practical limits on the time stamp</h4>
+<ul class="tight">
+<li><b>Exposure epoch.</b> FITS DATE-OBS is normally the UTC start of the exposure. The correct epoch is the flux-weighted mean time (§7.4, eq. 7.4.5).</li>
+<li><b>Clocks.</b> Unless independently verified, header times should not be trusted to better than 0.25 s. An NTP-synchronised Linux machine is typically good to ≈ 50 ms <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</li>
+<li><b>Coordinates.</b> A 1′ position error shifts BJD by up to |<b>r</b>| δθ/c = 0.15 s, and giving an object 10° from the field centre the field-centre BJD errs by up to 89 s (derived). Eastman et al. quote 0.28 s and "as large as 200 s", roughly the annual peak-to-peak range (0.27 s and 160 s for their RA offset at δ = 0, derived) <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</li>
+<li><b>Numerical precision.</b> One float64 JD near 2.46×10⁶ resolves only 40 µs (derived), and arithmetic on full JDs loses more. Keep two-part or modified JDs.</li>
+<li><b>Plane-wave approximation.</b> Eq. (7.5.4) assumes the target is at infinity. For stars the error is ≤ 1 ms (Proxima Centauri); Solar-System targets need the exact light-time formula <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</li>
+</ul>
+
+<h4>Consequences of timing errors for radial velocities</h4>
+<p class="small">A time error δt enters in two places. It shifts the epoch at which v<sub>B</sub> is computed, which matters through the rates of §7.4: ≤ 3.4 cm/s per s from rotation plus ≤ 0.62 cm/s per s from the orbit. It also shifts the time tag of the RV, which matters through the orbit being fitted: δv ≤ 2πKδt/P for a semi-amplitude K and period P. All values below are derived.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Mistake</th><th class="num">δt</th><th class="num">Error in v<sub>B</sub></th><th class="num">Error via the time tag (K = 100 m/s, P = 3 d)</th></tr></thead>
+<tbody>
+<tr><td>Missed leap second, or 1 s clock error</td><td class="num">1 s</td><td class="num">≤ 4.0 cm/s</td><td class="num">2.4 mm/s</td></tr>
+<tr><td>UTC instead of UT1 for the Earth's rotation</td><td class="num">≤ 0.9 s</td><td class="num">≤ 3.1 cm/s</td><td class="num">—</td></tr>
+<tr><td>Clock or header error of 1 min</td><td class="num">60 s</td><td class="num">≤ 2.4 m/s</td><td class="num">0.15 m/s</td></tr>
+<tr><td>UTC treated as TT/TDB (ephemeris only)</td><td class="num">69.184 s</td><td class="num">≤ 0.43 m/s</td><td class="num">0.17 m/s (BJD<sub>UTC</sub> vs BJD<sub>TDB</sub>)</td></tr>
+<tr><td>TT treated as UT1 (Earth rotation)</td><td class="num">69.184 s</td><td class="num">≤ 2.3 m/s</td><td class="num">—</td></tr>
+<tr><td>HJD instead of BJD as time tag</td><td class="num">≤ 4.6 s</td><td class="num">—</td><td class="num">0.011 m/s</td></tr>
+<tr><td>v<sub>B</sub> computed at BJD instead of at the telescope epoch</td><td class="num">≤ 511.5 s</td><td class="num">≤ 17 m/s (rot.) + 3.2 m/s (orbit)</td><td class="num">—</td></tr>
+<tr><td>Exposure start instead of mid-time, 30 min exposure</td><td class="num">900 s</td><td class="num">≤ 36 m/s</td><td class="num">2.2 m/s</td></tr>
+</tbody></table></div>
+<div class="note">The velocity correction is far more sensitive to time than the time tag is: an error of a second is a few cm/s in v<sub>B</sub>, and a minute is metres per second. Transit timing is the opposite case, where BJD<sub>UTC</sub> versus BJD<sub>TDB</sub> (≈ 1 min) is the dominant error <a class="cite" href="#ref-eastman2010">Eastman et al. 2010</a>.</div>
+
+<h4>Implementation in the calculator (§7.4)</h4>
+<ul class="tight small">
+<li>UTC (ISO 8601) → TAI from the IERS leap-second table (TAI − UTC = 37 s from 2017-01-01; valid until the next announced leap second) → TT = TAI + 32.184 s → TDB with the leading Fairhead &amp; Bretagnon terms (≈ 10 µs). UT1 = UTC + the entered UT1 − UTC.</li>
+<li>The ephemeris is read at JD<sub>TDB</sub> and the Earth rotation angle at JD<sub>UT1</sub>, both at the entered (flux-weighted) epoch.</li>
+<li>BJD<sub>TDB</sub> = JD<sub>TDB</sub> + Δ<sub>R⊙</sub>, with the plane-wave Rømer delay from the observer's own SSB position (geocentre + site). The Shapiro (≤ 0.11 ms) and topocentric Einstein (≤ 2.2 µs) terms are omitted, and the result is printed to 10⁻⁷ d (8.6 ms).</li>
+</ul>

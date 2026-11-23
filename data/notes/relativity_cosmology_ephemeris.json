@@ -1,0 +1,25 @@
+{
+ "sun_wrt_SSB_speed_m_s": {
+  "min": 8.51571463169213,
+  "max": 15.942587133950154,
+  "mean": 12.571922293546235,
+  "span": "2000-2040 TDB, DE440s"
+ },
+ "earth_wrt_SSB_speed_m_s": {
+  "min": 29263.655349818273,
+  "max": 30311.30707014796,
+  "mean": 29782.70707588728
+ },
+ "earth_wrt_EMB_speed_m_s": {
+  "min": 11.732657133908017,
+  "max": 13.41728047747507,
+  "note": "EMRAT=81.30056822149722 read from DE440s comment header"
+ },
+ "observer_clock_term_m_s": {
+  "min": 4.5477528877892315,
+  "max": 4.750660694209039,
+  "mean": 4.647650271821292,
+  "peak_to_peak": 0.2029078064198071,
+  "formula": "c*[GM_sun/(r c^2) + L_G + v_E^2/(2c^2)]  (Earth-centre speed, geoid potential)"
+ }
+}

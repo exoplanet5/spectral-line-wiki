@@ -1,0 +1,65 @@
+<div class="note"><b>Verdict.</b> Quote rest wavelengths to 10⁻³ Å (59.96 m/s at 5000 Å) wherever the source supports it. At that precision a catalogue stops limiting single-line measurements at R ≳ 30 000, the 2–12 mÅ physical shifts of §3.3 are resolved instead of rounded away, and laboratory data exist for most lines (after the ASD upgrade 78 % of the element lines on this page have ≥ 3 decimals, and 35 % a stated or implied σ ≤ 1 mÅ). It is still 6× (rest wavelengths for α variation) to ~6000× (comb calibration) too coarse for differential, comb-calibrated work. It is also ≈ 9× (Gaia RVS systematics) to 3500× (DESI redshift errors) finer than survey redshifts need.</div>
+
+<div class="kpis">
+<div class="kpi"><div class="v">0.14–0.62 mÅ</div><div class="l">single-line centroid, 13 echelle modes (R 38 700–270 000), SNR 100, rule FWHM/(SNR·√N<sub>pix</sub>); photon-noise bound 0.18–0.73 mÅ</div></div>
+<div class="kpi"><div class="v">2–12 mÅ</div><div class="l">physical shifts at 5000 Å or at the line (Earth rotation, solar redshift, convection, isotopes, Zeeman, telluric pressure)</div></div>
+<div class="kpi"><div class="v">4.0 mÅ</div><div class="l">median difference between a 2-decimal Handbook wavelength and a finer ASD value (305 m/s)</div></div>
+<div class="kpi"><div class="v">35 %</div><div class="l">element lines at grade <span class="badge g-A">A</span> (≤ 1 mÅ, stated or implied) after the ASD upgrade; 14 % as published</div></div>
+</div>
+
+<div class="cols3">
+<div class="card">
+<h4>Where 1 mÅ is necessary</h4>
+<ul class="tight small">
+<li><b>Line-by-line work at R ≳ 30 000.</b> At SNR 100 per pixel one unblended line centroids to 0.14–0.62 mÅ (rule of thumb; 0.18–0.73 mÅ photon-noise bound for a 50 %-deep line) in the 13 optical echelle modes of §3.2. The rule FWHM/(SNR·√N<sub>pix</sub>) reaches 1 mÅ at R ≈ 29 000 (3 px per FWHM, 5000 Å; derived) <a class="cite" href="#ref-bouchy2001">Bouchy et al. 2001</a>. A rest wavelength used for identification, deblending, a wavelength solution or a lab-to-sky comparison must be at least that good.</li>
+<li><b>Physical shifts of 2–12 mÅ.</b> At 5000 Å these are Earth rotation 7.8 mÅ, solar gravitational redshift 10.6 mÅ <a class="cite" href="#ref-gonzalezhernandez2020">González Hernández et al. 2020</a>, convective blueshift 0 to −9.1 mÅ depending on line depth <a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a> and the Zeeman σ shift at 1 kG for g = 1, 11.7 mÅ. At their own wavelengths the Ca II K and Mg II isotope shifts are −9.0 and −8.1 mÅ <a class="cite" href="#ref-murphy2014">Murphy &amp; Berengut 2014</a>, and the telluric O₂ pressure shift is +2.1 mÅ. On a 10 mÅ grid each of them is about one rounding step; on a 1 mÅ grid each spans 2–12 steps.</li>
+<li><b>Catalogue rounding.</b> Rounding to 0.01 Å alone costs 2.9 mÅ rms (173 m/s). When ASD has a finer value, the Handbook's 2-decimal wavelengths differ from it by a median 4.0 mÅ (305 m/s; 95th percentile 22 mÅ, 1.9 km/s; 2 572 lines). The 3-decimal values differ by a median 0.5 mÅ (2 070 lines) <a class="cite" href="#ref-sansonetti2005">Sansonetti &amp; Martin 2005</a>; <a class="cite" href="#ref-kramida2024">Kramida et al. 2024</a>.</li>
+</ul>
+</div>
+<div class="card">
+<h4>Where 1 mÅ is not enough</h4>
+<ul class="tight small">
+<li><b>EPRV.</b> 10 cm/s is 1.7 × 10⁻⁶ Å at 5000 Å, and the Earth-twin reflex of the Sun is 9 cm/s <a class="cite" href="#ref-fischer2016">Fischer et al. 2016</a>.</li>
+<li><b>Laser frequency combs.</b> Two independent combs on HARPS agree to ≈ 1 cm/s, which is 1.7 × 10⁻⁷ Å <a class="cite" href="#ref-probst2020">Probst et al. 2020</a>.</li>
+<li><b>α variation.</b> Laboratory rest wavelengths are needed to ≲ 20 m/s, i.e. 1.6 × 10⁻⁴ Å at Fe II 2383 Å <a class="cite" href="#ref-murphy2014">Murphy &amp; Berengut 2014</a>. A change Δα/α = 10⁻⁶ moves the 43 many-multiplet lines by −0.20 to +0.12 mÅ (−30 to +19 m/s; derived).</li>
+<li><b>Redshift drift.</b> The Planck 2018 cosmology gives −5.4 cm/s per decade at z = 4, i.e. −1.1 × 10⁻⁶ Å per decade at the observed Lyα wavelength of 6078 Å (derived) <a class="cite" href="#ref-planck2020b">Planck Collaboration 2020</a>; <a class="cite" href="#ref-liske2008">Liske et al. 2008</a> give ≈ 6 cm/s per decade.</li>
+</ul>
+<p class="small">These measurements are differential. A comb or a comb-referenced etalon defines the scale, and a catalogue wavelength only fixes the zero point. The page therefore stores every source string in full (Murphy &amp; Berengut tabulate 6–9 decimals); the 3-decimal display does not truncate the stored value.</p>
+</div>
+<div class="card">
+<h4>Where 1 mÅ is overkill</h4>
+<ul class="tight small">
+<li><b>Redshift surveys at R ≈ 1800–6500</b> (DESI, BOSS, LAMOST-LRS, PFS, WEAVE-LR, 4MOST-LRS) centroid single lines to 6–20 mÅ at SNR 100 (§3.2).</li>
+<li><b>DESI requirements.</b> σ<sub>z</sub> &lt; 0.0005(1+z) random (150 km/s) and 0.0002(1+z) systematic (60 km/s) correspond to 3.5 Å and 1.4 Å at 7000 Å <a class="cite" href="#ref-desi2022">DESI Collaboration 2022</a>.</li>
+<li><b>Stellar surveys.</b> Their velocity requirements correspond to 9–18 mÅ, so 0.01 Å rest wavelengths are enough. 4MOST needs &lt; 1 km/s (18 mÅ at 5450 Å) <a class="cite" href="#ref-dejong2019">de Jong et al. 2019</a>. LAMOST-MRS reaches ≈ 1 km/s (17 mÅ) <a class="cite" href="#ref-liu2020">Liu et al. 2020</a>. Gaia RVS is required to reach ≤ 300 m/s systematic error after calibration by the end of the mission (8.6 mÅ at 8600 Å) <a class="cite" href="#ref-cropper2018">Cropper et al. 2018</a>.</li>
+<li><b>Still mandatory for surveys:</b> the medium (vacuum − air = 0.65–6.0 Å), the velocity convention (radio and optical differ by 0.3 km/s already at z = 0.001) and multiplicative (1+z) composition (§7.8).</li>
+</ul>
+</div>
+</div>
+
+<h4>What 1 mÅ implies for each catalogue on this page</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Catalogue</th><th>Wavelength basis</th><th>Precision</th><th>Status at 1 mÅ</th></tr></thead>
+<tbody>
+<tr><td>Element lines, I and II (§4)</td><td>NIST Handbook <a class="cite" href="#ref-sansonetti2005">Sansonetti &amp; Martin 2005</a>, upgraded with NIST ASD Ritz or observed values <a class="cite" href="#ref-kramida2024">Kramida et al. 2024</a>. Air values via <a class="cite" href="#ref-peck1972">Peck &amp; Reeder 1972</a></td><td>After the upgrade, with σ stated by ASD or implied as 2.5 units of the last digit: 35 % ≤ 1 mÅ, 38 % ≤ 5 mÅ, 3 % ≤ 10 mÅ, 24 % &gt; 10 mÅ (mostly 2-decimal values with no finer ASD value, implied σ 25 mÅ). As published, 57 % had ≥ 3 decimals and 14 % were ≤ 1 mÅ on the same rule</td><td><span class="badge g-A">A</span> for a third, <span class="badge g-A">A</span> or <span class="badge g-B">B</span> for 74 %. Values are composites for the natural isotopic mix with unresolved hfs (e.g. Ca II K); this is not flagged line by line. The 118 lines that blend several fine-structure components (e.g. He I 4471, Lyβ) are flagged. 2-decimal values are never padded</td></tr>
+<tr><td>Atomic airglow and aurora lines (§5.1)</td><td>NIST ASD strings as printed</td><td>62 lines with stated σ ≤ 1 mÅ. 133 have ≥ 3 decimals but no stated σ, including the main O I, N I and O II lines. 19 fall short: H I Lyα, Hβ and Hα (stated 1.5–7 mÅ), N II 2139/2143, [N II], [O II] 7320/7330, the Ca II IR triplet, Si II and Li I</td><td><span class="badge g-A">A</span> stated or implied for 195 of 214</td></tr>
+<tr><td>OH Meinel bands (§5.3–5.4)</td><td>HITRAN2020 positions, unchanged in HITRAN2024 <a class="cite" href="#ref-gordon2022">Gordon et al. 2022</a></td><td>The formal HITRAN codes 2–3 mean 2.5–250 mÅ at 1.58 µm. Independent lists agree to ≈ 1–6 mÅ at J″ ≤ 8.5: Oliva − HITRAN has median +0.8 mÅ, 68 % within 2.5 mÅ and 95 % within 6.1 mÅ <a class="cite" href="#ref-oliva2015">Oliva et al. 2015</a></td><td><span class="badge g-B">B</span>–<span class="badge g-C">C</span> realistic. The agreement is consistency between models built on shared laboratory data, not an absolute accuracy</td></tr>
+<tr><td>O₂ (airglow and telluric)</td><td>HITRAN2024 <a class="cite" href="#ref-gordon2026">Gordon et al. 2026</a></td><td>Median bound 0.016 mÅ; 99 % of the selected telluric lines ≤ 1 mÅ</td><td><span class="badge g-A">A</span></td></tr>
+<tr><td>Telluric CO and CO₂ (§6.3)</td><td>HITRAN2024</td><td>Median bound 0.055 mÅ for CO (100 % ≤ 1 mÅ) and 0.38 mÅ for CO₂ (67 %)</td><td><span class="badge g-A">A</span></td></tr>
+<tr><td>Telluric H₂O, CH₄, N₂O (§6.3)</td><td>HITRAN2024</td><td>Median bound 0.86 mÅ for H₂O (58 % ≤ 1 mÅ), 5.4 mÅ for CH₄ (2 %) and 51 mÅ for N₂O (0 %). Over all selected lines, 51.8 % are ≤ 1 mÅ</td><td><span class="badge g-A">A</span>/<span class="badge g-B">B</span> H₂O, <span class="badge g-C">C</span> CH₄, <span class="badge g-D">D</span> N₂O</td></tr>
+<tr><td>Telluric lines as observed</td><td>HITRAN zero-pressure positions + δ<sub>air</sub>·p</td><td>The median pressure shift along a sea-level path is +2.1 mÅ (O₂), +11.0 (CO₂), +12.4 (H₂O), +13.1 (CO) and +22.5 mÅ (CH₄). Atmospheric effects, mainly winds, add 1–10 m/s rms <a class="cite" href="#ref-figueira2010">Figueira et al. 2010</a></td><td>Apply the pressure shift first. It exceeds the position uncertainty for every molecule except N₂O</td></tr>
+<tr><td>UVES night-sky atlas (§5.3)</td><td>Observed sky positions <a class="cite" href="#ref-hanuschik2003">Hanuschik 2003</a></td><td>Printed to 0.1 mÅ, but the single-line error is ≈ 17 mÅ (UVES − Keck/HIRES = +8 ± 17 mÅ, 529 lines). The dispersion-solution rms is 4.7–10 mÅ. The 580 and 860 nm settings sit +7 to +15 mÅ above lab and HITRAN positions, and 800U sits −10 to −21 mÅ below (derived)</td><td><span class="badge g-D">D</span>. For 1 mÅ work use the laboratory, HITRAN or NIST wavelength of the identification</td></tr>
+<tr><td>Solar photospheric lines (§6.2)</td><td>Solar-atlas positions</td><td>The IAG flux atlas is accurate to ±10 m/s (0.17 mÅ); Kitt Peak atlases deviate by tens of m/s to 100 m/s (1.7 mÅ), with jumps between scan regions and ≈ 200–300 m/s offsets in parts of the range <a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>. Solar − laboratory at 5000 Å = +10.6 mÅ (gravitational) and 0 to −9.1 mÅ (convective)</td><td>Precise, but not rest wavelengths. Never mix them with laboratory values (§6.4)</td></tr>
+</tbody></table></div>
+
+<h4>Display and storage rule</h4>
+<ul class="tight">
+<li>Store the source string verbatim, with its medium, conversion formula and stated σ. Display 3 decimals only when the source has them and never pad: 43 % of the Handbook lines have 2 decimals. Keep 4–9 decimals in the detail view where the source gives them (Ritz values, Th and U atlases, Murphy &amp; Berengut 2014).</li>
+<li>Read a precision as a velocity. A 1 mÅ step is 250 m/s at 1200 Å, 60 m/s at 5000 Å and 14 m/s at 2.2 µm. For a uniform 50 m/s target the far-UV needs 4 decimals, while 3 decimals are generous in the K band.</li>
+<li>Name the air formula. The standard formulas differ by ≤ 0.21 mÅ from 3000 Å to 1 µm and by ≈ 0.6 mÅ at 2000 Å and 2.2 µm. These differences are below the display digit but not negligible. Laboratory air differs from standard air by 26 mÅ (§3.3).</li>
+</ul>
+<div class="eq"><span class="tag">(3.1)</span><math display="block"><msub><mi>σ</mi><mtext>round</mtext></msub><mo>=</mo><mfrac><mi>Δ</mi><msqrt><mn>12</mn></msqrt></mfrac><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><mn>2.9</mn><mtext>&#160;mÅ (173&#160;m&#160;s⁻¹) for&#160;</mtext><mi>Δ</mi><mo>=</mo><mn>0.01</mn><mtext>&#160;Å,</mtext><mspace width="0.8em"/><mn>0.29</mn><mtext>&#160;mÅ (17&#160;m&#160;s⁻¹) for&#160;</mtext><mi>Δ</mi><mo>=</mo><mn>0.001</mn><mtext>&#160;Å (5000&#160;Å)</mtext></math></div>
+
+<div class="note">The correction chain on this page is never the limiting term at 1 mÅ. The barycentric calculator (§7.4) implements eq. 28 of <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a> and matches astropy to 0.26 mm/s rms, about 4 × 10⁻⁶ mÅ at 5000 Å. It keeps the sub-mÅ terms: the Sun's motion about the barycentre (0.27 mÅ), the lunar reflex (0.21 mÅ) and the observer-clock term (0.08 mÅ). Only EPRV needs them, but including them costs nothing.</div>
+
+<div class="note warn"><b>Caveats.</b> The centroid figures are photon-noise limits for one isolated, unresolved line. They exclude read noise, blends, LSF errors, pixel-level systematics (HARPS floor ≈ 0.15 mÅ <a class="cite" href="#ref-lovis2007">Lovis &amp; Pepe 2007</a>) and wavelength-solution errors, so real single-line accuracies are worse. The Handbook–ASD statistics are a snapshot of the 2026-11-23 build. HITRAN uncertainty codes are ranges, and their upper bounds (used here) are conservative. Telluric pressure shifts use one S·u-weighted pressure per line and ignore line mixing and the temperature dependence of δ<sub>air</sub>.</div>

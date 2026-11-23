@@ -1,0 +1,54 @@
+<div class="tscroll" style="border:0;margin:8px 0 4px">
+<svg viewBox="0 0 1120 250" width="100%" style="min-width:860px;display:block" role="img" aria-label="Chain of frames from the emitting atom to the detector, with the size of each velocity offset">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker>
+    <style>
+      .nd rect{fill:var(--paper);stroke:var(--rule);stroke-width:1.2}
+      .nd.k rect{stroke:var(--accent);stroke-width:1.8}
+      .nd text{fill:var(--ink);font:600 12.5px var(--sans);text-anchor:middle}
+      .nd text.s{fill:var(--muted);font:400 11px var(--sans)}
+      .ed{stroke:var(--muted);stroke-width:1.4;fill:none}
+      .lb{fill:var(--accent);font:600 11.5px var(--mono);text-anchor:middle}
+      .lb2{fill:var(--muted);font:400 10.5px var(--sans);text-anchor:middle}
+      .band{fill:var(--accent-soft)}
+      .bt{fill:var(--ink2);font:600 11px var(--sans);letter-spacing:.06em;text-transform:uppercase}
+    </style>
+  </defs>
+  <rect class="band" x="6" y="8" width="530" height="20" rx="5"/><text class="bt" x="16" y="22">Source side — cosmology &amp; astrophysics</text>
+  <rect class="band" x="556" y="8" width="558" height="20" rx="5"/><text class="bt" x="566" y="22">Observer side — removable by calculation</text>
+
+  <!-- row of nodes -->
+  <g class="nd k"><rect x="10" y="60" width="100" height="56" rx="8"/><text x="60" y="84">Atom at rest</text><text class="s" x="60" y="102">λ<tspan baseline-shift="sub" font-size="8">lab, vac</tspan> (§4)</text></g>
+  <g class="nd"><rect x="140" y="60" width="100" height="56" rx="8"/><text x="190" y="84">Source frame</text><text class="s" x="190" y="102">internal + grav.</text></g>
+  <g class="nd"><rect x="270" y="60" width="100" height="56" rx="8"/><text x="320" y="84">Hubble flow</text><text class="s" x="320" y="102">(1 + z<tspan baseline-shift="sub" font-size="8">cos</tspan>)</text></g>
+  <g class="nd"><rect x="400" y="60" width="110" height="56" rx="8"/><text x="455" y="84">CMB frame</text><text class="s" x="455" y="102">cosmic rest frame</text></g>
+  <g class="nd"><rect x="540" y="60" width="100" height="56" rx="8"/><text x="590" y="84">Local Group</text><text class="s" x="590" y="102">barycentre</text></g>
+  <g class="nd"><rect x="670" y="60" width="100" height="56" rx="8"/><text x="720" y="84">Galactic centre</text><text class="s" x="720" y="102">GSR</text></g>
+  <g class="nd"><rect x="800" y="60" width="90" height="56" rx="8"/><text x="845" y="84">LSR</text><text class="s" x="845" y="102">circular orbit</text></g>
+  <g class="nd k"><rect x="920" y="60" width="90" height="56" rx="8"/><text x="965" y="84">SSB</text><text class="s" x="965" y="102">BCRS origin</text></g>
+  <g class="nd k"><rect x="1030" y="60" width="84" height="56" rx="8"/><text x="1072" y="84">Telescope</text><text class="s" x="1072" y="102">air / vacuum</text></g>
+
+  <!-- edges with magnitudes -->
+  <path class="ed" d="M110 88 H138" marker-end="url(#arr)"/>
+  <path class="ed" d="M240 88 H268" marker-end="url(#arr)"/>
+  <path class="ed" d="M370 88 H398" marker-end="url(#arr)"/>
+  <path class="ed" d="M510 88 H538" marker-end="url(#arr)"/>
+  <path class="ed" d="M640 88 H668" marker-end="url(#arr)"/>
+  <path class="ed" d="M770 88 H798" marker-end="url(#arr)"/>
+  <path class="ed" d="M890 88 H918" marker-end="url(#arr)"/>
+  <path class="ed" d="M1010 88 H1028" marker-end="url(#arr)"/>
+
+  <text class="lb" x="125" y="146">km/s – 10³</text><text class="lb2" x="125" y="162">v<tspan baseline-shift="sub" font-size="7">int</tspan>, GM/Rc²</text>
+  <text class="lb" x="255" y="146">~300 km/s</text><text class="lb2" x="255" y="162">peculiar motion</text>
+  <text class="lb" x="385" y="146">z ≲ 14</text><text class="lb2" x="385" y="162">expansion</text>
+  <text class="lb" x="525" y="146">≈ 620 km/s</text><text class="lb2" x="525" y="162">LG vs CMB</text>
+  <text class="lb" x="655" y="146">≈ 80 km/s</text><text class="lb2" x="655" y="162">Galaxy vs LG</text>
+  <text class="lb" x="785" y="146">≈ 230–240</text><text class="lb2" x="785" y="162">Θ₀ rotation</text>
+  <text class="lb" x="905" y="146">≈ 18 km/s</text><text class="lb2" x="905" y="162">solar motion</text>
+  <text class="lb" x="1020" y="146">±30 km/s</text><text class="lb2" x="1020" y="162">orbit ± 0.47 rot.</text>
+
+  <!-- summary bar -->
+  <text class="lb2" x="560" y="200" style="font-size:12px">Solar-System barycentre vs CMB: 369.82 km/s toward (l, b) = (264.02°, 48.25°).  Air vs vacuum: λ<tspan baseline-shift="sub" font-size="8">vac</tspan> − λ<tspan baseline-shift="sub" font-size="8">air</tspan> ≈ (2.7–2.9) × 10⁻⁴ λ  (82–87 km/s equivalent, 0.3–1 µm).</text>
+  <text class="lb2" x="560" y="222" style="font-size:12px">Every arrow is a multiplicative factor (1 + z<tspan baseline-shift="sub" font-size="8">i</tspan>). Uncertainty: barycentric ≲ 1 cm/s, LSR ≈ 2 km/s, Θ₀ ≈ 5–15 km/s, Local Group ≈ 15–20 km/s, CMB dipole 0.1 km/s.</text>
+</svg>
+</div>

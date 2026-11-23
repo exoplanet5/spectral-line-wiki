@@ -1,0 +1,135 @@
+<p>A measured line shift is a dimensionless ratio. Expressing it as a “velocity” requires a convention, and the three conventions in common use differ by ≈ v²/c. FITS WCS Paper III (<a class="cite" href="#ref-greisen2006">Greisen et al. 2006</a>) defines all three, with receding objects positive:</p>
+<div class="eq"><span class="tag">(7.3.1) optical · VOPT, ZOPT</span><math display="block"><mi>Z</mi><mo>=</mo><mi>c</mi><mi>z</mi><mo>=</mo><mi>c</mi><mspace width="0.15em"/><mfrac><mrow><mi>λ</mi><mo>−</mo><msub><mi>λ</mi><mn>0</mn></msub></mrow><msub><mi>λ</mi><mn>0</mn></msub></mfrac></math></div>
+<div class="eq"><span class="tag">(7.3.2) radio · VRAD</span><math display="block"><mi>V</mi><mo>=</mo><mi>c</mi><mspace width="0.15em"/><mfrac><mrow><msub><mi>ν</mi><mn>0</mn></msub><mo>−</mo><mi>ν</mi></mrow><msub><mi>ν</mi><mn>0</mn></msub></mfrac><mo>=</mo><mi>c</mi><mspace width="0.15em"/><mfrac><mrow><mi>λ</mi><mo>−</mo><msub><mi>λ</mi><mn>0</mn></msub></mrow><mi>λ</mi></mfrac><mo>=</mo><mfrac><mrow><mi>c</mi><mi>z</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>z</mi></mrow></mfrac></math></div>
+<div class="eq"><span class="tag">(7.3.3) relativistic · VELO, BETA</span><math display="block"><mi>v</mi><mo>=</mo><mi>c</mi><mspace width="0.15em"/><mfrac><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>λ</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mrow><msup><mi>λ</mi><mn>2</mn></msup><mo>+</mo><msubsup><mi>λ</mi><mn>0</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mi>c</mi><mspace width="0.15em"/><mfrac><mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mspace width="1em"/><mo>⇔</mo><mspace width="1em"/><mn>1</mn><mo>+</mo><mi>z</mi><mo>=</mo><msqrt><mfrac><mrow><mn>1</mn><mo>+</mo><mi>β</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>β</mi></mrow></mfrac></msqrt></math></div>
+<p>Eq. 7.3.3 is Greisen et al.'s “apparent radial velocity” (eqs. 14, 16). It equals the true radial velocity only when the transverse velocity is zero. In general (their eq. 2, after Lang 1974):</p>
+<div class="eq"><span class="tag">(7.3.4)</span><math display="block"><mi>λ</mi><mo>=</mo><msub><mi>λ</mi><mn>0</mn></msub><mspace width="0.15em"/><mfrac><mrow><mi>c</mi><mo>+</mo><msub><mi>v</mi><mi>r</mi></msub></mrow><msqrt><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>v</mi><mi>r</mi><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>v</mi><mi>t</mi><mn>2</mn></msubsup></mrow></msqrt></mfrac></math></div>
+<p class="small">A transverse velocity of 100 km s⁻¹ adds ≈ 15 m s⁻¹ (Greisen et al.), or v<sub>t</sub>²/2c = 16.7 m s⁻¹ (derived). With v<sub>t</sub> = 0:</p>
+<ul class="tight small">
+<li>the radio velocity spans −∞ to +c;</li>
+<li>the optical velocity spans −c to +∞;</li>
+<li>the relativistic velocity equals v<sub>r</sub>.</li>
+</ul>
+<p class="small">Only the optical form is linear in λ, and only the radio form is linear in ν. This is why optical spectra are usually expressed in cz (or on WAVE/AWAV axes) and radio spectra in V.</p>
+
+<h4>When the conventions diverge</h4>
+<p>The first table expresses one observed redshift, quoted as cz, in each convention. To leading order (derived):</p>
+<ul class="tight">
+<li>cz − V ≈ (cz)²/c;</li>
+<li>cz − v ≈ (cz)²/2c.</li>
+</ul>
+<div class="tscroll"><table class="t">
+<thead><tr><th class="num">cz (km s⁻¹)</th><th class="num">z</th><th class="num">radio V (km s⁻¹)</th><th class="num">relativistic v (km s⁻¹)</th><th class="num">cz − V</th><th class="num">cz − v</th></tr></thead>
+<tbody>
+<tr><td class="num">30</td><td class="num">1.0007×10⁻⁴</td><td class="num">29.9970</td><td class="num">29.9985</td><td class="num">3.0 m s⁻¹</td><td class="num">1.5 m s⁻¹</td></tr>
+<tr><td class="num">300</td><td class="num">0.0010007</td><td class="num">299.700</td><td class="num">299.850</td><td class="num">0.300 km s⁻¹</td><td class="num">0.150 km s⁻¹</td></tr>
+<tr><td class="num"><b>1000</b></td><td class="num">0.0033356</td><td class="num">996.675</td><td class="num">998.332</td><td class="num"><b>3.32 km s⁻¹</b></td><td class="num"><b>1.67 km s⁻¹</b></td></tr>
+<tr><td class="num"><b>10 000</b></td><td class="num">0.033356</td><td class="num">9677.20</td><td class="num">9833.31</td><td class="num"><b>322.8 km s⁻¹</b></td><td class="num"><b>166.7 km s⁻¹</b></td></tr>
+<tr><td class="num"><b>100 000</b></td><td class="num">0.33356</td><td class="num">74 987.0</td><td class="num">83 989.7</td><td class="num"><b>25 013 km s⁻¹</b></td><td class="num"><b>16 010 km s⁻¹</b></td></tr>
+</tbody></table></div>
+<p>The second table starts from a <b>true radial velocity</b> v (no transverse motion, no gravity) and gives what each convention reports (derived):</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th class="num">v (km s⁻¹)</th><th class="num">z</th><th class="num">cz (km s⁻¹)</th><th class="num">radio V (km s⁻¹)</th><th class="num">cz − v</th><th class="num">v − V</th></tr></thead>
+<tbody>
+<tr><td class="num">1000</td><td class="num">0.0033412</td><td class="num">1001.673</td><td class="num">998.338</td><td class="num">+1.67</td><td class="num">+1.66</td></tr>
+<tr><td class="num">10 000</td><td class="num">0.033932</td><td class="num">10 172.49</td><td class="num">9838.65</td><td class="num">+172.5</td><td class="num">+161.4</td></tr>
+<tr><td class="num">100 000</td><td class="num">0.41458</td><td class="num">124 288.2</td><td class="num">87 862.2</td><td class="num">+24 288</td><td class="num">+12 138</td></tr>
+</tbody></table></div>
+<div class="note">At 1000 km s⁻¹ the radio–optical difference, 3.3 km s⁻¹, is 55 mÅ at 5000 Å (derived), already 55 times this page's precision. Even at barycentric-correction speeds (30 km s⁻¹) it is 3 m s⁻¹. A velocity quoted without its convention therefore carries an error of order cz²/c. For precise work:
+<ul class="tight small">
+<li>store <b>z</b>, not velocities;</li>
+<li>convert any velocity to 1 + z with its own convention: (1 + z) = 1 + Z/c, 1/(1 − V/c) or √[(1+β)/(1−β)];</li>
+<li>compose shifts as products of (1 + z) (<a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>; §7.8).</li>
+</ul>
+Cosmological redshifts are not Doppler shifts, and the special-relativistic formula (7.3.3) must not be applied to them (§7.8).</div>
+
+<h4>Frame changes are true velocities</h4>
+<p>Moving between rest frames is a Lorentz boost, so the relativistic formula applies. Greisen et al. (2006, §10.1) give the example of a 26.108 km s⁻¹ topocentric → barycentric correction: “this correction between reference frames is a true velocity and thus the relativistic formula … should be used.” For a barycentre moving at β = V/c relative to the target frame, with θ the angle between that motion and the direction to the source measured in the barycentric frame (the catalogue direction), the frame calculator in §7.7 composes</p>
+<div class="eq"><span class="tag">(7.3.5)</span><math display="block"><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>frame</mtext></msub><mo>=</mo><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>bary</mtext></msub></mrow><mrow><mi>γ</mi><mspace width="0.1em"/><mo>(</mo><mn>1</mn><mo>−</mo><mi>β</mi><mspace width="0.1em"/><mi>cos</mi><mspace width="0.1em"/><mi>θ</mi><mo>)</mo></mrow></mfrac><mo>,</mo><mspace width="1em"/><mi>γ</mi><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><msup><mi>β</mi><mn>2</mn></msup><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn><mo>/</mo><mn>2</mn></mrow></msup></math></div>
+<p class="small">The equivalent form (1 + z<sub>bary</sub>) γ (1 + β cos θ′) needs the angle θ′ measured in the target frame. Using the barycentric θ in that form errs by β² sin²θ, up to 0.46 km s⁻¹ for the CMB frame and 0.30 km s⁻¹ for a 300 km s⁻¹ Local Group apex (derived).</p>
+<p class="small">The barycentric correction of §7.4 is likewise applied multiplicatively: (1 + z<sub>true</sub>) = (1 + z<sub>meas</sub>)(1 + z<sub>B</sub>). The cross term |v<sub>meas</sub>z<sub>B</sub>| is 2.75 m s⁻¹ for v<sub>meas</sub> = 50 km s⁻¹ and |c z<sub>B</sub>| = 16.5 km s⁻¹ (derived).</p>
+
+<h4>FITS spectral reference frames: SPECSYS, SSYSOBS and related keywords</h4>
+<p>Greisen et al. (2006, §7) define three keywords that name frames from Table 12:</p>
+<ul class="tight">
+<li><b><code>SPECSYSa</code></b>: the frame in which the spectral axis is expressed.</li>
+<li><b><code>SSYSOBSa</code></b> (default <code>TOPOCENT</code>): the frame in which the spectral coordinate does not vary across the field.</li>
+<li><b><code>SSYSSRCa</code></b>: the frame of <code>ZSOURCEa</code>, the source's systemic redshift.</li>
+</ul>
+<p>Related keywords:</p>
+<ul class="tight">
+<li><code>VELOSYSa</code>: the observer's radial velocity relative to the <code>SPECSYS</code> frame toward the reference position, in m s⁻¹.</li>
+<li><code>RESTFRQa</code> (Hz) and <code>RESTWAVa</code> (m, <b>vacuum only</b>).</li>
+<li><code>MJD-AVG</code>/<code>DATE-AVG</code>: the representative epoch.</li>
+<li><code>OBSGEO-X/Y/Z</code>: geocentric Cartesian coordinates of the observatory in an ITRS-based frame, in m.</li>
+</ul>
+<p>The magnitudes and apices in the table are Greisen et al.'s nominal values. They are <i>definitions</i> for labelling, not current measurements.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th>SPECSYS</th><th>Frame</th><th class="num">Magnitude (km s⁻¹)</th><th class="num">Apex l, b (°)</th><th>Reference given</th><th>Remarks</th></tr></thead>
+<tbody>
+<tr><td><code>TOPOCENT</code></td><td>topocentric (observer)</td><td class="num">0</td><td class="num">—</td><td></td><td class="small">The frame of the raw data and of telluric lines.</td></tr>
+<tr><td><code>GEOCENTR</code></td><td>geocentric</td><td class="num">0.5</td><td class="num">—</td><td></td><td class="small">Removes Earth rotation (≤ 0.465 km s⁻¹).</td></tr>
+<tr><td><code>BARYCENT</code></td><td>Solar-System barycentre</td><td class="num">30</td><td class="num">—</td><td>Stumpff (1980)</td><td class="small">The IAU 2000 C1 frame (below). Correction from §7.4.</td></tr>
+<tr><td><code>HELIOCEN</code></td><td>heliocentric</td><td class="num">30</td><td class="num">—</td><td>Stumpff (1980)</td><td class="small">Greisen et al. say it “should be deprecated” because it “has frequently been misused as an alias for barycentric”. The two frames differ by up to ≈ 16 m s⁻¹ (0.27 mÅ at 5000 Å; derived).</td></tr>
+<tr><td><code>LSRK</code></td><td>kinematic LSR</td><td class="num">20</td><td class="num">56, 23</td><td>Delhaye (1965); Gordon (1976)</td><td class="small">“Normally quoted as” 20 km s⁻¹ toward RA 18ʰ, Dec +30° (1900). This is (l, b) = (56.157°, 22.765°), or (U, V, W) = (10.27, 15.32, 7.74) km s⁻¹ (derived; §7.6).</td></tr>
+<tr><td><code>LSRD</code></td><td>dynamical LSR</td><td class="num">16.6</td><td class="num">53, 25</td><td>Delhaye (1965)</td><td class="small">(U, V, W) = (9, 12, 7) km s⁻¹.</td></tr>
+<tr><td><code>GALACTOC</code></td><td>Galactocentric</td><td class="num">220</td><td class="num">90, 0</td><td>Kerr &amp; Lynden-Bell (1986)</td><td class="small">The IAU 1985 Θ₀. Modern values of the Sun's Galactocentric velocity are ≈ 246–252 km s⁻¹ (§7.6).</td></tr>
+<tr><td><code>LOCALGRP</code></td><td>Local Group</td><td class="num">300</td><td class="num">90, 0</td><td>de Vaucouleurs (1976)</td><td class="small">The RC2 correction “300 sin l cos b”. Alternatives are listed in §7.7.</td></tr>
+<tr><td><code>CMBDIPOL</code></td><td>CMB dipole</td><td class="num">368</td><td class="num">263.85, 48.25</td><td>Bennett et al. (2003)</td><td class="small">WMAP. Greisen et al. say it should be used only where appropriate, “and the parameters used should be well commented”. The Planck value is in §7.7.</td></tr>
+<tr><td><code>SOURCE</code></td><td>source rest frame</td><td class="num">any</td><td class="num">—</td><td></td><td class="small">Requires <code>ZSOURCE</code> and <code>SSYSSRC</code>.</td></tr>
+</tbody></table></div>
+<ul class="tight small">
+<li><b>LSR definitions disagree.</b> Different LSR conventions differ by 1.4–10.7 km s⁻¹ in vector terms, which is 24–178 mÅ at 5000 Å (derived; §7.6). A file labelled <code>LSRK</code> means the 1900 standard solar motion, not a modern one.</li>
+<li><b>Differential frame corrections.</b> A frame correction varies across a field of view. Greisen et al. give worst cases for a 1° offset: 8.7 m s⁻¹ (diurnal), 17.5 m s⁻¹ (change over 12 h), 1.0 km s⁻¹ (exposures months apart), and “5 km s⁻¹ for the Local Group correction over a field of one degree”.</li>
+</ul>
+<p><b>Legacy AIPS keywords.</b> Older radio files describe the frame in <code>CTYPE</code> (<code>VELO-LSR</code>, <code>VELO-HEL</code>, <code>VELO-OBS</code>, <code>FELO-…</code>, <code>FREQ-…</code>) and the integer <code>VELREF</code>. WCSLIB translates them as follows (<a class="cite" href="#ref-calabretta2026">Calabretta 2026</a>, <code>spcaips</code>):</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th class="num">VELREF</th><th>Original AIPS meaning</th><th>Interpreted as SPECSYS</th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td>“LSR” (kinematic and dynamic not distinguished)</td><td><code>LSRK</code></td></tr>
+<tr><td class="num">2</td><td>“HEL”, heliocentric</td><td><code>BARYCENT</code></td></tr>
+<tr><td class="num">3</td><td>“OBS”, nominally geocentric</td><td><code>TOPOCENT</code> (widely interpreted so)</td></tr>
+<tr><td class="num">4 / 5 / 6 / 7</td><td>AIPS++ extensions</td><td><code>LSRD</code> / <code>GEOCENTR</code> / <code>SOURCE</code> / <code>GALACTOC</code></td></tr>
+<tr><td class="num">+256</td><td>on a <code>VELO</code> axis: <b>radio</b> convention (VRAD); otherwise optical (VOPT)</td><td>not applicable to <code>FREQ</code> or <code>FELO</code> axes</td></tr>
+</tbody></table></div>
+<ul class="tight small">
+<li>If <code>VELREF</code> is absent it defaults to 0.</li>
+<li>When present, it takes precedence over the frame code in <code>CTYPE</code>.</li>
+<li>An AIPS <code>FELO</code> axis is an optical velocity sampled linearly in frequency. astropy 7.2 translates <code>FELO-LSR</code> to <code>VOPT-F2W</code> with <code>SPECSYS</code> = <code>LSRK</code>, and <code>VELO-HEL</code> with <code>VELREF</code> = 257 to <code>VRAD</code> with <code>LSRK</code>.</li>
+</ul>
+
+<h4>What a spectrum actually measures: IAU 2000 Resolution C1</h4>
+<p>IAU Resolution C1 (2000) notes that “the naive concept of radial velocity being equal to the time derivative of distance becomes ambiguous at accuracy levels around 100 m/s”. It therefore recommends reporting high-accuracy spectroscopic results as the <b>barycentric radial-velocity measure</b> (text reproduced in <a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins 2003</a>):</p>
+<div class="eq"><span class="tag">(7.3.6) IAU 2000 C1</span><math display="block"><mi>c</mi><msub><mi>z</mi><mi>B</mi></msub><mo>,</mo><mspace width="1em"/><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mi>λ</mi><mo>−</mo><msub><mi>λ</mi><mn>0</mn></msub></mrow><msub><mi>λ</mi><mn>0</mn></msub></mfrac><mo>,</mo><mspace width="1em"/><mi>c</mi><mo>=</mo><mn>299792458</mn><mtext>&#160;m&#160;s⁻¹</mtext></math></div>
+<p>The terms in the definition:</p>
+<ul class="tight">
+<li><b>λ</b> is the wavelength a hypothetical observer would see if at zero gravitational potential, located at, and at rest with respect to, the Solar-System barycentre. It is obtained by removing the observer's motion and the Solar-System gravitational shifts (§7.4).</li>
+<li><b>λ<sub>0</sub></b> is the rest-frame (laboratory) wavelength.</li>
+<li><b>The epoch</b> is the barycentric time of light arrival (§7.5).</li>
+</ul>
+<p>cz<sub>B</sub> is optical-convention in form, but it is “just a quantification of the spectroscopic shift, not of physical velocity”. The “B” refers to the Solar-System barycentre, not the CMB rest frame. To O(c⁻²), Lindegren &amp; Dravins (eq. 43) give</p>
+<div class="eq"><span class="tag">(7.3.7)</span><math display="block"><mn>1</mn><mo>+</mo><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><msup><mi>𝐤</mi><mo>′</mo></msup><msub><mi>𝐯</mi><mo>*</mo></msub></mrow><mi>c</mi></mfrac><mo>)</mo></mrow><msup><mrow><mo>(</mo><mn>1</mn><mo>−</mo><mfrac><msub><mi>Φ</mi><mo>*</mo></msub><msup><mi>c</mi><mn>2</mn></msup></mfrac><mo>−</mo><mfrac><msup><mrow><mo>|</mo><msub><mi>𝐯</mi><mo>*</mo></msub><mo>|</mo></mrow><mn>2</mn></msup><mrow><mn>2</mn><msup><mi>c</mi><mn>2</mn></msup></mrow></mfrac><mo>)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>(</mo><mn>1</mn><mo>+</mo><mi>X</mi><mo>)</mo></math></div>
+<p class="small">Here <b>k</b> is the coordinate (BCRS) direction to the star, not the aberrated one. The factors on the right are:</p>
+<ul class="tight small">
+<li>the line-of-sight Doppler term k′v<sub>*</sub>/c;</li>
+<li>the source's gravitational potential Φ<sub>*</sub>, which gives the gravitational redshift;</li>
+<li>the transverse Doppler term |v<sub>*</sub>|²/2c²;</li>
+<li>1 + X, everything that cannot be separated: convective shifts, line asymmetries, pressure shifts, rotation and activity, and the cosmological redshift.</li>
+</ul>
+<p class="small">For a solar-type star, the gravitational redshift (+636 m s⁻¹) and the convective blueshift (≈ −400 m s⁻¹) sum to ≈ +0.2 km s⁻¹, and the sum varies by ~200 m s⁻¹ from line to line. Lindegren &amp; Dravins conclude that radial-velocity standard stars are unlikely to be “true” to better than 0.5 (perhaps 0.3) km s⁻¹ without a physical model of the star.</p>
+
+<h4>Spectroscopic versus astrometric (and kinematic) radial velocity</h4>
+<p><a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins (2003)</a> separate three quantities that can be used interchangeably only at accuracies coarser than ≈ 100 m s⁻¹:</p>
+<ul class="tight">
+<li><b>kinematic radial velocity</b> v<sub>r</sub> = u′v<sub>*</sub> (their eq. 25): the component of the star's BCRS coordinate velocity along the barycentric direction u. This is the “textbook” radial velocity.</li>
+<li><b>astrometric radial velocity</b> ρ = dr<sub>*</sub>/dt<sub>B</sub> (eq. 29; IAU 2000 Resolution C2): the rate of change of barycentric coordinate distance with respect to barycentric time of light arrival. It is measured geometrically, for example from the secular change of parallax or with the moving-cluster method, and is related to the kinematic radial velocity by v<sub>r</sub> = ρ(1 − ρ/c)⁻¹ (eq. 34).</li>
+<li><b>spectroscopic barycentric radial-velocity measure</b> cz<sub>B</sub> (eq. 7.3.6): directly observable and independent of the coordinate system, but it contains Φ<sub>*</sub>, v<sub>t</sub> and X. It can be converted to v<sub>r</sub> or ρ “only in special circumstances”, namely when Φ<sub>*</sub>, v<sub>t</sub> and X are known.</li>
+</ul>
+<div class="note warn"><b>Symbol clash.</b> In <a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins (2003)</a> and IAU C1, z<sub>B</sub> is the <i>source's</i> redshift reduced to the barycentre. In <a class="cite" href="#ref-wright2014">Wright &amp; Eastman (2014)</a> and astropy, z<sub>B</sub> is the <i>correction factor</i> for the observer's motion, with (1 + z<sub>C1</sub>) = (1 + z<sub>meas</sub>)(1 + z<sub>B,WE14</sub>). The calculator in §7.4 returns the latter, as v<sub>B</sub> = c z<sub>B</sub>.</div>
+<div class="note"><b>Reporting recipe.</b>
+<ul class="tight small">
+<li><b>Quantity:</b> publish z or cz<sub>B</sub>, not a “velocity”.</li>
+<li><b>Header:</b> state the convention (<code>VOPT</code>/<code>ZOPT</code>, <code>VRAD</code> or <code>VELO</code>), <code>SPECSYS</code> = <code>BARYCENT</code>, <code>SSYSOBS</code> = <code>TOPOCENT</code>, and <code>VELOSYS</code>. Give the medium (<code>WAVE</code> or <code>AWAV</code>) with the air formula used (§7.2).</li>
+<li><b>Rest wavelengths:</b> name the laboratory source of λ<sub>0</sub>.</li>
+<li><b>LSR, Galactic, Local Group or CMB frames:</b> also give the solar-motion vector adopted (§7.6–7.7).</li>
+</ul></div>

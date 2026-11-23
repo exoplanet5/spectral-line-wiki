@@ -1,0 +1,346 @@
+{
+ "host": "#frameApex",
+ "caption": "Apex of the Sun’s (solar-system barycentre’s) velocity relative to each frame; rows marked “component” give the motion of one frame relative to the next. The correction added to a barycentric radial velocity is Δv = |V| cos θ, θ being the angle between target and apex (eq. 7.6.2). Apex RA/Dec and (U, V, W) are derived with astropy 7.2 from the published (|V|, l, b) or (U, V, W) except where the source gives them; “derived” rows are combinations made for this page, not published vectors. Values from <code>data/notes/velocity_frames.json</code>.",
+ "tall": false,
+ "search": true,
+ "cols": [
+  {
+   "k": "frame",
+   "label": "Frame / definition",
+   "num": false,
+   "html": false,
+   "title": "Sun's (barycentre's) velocity relative to the frame unless marked 'component'"
+  },
+  {
+   "k": "v",
+   "label": "|V| (km/s)",
+   "num": true,
+   "html": false,
+   "title": "speed of the Sun relative to the frame"
+  },
+  {
+   "k": "lb",
+   "label": "Apex l, b (°)",
+   "num": false,
+   "html": false,
+   "title": "Galactic longitude and latitude of the apex"
+  },
+  {
+   "k": "radec",
+   "label": "Apex α, δ (°, J2000)",
+   "num": false,
+   "html": false,
+   "title": "ICRS (≈ J2000) apex; derived with astropy unless published"
+  },
+  {
+   "k": "uvw",
+   "label": "(U, V, W) (km/s)",
+   "num": false,
+   "html": false,
+   "title": "Galactic Cartesian components: U toward l = 0°, V toward l = 90°, W toward b = +90° (derived where the source gives |V|, l, b)"
+  },
+  {
+   "k": "unc",
+   "label": "Uncertainty",
+   "num": false,
+   "html": false,
+   "title": "as published (1σ unless stated)"
+  },
+  {
+   "k": "ref",
+   "label": "Reference",
+   "num": false,
+   "html": true,
+   "title": ""
+  },
+  {
+   "k": "notes",
+   "label": "Convention / notes",
+   "num": false,
+   "html": false,
+   "title": ""
+  }
+ ],
+ "rows": [
+  [
+   "LSRK — standard solar motion",
+   20.0,
+   "56.157, +22.765",
+   "270.959, +30.005",
+   "(10.27, 15.32, 7.74)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-gordon1976\">Gordon 1976</a>, <a class=\"cite\" href=\"#ref-greisen2006\">Greisen et al. 2006</a>, <a class=\"cite\" href=\"#ref-reid2009\">Reid et al. 2009</a>",
+   "20 km/s toward 18ʰ, +30° (B1900); FITS, astropy and SLALIB LSRK"
+  ],
+  [
+   "LSRD — Delhaye 1965",
+   16.55,
+   "53.130, +25.017",
+   "267.494, +28.118",
+   "(9.00, 12.00, 7.00)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-delhaye1965\">Delhaye 1965</a>, <a class=\"cite\" href=\"#ref-greisen2006\">Greisen et al. 2006</a>",
+   "(9, 12, 7) km/s; FITS LSRD (16.6 km/s); astropy, SLALIB LSRD"
+  ],
+  [
+   "LSR — Schönrich et al. 2010",
+   18.04,
+   "47.796, +23.690",
+   "267.058, +23.097",
+   "(11.10, 12.24, 7.25)",
+   "(+0.69/−0.75, ±0.47, +0.37/−0.36) stat; (1, 2, 0.5) sys",
+   "<a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "astropy LSR default"
+  ],
+  [
+   "LSR — Dehnen & Binney 1998",
+   13.38,
+   "27.699, +32.409",
+   "251.513, +10.129",
+   "(10.00, 5.25, 7.17)",
+   "±(0.36, 0.62, 0.38)",
+   "<a class=\"cite\" href=\"#ref-dehnen1998\">Dehnen &amp; Binney 1998</a>",
+   "Hipparcos; arXiv v1 abstract gives V = 5.23"
+  ],
+  [
+   "LSR — Bland-Hawthorn & Gerhard 2016",
+   16.43,
+   "47.726, +25.214",
+   "265.479, +23.569",
+   "(10.00, 11.00, 7.00)",
+   "±(1, 2, 0.5)",
+   "<a class=\"cite\" href=\"#ref-blandhawthorn2016\">Bland-Hawthorn &amp; Gerhard 2016</a>",
+   "review-adopted values"
+  ],
+  [
+   "LSR — Ding et al. 2019 (Gaia DR2)",
+   12.24,
+   "28.880, +36.377",
+   "248.272, +12.697",
+   "(8.63, 4.76, 7.26)",
+   "±(0.64, 0.49, 0.36)",
+   "<a class=\"cite\" href=\"#ref-ding2019\">Ding et al. 2019</a>",
+   "Gaia DR2"
+  ],
+  [
+   "Sun–LSR, Planck 2018 Table 3",
+   17.9,
+   "48.000, +23.000",
+   "267.832, +23.026",
+   "(11.03, 12.24, 6.99)",
+   "±2.0 km/s; ±7°, ±4°",
+   "<a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>, <a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "rounded from Schönrich et al. 2010"
+  ],
+  [
+   "GSR — IAU 1985 Θ₀ + LSRD (derived)",
+   232.28,
+   "87.778, +1.727",
+   "313.862, +47.823",
+   "(9.00, 232.00, 7.00)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-kerr1986\">Kerr &amp; Lynden-Bell 1986</a>, <a class=\"cite\" href=\"#ref-delhaye1965\">Delhaye 1965</a>",
+   "Θ₀ = 220 km/s, R₀ = 8.5 kpc, plus (9, 12, 7); equals the NED vector"
+  ],
+  [
+   "GSR — NED (RC3)",
+   232.3,
+   "87.800, +1.700",
+   "313.913, +47.822",
+   "(8.91, 232.03, 6.89)",
+   "NED: 4 % of correction",
+   "<a class=\"cite\" href=\"#ref-devaucouleurs1991\">de Vaucouleurs et al. 1991</a>, <a class=\"cite\" href=\"#ref-ned2026\">NED</a>",
+   "NED “GSR”; error model 4 % of the correction"
+  ],
+  [
+   "GALACTOC — LSR rotation (component)",
+   220.0,
+   "90.000, +0.000",
+   "318.004, +48.330",
+   "(0.00, 220.00, 0.00)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-greisen2006\">Greisen et al. 2006</a>, <a class=\"cite\" href=\"#ref-kerr1986\">Kerr &amp; Lynden-Bell 1986</a>",
+   "FITS GALACTOC magnitude; add a solar motion"
+  ],
+  [
+   "LSR–GC, Planck 2018 (component)",
+   239.0,
+   "90.000, +0.000",
+   "318.004, +48.330",
+   "(0.00, 239.00, 0.00)",
+   "±5 km/s",
+   "<a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>, <a class=\"cite\" href=\"#ref-mcmillan2011\">McMillan 2011</a>",
+   "circular speed from McMillan 2011"
+  ],
+  [
+   "GSR — astropy “v4.0” (default)",
+   246.06,
+   "86.998, +1.819",
+   "313.014, +47.285",
+   "(12.88, 245.60, 7.81)",
+   "convention (software default)",
+   "<a class=\"cite\" href=\"#ref-astropy2022\">Astropy Collab. 2022</a>, <a class=\"cite\" href=\"#ref-drimmel2018\">Drimmel &amp; Poggio 2018</a>, <a class=\"cite\" href=\"#ref-gravity2018\">GRAVITY Collab. 2018</a>",
+   "R₀ = 8.122 kpc, z⊙ = 20.8 pc; galcen_v_sun = (12.9, 245.6, 7.78)"
+  ],
+  [
+   "GSR — astropy “pre-v4.0”",
+   232.62,
+   "87.269, +1.795",
+   "313.298, +47.477",
+   "(11.08, 232.24, 7.29)",
+   "convention (software default)",
+   "<a class=\"cite\" href=\"#ref-astropy2022\">Astropy Collab. 2022</a>, <a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "R₀ = 8.3 kpc, z⊙ = 27 pc; galcen_v_sun = (11.1, 232.24, 7.25)"
+  ],
+  [
+   "GSR — Reid et al. 2019 composite (derived)",
+   247.36,
+   "87.427, +1.680",
+   "313.579, +47.524",
+   "(11.10, 247.00, 7.25)",
+   "±4 km/s (V)",
+   "<a class=\"cite\" href=\"#ref-reid2019\">Reid et al. 2019</a>, <a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "Θ₀ + V⊙ = 247 ± 4 km/s; U, W from Schönrich et al. 2010"
+  ],
+  [
+   "GSR — Sgr A* reflex, R₀ = 8.178 kpc (derived)",
+   248.93,
+   "87.443, +1.955",
+   "313.281, +47.713",
+   "(11.10, 248.54, 8.49)",
+   "±0.84 km/s (V)",
+   "<a class=\"cite\" href=\"#ref-reid2020\">Reid &amp; Brunthaler 2020</a>, <a class=\"cite\" href=\"#ref-gravity2019\">GRAVITY Collab. 2019</a>, <a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "V, W = 4.74047 |μ| R₀; μ = (−6.411, −0.219) mas/yr"
+  ],
+  [
+   "GSR — Sgr A* reflex, R₀ = 8.275 kpc (derived)",
+   251.88,
+   "87.473, +1.955",
+   "313.310, +47.736",
+   "(11.10, 251.49, 8.59)",
+   "±1.09 km/s (V)",
+   "<a class=\"cite\" href=\"#ref-reid2020\">Reid &amp; Brunthaler 2020</a>, <a class=\"cite\" href=\"#ref-gravity2021\">GRAVITY Collab. 2021</a>, <a class=\"cite\" href=\"#ref-schoenrich2010\">Schönrich et al. 2010</a>",
+   "V, W = 4.74047 |μ| R₀; μ = (−6.411, −0.219) mas/yr"
+  ],
+  [
+   "LG — RC2 / “IAU” 300 sin l cos b",
+   300.0,
+   "90.000, +0.000",
+   "318.004, +48.330",
+   "(0.00, 300.00, 0.00)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-devaucouleurs1976\">de Vaucouleurs et al. 1976</a>, <a class=\"cite\" href=\"#ref-mould2000\">Mould et al. 2000</a>, <a class=\"cite\" href=\"#ref-greisen2006\">Greisen et al. 2006</a>",
+   "Δv = 300 sin l cos b; FITS LOCALGRP"
+  ],
+  [
+   "LG — Yahil, Tammann & Sandage 1977",
+   308.47,
+   "104.943, −6.702",
+   "343.015, +51.951",
+   "(−79, 296, −36)",
+   "exact (formula)",
+   "<a class=\"cite\" href=\"#ref-yahil1977\">Yahil et al. 1977</a>, <a class=\"cite\" href=\"#ref-mould2000\">Mould et al. 2000</a>",
+   "Δv = −79 cos l cos b + 296 sin l cos b − 36 sin b"
+  ],
+  [
+   "LG — Karachentsev & Makarov 1996 (NED)",
+   316.0,
+   "93.000, −4.000",
+   "325.370, +47.527",
+   "(−16.50, 314.80, −22.04)",
+   "±5 km/s; ±2°, ±2°",
+   "<a class=\"cite\" href=\"#ref-karachentsev1996\">Karachentsev &amp; Makarov 1996</a>, <a class=\"cite\" href=\"#ref-ned2026\">NED</a>",
+   "NED Local Group frame; error model 6 %"
+  ],
+  [
+   "LG — Courteau & van den Bergh 1999",
+   306.0,
+   "99.000, −4.000",
+   "332.600, +51.232",
+   "(−47.75, 301.50, −21.35)",
+   "±18 km/s; ±5°, ±4°",
+   "<a class=\"cite\" href=\"#ref-courteau1999\">Courteau &amp; van den Bergh 1999</a>",
+   "measured apex"
+  ],
+  [
+   "LG — Diaz et al. 2014",
+   299.0,
+   "98.400, −5.900",
+   "333.533, +49.331",
+   "(−43.45, 294.23, −30.73)",
+   "±15 km/s; ±3.6°, ±3.0°",
+   "<a class=\"cite\" href=\"#ref-diaz2014\">Diaz et al. 2014</a>, <a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>",
+   "used in Planck 2018 Table 3"
+  ],
+  [
+   "CMB — Planck 2018",
+   369.82,
+   "264.021, +48.253",
+   "167.942, −6.944",
+   "(−25.65, −244.90, 275.92)",
+   "±0.11 km/s; ±0.011°, ±0.005°",
+   "<a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>",
+   "β = (1.23357 ± 0.00036)×10⁻³; 3362.08 ± 0.99 μK"
+  ],
+  [
+   "CMB — COBE/FIRAS 1996, NED “3K”",
+   371.0,
+   "264.140, +48.260",
+   "168.012, −6.983",
+   "(−25.22, −245.70, 276.83)",
+   "±0.30°, ±0.30° (95 % CL)",
+   "<a class=\"cite\" href=\"#ref-fixsen1996\">Fixsen et al. 1996</a>, <a class=\"cite\" href=\"#ref-ned2026\">NED</a>",
+   "3.372 mK, cΔT/T₀ = 370.56 km/s; NED uses 371.0"
+  ],
+  [
+   "CMB — COBE/DMR 1993",
+   369.8,
+   "264.400, +48.400",
+   "168.235, −6.964",
+   "(−23.96, −244.35, 276.53)",
+   "3.365 ± 0.027 mK; ±0.3°, ±0.5°",
+   "<a class=\"cite\" href=\"#ref-kogut1993\">Kogut et al. 1993</a>",
+   "|V| from 3.365 mK with T₀ = 2.728 K (derived)"
+  ],
+  [
+   "CMB — FITS CMBDIPOL",
+   368.0,
+   "263.850, +48.250",
+   "167.845, −6.883",
+   "(−26.25, −243.63, 274.55)",
+   "exact (definition)",
+   "<a class=\"cite\" href=\"#ref-greisen2006\">Greisen et al. 2006</a>, <a class=\"cite\" href=\"#ref-bennett2003\">Bennett et al. 2003</a>",
+   "FITS conventional value, after WMAP"
+  ],
+  [
+   "LG–CMB, Kogut et al. 1993 (component)",
+   627.0,
+   "276.000, +30.000",
+   "166.657, −27.333",
+   "(56.76, −540.02, 313.50)",
+   "±22 km/s; ±3°, ±3°",
+   "<a class=\"cite\" href=\"#ref-kogut1993\">Kogut et al. 1993</a>",
+   "motion of the LG, not of the Sun"
+  ],
+  [
+   "LG–CMB, Planck 2018 (component)",
+   620.0,
+   "271.900, +29.600",
+   "162.954, −25.967",
+   "(17.87, −538.79, 306.24)",
+   "±15 km/s; ±2.0°, ±1.4°",
+   "<a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>, <a class=\"cite\" href=\"#ref-diaz2014\">Diaz et al. 2014</a>",
+   "vector difference: Planck dipole − Diaz et al. Sun–LG"
+  ],
+  [
+   "GC–CMB, Planck 2018 (component)",
+   565.0,
+   "265.760, +28.380",
+   "157.266, −24.029",
+   "(−36.75, −495.73, 268.55)",
+   "±5 km/s; ±0.20°, ±0.28°",
+   "<a class=\"cite\" href=\"#ref-planck2020a\">Planck Collab. 2020</a>",
+   "from Schönrich et al. 2010 + McMillan 2011"
+  ]
+ ]
+}

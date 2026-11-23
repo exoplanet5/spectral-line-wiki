@@ -1,0 +1,6 @@
+# Ciddor (1996) full-model sensitivities of the air wavelength at lambda_vac = 5000 A. DERIVED (central differences: dT=1 K, dp=100 Pa, dRH=1 %, dCO2=100 ppm). Velocity = c*dlambda/lambda.
+condition,t_C,p_Pa,RH_pct,xc_ppm,nm1_x1e8,lam_air_A,lam_air_minus_standard_air_mA,dlam_dT_mA_per_K,dlam_dP_mA_per_hPa,dlam_dRH_mA_per_pctRH,dlam_dCO2_mA_per_100ppm,dv_dT_ms_per_K,dv_dP_ms_per_hPa,dv_dRH_ms_per_pctRH,dv_dCO2_ms_per_100ppm
+standard_air_15C_101325Pa_RH0_450ppm,15.0,101325.0,0.0,450.0,27897.381,4998.60552,0.0,4.8528,-1.3764,0.03128,-0.07444,290.97,-82.53,1.875,-4.464
+lab_20C_101325Pa_RH50_420ppm,20.0,101325.0,50.0,420.0,27377.711,4998.631489,25.969,4.8104,-1.3528,0.04179,-0.07233,288.42,-81.11,2.506,-4.337
+site_2600m_ISA_0C_RH30_420ppm,0.0,73748.9,30.0,420.0,21412.956,4998.929581,324.061,3.9557,-1.4522,0.01182,-0.05703,237.18,-87.07,0.709,-3.419
+site_4200m_ISA_0C_RH20_420ppm,0.0,60050.5,20.0,420.0,17435.288,4999.128388,522.868,3.2156,-1.4521,0.01185,-0.04645,192.8,-87.07,0.71,-2.785

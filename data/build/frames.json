@@ -1,0 +1,210 @@
+{
+ "frames": [
+  {
+   "key": "lsrk",
+   "name": "LSRK (kinematic LSR)",
+   "desc": "Standard solar motion: 20 km/s toward \u03b1 = 18\u02b0, \u03b4 = +30\u00b0 (B1900) \u21d2 (l, b) = (56.157\u00b0, 22.765\u00b0); radio-astronomy / FITS LSRK convention",
+   "ref": "Gordon 1976; Greisen et al. 2006 (FITS LSRK); astropy LSRK",
+   "v": 20.0,
+   "apex": [
+    56.157457,
+    22.764802
+   ],
+   "apex_icrs": [
+    270.959393,
+    30.004671
+   ]
+  },
+  {
+   "key": "lsrd",
+   "name": "LSRD (dynamical, Delhaye 1965)",
+   "desc": "(U, V, W) = (9, 12, 7) km/s (FITS LSRD; astropy LSRD)",
+   "ref": "Delhaye 1965; Greisen et al. 2006",
+   "uvw": [
+    9.0,
+    12.0,
+    7.0
+   ],
+   "v": 16.553,
+   "apex": [
+    53.13,
+    25.017
+   ],
+   "apex_icrs": [
+    267.4944,
+    28.1178
+   ]
+  },
+  {
+   "key": "lsr",
+   "name": "LSR (Sch\u00f6nrich et al. 2010)",
+   "desc": "(U, V, W) = (11.1 +0.69/\u22120.75, 12.24 +0.47/\u22120.47, 7.25 +0.37/\u22120.36) km/s (\u00b1 1, 2, 0.5 km/s syst.; astropy LSR default)",
+   "ref": "Sch\u00f6nrich, Binney & Dehnen 2010, MNRAS 403, 1829",
+   "uvw": [
+    11.1,
+    12.24,
+    7.25
+   ],
+   "v": 18.044,
+   "apex": [
+    47.796,
+    23.69
+   ],
+   "apex_icrs": [
+    267.0583,
+    23.0965
+   ]
+  },
+  {
+   "key": "gsr",
+   "name": "Galactocentric (astropy v4.0 defaults)",
+   "desc": "v\u2299 = (12.9, 245.6, 7.78) km/s in Galactocentric axes = (12.880, 245.600, 7.813) km/s on Galactic axes (Drimmel & Poggio 2018; R\u2080 = 8.122 kpc, z\u2299 = 20.8 pc)",
+   "ref": "Drimmel & Poggio 2018; GRAVITY Collaboration 2018; Reid & Brunthaler 2004; Bennett & Bovy 2019",
+   "uvw": [
+    12.8798,
+    245.6,
+    7.8126
+   ],
+   "v": 246.062,
+   "apex": [
+    86.998,
+    1.819
+   ],
+   "apex_icrs": [
+    313.0142,
+    47.2847
+   ]
+  },
+  {
+   "key": "gsr_mod",
+   "name": "Galactocentric (Sgr A* proper motion \u00d7 GRAVITY 2021 R\u2080)",
+   "desc": "v\u2299 = (11.1, 251.49, 8.59) km/s: U from Sch\u00f6nrich et al. 2010, V and W from the Sgr A* proper motion (Reid & Brunthaler 2020) at R\u2080 = 8.275 kpc (derived combination)",
+   "ref": "Reid & Brunthaler 2020; GRAVITY Collaboration 2021; Sch\u00f6nrich et al. 2010",
+   "uvw": [
+    11.1,
+    251.4868,
+    8.5908
+   ],
+   "v": 251.878,
+   "apex": [
+    87.473,
+    1.955
+   ],
+   "apex_icrs": [
+    313.3097,
+    47.7358
+   ]
+  },
+  {
+   "key": "gsr_iau",
+   "name": "GSR (IAU 1985 \u0398\u2080 = 220 km/s + LSRD) = NED/RC3",
+   "desc": "\u0398\u2080 = 220 km/s toward l = 90\u00b0 plus Delhaye (9, 12, 7) \u21d2 232.3 km/s toward (87.8\u00b0, 1.7\u00b0)",
+   "ref": "Kerr & Lynden-Bell 1986; Delhaye 1965; de Vaucouleurs et al. 1991 (RC3); NED",
+   "uvw": [
+    9.0,
+    232.0,
+    7.0
+   ],
+   "v": 232.28,
+   "apex": [
+    87.778,
+    1.727
+   ],
+   "apex_icrs": [
+    313.8616,
+    47.8232
+   ]
+  },
+  {
+   "key": "lg_km96",
+   "name": "Local Group (Karachentsev & Makarov 1996)",
+   "desc": "316 \u00b1 5 km/s toward (l, b) = (93\u00b0 \u00b1 2\u00b0, \u22124\u00b0 \u00b1 2\u00b0)",
+   "ref": "Karachentsev & Makarov 1996, AJ 111, 794",
+   "v": 316.0,
+   "apex": [
+    93.0,
+    -4.0
+   ],
+   "apex_icrs": [
+    325.3704,
+    47.5268
+   ]
+  },
+  {
+   "key": "lg_cvdb99",
+   "name": "Local Group (Courteau & van den Bergh 1999)",
+   "desc": "306 \u00b1 18 km/s toward (l, b) = (99\u00b0 \u00b1 5\u00b0, \u22124\u00b0 \u00b1 4\u00b0)",
+   "ref": "Courteau & van den Bergh 1999, AJ 118, 337",
+   "v": 306.0,
+   "apex": [
+    99.0,
+    -4.0
+   ],
+   "apex_icrs": [
+    332.6001,
+    51.2317
+   ]
+  },
+  {
+   "key": "lg_diaz14",
+   "name": "Local Group (Diaz et al. 2014)",
+   "desc": "299 km/s toward (l, b) = (98.4\u00b0, \u22125.9\u00b0)",
+   "ref": "Diaz et al. 2014, MNRAS 443, 1688",
+   "v": 299.0,
+   "apex": [
+    98.4,
+    -5.9
+   ],
+   "apex_icrs": [
+    333.5328,
+    49.3311
+   ]
+  },
+  {
+   "key": "lg_yts77",
+   "name": "Local Group (Yahil, Tammann & Sandage 1977)",
+   "desc": "\u0394v = \u221279 cos l cos b + 296 sin l cos b \u2212 36 sin b km/s",
+   "ref": "Yahil, Tammann & Sandage 1977, ApJ 217, 903",
+   "formula": "yts77",
+   "v": 308.47
+  },
+  {
+   "key": "lg_iau76",
+   "name": "Local Group (RC2 / \u201cIAU\u201d 300 sin l cos b)",
+   "desc": "\u0394v = 300 sin l cos b km/s (FITS LOCALGRP)",
+   "ref": "de Vaucouleurs, de Vaucouleurs & Corwin 1976 (RC2); de Vaucouleurs 1976, Trans. IAU 16B, 201; Mould et al. 2000; Greisen et al. 2006",
+   "formula": "iau76",
+   "v": 300.0
+  },
+  {
+   "key": "cmb",
+   "name": "CMB rest frame (Planck 2018)",
+   "desc": "369.82 \u00b1 0.11 km/s toward (l, b) = (264.021\u00b0 \u00b1 0.011\u00b0, 48.253\u00b0 \u00b1 0.005\u00b0)",
+   "ref": "Planck Collaboration 2020, A&A 641, A1",
+   "v": 369.82,
+   "apex": [
+    264.021,
+    48.253
+   ],
+   "apex_icrs": [
+    167.9419,
+    -6.9443
+   ]
+  },
+  {
+   "key": "cmb_cobe",
+   "name": "CMB rest frame (COBE/FIRAS, Fixsen et al. 1996; NED \u201c3K\u201d)",
+   "desc": "371.0 km/s toward (l, b) = (264.14\u00b0, 48.26\u00b0)",
+   "ref": "Fixsen et al. 1996, ApJ 473, 576; NED",
+   "v": 371.0,
+   "apex": [
+    264.14,
+    48.26
+   ],
+   "apex_icrs": [
+    168.0119,
+    -6.983
+   ]
+  }
+ ]
+}

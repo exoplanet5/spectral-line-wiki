@@ -1,0 +1,1548 @@
+{
+ "meta": {
+  "generated_utc": "2026-11-23T08:50:13+00:00",
+  "astropy": "7.2.0",
+  "numpy": "2.4.2",
+  "ephemeris": "~/JPLDE/de440s.bsp",
+  "script": "scripts/research/velocity_examples.py"
+ },
+ "literature": {
+  "omega_earth": {
+   "value": 7.292115e-05,
+   "unit": "rad/s",
+   "src": "IERS Conventions (2010) TN36 Table 1.2 (GRS80) / WGS84: nominal mean angular velocity"
+  },
+  "a_wgs84": {
+   "value": 6378137.0,
+   "unit": "m",
+   "src": "IERS TN36 Table 1.2 / WGS84 equatorial radius"
+  },
+  "earth_orbit_factsheet": {
+   "mean": 29.78,
+   "max": 30.29,
+   "min": 29.29,
+   "unit": "km/s",
+   "src": "NASA NSSDCA Earth Fact Sheet"
+  },
+  "LSRK_Gordon1975": {
+   "V": 20.0,
+   "ra_b1900": 270.0,
+   "dec_b1900": 30.0,
+   "src": "Gordon 1975 (Meth. Exp. Phys. 12C, sec 6.1.5); astropy LSRK; SLALIB sla_RVLSRK"
+  },
+  "LSRD_Delhaye1965": {
+   "uvw": [
+    9.0,
+    12.0,
+    7.0
+   ],
+   "src": "Delhaye 1965 (Galactic Structure, Stars & Stellar Systems vol 5); astropy LSRD; SLALIB sla_RVLSRD"
+  },
+  "LSR_Schoenrich2010": {
+   "uvw": [
+    11.1,
+    12.24,
+    7.25
+   ],
+   "stat": [
+    [
+     0.75,
+     0.69
+    ],
+    [
+     0.47,
+     0.47
+    ],
+    [
+     0.36,
+     0.37
+    ]
+   ],
+   "sys": [
+    1.0,
+    2.0,
+    0.5
+   ],
+   "src": "Schoenrich, Binney & Dehnen 2010 MNRAS 403, 1829 (abstract); astropy LSR / GalacticLSR default"
+  },
+  "LSR_DehnenBinney1998": {
+   "uvw": [
+    10.0,
+    5.25,
+    7.17
+   ],
+   "err": [
+    0.36,
+    0.62,
+    0.38
+   ],
+   "src": "Dehnen & Binney 1998 MNRAS 298, 387 (published abstract; arXiv v1 abstract gives V0=5.23)"
+  },
+  "LSR_BHG2016": {
+   "uvw": [
+    10.0,
+    11.0,
+    7.0
+   ],
+   "err": [
+    1.0,
+    2.0,
+    0.5
+   ],
+   "src": "Bland-Hawthorn & Gerhard 2016 ARA&A 54, 529 (adopted)"
+  },
+  "LSR_Ding2019_GaiaDR2": {
+   "uvw": [
+    8.63,
+    4.76,
+    7.26
+   ],
+   "err": [
+    0.64,
+    0.49,
+    0.36
+   ],
+   "src": "Ding, Zhu & Liu 2019 RAA 19, 068 (Gaia DR2)"
+  },
+  "IAU1985": {
+   "R0": 8.5,
+   "Theta0": 220.0,
+   "src": "Kerr & Lynden-Bell 1986 MNRAS 221, 1023 (IAU Commission 33, 1985 Nov 21, Delhi)"
+  },
+  "NED_GSR_RC3": {
+   "V": 232.3,
+   "l": 87.8,
+   "b": 1.7,
+   "src": "NED velocity-correction help (RC3, de Vaucouleurs et al. 1991)"
+  },
+  "astropy_v4.0": {
+   "galcen_v_sun": [
+    12.9,
+    245.6,
+    7.78
+   ],
+   "R0": 8.122,
+   "z_sun": 20.8,
+   "galcen_radec": [
+    266.4051,
+    -28.936175
+   ],
+   "src": "astropy Galactocentric 'v4.0' defaults: Drimmel & Poggio 2018 RNAAS 2, 210; GRAVITY 2018 A&A 615, L15; Reid & Brunthaler 2004; Bennett & Bovy 2019"
+  },
+  "astropy_pre-v4.0": {
+   "galcen_v_sun": [
+    11.1,
+    232.24,
+    7.25
+   ],
+   "R0": 8.3,
+   "z_sun": 27.0,
+   "src": "astropy 'pre-v4.0' defaults (Schoenrich+2010; Bovy 2015; Gillessen+2009; Chen+2001)"
+  },
+  "Reid2019": {
+   "R0": 8.15,
+   "R0_err": 0.15,
+   "Theta0": 236.0,
+   "Theta0_err": 7.0,
+   "Theta0_plus_Vsun": 247.0,
+   "err": 4.0,
+   "Omega": 30.32,
+   "Omega_err": 0.27,
+   "Zsun_pc": 5.5,
+   "Zsun_err": 5.8,
+   "src": "Reid et al. 2019 ApJ 885, 131 (abstract)"
+  },
+  "BHG2016_galactic": {
+   "R0": 8.2,
+   "R0_err": 0.1,
+   "Theta0": 238.0,
+   "Theta0_err": 15.0,
+   "Vg_sun": 248.0,
+   "Vg_sun_err": 3.0,
+   "z0_pc": 25.0,
+   "z0_err": 5.0,
+   "src": "Bland-Hawthorn & Gerhard 2016 ARA&A 54, 529"
+  },
+  "GRAVITY2018": {
+   "R0_pc": 8122.0,
+   "err_pc": 31.0,
+   "src": "GRAVITY Collab. 2018 A&A 615, L15 (table; astropy v4.0 R0)"
+  },
+  "GRAVITY2019": {
+   "R0_pc": 8178.0,
+   "stat": 13.0,
+   "sys": 22.0,
+   "src": "GRAVITY Collab. 2019 A&A 625, L10 (abstract)"
+  },
+  "GRAVITY2021": {
+   "R0_pc": 8275.0,
+   "stat": 9.0,
+   "sys": 33.0,
+   "src": "GRAVITY Collab. 2021 A&A 647, A59 (eq. 38)"
+  },
+  "GRAVITY2022": {
+   "R0_pc": 8277.0,
+   "stat": 9.0,
+   "sys": 33.0,
+   "src": "GRAVITY Collab. 2022 A&A 657, L12 (sec 4; sys from 2021)"
+  },
+  "SgrA_pm_RB2020": {
+   "mu_l": -6.411,
+   "mu_l_err": 0.008,
+   "mu_b": -0.219,
+   "mu_b_err": 0.007,
+   "unit": "mas/yr",
+   "src": "Reid & Brunthaler 2020 ApJ 892, 39 (abstract)"
+  },
+  "SgrA_pm_RB2004": {
+   "mu": 6.379,
+   "mu_err": 0.024,
+   "src": "Reid & Brunthaler 2004 ApJ 616, 872 (abstract)"
+  },
+  "LG_RC2_300sinl": {
+   "V": 300.0,
+   "l": 90.0,
+   "b": 0.0,
+   "src": "RC2 (de Vaucouleurs, de Vaucouleurs & Corwin 1976) 'IAU' 300 sin l cos b; quoted by Mould+2000, Courteau & vdB 1999"
+  },
+  "LG_YTS1977": {
+   "xyz": [
+    -79.0,
+    296.0,
+    -36.0
+   ],
+   "src": "Yahil, Tammann & Sandage 1977 ApJ 217, 903; formula as given in Mould+2000 eq. A1"
+  },
+  "LG_KM1996": {
+   "V": 316.0,
+   "V_err": 5.0,
+   "l": 93.0,
+   "l_err": 2.0,
+   "b": -4.0,
+   "b_err": 2.0,
+   "src": "Karachentsev & Makarov 1996 AJ 111, 794 (abstract); used by NED"
+  },
+  "LG_CvdB1999": {
+   "V": 306.0,
+   "V_err": 18.0,
+   "l": 99.0,
+   "l_err": 5.0,
+   "b": -4.0,
+   "b_err": 4.0,
+   "src": "Courteau & van den Bergh 1999 AJ 118, 337 (abstract)"
+  },
+  "LG_Diaz2014": {
+   "V": 299.0,
+   "V_err": 15.0,
+   "l": 98.4,
+   "l_err": 3.6,
+   "b": -5.9,
+   "b_err": 3.0,
+   "src": "Diaz et al. 2014 MNRAS 443, 1688 (abstract); Planck 2018 I Table 3"
+  },
+  "CMB_Planck2018": {
+   "V": 369.82,
+   "V_err": 0.11,
+   "l": 264.021,
+   "l_err": 0.011,
+   "b": 48.253,
+   "b_err": 0.005,
+   "beta": 0.00123357,
+   "beta_err": 3.6e-07,
+   "T_uK": 3362.08,
+   "T_err": 0.99,
+   "radec": [
+    167.942,
+    -6.944
+   ],
+   "radec_err": 0.007,
+   "src": "Planck Collab. 2020 (2018 results I) A&A 641, A1, Table 2/3 & sec 3"
+  },
+  "CMB_Fixsen1996_NED": {
+   "V": 371.0,
+   "l": 264.14,
+   "l_err95": 0.3,
+   "b": 48.26,
+   "b_err95": 0.3,
+   "T_mK": 3.372,
+   "T_err95": 0.007,
+   "T0": 2.728,
+   "T0_err95": 0.004,
+   "src": "Fixsen et al. 1996 ApJ 473, 576 (abstract, 95% CL); V=371.0 as used by NED"
+  },
+  "CMB_Kogut1993_dipole": {
+   "T_mK": 3.365,
+   "T_err": 0.027,
+   "l": 264.4,
+   "l_err": 0.3,
+   "b": 48.4,
+   "b_err": 0.5,
+   "src": "Kogut et al. 1993 ApJ 419, 1 (abstract)"
+  },
+  "LG_CMB_Kogut1993": {
+   "V": 627.0,
+   "V_err": 22.0,
+   "l": 276.0,
+   "l_err": 3.0,
+   "b": 30.0,
+   "b_err": 3.0,
+   "src": "Kogut et al. 1993 ApJ 419, 1 (abstract)"
+  },
+  "LG_CMB_Planck2018": {
+   "V": 620.0,
+   "V_err": 15.0,
+   "l": 271.9,
+   "l_err": 2.0,
+   "b": 29.6,
+   "b_err": 1.4,
+   "src": "Planck 2018 I Table 3 (from Diaz+2014 Sun-LG)"
+  },
+  "GC_CMB_Planck2018": {
+   "V": 565.0,
+   "V_err": 5.0,
+   "l": 265.76,
+   "l_err": 0.2,
+   "b": 28.38,
+   "b_err": 0.28,
+   "src": "Planck 2018 I Table 3 (Schoenrich+2010 + McMillan 2011)"
+  },
+  "Sun_LSR_Planck2018": {
+   "V": 17.9,
+   "V_err": 2.0,
+   "l": 48.0,
+   "l_err": 7.0,
+   "b": 23.0,
+   "b_err": 4.0,
+   "src": "Planck 2018 I Table 3 (from Schoenrich+2010)"
+  },
+  "LSR_GC_Planck2018": {
+   "V": 239.0,
+   "V_err": 5.0,
+   "l": 90.0,
+   "b": 0.0,
+   "src": "Planck 2018 I Table 3 (McMillan 2011)"
+  },
+  "M31_vdM2012": {
+   "V_rad": -109.3,
+   "V_rad_err": 4.4,
+   "V_tan": 17.0,
+   "V_tan_1sigma_upper": 34.3,
+   "M_LG": 3170000000000.0,
+   "M_LG_err": 570000000000.0,
+   "src": "van der Marel et al. 2012 ApJ 753, 8 (abstract)"
+  },
+  "LocalSheet_Tully2008": {
+   "V": 631.0,
+   "components": [
+    259.0,
+    185.0,
+    455.0
+   ],
+   "src": "Tully et al. 2008 ApJ 676, 184 (abstract; Local-Sheet frame)"
+  },
+  "Mould2000": {
+   "gamma": 2.0,
+   "attractors": {
+    "Virgo": {
+     "ra_b1950": "12h28m19s",
+     "dec_b1950": "+12d40m00s",
+     "VH": 1035.0,
+     "VLG": 957.0,
+     "Vfid": 200.0,
+     "radius": 10.0,
+     "vrange": [
+      600.0,
+      2300.0
+     ]
+    },
+    "GreatAttractor": {
+     "ra_b1950": "13h20m00s",
+     "dec_b1950": "-44d00m00s",
+     "VH": 4600.0,
+     "VLG": 4380.0,
+     "Vfid": 400.0,
+     "radius": 10.0,
+     "vrange": [
+      2600.0,
+      6600.0
+     ]
+    },
+    "Shapley": {
+     "ra_b1950": "13h30m00s",
+     "dec_b1950": "-31d00m00s",
+     "VH": 13800.0,
+     "VLG": 13600.0,
+     "Vfid": 85.0,
+     "radius": 12.0,
+     "vrange": [
+      10000.0,
+      16000.0
+     ]
+    }
+   },
+   "src": "Mould et al. 2000 ApJ 529, 786, eqs. 1-2, A1-A2, Table A1; NED objresult help (sign/declination corrections; Virgo vrange 600 per NED, -600 in arXiv preprint)"
+  },
+  "SSB_accel_GaiaEDR3": {
+   "a": 2.32e-10,
+   "a_err": 1.6e-11,
+   "ra": 269.1,
+   "ra_err": 5.4,
+   "dec": -31.6,
+   "dec_err": 4.1,
+   "src": "Gaia Collab., Klioner et al. 2021 A&A 649, A9 (abstract)"
+  },
+  "Sun_grav_redshift_LD2003": {
+   "photosphere": 636.486,
+   "err": 0.024,
+   "at_1au": 633.5,
+   "convective_blueshift": -400.0,
+   "src": "Lindegren & Dravins 2003 A&A 401, 1185, sec 3.1-3.2 and footnote 3"
+  }
+ },
+ "wavelength_velocity_scale": {
+  "1216.0": {
+   "mA_per_ms": 0.004056139397609529,
+   "ms_per_mA": 246.53985032894738
+  },
+  "3000.0": {
+   "mA_per_ms": 0.010006922855944561,
+   "ms_per_mA": 99.93081933333335
+  },
+  "5000.0": {
+   "mA_per_ms": 0.016678204759907604,
+   "ms_per_mA": 59.958491599999995
+  },
+  "6563.0": {
+   "mA_per_ms": 0.02189181156785472,
+   "ms_per_mA": 45.679179948194424
+  },
+  "10000.0": {
+   "mA_per_ms": 0.03335640951981521,
+   "ms_per_mA": 29.979245799999998
+  },
+  "21000.0": {
+   "mA_per_ms": 0.07004845999161192,
+   "ms_per_mA": 14.275831333333334
+  }
+ },
+ "earth_rotation": {
+  "v_equator_ms": 465.10108489755,
+  "keck_axis_distance_m": 6006222.757336867,
+  "v_keck_ms": 437.98067062117525,
+  "accel_equator_ms2": 0.033915705976976976,
+  "dv_per_s_equator": 0.033915705976976976,
+  "note": "v = omega * a (WGS84); Keck: distance from rotation axis from WGS84 geodetic->ITRS"
+ },
+ "earth_orbit_2026": {
+  "earth_bary_speed_kms": {
+   "min": 29.294164345777382,
+   "max": 30.27787954796092,
+   "mean": 29.78342981219184
+  },
+  "earth_helio_speed_kms": {
+   "min": 29.282611362015796,
+   "max": 30.288411278968287,
+   "mean": 29.78242488573686
+  },
+  "emb_helio_speed_kms": {
+   "min": 29.292910769367374,
+   "max": 30.28555856860375,
+   "mean": 29.782674020503638
+  },
+  "earth_about_emb_ms": {
+   "min": 11.733324909292582,
+   "max": 13.410646499381775,
+   "mean": 12.43359168803425
+  },
+  "earth_accel_ms2": {
+   "min": 0.005708777401671517,
+   "max": 0.006156326979102176
+  },
+  "light_time_1au_s": 499.00478383615643,
+  "dv_over_1au_lighttime_ms": 2.9592701961867656
+ },
+ "sun_about_ssb_1990_2040": {
+  "speed_ms": {
+   "min": 8.515714631692132,
+   "max": 16.077144352436978,
+   "mean": 12.515014251104903
+  },
+  "distance_Rsun": {
+   "min": 0.0639095392612604,
+   "max": 1.9811481601509928
+  },
+  "max_light_time_s": 4.597463139039494,
+  "jupiter_only_reflex_ms": {
+   "mean": 12.43915608214906,
+   "min": 11.864419753783709,
+   "max": 13.083987137427668
+  },
+  "note": "Jupiter-only reflex = |v_Jup,helio| * GM_J/(GM_sun+GM_J) with astropy GM_jup (IAU 2015 nominal)"
+ },
+ "example_geometry": {
+  "time_utc": "2026-03-20T10:00:00.000",
+  "time_tdb": "2026-03-20T10:01:09.186",
+  "jd_utc": 2461119.9166666665,
+  "ut1_utc_s": 0.057082325,
+  "site": "Keck Observatory, Mauna Kea (astropy site registry): lon -155.47833 deg, lat +19.82833 deg, h 4160 m",
+  "ra_deg": 150.0,
+  "dec_deg": 20.0,
+  "l_deg": 213.80097735289047,
+  "b_deg": 50.26371770865176,
+  "ecl_lon_deg": 145.12407213095653,
+  "ecl_lat_deg": 7.290687876897759,
+  "alt_deg": 69.2227333875908,
+  "az_deg": 273.915897887685,
+  "airmass": 1.0695570382084316,
+  "lst_apparent_h": 11.498368046397081,
+  "hour_angle_h": 1.4737212192822913,
+  "ra_app_deg": 150.3697024067218,
+  "dec_app_deg": 19.872766998134825
+ },
+ "example_barycentric": {
+  "astropy_bary_de440s_ms": -16495.064583983647,
+  "astropy_bary_builtin_ms": -16495.06447747597,
+  "astropy_helio_ms": -16490.839640076916,
+  "independent_we14_de440s_ms": -16495.06470340538,
+  "diff_astropy_minus_independent_ms": 0.00011942173296120018,
+  "diff_builtin_minus_de440s_ms": 0.00010650767580955289,
+  "bary_minus_helio_ms": -4.224943906730914,
+  "decomposition_ms": {
+   "rotation_observer_gcrs": -155.0367724258472,
+   "rotation_own_omega_cross_r": -155.0367638714157,
+   "rotation_simple_formula": -155.00508987644625,
+   "emb_orbital": -16334.25984303693,
+   "earth_about_emb": -10.481297817115566,
+   "galilean_total": -16499.777913279893,
+   "sun_about_ssb": -8.938273202979124,
+   "relativistic_remainder": 4.713209874513268,
+   "gamma_minus1": 1.533128412506366,
+   "grav_redshift_terms": {
+    "sun": -2.9713149374717243,
+    "jupiter": -0.000578054067656738,
+    "moon": -4.370340984739669e-05,
+    "earth": -0.20840409023770184
+   }
+  },
+  "roemer_delay_s": 406.63621384087514,
+  "change_if_evaluated_at_t_plus_roemer_ms": -13.246285853241716,
+  "dvcorr_dt_ms_per_s": -0.03274704940498244,
+  "exposure_mean_minus_midpoint_ms": {
+   "texp_1800s": 0.1125851059841807,
+   "texp_3600s": 0.44757594372640597
+  },
+  "shapiro_we14_eq27_ms": 0.00018443832998412755,
+  "sun_elongation_deg": 145.0153587001785,
+  "cross_term_examples_ms": {
+   "10.0": -0.5502161293191588,
+   "50.0": -2.7510806465957938,
+   "300.0": -16.506483879574763
+  }
+ },
+ "year_grid_2026": {
+  "n": 1460,
+  "bary_corr_range_ms": {
+   "min": -29624.99654962207,
+   "max": 30261.27550071111
+  },
+  "astropy_minus_independent_ms": {
+   "max_abs": 0.0001228166638611583,
+   "rms": 8.152787369592069e-05
+  },
+  "builtin_minus_de440s_ms": {
+   "max_abs": 0.002432102795864921,
+   "rms": 0.0009536565693481438
+  },
+  "full_minus_galilean_ms": {
+   "min": 4.512376994927763,
+   "max": 4.787597677604936
+  }
+ },
+ "vector_closure_check": {
+  "sun_lg_plus_lg_cmb": [
+   369.2847491207123,
+   264.0303283679423,
+   48.25032112855188
+  ],
+  "planck_sun_cmb": [
+   369.82,
+   264.021,
+   48.253
+  ],
+  "note": "Planck 2018 I Table 3 says LG-CMB was derived by non-relativistic subtraction; this re-adds them"
+ },
+ "planck_apex_radec_check": {
+  "computed": [
+   167.94190332672108,
+   -6.94425997754806
+  ],
+  "published": [
+   167.942,
+   -6.944
+  ]
+ },
+ "frames": {
+  "LSRK_Gordon1975": {
+   "label": "LSRK (standard solar motion, radio convention)",
+   "uvw": [
+    10.270591641290546,
+    15.317410906544218,
+    7.738983813003685
+   ],
+   "V": 20.0,
+   "l": 56.15745658851051,
+   "b": 22.764801824080358,
+   "ra": 270.9594605555368,
+   "dec": 30.004670777316175,
+   "ra_hms": "18h03m50.27s",
+   "dec_dms": "+30d00m16.8s",
+   "corr_kms": -4.951784138780347,
+   "src": "Gordon 1975 (Meth. Exp. Phys. 12C, sec 6.1.5); astropy LSRK; SLALIB sla_RVLSRK",
+   "icrs_xyz_kms": [
+    0.2899970683903461,
+    -17.31726478971793,
+    10.001411995469473
+   ],
+   "astropy_hardcoded_V_OFFSET_LSRK": [
+    0.28999706839034606,
+    -17.317264789717928,
+    10.00141199546947
+   ]
+  },
+  "LSRD_Delhaye1965": {
+   "label": "LSRD (Delhaye 1965 peculiar solar motion)",
+   "uvw": [
+    9.0,
+    12.0,
+    7.0
+   ],
+   "V": 16.55294535724685,
+   "l": 53.13010235415598,
+   "b": 25.016893478100023,
+   "ra": 267.49444324565843,
+   "dec": 28.11775041269669,
+   "ra_hms": "17h49m58.67s",
+   "dec_dms": "+28d07m03.9s",
+   "corr_kms": -3.6653643494773114,
+   "src": "Delhaye 1965 (Galactic Structure, Stars & Stellar Systems vol 5); astropy LSRD; SLALIB sla_RVLSRD"
+  },
+  "LSR_Schoenrich2010": {
+   "label": "LSR (Schoenrich, Binney & Dehnen 2010; stat+sys)",
+   "uvw": [
+    11.1,
+    12.24,
+    7.25
+   ],
+   "V": 18.044115384246467,
+   "l": 47.79628626384542,
+   "b": 23.69031810716205,
+   "ra": 267.05828456208894,
+   "dec": 23.096544707420637,
+   "ra_hms": "17h48m13.99s",
+   "dec_dms": "+23d05m47.6s",
+   "corr_kms": -4.673995479146367,
+   "src": "Schoenrich, Binney & Dehnen 2010 MNRAS 403, 1829 (abstract); astropy LSR / GalacticLSR default",
+   "corr_sigma_kms": 1.097689413042298,
+   "V_sigma": 1.5958118627806492
+  },
+  "LSR_DehnenBinney1998": {
+   "label": "LSR (Dehnen & Binney 1998)",
+   "uvw": [
+    10.0,
+    5.25,
+    7.17
+   ],
+   "V": 13.378019285380029,
+   "l": 27.699472808055,
+   "b": 32.4086175427592,
+   "ra": 251.51330650064742,
+   "dec": 10.128931431478826,
+   "ra_hms": "16h46m03.19s",
+   "dec_dms": "+10d07m44.2s",
+   "corr_kms": -1.6653796434956432,
+   "src": "Dehnen & Binney 1998 MNRAS 298, 387 (published abstract; arXiv v1 abstract gives V0=5.23)",
+   "corr_sigma_kms": 0.41213604726421116,
+   "V_sigma": 0.4140093749734646
+  },
+  "LSR_BHG2016": {
+   "label": "LSR (Bland-Hawthorn & Gerhard 2016 adopted)",
+   "uvw": [
+    10.0,
+    11.0,
+    7.0
+   ],
+   "V": 16.431676725154983,
+   "l": 47.72631099390627,
+   "b": 25.214384019224813,
+   "ra": 265.4788155894018,
+   "dec": 23.569311532638825,
+   "ra_hms": "17h41m54.92s",
+   "dec_dms": "+23d34m09.5s",
+   "corr_kms": -3.840945419953165,
+   "src": "Bland-Hawthorn & Gerhard 2016 ARA&A 54, 529 (adopted)",
+   "corr_sigma_kms": 0.9669787136982044,
+   "V_sigma": 1.47610386865067
+  },
+  "LSR_Ding2019_GaiaDR2": {
+   "label": "LSR (Ding+2019, Gaia DR2)",
+   "uvw": [
+    8.63,
+    4.76,
+    7.26
+   ],
+   "V": 12.241000776080362,
+   "l": 28.87956087064182,
+   "b": 36.37650389514571,
+   "ra": 248.27165843449396,
+   "dec": 12.697329620577271,
+   "ra_hms": "16h33m05.20s",
+   "dec_dms": "+12d41m50.4s",
+   "corr_kms": -0.694163834615722,
+   "src": "Ding, Zhu & Liu 2019 RAA 19, 068 (Gaia DR2)",
+   "corr_sigma_kms": 0.4737586403460601,
+   "V_sigma": 0.5315997755464167
+  },
+  "GSR_IAU1985_Delhaye": {
+   "label": "GSR: IAU 1985 Theta0=220 + Delhaye (9,12,7)  [derived]",
+   "uvw": [
+    9.0,
+    232.0,
+    7.0
+   ],
+   "V": 232.28000344411913,
+   "l": 87.77843286706396,
+   "b": 1.7269294941371862,
+   "ra": 313.861550654503,
+   "dec": 47.823192525553154,
+   "ra_hms": "20h55m26.77s",
+   "dec_dms": "+47d49m23.5s",
+   "corr_kms": -81.90259242097125,
+   "src": "derived: Kerr & Lynden-Bell 1986 + Delhaye 1965 (as in Courteau & vdB 1999 / RC3)"
+  },
+  "NED_GSR_RC3": {
+   "label": "GSR as used by NED (RC3)",
+   "uvw": [
+    8.913563108904734,
+    232.02660635065905,
+    6.891468500971229
+   ],
+   "V": 232.3,
+   "l": 87.8,
+   "b": 1.7,
+   "ra": 313.9129068278077,
+   "dec": 47.822233050831635,
+   "ra_hms": "20h55m39.10s",
+   "dec_dms": "+47d49m20.0s",
+   "corr_kms": -81.9495987467909,
+   "src": "NED velocity-correction help (RC3, de Vaucouleurs et al. 1991)"
+  },
+  "astropy_v4.0": {
+   "label": "GSR: astropy Galactocentric v4.0 default (approx. Galactic axes)",
+   "uvw": [
+    12.9,
+    245.6,
+    7.78
+   ],
+   "V": 246.06157440770798,
+   "l": 86.99333475548103,
+   "b": 1.8118857878655492,
+   "ra": 313.01844838451035,
+   "dec": 47.27619818959058,
+   "ra_hms": "20h52m04.43s",
+   "dec_dms": "+47d16m34.3s",
+   "corr_kms": -88.21095844003118,
+   "src": "astropy Galactocentric 'v4.0' defaults: Drimmel & Poggio 2018 RNAAS 2, 210; GRAVITY 2018 A&A 615, L15; Reid & Brunthaler 2004; Bennett & Bovy 2019"
+  },
+  "astropy_pre-v4.0": {
+   "label": "GSR: astropy pre-v4.0 (approx. Galactic axes)",
+   "uvw": [
+    11.1,
+    232.24,
+    7.25
+   ],
+   "V": 232.6181207472883,
+   "l": 87.2636086135778,
+   "b": 1.7860245817578217,
+   "ra": 313.3028977316112,
+   "dec": 47.46733889809276,
+   "ra_hms": "20h53m12.70s",
+   "dec_dms": "+47d28m02.4s",
+   "corr_kms": -82.9112235506403,
+   "src": "astropy 'pre-v4.0' defaults (Schoenrich+2010; Bovy 2015; Gillessen+2009; Chen+2001)"
+  },
+  "GSR_Reid2019_composite": {
+   "label": "GSR: Reid+2019 Theta0+Vsun=247+-4 with Schoenrich U,W  [derived composite]",
+   "uvw": [
+    11.1,
+    247.0,
+    7.25
+   ],
+   "V": 247.35555886213675,
+   "l": 87.42690064822767,
+   "b": 1.6795818231306454,
+   "ra": 313.57879644746754,
+   "dec": 47.52409666440755,
+   "ra_hms": "20h54m18.91s",
+   "dec_dms": "+47d31m26.7s",
+   "corr_kms": -88.16023030670962,
+   "src": "derived: Reid+2019 ApJ 885, 131 (V) + Schoenrich+2010 (U, W)",
+   "corr_sigma_kms": 1.6270479195825045,
+   "V_sigma": 4.003014030451142
+  },
+  "GSR_SgrApm_GRAVITY2019": {
+   "label": "GSR: Sgr A* pm (Reid & Brunthaler 2020) x R0 (GRAVITY2019) + U=11.1  [derived]",
+   "uvw": [
+    11.1,
+    248.5388749269231,
+    8.490097271719884
+   ],
+   "V": 248.93144458188485,
+   "l": 87.44281125975884,
+   "b": 1.9545184411337988,
+   "ra": 313.2812352651188,
+   "dec": 47.71281006679223,
+   "ra_hms": "20h53m07.50s",
+   "dec_dms": "+47d42m46.1s",
+   "corr_kms": -87.75386231807201,
+   "src": "derived: V_phi=4.74047*|mu_l|*R0, V_z=4.74047*|mu_b|*R0 with mu from Reid & Brunthaler 2020, R0 from GRAVITY2019; U from Schoenrich+2010",
+   "corr_sigma_kms": 0.7322003358060731,
+   "V_sigma": 0.8407265803936357,
+   "Vy_kms": 248.5388749269231,
+   "Vz_kms": 8.490097271719884,
+   "sVy": 0.8362491034264713
+  },
+  "GSR_SgrApm_GRAVITY2021": {
+   "label": "GSR: Sgr A* pm (Reid & Brunthaler 2020) x R0 (GRAVITY2021) + U=11.1  [derived]",
+   "uvw": [
+    11.1,
+    251.4868170726692,
+    8.590799085776721
+   ],
+   "V": 251.87820666003313,
+   "l": 87.47274767026828,
+   "b": 1.9545637476479383,
+   "ra": 313.3096794125704,
+   "dec": 47.735810617325214,
+   "ra_hms": "20h53m14.32s",
+   "dec_dms": "+47d44m08.9s",
+   "corr_kms": -88.72478141804933,
+   "src": "derived: V_phi=4.74047*|mu_l|*R0, V_z=4.74047*|mu_b|*R0 with mu from Reid & Brunthaler 2020, R0 from GRAVITY2021; U from Schoenrich+2010",
+   "corr_sigma_kms": 0.7670164079949184,
+   "V_sigma": 1.0815326003013541,
+   "Vy_kms": 251.4868170726692,
+   "Vz_kms": 8.590799085776721,
+   "sVy": 1.0858732110050513
+  },
+  "LG_RC2_300sinl": {
+   "label": "LG: RC2/'IAU' 300 sin l cos b",
+   "uvw": [
+    1.8369701987210297e-14,
+    300.0,
+    0.0
+   ],
+   "V": 300.0,
+   "l": 90.0,
+   "b": 0.0,
+   "ra": 318.00438150701746,
+   "dec": 48.329637206840914,
+   "ra_hms": "21h12m01.05s",
+   "dec_dms": "+48d19m46.7s",
+   "corr_kms": -106.68712918840083,
+   "src": "RC2 (de Vaucouleurs, de Vaucouleurs & Corwin 1976) 'IAU' 300 sin l cos b; quoted by Mould+2000, Courteau & vdB 1999"
+  },
+  "LG_YTS1977": {
+   "label": "LG: Yahil, Tammann & Sandage 1977",
+   "uvw": [
+    -79.0,
+    296.0,
+    -36.0
+   ],
+   "V": 308.46879907050567,
+   "l": 104.9434642300023,
+   "b": -6.702004452121304,
+   "ra": 343.01525689431963,
+   "dec": 51.95101604298338,
+   "ra_hms": "22h52m03.66s",
+   "dec_dms": "+51d57m03.7s",
+   "corr_kms": -90.98326875598364,
+   "src": "Yahil, Tammann & Sandage 1977 ApJ 217, 903; formula as given in Mould+2000 eq. A1"
+  },
+  "LG_KM1996": {
+   "label": "LG: Karachentsev & Makarov 1996 (NED)",
+   "uvw": [
+    -16.49787604092251,
+    314.79822779403867,
+    -22.043045703143594
+   ],
+   "V": 316.0,
+   "l": 93.0,
+   "b": -4.0,
+   "ra": 325.37044867288625,
+   "dec": 47.52684722101748,
+   "ra_hms": "21h41m28.91s",
+   "dec_dms": "+47d31m36.6s",
+   "corr_kms": -120.13696895992642,
+   "src": "Karachentsev & Makarov 1996 AJ 111, 794 (abstract); used by NED",
+   "corr_sigma_kms": 10.44809579047448
+  },
+  "LG_CvdB1999": {
+   "label": "LG: Courteau & van den Bergh 1999",
+   "uvw": [
+    -47.75233995500303,
+    301.49640872017807,
+    -21.345480965702343
+   ],
+   "V": 306.0,
+   "l": 99.0,
+   "b": -4.0,
+   "ra": 332.600146581349,
+   "dec": 51.231713125507646,
+   "ra_hms": "22h10m24.04s",
+   "dec_dms": "+51d13m54.2s",
+   "corr_kms": -98.26757993614336,
+   "src": "Courteau & van den Bergh 1999 AJ 118, 337 (abstract)",
+   "corr_sigma_kms": 22.750103015949716
+  },
+  "LG_Diaz2014": {
+   "label": "LG: Diaz+2014 (Planck 2018 I Table 3)",
+   "uvw": [
+    -43.44745081316784,
+    294.22556097181473,
+    -30.7349684993868
+   ],
+   "V": 299.0,
+   "l": 98.4,
+   "b": -5.9,
+   "ra": 333.5327778398672,
+   "dec": 49.331111223731995,
+   "ra_hms": "22h14m07.87s",
+   "dec_dms": "+49d19m52.0s",
+   "corr_kms": -105.1891396811057,
+   "src": "Diaz et al. 2014 MNRAS 443, 1688 (abstract); Planck 2018 I Table 3",
+   "corr_sigma_kms": 16.54865470236659
+  },
+  "CMB_Planck2018": {
+   "label": "CMB: Planck 2018 (HFI) solar dipole",
+   "uvw": [
+    -25.649528852489954,
+    -244.90238946932885,
+    275.9198320198431
+   ],
+   "V": 369.82,
+   "l": 264.021,
+   "b": 48.253,
+   "ra": 167.94190332672108,
+   "dec": -6.94425997754806,
+   "ra_hms": "11h11m46.06s",
+   "dec_dms": "-06d56m39.3s",
+   "corr_kms": 312.89920800922357,
+   "src": "Planck Collab. 2020 (2018 results I) A&A 641, A1, Table 2/3 & sec 3",
+   "corr_sigma_kms": 0.09598519946521317
+  },
+  "CMB_Fixsen1996_NED": {
+   "label": "CMB: Fixsen+1996 (NED's 3K frame)",
+   "uvw": [
+    -25.217590866488074,
+    -245.70307964924004,
+    276.8303989119866
+   ],
+   "V": 371.0,
+   "l": 264.14,
+   "b": 48.26,
+   "ra": 168.01186670135553,
+   "dec": -6.983034241036559,
+   "ra_hms": "11h12m02.85s",
+   "dec_dms": "-06d58m58.9s",
+   "corr_kms": 313.65472621823784,
+   "src": "Fixsen et al. 1996 ApJ 473, 576 (abstract, 95% CL); V=371.0 as used by NED",
+   "corr_sigma_kms": 0.9278295721797207,
+   "V_from_dT_over_T0_derived": 370.56457785043983,
+   "note": "sigma_V=1 km/s and 95%->1sigma halving are assumptions for the MC only"
+  },
+  "LG_CMB_Kogut1993": {
+   "label": "LG_CMB_Kogut1993",
+   "uvw": [
+    56.7587389894267,
+    -540.0233287075015,
+    313.49999999999994
+   ],
+   "V": 627.0,
+   "l": 276.0,
+   "b": 30.0,
+   "ra": 166.6566819328282,
+   "dec": -27.333475522138343,
+   "ra_hms": "11h06m37.60s",
+   "dec_dms": "-27d20m00.5s",
+   "corr_kms": 402.9745146378556,
+   "src": "Kogut et al. 1993 ApJ 419, 1 (abstract)",
+   "corr_sigma_kms": 27.401409573065433
+  },
+  "LG_CMB_Planck2018": {
+   "label": "LG_CMB_Planck2018",
+   "uvw": [
+    17.87352088731181,
+    -538.7904749336375,
+    306.2439572822232
+   ],
+   "V": 620.0,
+   "l": 271.9,
+   "b": 29.6,
+   "ra": 162.9538971537462,
+   "dec": -25.967341544756525,
+   "ra_hms": "10h51m48.94s",
+   "dec_dms": "-25d58m02.4s",
+   "corr_kms": 417.61223850919833,
+   "src": "Planck 2018 I Table 3 (from Diaz+2014 Sun-LG)",
+   "corr_sigma_kms": 16.30427333568073
+  },
+  "GC_CMB_Planck2018": {
+   "label": "GC_CMB_Planck2018",
+   "uvw": [
+    -36.75245454803082,
+    -495.7347192732016,
+    268.5541755248184
+   ],
+   "V": 565.0,
+   "l": 265.76,
+   "b": 28.38,
+   "ra": 157.26600929626574,
+   "dec": -24.02889975051821,
+   "ra_hms": "10h29m03.84s",
+   "dec_dms": "-24d01m44.0s",
+   "corr_kms": 402.33492075385465,
+   "src": "Planck 2018 I Table 3 (Schoenrich+2010 + McMillan 2011)",
+   "corr_sigma_kms": 3.947640926747209
+  },
+  "Sun_LSR_Planck2018": {
+   "label": "Sun_LSR_Planck2018",
+   "uvw": [
+    11.02528967636957,
+    12.244824694193145,
+    6.994087199958
+   ],
+   "V": 17.9,
+   "l": 48.0,
+   "b": 23.0,
+   "ra": 267.83177116154013,
+   "dec": 23.025551631055265,
+   "ra_hms": "17h51m19.63s",
+   "dec_dms": "+23d01m32.0s",
+   "corr_kms": -4.832820409060872,
+   "src": "Planck 2018 I Table 3 (from Schoenrich+2010)",
+   "corr_sigma_kms": 1.3500473107035174
+  }
+ },
+ "lsr_definition_differences_kms": {
+  "LSRK_Gordon1975-LSRD_Delhaye1965": 3.6284590830898726,
+  "LSRK_Gordon1975-LSR_Schoenrich2010": 3.2245125651164765,
+  "LSRK_Gordon1975-LSR_DehnenBinney1998": 10.08710685860926,
+  "LSRK_Gordon1975-LSR_BHG2016": 4.388548034164004,
+  "LSRK_Gordon1975-LSR_Ding2019_GaiaDR2": 10.694853504195875,
+  "LSRD_Delhaye1965-LSR_Schoenrich2010": 2.128403157298917,
+  "LSRD_Delhaye1965-LSR_DehnenBinney1998": 6.825789331645096,
+  "LSRD_Delhaye1965-LSR_BHG2016": 1.4142135623730951,
+  "LSRD_Delhaye1965-LSR_Ding2019_GaiaDR2": 7.2541091803198,
+  "LSR_Schoenrich2010-LSR_DehnenBinney1998": 7.076475111240059,
+  "LSR_Schoenrich2010-LSR_BHG2016": 1.67633528865797,
+  "LSR_Schoenrich2010-LSR_Ding2019_GaiaDR2": 7.8772711010857055,
+  "LSR_DehnenBinney1998-LSR_BHG2016": 5.7525124945540105,
+  "LSR_DehnenBinney1998-LSR_Ding2019_GaiaDR2": 1.4577722730248364,
+  "LSR_BHG2016-LSR_Ding2019_GaiaDR2": 6.3939111661017
+ },
+ "kogut1993_v_from_dT_with_FIRAS_T0_kms": 369.79531567815246,
+ "sources": [
+  {
+   "citation": "Wright, J. T. & Eastman, J. D. 2014, PASP 126, 838-852, 'Barycentric Corrections at 1 cm/s for precise Doppler velocities'",
+   "bibcode": "2014PASP..126..838W",
+   "doi": "10.1086/678541",
+   "url": "https://arxiv.org/abs/1409.4774",
+   "used_for": "zB formula (eq. 2, 10, 11, 27, 28), precision budget"
+  },
+  {
+   "citation": "Lindegren, L. & Dravins, D. 2003, A&A 401, 1185-1201, 'The fundamental definition of radial velocity' (includes IAU 2000 Resolutions C1, C2)",
+   "bibcode": "2003A&A...401.1185L",
+   "doi": "10.1051/0004-6361:20030181",
+   "url": "https://arxiv.org/abs/astro-ph/0302522",
+   "used_for": "barycentric RV measure, solar gravitational redshift"
+  },
+  {
+   "citation": "Kanodia, S. & Wright, J. T. 2018, RNAAS 2, 4 (barycorrpy)",
+   "bibcode": "2018RNAAS...2....4K",
+   "doi": "10.3847/2515-5172/aaa4b7",
+   "url": "https://arxiv.org/abs/1801.01634",
+   "used_for": "barycorrpy precision statement"
+  },
+  {
+   "citation": "Tronsgaard, R., Buchhave, L. A., Wright, J. T., Eastman, J. D., Blackman, R. T. 2019, MNRAS 489, 2395-2402",
+   "bibcode": "2019MNRAS.489.2395T",
+   "doi": "10.1093/mnras/stz2181",
+   "url": "https://arxiv.org/abs/1908.00991",
+   "used_for": "photon-weighted midpoint second-order error"
+  },
+  {
+   "citation": "Blackman, R. T., Szymkowiak, A. E., Fischer, D. A., Jurgenson, C. A. 2017, ApJ 837, 18",
+   "bibcode": "2017ApJ...837...18B",
+   "doi": "10.3847/1538-4357/aa5ead",
+   "url": "https://arxiv.org/abs/1703.00012",
+   "used_for": "chromatic barycentric correction"
+  },
+  {
+   "citation": "Blackman, R. T., Ong, J. M. J., Fischer, D. A. 2019, AJ 158, 40",
+   "bibcode": "2019AJ....158...40B",
+   "doi": "10.3847/1538-3881/ab24c3",
+   "url": "https://arxiv.org/abs/1906.01653",
+   "used_for": "chromatic barycentric correction measured with EXPRES"
+  },
+  {
+   "citation": "Eastman, J., Siverd, R., Gaudi, B. S. 2010, PASP 122, 935-946",
+   "bibcode": "2010PASP..122..935E",
+   "doi": "10.1086/655938",
+   "url": "",
+   "used_for": "BJD time reduction (cited via WE14)"
+  },
+  {
+   "citation": "Petit, G. & Luzum, B. (eds.) 2010, IERS Conventions (2010), IERS Technical Note 36, Table 1.2",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://iers-conventions.obspm.fr/content/tn36.pdf",
+   "used_for": "omega = 7.292115e-5 rad/s, a_E = 6378137 m"
+  },
+  {
+   "citation": "NASA NSSDCA Earth Fact Sheet (D. R. Williams)",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html",
+   "used_for": "Earth orbital speed mean/max/min"
+  },
+  {
+   "citation": "Gordon 1975, Methods of Experimental Physics vol. 12C (ed. Meeks), sec. 6.1.5(.2), p. 281 - as cited in astropy LSRK and SLALIB sla_RVLSRK",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://docs.astropy.org/en/stable/api/astropy.coordinates.LSRK.html",
+   "used_for": "LSRK definition 20 km/s to 18h,+30 (1900)"
+  },
+  {
+   "citation": "Delhaye, J. 1965, in Galactic Structure (Stars and Stellar Systems V), eds. Blaauw & Schmidt, p. 61",
+   "bibcode": "1965gast.book...61D",
+   "doi": "",
+   "url": "https://irtfweb.ifa.hawaii.edu/~tcs3/tcs3/Misc/slalib_html/node173.html",
+   "used_for": "LSRD (9,12,7) km/s"
+  },
+  {
+   "citation": "Wallace, P. T. 2000, SLALIB Starlink User Note 67 (sla_RVLSRK, sla_RVLSRD)",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://irtfweb.ifa.hawaii.edu/~tcs3/tcs3/Misc/slalib_html/node174.html",
+   "used_for": "LSR definitions, sign convention"
+  },
+  {
+   "citation": "Schoenrich, R., Binney, J., Dehnen, W. 2010, MNRAS 403, 1829-1833",
+   "bibcode": "2010MNRAS.403.1829S",
+   "doi": "10.1111/j.1365-2966.2010.16253.x",
+   "url": "https://arxiv.org/abs/0912.3693",
+   "used_for": "(U,V,W)sun = (11.1, 12.24, 7.25)"
+  },
+  {
+   "citation": "Dehnen, W. & Binney, J. J. 1998, MNRAS 298, 387-394",
+   "bibcode": "1998MNRAS.298..387D",
+   "doi": "10.1046/j.1365-8711.1998.01600.x",
+   "url": "https://arxiv.org/abs/astro-ph/9710077",
+   "used_for": "(U,V,W) = (10.00, 5.25, 7.17)"
+  },
+  {
+   "citation": "Ding, P.-J., Zhu, Z., Liu, J.-C. 2019, RAA 19, 068 (Gaia DR2 LSR)",
+   "bibcode": "2019RAA....19...68D",
+   "doi": "10.1088/1674-4527/19/5/68",
+   "url": "",
+   "used_for": "(U,V,W) = (8.63, 4.76, 7.26)"
+  },
+  {
+   "citation": "Reid, M. J. et al. 2009, ApJ 700, 137-148",
+   "bibcode": "2009ApJ...700..137R",
+   "doi": "10.1088/0004-637X/700/1/137",
+   "url": "https://arxiv.org/abs/0902.3913",
+   "used_for": "standard solar motion (10.3, 15.3, 7.7)"
+  },
+  {
+   "citation": "Kerr, F. J. & Lynden-Bell, D. 1986, MNRAS 221, 1023-1038",
+   "bibcode": "1986MNRAS.221.1023K",
+   "doi": "10.1093/mnras/221.4.1023",
+   "url": "",
+   "used_for": "IAU 1985 R0 = 8.5 kpc, Theta0 = 220 km/s"
+  },
+  {
+   "citation": "GRAVITY Collaboration 2018, A&A 615, L15",
+   "bibcode": "2018A&A...615L..15G",
+   "doi": "10.1051/0004-6361/201833718",
+   "url": "https://arxiv.org/abs/1807.09409",
+   "used_for": "R0 = 8122 +- 31 pc (astropy v4.0)"
+  },
+  {
+   "citation": "GRAVITY Collaboration 2019, A&A 625, L10",
+   "bibcode": "2019A&A...625L..10G",
+   "doi": "10.1051/0004-6361/201935656",
+   "url": "https://arxiv.org/abs/1904.05721",
+   "used_for": "R0 = 8178 +- 13 +- 22 pc"
+  },
+  {
+   "citation": "GRAVITY Collaboration 2021, A&A 647, A59",
+   "bibcode": "2021A&A...647A..59G",
+   "doi": "10.1051/0004-6361/202040208",
+   "url": "https://arxiv.org/abs/2101.12098",
+   "used_for": "R0 = 8275 +- 9 +- 33 pc"
+  },
+  {
+   "citation": "GRAVITY Collaboration 2022, A&A 657, L12",
+   "bibcode": "2022A&A...657L..12G",
+   "doi": "10.1051/0004-6361/202142465",
+   "url": "https://arxiv.org/abs/2112.07478",
+   "used_for": "R0 = 8277 +- 9 pc"
+  },
+  {
+   "citation": "Reid, M. J. et al. 2019, ApJ 885, 131",
+   "bibcode": "2019ApJ...885..131R",
+   "doi": "10.3847/1538-4357/ab4a11",
+   "url": "https://arxiv.org/abs/1910.03357",
+   "used_for": "R0 = 8.15, Theta0 = 236 +- 7, Theta0+Vsun = 247 +- 4"
+  },
+  {
+   "citation": "Reid, M. J. & Brunthaler, A. 2004, ApJ 616, 872-884",
+   "bibcode": "2004ApJ...616..872R",
+   "doi": "10.1086/424960",
+   "url": "https://arxiv.org/abs/astro-ph/0408107",
+   "used_for": "Sgr A* proper motion; astropy galcen_coord"
+  },
+  {
+   "citation": "Reid, M. J. & Brunthaler, A. 2020, ApJ 892, 39",
+   "bibcode": "2020ApJ...892...39R",
+   "doi": "10.3847/1538-4357/ab76cd",
+   "url": "https://arxiv.org/abs/2001.04386",
+   "used_for": "Sgr A* pm -6.411 +- 0.008, -0.219 +- 0.007 mas/yr"
+  },
+  {
+   "citation": "Bland-Hawthorn, J. & Gerhard, O. 2016, ARA&A 54, 529-596",
+   "bibcode": "2016ARA&A..54..529B",
+   "doi": "10.1146/annurev-astro-081915-023441",
+   "url": "https://arxiv.org/abs/1602.07702",
+   "used_for": "R0 = 8.2 +- 0.1, Theta0 = 238 +- 15, Vg = 248 +- 3, z0 = 25 +- 5"
+  },
+  {
+   "citation": "Drimmel, R. & Poggio, E. 2018, RNAAS 2, 210",
+   "bibcode": "2018RNAAS...2..210D",
+   "doi": "10.3847/2515-5172/aaef8b",
+   "url": "",
+   "used_for": "astropy v4.0 galcen_v_sun"
+  },
+  {
+   "citation": "Bennett, M. & Bovy, J. 2019, MNRAS 482, 1417-1425",
+   "bibcode": "2019MNRAS.482.1417B",
+   "doi": "10.1093/mnras/sty2813",
+   "url": "https://arxiv.org/abs/1809.03507",
+   "used_for": "z_sun = 20.8 +- 0.3 pc"
+  },
+  {
+   "citation": "Gaia Collaboration, Drimmel, R. et al. 2023, A&A 674, A37",
+   "bibcode": "2023A&A...674A..37G",
+   "doi": "10.1051/0004-6361/202243797",
+   "url": "https://arxiv.org/abs/2206.06207",
+   "used_for": "Gaia DR3 disc kinematics (context; no solar-motion value used)"
+  },
+  {
+   "citation": "Yahil, A., Tammann, G. A., Sandage, A. 1977, ApJ 217, 903",
+   "bibcode": "1977ApJ...217..903Y",
+   "doi": "10.1086/155636",
+   "url": "",
+   "used_for": "LG correction -79 cos l cos b + 296 sin l cos b - 36 sin b"
+  },
+  {
+   "citation": "Karachentsev, I. D. & Makarov, D. A. 1996, AJ 111, 794",
+   "bibcode": "1996AJ....111..794K",
+   "doi": "10.1086/117825",
+   "url": "",
+   "used_for": "Sun-LG 316 +- 5 km/s to (93, -4)"
+  },
+  {
+   "citation": "Courteau, S. & van den Bergh, S. 1999, AJ 118, 337-345",
+   "bibcode": "1999AJ....118..337C",
+   "doi": "10.1086/300942",
+   "url": "https://arxiv.org/abs/astro-ph/9903298",
+   "used_for": "Sun-LG 306 +- 18 to (99, -4); RC2 300 sin l cos b; Delhaye LSR"
+  },
+  {
+   "citation": "Diaz, J. D., Koposov, S. E., Irwin, M., Belokurov, V., Evans, W. 2014, MNRAS 443, 1688-1703",
+   "bibcode": "2014MNRAS.443.1688D",
+   "doi": "10.1093/mnras/stu1210",
+   "url": "https://arxiv.org/abs/1405.3662",
+   "used_for": "Sun-LG 299 +- 15 to (98.4, -5.9)"
+  },
+  {
+   "citation": "van der Marel, R. P. et al. 2012, ApJ 753, 8 (M31 velocity vector II)",
+   "bibcode": "2012ApJ...753....8V",
+   "doi": "10.1088/0004-637X/753/1/8",
+   "url": "https://arxiv.org/abs/1205.6864",
+   "used_for": "M31 radial -109.3 +- 4.4, tangential 17.0 (<34.3) km/s"
+  },
+  {
+   "citation": "Planck Collaboration 2020, Planck 2018 results I, A&A 641, A1",
+   "bibcode": "2020A&A...641A...1P",
+   "doi": "10.1051/0004-6361/201833880",
+   "url": "https://arxiv.org/abs/1807.06205",
+   "used_for": "solar dipole 369.82 +- 0.11 km/s to (264.021, 48.253); Table 3"
+  },
+  {
+   "citation": "Planck Collaboration 2020, Planck 2018 results VI, A&A 641, A6",
+   "bibcode": "2020A&A...641A...6P",
+   "doi": "10.1051/0004-6361/201833910",
+   "url": "",
+   "used_for": "Planck18 cosmology (astropy)"
+  },
+  {
+   "citation": "Fixsen, D. J. et al. 1996, ApJ 473, 576-587",
+   "bibcode": "1996ApJ...473..576F",
+   "doi": "10.1086/178173",
+   "url": "https://arxiv.org/abs/astro-ph/9605054",
+   "used_for": "COBE/FIRAS dipole 3.372 mK to (264.14, 48.26); NED 3K frame"
+  },
+  {
+   "citation": "Kogut, A. et al. 1993, ApJ 419, 1",
+   "bibcode": "1993ApJ...419....1K",
+   "doi": "10.1086/173453",
+   "url": "https://arxiv.org/abs/astro-ph/9312056",
+   "used_for": "COBE DMR dipole; LG-CMB 627 +- 22 to (276, 30)"
+  },
+  {
+   "citation": "Tully, R. B. et al. 2008, ApJ 676, 184-205",
+   "bibcode": "2008ApJ...676..184T",
+   "doi": "10.1086/527428",
+   "url": "https://arxiv.org/abs/0705.4139",
+   "used_for": "Local Void / Virgo / large-scale decomposition 259, 185, 455 -> 631 km/s"
+  },
+  {
+   "citation": "Mould, J. R. et al. 2000, ApJ 529, 786-794",
+   "bibcode": "2000ApJ...529..786M",
+   "doi": "10.1086/308304",
+   "url": "https://arxiv.org/abs/astro-ph/9909260",
+   "used_for": "multi-attractor flow model eqs. 1-2, A1-A2, Table A1"
+  },
+  {
+   "citation": "NASA/IPAC Extragalactic Database: velocity-correction help and object-result help",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://ned.ipac.caltech.edu/help/velc_help.html ; https://ned.ipac.caltech.edu/help/objresult_help.html",
+   "used_for": "NED apex vectors and Mould-model corrections"
+  },
+  {
+   "citation": "Tully, R. B. et al. 2023, ApJ 944, 94 (Cosmicflows-4)",
+   "bibcode": "2023ApJ...944...94T",
+   "doi": "10.3847/1538-4357/ac94d8",
+   "url": "https://arxiv.org/abs/2209.11238",
+   "used_for": "peculiar-velocity catalogue"
+  },
+  {
+   "citation": "Davis, T. M. et al. 2011, ApJ 741, 67",
+   "bibcode": "2011ApJ...741...67D",
+   "doi": "10.1088/0004-637X/741/1/67",
+   "url": "https://arxiv.org/abs/1012.2912",
+   "used_for": "(1+z) = (1+zbar)(1+z_pec,sun), z_sun = -v.n/c"
+  },
+  {
+   "citation": "Carr, A. et al. 2022, PASA 39, e046",
+   "bibcode": "2022PASA...39...46C",
+   "doi": "10.1017/pasa.2022.41",
+   "url": "https://arxiv.org/abs/2112.01471",
+   "used_for": "exact multiplicative heliocentric->CMB conversion"
+  },
+  {
+   "citation": "Gaia Collaboration, Klioner, S. A. et al. 2021, A&A 649, A9",
+   "bibcode": "2021A&A...649A...9G",
+   "doi": "10.1051/0004-6361/202039734",
+   "url": "https://arxiv.org/abs/2012.02036",
+   "used_for": "SSB acceleration 2.32e-10 m/s^2"
+  },
+  {
+   "citation": "Sandage, A. 1962, ApJ 136, 319",
+   "bibcode": "1962ApJ...136..319S",
+   "doi": "10.1086/147385",
+   "url": "",
+   "used_for": "redshift drift"
+  },
+  {
+   "citation": "Loeb, A. 1998, ApJ 499, L111-L114",
+   "bibcode": "1998ApJ...499L.111L",
+   "doi": "10.1086/311375",
+   "url": "",
+   "used_for": "redshift drift"
+  },
+  {
+   "citation": "astropy 7.2.0 source: coordinates/sky_coordinate.py (radial_velocity_correction), earth.py (gravitational_redshift), builtin_frames/lsr.py, builtin_frames/galactocentric.py",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://github.com/astropy/astropy",
+   "used_for": "implementation details verified locally"
+  },
+  {
+   "citation": "astropy issue #18550 'A possible LSRK documentation error' (docstring wording vs code)",
+   "bibcode": "",
+   "doi": "",
+   "url": "https://github.com/astropy/astropy/issues/18550",
+   "used_for": "LSR docstring ambiguity; code follows Gordon 1975"
+  }
+ ],
+ "astropy_frame_crosscheck_kms": {
+  "LSRK": -4.951767545251435,
+  "LSRD": -3.6653643494773083,
+  "LSR_default": -4.67399547914636,
+  "GSR_astropy_v4.0": -88.17515162585309,
+  "galcen_v_sun_v4.0": [
+   12.899999999999999,
+   245.6,
+   7.779999999999999
+  ],
+  "GSR_astropy_pre-v4.0": -82.87109930316888,
+  "galcen_v_sun_pre-v4.0": [
+   11.1,
+   232.24,
+   7.249999999999999
+  ]
+ },
+ "example_galaxy_cmb": {
+  "cz_hel_kms": 3000.0,
+  "z_hel": 0.010006922855944561,
+  "sun_cmb_projection_kms": 312.89920800922357,
+  "z_sun_first_order": -0.0010437194120781503,
+  "z_sun_exact_SR": -0.001043391272760652,
+  "z_cmb_additive": 0.011050642268022711,
+  "z_cmb_multiplicative": 0.011062188088470704,
+  "z_cmb_mult_exactSR": 0.011061855972687606,
+  "cz_cmb_additive_kms": 3312.899208009223,
+  "cz_cmb_multiplicative_kms": 3316.3605579009536,
+  "difference_kms": 3.4613498917303294,
+  "at_z1_difference": {
+   "z_hel": 1.0,
+   "dz": 0.0010459003888281249
+  }
+ },
+ "example_galaxy_mould2000": {
+  "NED_KM1996": {
+   "V_LG_kms": 2879.8630310400736,
+   "terms": {
+    "Virgo": {
+     "theta_deg": 36.92127988387703,
+     "r_oa_kms": 2191.524918790296,
+     "V_infall_kms": 244.17026791005839,
+     "in_core": false,
+     "icrs": [
+      187.71186019896288,
+      12.390607081330128
+     ]
+    },
+    "GreatAttractor": {
+     "theta_deg": 79.20883346571225,
+     "r_oa_kms": 4770.183516122913,
+     "V_infall_kms": 233.48646912191302,
+     "in_core": false,
+     "icrs": [
+      200.73467628096424,
+      -44.26105914998775
+     ]
+    },
+    "Shapley": {
+     "theta_deg": 72.32225793133001,
+     "r_oa_kms": 13017.949195537942,
+     "V_infall_kms": 17.284936965278426,
+     "in_core": false,
+     "icrs": [
+      203.20597847513918,
+      -31.256593194860738
+     ]
+    }
+   },
+   "V_cosmic_kms": 3374.804705037324
+  },
+  "Mould_YTS1977": {
+   "V_LG_kms": 2909.0167312440162,
+   "terms": {
+    "Virgo": {
+     "theta_deg": 36.92127988387703,
+     "r_oa_kms": 2219.6708385661104,
+     "V_infall_kms": 243.17904539860288,
+     "in_core": false,
+     "icrs": [
+      187.71186019896288,
+      12.390607081330128
+     ]
+    },
+    "GreatAttractor": {
+     "theta_deg": 79.20883346571225,
+     "r_oa_kms": 4782.844559204446,
+     "V_infall_kms": 234.88075239146409,
+     "in_core": false,
+     "icrs": [
+      200.73467628096424,
+      -44.26105914998775
+     ]
+    },
+    "Shapley": {
+     "theta_deg": 72.32225793133001,
+     "r_oa_kms": 13015.182276009004,
+     "V_infall_kms": 17.480264526782413,
+     "in_core": false,
+     "icrs": [
+      203.20597847513918,
+      -31.256593194860738
+     ]
+    }
+   },
+   "V_cosmic_kms": 3404.5567935608656
+  }
+ },
+ "ssb_acceleration": {
+  "a_ms2": 2.32e-10,
+  "drift_mm_s_per_yr_max": 7.3213632,
+  "drift_mm_s_per_yr_target": 4.16188643136375,
+  "note": "d(v_bary)/dt = -a.n for a distant source at rest in the extragalactic frame (derived)"
+ },
+ "sandage_loeb_planck18": {
+  "0.5": {
+   "zdot_per_yr": 1.2541321443237603e-11,
+   "vdot_cm_s_per_yr": 0.25065290546908725,
+   "dv_cm_s_in_20yr": 5.0130581093817455
+  },
+  "1.0": {
+   "zdot_per_yr": 1.502303829542044e-11,
+   "vdot_cm_s_per_yr": 0.2251896788606112,
+   "dv_cm_s_in_20yr": 4.503793577212224
+  },
+  "2.0": {
+   "zdot_per_yr": -1.084499190529154e-12,
+   "vdot_cm_s_per_yr": -0.01083748926759151,
+   "dv_cm_s_in_20yr": -0.2167497853518302
+  },
+  "3.0": {
+   "zdot_per_yr": -3.741451514667944e-11,
+   "vdot_cm_s_per_yr": -0.2804147365175315,
+   "dv_cm_s_in_20yr": -5.6082947303506305
+  },
+  "4.0": {
+   "zdot_per_yr": -8.958665514158366e-11,
+   "vdot_cm_s_per_yr": -0.537148070977874,
+   "dv_cm_s_in_20yr": -10.74296141955748
+  },
+  "5.0": {
+   "zdot_per_yr": -1.553634116944988e-10,
+   "vdot_cm_s_per_yr": -0.7762796512526623,
+   "dv_cm_s_in_20yr": -15.525593025053245
+  }
+ },
+ "perspective_accel_hypothetical": {
+  "mu_arcsec_yr": 1.0,
+  "d_pc": 10.0,
+  "v_t_kms": 47.40470463533348,
+  "dvr_dt_m_s_per_yr": 0.2298244935616631
+ },
+ "solar_grav_redshift_derived": {
+  "photosphere_ms": 636.3102626151939,
+  "at_1au_ms": 633.3511225710877,
+  "note": "astropy IAU 2015 nominal GM_sun and R_sun; LD2003 published 636.486+-0.024 (R=6.95508e8 m)"
+ }
+}

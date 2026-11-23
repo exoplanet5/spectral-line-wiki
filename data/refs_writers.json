@@ -1,0 +1,1593 @@
+[
+ {
+  "key": "bouchy2001",
+  "citation": "Bouchy F., Pepe F., Queloz D. 2001, Fundamental photon noise limit to radial velocity measurements, A&A 374, 733-739",
+  "doi": "10.1051/0004-6361:20010730",
+  "bibcode": "2001A&A...374..733B",
+  "url": "https://www.aanda.org/articles/aa/pdf/2001/29/aa1316.pdf"
+ },
+ {
+  "key": "lovis2007",
+  "citation": "Lovis C., Pepe F. 2007, A new list of thorium and argon spectral lines in the visible, A&A 468, 1115-1121",
+  "doi": "10.1051/0004-6361:20077249",
+  "bibcode": "2007A&A...468.1115L",
+  "url": "https://arxiv.org/abs/astro-ph/0703412"
+ },
+ {
+  "key": "sansonetti2005",
+  "citation": "Sansonetti J. E., Martin W. C. 2005, Handbook of Basic Atomic Spectroscopic Data, J. Phys. Chem. Ref. Data 34, 1559",
+  "doi": "10.1063/1.1800011",
+  "bibcode": "2005JPCRD..34.1559S",
+  "url": "https://physics.nist.gov/PhysRefData/Handbook/"
+ },
+ {
+  "key": "kramida2024",
+  "citation": "Kramida A., Ralchenko Yu., Reader J., NIST ASD Team 2024, NIST Atomic Spectra Database (ver. 5.12), National Institute of Standards and Technology, Gaithersburg, MD (queried 2026-11-23)",
+  "doi": "10.18434/T4W30F",
+  "url": "https://physics.nist.gov/asd"
+ },
+ {
+  "key": "peck1972",
+  "citation": "Peck E. R., Reeder K. 1972, Dispersion of air, J. Opt. Soc. Am. 62, 958-962",
+  "doi": "10.1364/JOSA.62.000958",
+  "bibcode": "1972JOSA...62..958P",
+  "url": "https://doi.org/10.1364/JOSA.62.000958"
+ },
+ {
+  "key": "ciddor1996",
+  "citation": "Ciddor P. E. 1996, Refractive index of air: new equations for the visible and near infrared, Appl. Opt. 35, 1566-1573",
+  "doi": "10.1364/AO.35.001566",
+  "bibcode": "1996ApOpt..35.1566C",
+  "url": "https://doi.org/10.1364/AO.35.001566"
+ },
+ {
+  "key": "greisen2006",
+  "citation": "Greisen E. W., Calabretta M. R., Valdes F. G., Allen S. L. 2006, Representations of spectral coordinates in FITS, A&A 446, 747-771",
+  "doi": "10.1051/0004-6361:20053818",
+  "bibcode": "2006A&A...446..747G",
+  "url": "https://arxiv.org/abs/astro-ph/0507293"
+ },
+ {
+  "key": "wright2014",
+  "citation": "Wright J. T., Eastman J. D. 2014, Barycentric Corrections at 1 cm/s for Precise Doppler Velocities, PASP 126, 838-852",
+  "doi": "10.1086/678541",
+  "bibcode": "2014PASP..126..838W",
+  "url": "https://arxiv.org/abs/1409.4774"
+ },
+ {
+  "key": "lindegren2003",
+  "citation": "Lindegren L., Dravins D. 2003, The fundamental definition of 'radial velocity', A&A 401, 1185-1201",
+  "doi": "10.1051/0004-6361:20030181",
+  "bibcode": "2003A&A...401.1185L",
+  "url": "https://arxiv.org/abs/astro-ph/0302522"
+ },
+ {
+  "key": "park2021",
+  "citation": "Park R. S., Folkner W. M., Williams J. G., Boggs D. H. 2021, The JPL Planetary and Lunar Ephemerides DE440 and DE441, AJ 161, 105",
+  "doi": "10.3847/1538-3881/abd414",
+  "bibcode": "2021AJ....161..105P",
+  "url": "https://doi.org/10.3847/1538-3881/abd414"
+ },
+ {
+  "key": "petit2010",
+  "citation": "Petit G., Luzum B. (eds.) 2010, IERS Conventions (2010), IERS Technical Note 36, Verlag des Bundesamts für Kartographie und Geodäsie, Frankfurt am Main",
+  "url": "https://iers-conventions.obspm.fr/content/tn36.pdf"
+ },
+ {
+  "key": "fischer2016",
+  "citation": "Fischer D. A., Anglada-Escudé G., Arriagada P., et al. 2016, State of the Field: Extreme Precision Radial Velocities, PASP 128, 066001",
+  "doi": "10.1088/1538-3873/128/964/066001",
+  "bibcode": "2016PASP..128f6001F",
+  "url": "https://arxiv.org/abs/1602.07939"
+ },
+ {
+  "key": "probst2020",
+  "citation": "Probst R. A., Milaković D., Toledo-Padrón B., et al. 2020, A crucial test for astronomical spectrograph calibration with frequency combs, Nature Astronomy 4, 603-608",
+  "doi": "10.1038/s41550-020-1010-x",
+  "bibcode": "2020NatAs...4..603P",
+  "url": "https://arxiv.org/abs/2002.08868"
+ },
+ {
+  "key": "liske2008",
+  "citation": "Liske J., Grazian A., Vanzella E., et al. 2008, Cosmic dynamics in the era of Extremely Large Telescopes, MNRAS 386, 1192-1218",
+  "doi": "10.1111/j.1365-2966.2008.13090.x",
+  "bibcode": "2008MNRAS.386.1192L",
+  "url": "https://arxiv.org/abs/0802.1532"
+ },
+ {
+  "key": "murphy2014",
+  "citation": "Murphy M. T., Berengut J. C. 2014, Laboratory atomic transition data for precise optical quasar absorption spectroscopy, MNRAS 438, 388-411",
+  "doi": "10.1093/mnras/stt2204",
+  "bibcode": "2014MNRAS.438..388M",
+  "url": "https://arxiv.org/abs/1311.2949"
+ },
+ {
+  "key": "brown2013",
+  "citation": "Brown R. C., Wu S., Porto J. V., et al. 2013, Quantum interference and light polarization effects in unresolvable atomic lines: Application to a precise measurement of the 6,7Li D2 lines, Phys. Rev. A 87, 032504",
+  "doi": "10.1103/PhysRevA.87.032504",
+  "bibcode": "2013PhRvA..87c2504B",
+  "url": "https://www.agpohl.physik.uni-mainz.de/files/2022/01/PRA_Brown.pdf"
+ },
+ {
+  "key": "reiners2016",
+  "citation": "Reiners A., Mrotzek N., Lemke U., Hinrichs J., Reinsch K. 2016, The IAG solar flux atlas: Accurate wavelengths and absolute convective blueshift in standard solar spectra, A&A 587, A65",
+  "doi": "10.1051/0004-6361/201527530",
+  "bibcode": "2016A&A...587A..65R",
+  "url": "https://arxiv.org/abs/1511.03014"
+ },
+ {
+  "key": "lohnerbottcher2019",
+  "citation": "Löhner-Böttcher J., Schmidt W., Schlichenmaier R., Steinmetz T., Holzwarth R. 2019, Convective blueshifts in the solar atmosphere. III. High-accuracy observations of spectral lines in the visible, A&A 624, A57",
+  "doi": "10.1051/0004-6361/201834925",
+  "bibcode": "2019A&A...624A..57L",
+  "url": "https://arxiv.org/abs/1901.07606"
+ },
+ {
+  "key": "gonzalezhernandez2020",
+  "citation": "González Hernández J. I., Rebolo R., Pasquini L., et al. 2020, The solar gravitational redshift from HARPS-LFC Moon spectra. A test of the general theory of relativity, A&A 643, A146",
+  "doi": "10.1051/0004-6361/202038937",
+  "bibcode": "2020A&A...643A.146G",
+  "url": "https://arxiv.org/abs/2009.10558"
+ },
+ {
+  "key": "gordon2022",
+  "citation": "Gordon I. E., Rothman L. S., Hargreaves R. J., et al. 2022, The HITRAN2020 molecular spectroscopic database, J. Quant. Spectrosc. Radiat. Transfer 277, 107949",
+  "doi": "10.1016/j.jqsrt.2021.107949",
+  "bibcode": "2022JQSRT.27707949G",
+  "url": "https://hitran.org/media/refs/HITRAN-2020.pdf"
+ },
+ {
+  "key": "gordon2026",
+  "citation": "Gordon I. E., Rothman L. S., Hargreaves R. J., Gomez F. M., Bertin T., Hill C., et al. 2026, The HITRAN2024 molecular spectroscopic database, J. Quant. Spectrosc. Radiat. Transfer 353, 109807",
+  "doi": "10.1016/j.jqsrt.2026.109807",
+  "bibcode": "2026JQSRT.35309807G",
+  "url": "https://hitran.org/media/refs/HITRAN-2024.pdf"
+ },
+ {
+  "key": "oliva2015",
+  "citation": "Oliva E., Origlia L., Scuderi S., et al. 2015, Lines and continuum sky emission in the near infrared: observational constraints from deep high spectral resolution spectra with GIANO-TNG, A&A 581, A47",
+  "doi": "10.1051/0004-6361/201526291",
+  "bibcode": "2015A&A...581A..47O",
+  "url": "https://arxiv.org/abs/1506.09004"
+ },
+ {
+  "key": "hanuschik2003",
+  "citation": "Hanuschik R. W. 2003, A flux-calibrated, high-resolution atlas of optical sky emission from UVES, A&A 407, 1157-1164",
+  "doi": "10.1051/0004-6361:20030885",
+  "bibcode": "2003A&A...407.1157H",
+  "url": "https://www.aanda.org/articles/aa/pdf/2003/33/aa3874.pdf"
+ },
+ {
+  "key": "cosby2006",
+  "citation": "Cosby P. C., Sharpee B. D., Slanger T. G., Huestis D. L., Hanuschik R. W. 2006, High-resolution terrestrial nightglow emission line atlas from UVES/VLT: Positions, intensities, and identifications for 2808 lines at 314-1043 nm, J. Geophys. Res. 111, A12307",
+  "doi": "10.1029/2006JA012023",
+  "bibcode": "2006JGRA..11112307C",
+  "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006JA012023"
+ },
+ {
+  "key": "figueira2010",
+  "citation": "Figueira P., Pepe F., Lovis C., Mayor M. 2010, Evaluating the stability of atmospheric lines with HARPS, A&A 515, A106",
+  "doi": "10.1051/0004-6361/201014005",
+  "bibcode": "2010A&A...515A.106F",
+  "url": "https://arxiv.org/abs/1003.0541"
+ },
+ {
+  "key": "desi2022",
+  "citation": "DESI Collaboration (Abareshi B., Aguilar J., et al.) 2022, Overview of the Instrumentation for the Dark Energy Spectroscopic Instrument, AJ 164, 207",
+  "doi": "10.3847/1538-3881/ac882b",
+  "bibcode": "2022AJ....164..207D",
+  "url": "https://arxiv.org/abs/2205.10939"
+ },
+ {
+  "key": "dejong2019",
+  "citation": "de Jong R. S., Agertz O., Berbel A. A., et al. 2019, 4MOST: Project overview and information for the First Call for Proposals, The Messenger 175, 3-11",
+  "doi": "10.18727/0722-6691/5117",
+  "bibcode": "2019Msngr.175....3D",
+  "url": "https://arxiv.org/abs/1903.02464"
+ },
+ {
+  "key": "liu2020",
+  "citation": "Liu C., Fu J., Shi J., et al. 2020, LAMOST Medium-Resolution Spectroscopic Survey (LAMOST-MRS): Scientific goals and survey plan, arXiv:2005.07210",
+  "bibcode": "2020arXiv200507210L",
+  "url": "https://arxiv.org/abs/2005.07210"
+ },
+ {
+  "key": "cropper2018",
+  "citation": "Cropper M., Katz D., Sartoretti P., et al. 2018, Gaia Data Release 2. Gaia Radial Velocity Spectrometer, A&A 616, A5",
+  "doi": "10.1051/0004-6361/201832763",
+  "bibcode": "2018A&A...616A...5C",
+  "url": "https://arxiv.org/abs/1804.09369"
+ },
+ {
+  "key": "smee2013",
+  "citation": "Smee S. A., Gunn J. E., Uomoto A., et al. 2013, The Multi-object, Fiber-fed Spectrographs for the Sloan Digital Sky Survey and the Baryon Oscillation Spectroscopic Survey, AJ 146, 32",
+  "doi": "10.1088/0004-6256/146/2/32",
+  "bibcode": "2013AJ....146...32S",
+  "url": "https://arxiv.org/abs/1208.2233"
+ },
+ {
+  "key": "mayor2003",
+  "citation": "Mayor M., Pepe F., Queloz D., et al. 2003, Setting New Standards with HARPS, The Messenger 114, 20-24",
+  "bibcode": "2003Msngr.114...20M",
+  "url": "https://www.eso.org/sci/publications/messenger/archive/no.114-dec03/messenger-no114-20-24.pdf"
+ },
+ {
+  "key": "pepe2021",
+  "citation": "Pepe F., Cristiani S., Rebolo R., et al. 2021, ESPRESSO at VLT. On-sky performance and first results, A&A 645, A96",
+  "doi": "10.1051/0004-6361/202038306",
+  "bibcode": "2021A&A...645A..96P",
+  "url": "https://arxiv.org/abs/2010.00316"
+ },
+ {
+  "key": "blackman2020",
+  "citation": "Blackman R. T., Fischer D. A., Jurgenson C. A., et al. 2020, Performance Verification of the EXtreme PREcision Spectrograph, AJ 159, 238",
+  "doi": "10.3847/1538-3881/ab811d",
+  "bibcode": "2020AJ....159..238B",
+  "url": "https://arxiv.org/abs/2003.08852"
+ },
+ {
+  "key": "schwab2016",
+  "citation": "Schwab C., Rakich A., Gong Q., et al. 2016, Design of NEID, an extreme precision Doppler spectrograph for WIYN, Proc. SPIE 9908, 99087H",
+  "doi": "10.1117/12.2234411",
+  "url": "https://www.wiyn.org/Instruments/wiynneid.html"
+ },
+ {
+  "key": "strassmeier2015",
+  "citation": "Strassmeier K. G., Ilyin I., Järvinen A., et al. 2015, PEPSI: The high-resolution échelle spectrograph and polarimeter for the Large Binocular Telescope, Astron. Nachr. 336, 324-361",
+  "doi": "10.1002/asna.201512172",
+  "bibcode": "2015AN....336..324S",
+  "url": "https://arxiv.org/abs/1505.06492"
+ },
+ {
+  "key": "dekker2000",
+  "citation": "Dekker H., D'Odorico S., Kaufer A., Delabre B., Kotzlowski H. 2000, Design, construction, and performance of UVES, the echelle spectrograph for the UT2 Kueyen Telescope at the ESO Paranal Observatory, Proc. SPIE 4008, 534",
+  "doi": "10.1117/12.395512",
+  "url": "https://www.eso.org/sci/facilities/paranal/instruments/uves/inst.html"
+ },
+ {
+  "key": "vogt1994",
+  "citation": "Vogt S. S., Allen S. L., Bigelow B. C., et al. 1994, HIRES: the high-resolution echelle spectrometer on the Keck 10-m Telescope, Proc. SPIE 2198, 362-375",
+  "doi": "10.1117/12.176725",
+  "url": "https://www2.keck.hawaii.edu/inst/hires/slitres.html"
+ },
+ {
+  "key": "noguchi2002",
+  "citation": "Noguchi K., Aoki W., Kawanomoto S., et al. 2002, High Dispersion Spectrograph (HDS) for the Subaru Telescope, PASJ 54, 855-864",
+  "doi": "10.1093/pasj/54.6.855",
+  "bibcode": "2002PASJ...54..855N",
+  "url": "https://subarutelescope.org/Instruments/HDS/"
+ },
+ {
+  "key": "dorn2023",
+  "citation": "Dorn R. J., Bristow P., Smoker J. V., et al. 2023, CRIRES+ on sky at the ESO Very Large Telescope. Observing the Universe at infrared wavelengths and high spectral resolution, A&A 671, A24",
+  "doi": "10.1051/0004-6361/202245217",
+  "bibcode": "2023A&A...671A..24D",
+  "url": "https://arxiv.org/abs/2301.08048"
+ },
+ {
+  "key": "park2014",
+  "citation": "Park C., Jaffe D. T., Yuk I.-S., et al. 2014, Design and early performance of IGRINS (Immersion Grating Infrared Spectrometer), Proc. SPIE 9147, 91471D",
+  "doi": "10.1117/12.2056431",
+  "url": "https://www.gemini.edu/instrumentation/igrins"
+ },
+ {
+  "key": "le2015",
+  "citation": "Le H. A. N., Pak S., Jaffe D. T., et al. 2015, Exposure time calculator for Immersion Grating Infrared Spectrograph: IGRINS, Adv. Space Res. 55, 2509-2518",
+  "doi": "10.1016/j.asr.2015.03.007",
+  "bibcode": "2015AdSpR..55.2509L",
+  "url": "https://arxiv.org/abs/1501.03249"
+ },
+ {
+  "key": "wilson2019",
+  "citation": "Wilson J. C., Hearty F. R., Skrutskie M. F., et al. 2019, The Apache Point Observatory Galactic Evolution Experiment (APOGEE) Spectrographs, PASP 131, 055001",
+  "doi": "10.1088/1538-3873/ab0075",
+  "bibcode": "2019PASP..131e5001W",
+  "url": "https://arxiv.org/abs/1902.00928"
+ },
+ {
+  "key": "cui2012",
+  "citation": "Cui X.-Q., Zhao Y.-H., Chu Y.-Q., et al. 2012, The Large Sky Area Multi-Object Fiber Spectroscopic Telescope (LAMOST), Res. Astron. Astrophys. 12, 1197-1242",
+  "doi": "10.1088/1674-4527/12/9/003",
+  "bibcode": "2012RAA....12.1197C",
+  "url": "https://www.lamost.org/dr11/v1.1/doc/lr-data-production-description"
+ },
+ {
+  "key": "tamura2016",
+  "citation": "Tamura N., Takato N., Shimono A., et al. 2016, Prime Focus Spectrograph (PFS) for the Subaru telescope: ongoing integration and future plans, Proc. SPIE 9908, 99081M",
+  "doi": "10.1117/12.2232103",
+  "url": "https://pfs.ipmu.jp/research/parameters.html"
+ },
+ {
+  "key": "jin2024",
+  "citation": "Jin S., Trager S. C., Dalton G. B., et al. 2024, The wide-field, multiplexed, spectroscopic facility WEAVE: Survey design, overview, and simulated implementation, MNRAS 530, 2688-2730",
+  "doi": "10.1093/mnras/stad557",
+  "bibcode": "2024MNRAS.530.2688J",
+  "url": "https://arxiv.org/abs/2212.03981"
+ },
+ {
+  "key": "wright2014",
+  "citation": "Wright, J. T. & Eastman, J. D. 2014, Barycentric Corrections at 1 cm/s for Precise Doppler Velocities, PASP 126, 838-852",
+  "doi": "10.1086/678541",
+  "bibcode": "2014PASP..126..838W",
+  "url": "https://arxiv.org/abs/1409.4774"
+ },
+ {
+  "key": "eastman2010",
+  "citation": "Eastman, J., Siverd, R. & Gaudi, B. S. 2010, Achieving Better Than 1 Minute Accuracy in the Heliocentric and Barycentric Julian Dates, PASP 122, 935-946",
+  "doi": "10.1086/655938",
+  "bibcode": "2010PASP..122..935E",
+  "url": "https://arxiv.org/abs/1005.4415"
+ },
+ {
+  "key": "lindegren2003",
+  "citation": "Lindegren, L. & Dravins, D. 2003, The fundamental definition of 'radial velocity', A&A 401, 1185-1201 (includes the text of IAU 2000 Resolutions C1, C2)",
+  "doi": "10.1051/0004-6361:20030181",
+  "bibcode": "2003A&A...401.1185L",
+  "url": "https://arxiv.org/abs/astro-ph/0302522"
+ },
+ {
+  "key": "kanodia2018",
+  "citation": "Kanodia, S. & Wright, J. 2018, Python Leap Second Management and Implementation of Precise Barycentric Correction (barycorrpy), RNAAS 2, 4",
+  "doi": "10.3847/2515-5172/aaa4b7",
+  "bibcode": "2018RNAAS...2....4K",
+  "url": "https://arxiv.org/abs/1801.01634"
+ },
+ {
+  "key": "tronsgaard2019",
+  "citation": "Tronsgaard, R., Buchhave, L. A., Wright, J. T., Eastman, J. D. & Blackman, R. T. 2019, Photon-weighted barycentric correction and its importance for precise radial velocities, MNRAS 489, 2395-2402",
+  "doi": "10.1093/mnras/stz2181",
+  "bibcode": "2019MNRAS.489.2395T",
+  "url": "https://arxiv.org/abs/1908.00991"
+ },
+ {
+  "key": "blackman2017",
+  "citation": "Blackman, R. T., Szymkowiak, A. E., Fischer, D. A. & Jurgenson, C. A. 2017, Accounting for Chromatic Atmospheric Effects on Barycentric Corrections, ApJ 837, 18",
+  "doi": "10.3847/1538-4357/aa5ead",
+  "bibcode": "2017ApJ...837...18B",
+  "url": "https://arxiv.org/abs/1703.00012"
+ },
+ {
+  "key": "blackman2019",
+  "citation": "Blackman, R. T., Ong, J. M. J. & Fischer, D. A. 2019, The Measured Impact of Chromatic Atmospheric Effects on Barycentric Corrections: Results from the EXtreme PREcision Spectrograph, AJ 158, 40",
+  "doi": "10.3847/1538-3881/ab24c3",
+  "bibcode": "2019AJ....158...40B",
+  "url": "https://arxiv.org/abs/1906.01653"
+ },
+ {
+  "key": "petit2010",
+  "citation": "Petit, G. & Luzum, B. (eds.) 2010, IERS Conventions (2010), IERS Technical Note No. 36 (Frankfurt am Main: Verlag des Bundesamts für Kartographie und Geodäsie); Table 1.1-1.2, eq. 5.15, ch. 10",
+  "bibcode": "2010ITN....36....1P",
+  "url": "https://iers-conventions.obspm.fr/content/tn36.pdf"
+ },
+ {
+  "key": "park2021",
+  "citation": "Park, R. S., Folkner, W. M., Williams, J. G. & Boggs, D. H. 2021, The JPL Planetary and Lunar Ephemerides DE440 and DE441, AJ 161, 105",
+  "doi": "10.3847/1538-3881/abd414",
+  "bibcode": "2021AJ....161..105P",
+  "url": "https://ssd.jpl.nasa.gov/planets/eph_export.html"
+ },
+ {
+  "key": "astropy2022",
+  "citation": "Astropy Collaboration (Price-Whelan, A. M. et al.) 2022, The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package, ApJ 935, 167",
+  "doi": "10.3847/1538-4357/ac7c74",
+  "bibcode": "2022ApJ...935..167A",
+  "url": "https://www.astropy.org"
+ },
+ {
+  "key": "ciddor1996",
+  "citation": "Ciddor, P. E. 1996, Refractive index of air: new equations for the visible and near infrared, Applied Optics 35, 1566-1573",
+  "doi": "10.1364/AO.35.001566",
+  "bibcode": "1996ApOpt..35.1566C"
+ },
+ {
+  "key": "fairhead1990",
+  "citation": "Fairhead, L. & Bretagnon, P. 1990, An analytical formula for the time transformation TB-TT, A&A 229, 240-247",
+  "bibcode": "1990A&A...229..240F"
+ },
+ {
+  "key": "kaplan2005",
+  "citation": "Kaplan, G. H. 2005, The IAU Resolutions on Astronomical Reference Systems, Time Scales, and Earth Rotation Models: Explanation and Implementation, U.S. Naval Observatory Circular No. 179",
+  "bibcode": "2005USNOC.179.....K",
+  "url": "https://arxiv.org/abs/astro-ph/0602086"
+ },
+ {
+  "key": "iers2026",
+  "citation": "IERS Earth Orientation Center (Bizouard, C.) 2026, IERS Bulletin C 72 (Paris, 6 July 2026): no leap second at the end of December 2026; UTC - TAI = -37 s from 2017 January 1, 0h UTC, until further notice",
+  "url": "https://datacenter.iers.org/data/latestVersion/bulletinC.txt"
+ },
+ {
+  "key": "cgpm2022",
+  "citation": "CGPM 2022, Resolution 4 of the 27th General Conference on Weights and Measures, On the use and future development of UTC (decides that the maximum value of UT1-UTC will be increased in, or before, 2035); Proceedings of the 27th CGPM (2022), 2024, p. 398",
+  "doi": "10.59161/CGPM2022RES4E",
+  "url": "https://www.bipm.org/en/cgpm-2022/resolution-4"
+ },
+ {
+  "key": "edlen1953",
+  "citation": "Edlén, B. 1953, The Dispersion of Standard Air, J. Opt. Soc. Am. 43, 339–344 (IAU standard; adopted 1957, reaffirmed 1991)",
+  "doi": "10.1364/JOSA.43.000339",
+  "bibcode": "1953JOSA...43..339E",
+  "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-43-5-339"
+ },
+ {
+  "key": "edlen1966",
+  "citation": "Edlén, B. 1966, The Refractive Index of Air, Metrologia 2, 71–80",
+  "doi": "10.1088/0026-1394/2/2/002",
+  "bibcode": "1966Metro...2...71E"
+ },
+ {
+  "key": "peck1972",
+  "citation": "Peck, E. R. & Reeder, K. 1972, Dispersion of Air, J. Opt. Soc. Am. 62, 958–962. The eq. 3 (five-parameter) coefficients come from refractiveindex.info; they reproduce P&R Table V and NIST ASD.",
+  "doi": "10.1364/JOSA.62.000958",
+  "bibcode": "1972JOSA...62..958P",
+  "url": "https://opg.optica.org/josa/abstract.cfm?uri=josa-62-8-958"
+ },
+ {
+  "key": "birch1993",
+  "citation": "Birch, K. P. & Downs, M. J. 1993, An Updated Edlén Equation for the Refractive Index of Air, Metrologia 30, 155–162",
+  "doi": "10.1088/0026-1394/30/3/004",
+  "bibcode": "1993Metro..30..155B"
+ },
+ {
+  "key": "birch1994",
+  "citation": "Birch, K. P. & Downs, M. J. 1994, Correction to the Updated Edlén Equation for the Refractive Index of Air, Metrologia 31, 315–316",
+  "doi": "10.1088/0026-1394/31/4/006",
+  "bibcode": "1994Metro..31..315B"
+ },
+ {
+  "key": "ciddor1996",
+  "citation": "Ciddor, P. E. 1996, Refractive index of air: new equations for the visible and near infrared, Appl. Opt. 35, 1566–1573",
+  "doi": "10.1364/AO.35.001566",
+  "bibcode": "1996ApOpt..35.1566C"
+ },
+ {
+  "key": "iugg1999",
+  "citation": "IUGG 1999, Comptes Rendus of the XXII General Assembly, Birmingham, pp. 110–111, IAG Resolution 3 (phase and group refractivity of standard air at 0 °C, 1013.25 hPa, 375 ppm CO2)",
+  "url": "https://iugg.org/wp-content/uploads/2022/10/IUGG_GA_1999_Comptes_Rendus.pdf"
+ },
+ {
+  "key": "greisen2006",
+  "citation": "Greisen, E. W., Calabretta, M. R., Valdes, F. G. & Allen, S. L. 2006, Representations of spectral coordinates in FITS, A&A 446, 747–771 (FITS WCS Paper III)",
+  "doi": "10.1051/0004-6361:20053818",
+  "bibcode": "2006A&A...446..747G",
+  "url": "https://arxiv.org/abs/astro-ph/0507293"
+ },
+ {
+  "key": "morton1991",
+  "citation": "Morton, D. C. 1991, Atomic data for resonance absorption lines. I. Wavelengths longward of the Lyman limit, ApJS 77, 119–202",
+  "doi": "10.1086/191601",
+  "bibcode": "1991ApJS...77..119M"
+ },
+ {
+  "key": "morton2000",
+  "citation": "Morton, D. C. 2000, Atomic Data for Resonance Absorption Lines. II. Wavelengths Longward of the Lyman Limit for Heavy Elements, ApJS 130, 403–436. Eq. 8 is quoted via the VALD wiki and specutils; the full text was not accessed.",
+  "doi": "10.1086/317349",
+  "bibcode": "2000ApJS..130..403M"
+ },
+ {
+  "key": "piskunov2018",
+  "citation": "Piskunov, N. 2018, VALD documentation wiki: 'Air-to-vacuum conversion' (last edited 2018-12-12)",
+  "url": "https://www.astro.uu.se/valdwiki/Air-to-vacuum%20conversion"
+ },
+ {
+  "key": "kramida2024",
+  "citation": "Kramida, A., Ralchenko, Yu., Reader, J. & NIST ASD Team 2024, NIST Atomic Spectra Database (ver. 5.12), National Institute of Standards and Technology, Gaithersburg, MD; Lines help 'Conversion between air and vacuum wavelengths' (accessed 2026-11-23)",
+  "doi": "10.18434/T4W30F",
+  "url": "https://physics.nist.gov/asd"
+ },
+ {
+  "key": "allendeprieto2011",
+  "citation": "Allende Prieto, C. 2011, Conversion from vacuum to standard air wavelengths, APOGEE Technical Note (8 April 2011)",
+  "url": "https://www.as.utexas.edu/~hebe/apogee/docs/air_vacuum.pdf"
+ },
+ {
+  "key": "sdss2003",
+  "citation": "SDSS 2003, 'Vacuum wavelengths' (SDSS DR7 web documentation, also used on the DR8–DR12 pages). The Ciddor formula used since DR9 is documented on the SDSS DR17 'Spectroscopic basics' page.",
+  "url": "https://classic.sdss.org/dr7/products/spectra/vacwavelength.php"
+ },
+ {
+  "key": "landsman1993",
+  "citation": "Landsman, W. B. 1993, The IDL Astronomy User's Library, in Astronomical Data Analysis Software and Systems II, ASP Conf. Ser. 52, 246 (routines vactoair.pro and airtovac.pro, 2011 revisions)",
+  "bibcode": "1993ASPC...52..246L",
+  "url": "https://github.com/wlandsman/IDLAstro"
+ },
+ {
+  "key": "tody1993",
+  "citation": "Tody, D. 1993, IRAF in the Nineties, in Astronomical Data Analysis Software and Systems II, ASP Conf. Ser. 52, 173 (code: noao/onedspec/dispcor/t_disptrans.x, noao/lib/linelists/airvac.cl, noao/astutil/asttools/astlvac.x)",
+  "bibcode": "1993ASPC...52..173T",
+  "url": "https://github.com/iraf-community/iraf"
+ },
+ {
+  "key": "calabretta2026",
+  "citation": "Calabretta, M. R. 2026, WCSLIB 8.10: spx.h/spx.c (air-to-vacuum conversion, Edlén 1953 at the air wavenumber) and spc.h (spcaips, AIPS VELREF convention). Bundled in astropy (cextern/wcslib; WCSLIB 8.4 in astropy 7.2).",
+  "url": "https://www.atnf.csiro.au/computing/software/wcs/"
+ },
+ {
+  "key": "astropy2022",
+  "citation": "Astropy Collaboration, Price-Whelan, A. M., et al. 2022, The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package, ApJ 935, 167",
+  "doi": "10.3847/1538-4357/ac7c74",
+  "bibcode": "2022ApJ...935..167A"
+ },
+ {
+  "key": "specutils2026",
+  "citation": "Specutils Developers 2026, specutils 2.4.0: specutils.utils.wcs_utils (refraction_index, vac_to_air, air_to_vac)",
+  "url": "https://docs.astropy.org/projects/specutils/en/latest/wcs_utils.html"
+ },
+ {
+  "key": "czesla2019",
+  "citation": "Czesla, S., et al. 2019, PyA: Python astronomy-related packages, Astrophysics Source Code Library, ascl:1906.010 (PyAstronomy 0.25, pyasl airtovac2/vactoair2)",
+  "bibcode": "2019ascl.soft06010C",
+  "url": "https://github.com/sczesla/PyAstronomy"
+ },
+ {
+  "key": "mathar2004",
+  "citation": "Mathar, R. J. 2004, Calculated refractivity of water vapor and moist air in the atmospheric window at 10 μm, Appl. Opt. 43, 928",
+  "doi": "10.1364/AO.43.000928",
+  "bibcode": "2004ApOpt..43..928M"
+ },
+ {
+  "key": "noaa2026",
+  "citation": "NOAA Global Monitoring Laboratory 2026, Trends in Atmospheric Carbon Dioxide, Mauna Loa (annual means 2024 = 424.61 ppm, 2025 = 427.35 ppm; co2_annmean_mlo.txt), accessed 2026-11",
+  "url": "https://gml.noaa.gov/ccgg/trends/"
+ },
+ {
+  "key": "lindegren2003",
+  "citation": "Lindegren, L. & Dravins, D. 2003, The fundamental definition of 'radial velocity', A&A 401, 1185–1201 (includes the texts of IAU 2000 Resolutions C1 and C2)",
+  "doi": "10.1051/0004-6361:20030181",
+  "bibcode": "2003A&A...401.1185L",
+  "url": "https://arxiv.org/abs/astro-ph/0302522"
+ },
+ {
+  "key": "wright2014",
+  "citation": "Wright, J. T. & Eastman, J. D. 2014, Barycentric Corrections at 1 cm s⁻¹ for Precise Doppler Velocities, PASP 126, 838–852",
+  "doi": "10.1086/678541",
+  "bibcode": "2014PASP..126..838W",
+  "url": "https://arxiv.org/abs/1409.4774"
+ },
+ {
+  "key": "abrams1994",
+  "citation": "Abrams, M. C., Davis, S. P., Rao, M. L. P., Engleman, R., Jr., & Brault, J. W. 1994, High-resolution Fourier transform spectroscopy of the Meinel system of OH, ApJS 93, 351",
+  "doi": "10.1086/192058",
+  "bibcode": "1994ApJS...93..351A"
+ },
+ {
+  "key": "bagdonaite2013",
+  "citation": "Bagdonaite, J., Daprà, M., Jansen, P., Bethlem, H. L., Ubachs, W., et al. 2013, Robust constraint on a drifting proton-to-electron mass ratio at z = 0.89 from methanol observation at three radio telescopes, PRL 111, 231101",
+  "doi": "10.1103/PhysRevLett.111.231101",
+  "url": "https://arxiv.org/abs/1311.3438"
+ },
+ {
+  "key": "bauer2015",
+  "citation": "Bauer, F. F., Zechmeister, M., & Reiners, A. 2015, Calibrating echelle spectrographs with Fabry-Pérot etalons, A&A 581, A117",
+  "doi": "10.1051/0004-6361/201526462",
+  "url": "https://arxiv.org/abs/1506.07887"
+ },
+ {
+  "key": "butler1996",
+  "citation": "Butler, R. P., Marcy, G. W., Williams, E., McCarthy, C., Dosanjh, P., & Vogt, S. S. 1996, Attaining Doppler precision of 3 m s^-1, PASP 108, 500",
+  "doi": "10.1086/133755"
+ },
+ {
+  "key": "calcino2017",
+  "citation": "Calcino, J. & Davis, T. 2017, The need for accurate redshifts in supernova cosmology, JCAP 01, 038",
+  "doi": "10.1088/1475-7516/2017/01/038",
+  "url": "https://arxiv.org/abs/1610.07695"
+ },
+ {
+  "key": "carr2022",
+  "citation": "Carr, A., Davis, T. M., Scolnic, D., Said, K., et al. 2022, The Pantheon+ analysis: improving the redshifts and peculiar velocities of Type Ia supernovae used in cosmological analyses, PASA 39, e046",
+  "doi": "10.1017/pasa.2022.41",
+  "bibcode": "2022PASA...39...46C",
+  "url": "https://arxiv.org/abs/2112.01471"
+ },
+ {
+  "key": "cersullo2019",
+  "citation": "Cersullo, F., Coffinet, A., Chazelas, B., Lovis, C., & Pepe, F. 2019, A new infrared Fabry-Pérot-based radial-velocity-reference module for the SPIRou radial-velocity spectrograph, A&A 624, A122",
+  "doi": "10.1051/0004-6361/201833852",
+  "url": "https://arxiv.org/abs/1903.01942"
+ },
+ {
+  "key": "cooke2020",
+  "citation": "Cooke, R. 2020, The ACCELERATION programme: I. Cosmology with the redshift drift, MNRAS 492, 2044",
+  "doi": "10.1093/mnras/stz3465",
+  "url": "https://arxiv.org/abs/1912.04983"
+ },
+ {
+  "key": "davis2004",
+  "citation": "Davis, T. M. & Lineweaver, C. H. 2004, Expanding confusion: common misconceptions of cosmological horizons and the superluminal expansion of the Universe, PASA 21, 97",
+  "doi": "10.1071/AS03040",
+  "url": "https://arxiv.org/abs/astro-ph/0310808"
+ },
+ {
+  "key": "davis2011",
+  "citation": "Davis, T. M., Hui, L., Frieman, J. A., Haugbølle, T., et al. 2011, The effect of peculiar velocities on supernova cosmology, ApJ 741, 67",
+  "doi": "10.1088/0004-637X/741/1/67",
+  "bibcode": "2011ApJ...741...67D",
+  "url": "https://arxiv.org/abs/1012.2912"
+ },
+ {
+  "key": "davis2014",
+  "citation": "Davis, T. M. & Scrimgeour, M. I. 2014, Deriving accurate peculiar velocities (even at high redshift), MNRAS 442, 1117",
+  "doi": "10.1093/mnras/stu920",
+  "url": "https://arxiv.org/abs/1405.0105"
+ },
+ {
+  "key": "dzuba1999",
+  "citation": "Dzuba, V. A., Flambaum, V. V., & Webb, J. K. 1999, Space-time variation of physical constants and relativistic corrections in atoms, PRL 82, 888",
+  "doi": "10.1103/PhysRevLett.82.888"
+ },
+ {
+  "key": "falcon2010",
+  "citation": "Falcon, R. E., Winget, D. E., Montgomery, M. H., & Williams, K. A. 2010, A gravitational redshift determination of the mean mass of white dwarfs: DA stars, ApJ 712, 585",
+  "doi": "10.1088/0004-637X/712/1/585",
+  "url": "https://arxiv.org/abs/1002.2009"
+ },
+ {
+  "key": "figueira2010",
+  "citation": "Figueira, P., Pepe, F., Lovis, C., & Mayor, M. 2010, Evaluating the stability of atmospheric lines with HARPS, A&A 515, A106",
+  "doi": "10.1051/0004-6361/201014005",
+  "bibcode": "2010A&A...515A.106F",
+  "url": "https://arxiv.org/abs/1003.0541"
+ },
+ {
+  "key": "fixsen1996",
+  "citation": "Fixsen, D. J., Cheng, E. S., Gales, J. M., Mather, J. C., Shafer, R. A., & Wright, E. L. 1996, The cosmic microwave background spectrum from the full COBE FIRAS data set, ApJ 473, 576",
+  "doi": "10.1086/178173",
+  "bibcode": "1996ApJ...473..576F",
+  "url": "https://arxiv.org/abs/astro-ph/9605054"
+ },
+ {
+  "key": "gonzalezhernandez2020",
+  "citation": "González Hernández, J. I., Rebolo, R., Pasquini, L., Lo Curto, G., et al. 2020, The solar gravitational redshift from HARPS-LFC Moon spectra, A&A 643, A146",
+  "doi": "10.1051/0004-6361/202038937",
+  "url": "https://arxiv.org/abs/2009.10558"
+ },
+ {
+  "key": "gordon2026",
+  "citation": "Gordon, I. E., Rothman, L. S., Hargreaves, R. J., Gomez, F. M., Bertin, T., Hill, C., et al. 2026, The HITRAN2024 molecular spectroscopic database, JQSRT 353, 109807",
+  "doi": "10.1016/j.jqsrt.2026.109807",
+  "bibcode": "2026JQSRT.35309807G",
+  "url": "https://hitran.org/"
+ },
+ {
+  "key": "gravity2018",
+  "citation": "GRAVITY Collaboration (Abuter, R., et al.) 2018, Detection of the gravitational redshift in the orbit of the star S2 near the Galactic centre massive black hole, A&A 615, L15",
+  "doi": "10.1051/0004-6361/201833718",
+  "bibcode": "2018A&A...615L..15G",
+  "url": "https://arxiv.org/abs/1807.09409"
+ },
+ {
+  "key": "greisen2006",
+  "citation": "Greisen, E. W., Calabretta, M. R., Valdes, F. G., & Allen, S. L. 2006, Representations of spectral coordinates in FITS, A&A 446, 747",
+  "doi": "10.1051/0004-6361:20053818",
+  "url": "https://arxiv.org/abs/astro-ph/0507293"
+ },
+ {
+  "key": "hanuschik2003",
+  "citation": "Hanuschik, R. W. 2003, A flux-calibrated, high-resolution atlas of optical sky emission from UVES, A&A 407, 1157",
+  "doi": "10.1051/0004-6361:20030885",
+  "bibcode": "2003A&A...407.1157H"
+ },
+ {
+  "key": "joyce2018",
+  "citation": "Joyce, S. R. G., Barstow, M. A., Holberg, J. B., Bond, H. E., et al. 2018, The gravitational redshift of Sirius B, MNRAS 481, 2361",
+  "doi": "10.1093/mnras/sty2404",
+  "url": "https://arxiv.org/abs/1809.01240"
+ },
+ {
+  "key": "kerber2008",
+  "citation": "Kerber, F., Nave, G., & Sansonetti, C. J. 2008, The spectrum of Th-Ar hollow cathode lamps in the 691-5804 nm region, ApJS 178, 374",
+  "doi": "10.1086/590111"
+ },
+ {
+  "key": "king2012",
+  "citation": "King, J. A., Webb, J. K., Murphy, M. T., Flambaum, V. V., Carswell, R. F., et al. 2012, Spatial variation in the fine-structure constant: new results from VLT/UVES, MNRAS 422, 3370",
+  "doi": "10.1111/j.1365-2966.2012.20852.x",
+  "url": "https://arxiv.org/abs/1202.4758"
+ },
+ {
+  "key": "kurster2003",
+  "citation": "Kürster, M., Endl, M., Rouesnel, F., Els, S., et al. 2003, The low-level radial velocity variability in Barnard's star, A&A 403, 1077",
+  "doi": "10.1051/0004-6361:20030396",
+  "url": "https://arxiv.org/abs/astro-ph/0303528"
+ },
+ {
+  "key": "li2008",
+  "citation": "Li, C.-H., Benedick, A. J., Fendel, P., Glenday, A. G., Kärtner, F. X., Phillips, D. F., Sasselov, D., Szentgyorgyi, A., & Walsworth, R. L. 2008, A laser frequency comb that enables radial velocity measurements with a precision of 1 cm s^-1, Nature 452, 610",
+  "doi": "10.1038/nature06854",
+  "url": "https://arxiv.org/abs/0804.0955"
+ },
+ {
+  "key": "lindegren2003",
+  "citation": "Lindegren, L. & Dravins, D. 2003, The fundamental definition of 'radial velocity', A&A 401, 1185 (includes IAU 2000 Resolutions C1 and C2)",
+  "doi": "10.1051/0004-6361:20030181",
+  "bibcode": "2003A&A...401.1185L",
+  "url": "https://arxiv.org/abs/astro-ph/0302522"
+ },
+ {
+  "key": "liske2008",
+  "citation": "Liske, J., Grazian, A., Vanzella, E., Dessauges, M., et al. 2008, Cosmic dynamics in the era of Extremely Large Telescopes, MNRAS 386, 1192",
+  "doi": "10.1111/j.1365-2966.2008.13090.x",
+  "url": "https://arxiv.org/abs/0802.1532"
+ },
+ {
+  "key": "loeb1998",
+  "citation": "Loeb, A. 1998, Direct measurement of cosmological parameters from the cosmic deceleration of extragalactic objects, ApJ 499, L111",
+  "doi": "10.1086/311375",
+  "bibcode": "1998ApJ...499L.111L",
+  "url": "https://arxiv.org/abs/astro-ph/9802122"
+ },
+ {
+  "key": "lohnerbottcher2018",
+  "citation": "Löhner-Böttcher, J., Schmidt, W., Stief, F., Steinmetz, T., & Holzwarth, R. 2018, Convective blueshifts in the solar atmosphere. I. Absolute measurements with LARS of the spectral lines at 6302 Å, A&A 611, A4",
+  "doi": "10.1051/0004-6361/201732107"
+ },
+ {
+  "key": "lohnerbottcher2019",
+  "citation": "Löhner-Böttcher, J., et al. 2019, Convective blueshifts in the solar atmosphere. III. High-accuracy observations of spectral lines in the visible, A&A 624, A57",
+  "doi": "10.1051/0004-6361/201834925",
+  "url": "https://arxiv.org/abs/1901.07606"
+ },
+ {
+  "key": "lovis2007",
+  "citation": "Lovis, C. & Pepe, F. 2007, A new list of thorium and argon spectral lines in the visible, A&A 468, 1115",
+  "doi": "10.1051/0004-6361:20077249",
+  "url": "https://arxiv.org/abs/astro-ph/0703412"
+ },
+ {
+  "key": "marcy1992",
+  "citation": "Marcy, G. W. & Butler, R. P. 1992, Precision radial velocities with an iodine absorption cell, PASP 104, 270",
+  "doi": "10.1086/132989"
+ },
+ {
+  "key": "martins2024",
+  "citation": "Martins, C. J. A. P., Cooke, R., Liske, J., Murphy, M. T., et al. 2024, Cosmology and fundamental physics with the ELT-ANDES spectrograph, Experimental Astronomy 57, 5 (arXiv:2311.16274)",
+  "url": "",
+  "doi": "10.1007/s10686-024-09928-w"
+ },
+ {
+  "key": "milakovic2020",
+  "citation": "Milaković, D., Pasquini, L., Webb, J. K., & Lo Curto, G. 2020, Precision and consistency of astrocombs, MNRAS 493, 3997",
+  "doi": "10.1093/mnras/staa356",
+  "url": "https://arxiv.org/abs/2002.05182"
+ },
+ {
+  "key": "murphy2003",
+  "citation": "Murphy, M. T., Webb, J. K., & Flambaum, V. V. 2003, Further evidence for a variable fine-structure constant from Keck/HIRES QSO absorption spectra, MNRAS 345, 609",
+  "doi": "10.1046/j.1365-8711.2003.06970.x"
+ },
+ {
+  "key": "murphy2007a",
+  "citation": "Murphy, M. T., Tzanavaris, P., Webb, J. K., & Lovis, C. 2007, Selection of ThAr lines for wavelength calibration of echelle spectra and implications for variations in the fine-structure constant, MNRAS 378, 221",
+  "doi": "10.1111/j.1365-2966.2007.11768.x"
+ },
+ {
+  "key": "murphy2007b",
+  "citation": "Murphy, M. T., Udem, Th., Holzwarth, R., Sizmann, A., Pasquini, L., Araujo-Hauck, C., et al. 2007, High-precision wavelength calibration of astronomical spectrographs with laser frequency combs, MNRAS 380, 839",
+  "doi": "10.1111/j.1365-2966.2007.12147.x"
+ },
+ {
+  "key": "murphy2014",
+  "citation": "Murphy, M. T. & Berengut, J. C. 2014, Laboratory atomic transition data for precise optical quasar absorption spectroscopy, MNRAS 438, 388",
+  "doi": "10.1093/mnras/stt2204",
+  "url": "https://arxiv.org/abs/1311.2949"
+ },
+ {
+  "key": "murphy2022",
+  "citation": "Murphy, M. T., Molaro, P., Leite, A. C. O., Cupani, G., Cristiani, S., et al. 2022, Fundamental physics with ESPRESSO: precise limit on variations in the fine-structure constant towards the bright quasar HE 0515-4414, A&A 658, A123",
+  "doi": "10.1051/0004-6361/202142257",
+  "url": "https://arxiv.org/abs/2112.05819"
+ },
+ {
+  "key": "oliva2015",
+  "citation": "Oliva, E., Origlia, L., Scuderi, S., Benatti, S., Carleo, I., et al. 2015, Lines and continuum sky emission in the near infrared: observational constraints from deep high spectral resolution spectra with GIANO-TNG, A&A 581, A47",
+  "doi": "10.1051/0004-6361/201526291",
+  "bibcode": "2015A&A...581A..47O"
+ },
+ {
+  "key": "osterbrock1996",
+  "citation": "Osterbrock, D. E., Fulbright, J. P., Martel, A. R., Keane, M. J., Trager, S. C., & Basri, G. 1996, Night-sky high-resolution spectral atlas of OH and O2 emission lines for echelle spectrograph wavelength calibration, PASP 108, 277",
+  "doi": "10.1086/133722",
+  "bibcode": "1996PASP..108..277O"
+ },
+ {
+  "key": "osterbrock1997",
+  "citation": "Osterbrock, D. E., Fulbright, J. P. & Bida, T. A. 1997, Night-sky high-resolution spectral atlas of OH emission lines for echelle spectrograph wavelength calibration. II, PASP 109, 614–627 (VizieR III/211)",
+  "doi": "10.1086/133920",
+  "bibcode": "1997PASP..109..614O"
+ },
+ {
+  "key": "pasquini2011",
+  "citation": "Pasquini, L., Melo, C., Chavero, C., Dravins, D., et al. 2011, Gravitational redshifts in main-sequence and giant stars, A&A 526, A127",
+  "doi": "10.1051/0004-6361/201015337",
+  "url": "https://arxiv.org/abs/1011.4635"
+ },
+ {
+  "key": "planck2020a",
+  "citation": "Planck Collaboration 2020, Planck 2018 results. I. Overview and the cosmological legacy of Planck, A&A 641, A1 (solar dipole 369.82 ± 0.11 km/s)",
+  "doi": "10.1051/0004-6361/201833880",
+  "bibcode": "2020A&A...641A...1P",
+  "url": "https://arxiv.org/abs/1807.06205"
+ },
+ {
+  "key": "planck2020b",
+  "citation": "Planck Collaboration 2020, Planck 2018 results. VI. Cosmological parameters, A&A 641, A6 (used through astropy.cosmology.Planck18)",
+  "doi": "10.1051/0004-6361/201833910",
+  "bibcode": "2020A&A...641A...6P"
+ },
+ {
+  "key": "probst2020",
+  "citation": "Probst, R. A., Milaković, D., Toledo-Padrón, B., Lo Curto, G., et al. 2020, A crucial test for astronomical spectrograph calibration with frequency combs, Nature Astronomy 4, 603",
+  "doi": "10.1038/s41550-020-1010-x",
+  "url": "https://arxiv.org/abs/2002.08868"
+ },
+ {
+  "key": "redman2011",
+  "citation": "Redman, S. L., Lawler, J. E., Nave, G., Ramsey, L. W., & Mahadevan, S. 2011, The infrared spectrum of uranium hollow cathode lamps from 850 nm to 4000 nm, ApJS 195, 24",
+  "doi": "10.1088/0067-0049/195/2/24",
+  "url": "https://arxiv.org/abs/1107.4091"
+ },
+ {
+  "key": "redman2012",
+  "citation": "Redman, S. L., Ycas, G. G., Terrien, R., Mahadevan, S., Ramsey, L. W., Bender, C. F., et al. 2012, A high-resolution atlas of uranium-neon in the H band, ApJS 199, 2",
+  "doi": "10.1088/0067-0049/199/1/2",
+  "url": "https://arxiv.org/abs/1112.1062"
+ },
+ {
+  "key": "redman2014",
+  "citation": "Redman, S. L., Nave, G., & Sansonetti, C. J. 2014, The spectrum of thorium from 250 nm to 5500 nm: Ritz wavelengths and optimized energy levels, ApJS 211, 4",
+  "doi": "10.1088/0067-0049/211/1/4",
+  "url": "https://arxiv.org/abs/1308.5229"
+ },
+ {
+  "key": "reiners2016",
+  "citation": "Reiners, A., Mrotzek, N., Lemke, U., Hinrichs, J., & Reinsch, K. 2016, The IAG solar flux atlas: accurate wavelengths and absolute convective blueshift in standard solar spectra, A&A 587, A65",
+  "doi": "10.1051/0004-6361/201527530",
+  "url": "https://arxiv.org/abs/1511.03014"
+ },
+ {
+  "key": "riess2022",
+  "citation": "Riess, A. G., Yuan, W., Macri, L. M., Scolnic, D., et al. 2022, A comprehensive measurement of the local value of the Hubble constant with 1 km s^-1 Mpc^-1 uncertainty from the Hubble Space Telescope and the SH0ES team, ApJL 934, L7",
+  "doi": "10.3847/2041-8213/ac5c5b",
+  "url": "https://arxiv.org/abs/2112.04510"
+ },
+ {
+  "key": "rousselot2000",
+  "citation": "Rousselot, P., Lidman, C., Cuby, J.-G., Moreels, G., & Monnet, G. 2000, Night-sky spectral atlas of OH emission lines in the near-infrared, A&A 354, 1134",
+  "bibcode": "2000A&A...354.1134R",
+  "url": "https://adsabs.harvard.edu/abs/2000A%26A...354.1134R"
+ },
+ {
+  "key": "sandage1962",
+  "citation": "Sandage, A. 1962, The change of redshift and apparent luminosity of galaxies due to the deceleration of selected expanding universes, ApJ 136, 319",
+  "doi": "10.1086/147385",
+  "bibcode": "1962ApJ...136..319S"
+ },
+ {
+  "key": "schmidt2021",
+  "citation": "Schmidt, T. M., Molaro, P., Murphy, M. T., Lovis, C., Cupani, G., Cristiani, S., et al. 2021, Fundamental physics with ESPRESSO: towards an accurate wavelength calibration for a precision test of the fine-structure constant, A&A 646, A144",
+  "doi": "10.1051/0004-6361/202039345",
+  "url": "https://arxiv.org/abs/2011.13963"
+ },
+ {
+  "key": "steinmetz2008",
+  "citation": "Steinmetz, T., Wilken, T., Araujo-Hauck, C., Holzwarth, R., Hänsch, T. W., Pasquini, L., et al. 2008, Laser frequency combs for astronomical observations, Science 321, 1335",
+  "doi": "10.1126/science.1161030",
+  "url": "https://arxiv.org/abs/0809.1663"
+ },
+ {
+  "key": "terrien2021",
+  "citation": "Terrien, R. C., Ninan, J. P., Diddams, S. A., Mahadevan, S., et al. 2021, Broadband stability of the Habitable Zone Planet Finder Fabry-Pérot etalon calibration system, AJ 161, 252",
+  "doi": "10.3847/1538-3881/abef68"
+ },
+ {
+  "key": "ubachs2007",
+  "citation": "Ubachs, W., Buning, R., Eikema, K. S. E., & Reinhold, E. 2007, On a possible variation of the proton-to-electron mass ratio: H2 spectra in the line of sight of high-redshift quasars and in the laboratory, J. Mol. Spectrosc. 241, 155",
+  "doi": "10.1016/j.jms.2006.12.004"
+ },
+ {
+  "key": "ubachs2016",
+  "citation": "Ubachs, W., Bagdonaite, J., Salumbides, E. J., Murphy, M. T., & Kaper, L. 2016, Colloquium: Search for a drifting proton-electron mass ratio from H2, Rev. Mod. Phys. 88, 021003",
+  "doi": "10.1103/RevModPhys.88.021003"
+ },
+ {
+  "key": "webb1999",
+  "citation": "Webb, J. K., Flambaum, V. V., Churchill, C. W., Drinkwater, M. J., & Barrow, J. D. 1999, Search for time variation of the fine structure constant, PRL 82, 884",
+  "doi": "10.1103/PhysRevLett.82.884",
+  "url": "https://arxiv.org/abs/astro-ph/9803165"
+ },
+ {
+  "key": "webb2011",
+  "citation": "Webb, J. K., King, J. A., Murphy, M. T., Flambaum, V. V., Carswell, R. F., & Bainbridge, M. B. 2011, Indications of a spatial variation of the fine structure constant, PRL 107, 191101",
+  "doi": "10.1103/PhysRevLett.107.191101"
+ },
+ {
+  "key": "wildi2010",
+  "citation": "Wildi, F., Pepe, F., Chazelas, B., Lo Curto, G., & Lovis, C. 2010, A Fabry-Perot calibrator of the HARPS radial velocity spectrograph: performance report, Proc. SPIE 7735, 77354X",
+  "doi": "10.1117/12.857951"
+ },
+ {
+  "key": "wilken2012",
+  "citation": "Wilken, T., Lo Curto, G., Probst, R. A., Steinmetz, T., Manescau, A., Pasquini, L., González Hernández, J. I., Rebolo, R., Hänsch, T. W., Udem, T., & Holzwarth, R. 2012, A spectrograph for exoplanet observations calibrated at the centimetre-per-second level, Nature 485, 611",
+  "doi": "10.1038/nature11092"
+ },
+ {
+  "key": "wojtak2011",
+  "citation": "Wojtak, R., Hansen, S. H., & Hjorth, J. 2011, Gravitational redshift of galaxies in clusters as predicted by general relativity, Nature 477, 567",
+  "doi": "10.1038/nature10445",
+  "url": "https://arxiv.org/abs/1109.6571"
+ },
+ {
+  "key": "wright2014",
+  "citation": "Wright, J. T. & Eastman, J. D. 2014, Barycentric corrections at 1 cm/s for precise Doppler velocities, PASP 126, 838",
+  "doi": "10.1086/678541",
+  "bibcode": "2014PASP..126..838W",
+  "url": "https://arxiv.org/abs/1409.4774"
+ },
+ {
+  "key": "gordon1976",
+  "citation": "Gordon, M. A. 1976, Computer programs for radio astronomy, §6.1 “Radial-velocity corrections for Earth motion”, in Methods of Experimental Physics, Vol. 12C: Astrophysics — Radio Observations, ed. M. L. Meeks (New York: Academic Press), p. 277 (LSRK definition: 20 km/s toward 18h, +30°, B1900)",
+  "url": "https://docs.astropy.org/en/stable/api/astropy.coordinates.LSRK.html"
+ },
+ {
+  "key": "delhaye1965",
+  "citation": "Delhaye, J. 1965, 'Solar Motion and Velocity Distribution of Common Stars', in Galactic Structure (Stars and Stellar Systems V), eds. A. Blaauw & M. Schmidt (Chicago: Univ. Chicago Press), p. 61",
+  "bibcode": "1965gast.book...61D",
+  "url": "https://irtfweb.ifa.hawaii.edu/~tcs3/tcs3/Misc/slalib_html/node173.html"
+ },
+ {
+  "key": "wallace2000",
+  "citation": "Wallace, P. T. 2000, SLALIB - Positional Astronomy Library, Starlink User Note 67 (routines sla_RVLSRK, sla_RVLSRD)",
+  "url": "https://irtfweb.ifa.hawaii.edu/~tcs3/tcs3/Misc/slalib_html/node174.html"
+ },
+ {
+  "key": "schoenrich2010",
+  "citation": "Schönrich, R., Binney, J., & Dehnen, W. 2010, MNRAS, 403, 1829, 'Local kinematics and the local standard of rest'",
+  "doi": "10.1111/j.1365-2966.2010.16253.x",
+  "bibcode": "2010MNRAS.403.1829S",
+  "url": "https://arxiv.org/abs/0912.3693"
+ },
+ {
+  "key": "dehnen1998",
+  "citation": "Dehnen, W., & Binney, J. J. 1998, MNRAS, 298, 387, 'Local stellar kinematics from HIPPARCOS data'",
+  "doi": "10.1046/j.1365-8711.1998.01600.x",
+  "bibcode": "1998MNRAS.298..387D",
+  "url": "https://arxiv.org/abs/astro-ph/9710077"
+ },
+ {
+  "key": "blandhawthorn2016",
+  "citation": "Bland-Hawthorn, J., & Gerhard, O. 2016, ARA&A, 54, 529, 'The Galaxy in Context: Structural, Kinematic, and Integrated Properties'",
+  "doi": "10.1146/annurev-astro-081915-023441",
+  "bibcode": "2016ARA&A..54..529B",
+  "url": "https://arxiv.org/abs/1602.07702"
+ },
+ {
+  "key": "ding2019",
+  "citation": "Ding, P.-J., Zhu, Z., & Liu, J.-C. 2019, RAA, 19, 068 (solar peculiar motion from Gaia DR2)",
+  "doi": "10.1088/1674-4527/19/5/68",
+  "bibcode": "2019RAA....19...68D",
+  "url": "https://www.raa-journal.org/issues/all/2019/v19n5/202203/P020220325577096731696.pdf"
+ },
+ {
+  "key": "reid2009",
+  "citation": "Reid, M. J., et al. 2009, ApJ, 700, 137, 'Trigonometric Parallaxes of Massive Star-Forming Regions. VI. Galactic Structure, Fundamental Parameters, and Noncircular Motions'",
+  "doi": "10.1088/0004-637X/700/1/137",
+  "bibcode": "2009ApJ...700..137R",
+  "url": "https://arxiv.org/abs/0902.3913"
+ },
+ {
+  "key": "kerr1986",
+  "citation": "Kerr, F. J., & Lynden-Bell, D. 1986, MNRAS, 221, 1023, 'Review of galactic constants' (IAU 1985: R0 = 8.5 kpc, Theta0 = 220 km/s)",
+  "doi": "10.1093/mnras/221.4.1023",
+  "bibcode": "1986MNRAS.221.1023K"
+ },
+ {
+  "key": "greisen2006",
+  "citation": "Greisen, E. W., Calabretta, M. R., Valdes, F. G., & Allen, S. L. 2006, A&A, 446, 747, 'Representations of spectral coordinates in FITS' (Table 12, SPECSYS conventions)",
+  "doi": "10.1051/0004-6361:20053818",
+  "bibcode": "2006A&A...446..747G",
+  "url": "https://arxiv.org/abs/astro-ph/0507293"
+ },
+ {
+  "key": "gravity2018",
+  "citation": "GRAVITY Collaboration (Abuter, R., et al.) 2018, A&A, 615, L15, 'Detection of the gravitational redshift in the orbit of the star S2 near the Galactic centre massive black hole' (R0 = 8122 +- 31 pc)",
+  "doi": "10.1051/0004-6361/201833718",
+  "bibcode": "2018A&A...615L..15G",
+  "url": "https://arxiv.org/abs/1807.09409"
+ },
+ {
+  "key": "gravity2019",
+  "citation": "GRAVITY Collaboration (Abuter, R., et al.) 2019, A&A, 625, L10, 'A geometric distance measurement to the Galactic center black hole with 0.3% uncertainty'",
+  "doi": "10.1051/0004-6361/201935656",
+  "bibcode": "2019A&A...625L..10G",
+  "url": "https://arxiv.org/abs/1904.05721"
+ },
+ {
+  "key": "gravity2021",
+  "citation": "GRAVITY Collaboration (Abuter, R., et al.) 2021, A&A, 647, A59, 'Improved GRAVITY astrometric accuracy from modeling optical aberrations'",
+  "doi": "10.1051/0004-6361/202040208",
+  "bibcode": "2021A&A...647A..59G",
+  "url": "https://arxiv.org/abs/2101.12098"
+ },
+ {
+  "key": "gravity2022",
+  "citation": "GRAVITY Collaboration (Abuter, R., et al.) 2022, A&A, 657, L12, 'Mass distribution in the Galactic Center based on interferometric astrometry of multiple stellar orbits'",
+  "doi": "10.1051/0004-6361/202142465",
+  "bibcode": "2022A&A...657L..12G",
+  "url": "https://arxiv.org/abs/2112.07478"
+ },
+ {
+  "key": "reid2019",
+  "citation": "Reid, M. J., et al. 2019, ApJ, 885, 131, 'Trigonometric Parallaxes of High-mass Star-forming Regions: Our View of the Milky Way'",
+  "doi": "10.3847/1538-4357/ab4a11",
+  "bibcode": "2019ApJ...885..131R",
+  "url": "https://arxiv.org/abs/1910.03357"
+ },
+ {
+  "key": "reid2004",
+  "citation": "Reid, M. J., & Brunthaler, A. 2004, ApJ, 616, 872, 'The Proper Motion of Sagittarius A*. II. The Mass of Sagittarius A*'",
+  "doi": "10.1086/424960",
+  "bibcode": "2004ApJ...616..872R",
+  "url": "https://arxiv.org/abs/astro-ph/0408107"
+ },
+ {
+  "key": "reid2020",
+  "citation": "Reid, M. J., & Brunthaler, A. 2020, ApJ, 892, 39, 'The Proper Motion of Sagittarius A*. III. The Case for a Supermassive Black Hole'",
+  "doi": "10.3847/1538-4357/ab76cd",
+  "bibcode": "2020ApJ...892...39R",
+  "url": "https://arxiv.org/abs/2001.04386"
+ },
+ {
+  "key": "drimmel2018",
+  "citation": "Drimmel, R., & Poggio, E. 2018, RNAAS, 2, 210, 'On the Solar Velocity'",
+  "doi": "10.3847/2515-5172/aaef8b",
+  "bibcode": "2018RNAAS...2..210D",
+  "url": "https://iopscience.iop.org/article/10.3847/2515-5172/aaef8b"
+ },
+ {
+  "key": "bennett2019",
+  "citation": "Bennett, M., & Bovy, J. 2019, MNRAS, 482, 1417, 'Vertical waves in the solar neighbourhood in Gaia DR2'",
+  "doi": "10.1093/mnras/sty2813",
+  "bibcode": "2019MNRAS.482.1417B",
+  "url": "https://arxiv.org/abs/1809.03507"
+ },
+ {
+  "key": "astropy2022",
+  "citation": "Astropy Collaboration (Price-Whelan, A. M., et al.) 2022, ApJ, 935, 167, 'The Astropy Project: Sustaining and Growing a Community-oriented Open-source Project and the Latest Major Release (v5.0) of the Core Package' (frame defaults checked in astropy 7.2.0 source: builtin_frames/lsr.py, galactocentric.py)",
+  "doi": "10.3847/1538-4357/ac7c74",
+  "bibcode": "2022ApJ...935..167A",
+  "url": "https://github.com/astropy/astropy"
+ },
+ {
+  "key": "mcmillan2011",
+  "citation": "McMillan, P. J. 2011, MNRAS, 414, 2446, 'Mass models of the Milky Way' (cited as quoted in Planck 2018 I Table 3)",
+  "doi": "10.1111/j.1365-2966.2011.18564.x",
+  "bibcode": "2011MNRAS.414.2446M"
+ },
+ {
+  "key": "devaucouleurs1976",
+  "citation": "de Vaucouleurs, G., de Vaucouleurs, A., & Corwin, H. G., Jr. 1976, Second Reference Catalogue of Bright Galaxies (RC2) (Austin: University of Texas Press)"
+ },
+ {
+  "key": "devaucouleurs1991",
+  "citation": "de Vaucouleurs, G., de Vaucouleurs, A., Corwin, H. G., Jr., Buta, R. J., Paturel, G., & Fouqué, P. 1991, Third Reference Catalogue of Bright Galaxies (RC3) (New York: Springer)"
+ },
+ {
+  "key": "ned2026",
+  "citation": "NASA/IPAC Extragalactic Database (NED), Velocity Conversion Calculator help (velc_help) and Object Search Results help (objresult_help), accessed 2026-11",
+  "url": "https://ned.ipac.caltech.edu/help/velc_help.html"
+ },
+ {
+  "key": "yahil1977",
+  "citation": "Yahil, A., Tammann, G. A., & Sandage, A. 1977, ApJ, 217, 903, 'The local group: the solar motion relative to its centroid'",
+  "doi": "10.1086/155636",
+  "bibcode": "1977ApJ...217..903Y"
+ },
+ {
+  "key": "karachentsev1996",
+  "citation": "Karachentsev, I. D., & Makarov, D. A. 1996, AJ, 111, 794, 'The Galaxy Motion Relative to Nearby Galaxies and the Local Velocity Field'",
+  "doi": "10.1086/117825",
+  "bibcode": "1996AJ....111..794K",
+  "url": "https://ui.adsabs.harvard.edu/abs/1996AJ....111..794K/abstract"
+ },
+ {
+  "key": "courteau1999",
+  "citation": "Courteau, S., & van den Bergh, S. 1999, AJ, 118, 337, 'The Solar Motion Relative to the Local Group'",
+  "doi": "10.1086/300942",
+  "bibcode": "1999AJ....118..337C",
+  "url": "https://arxiv.org/abs/astro-ph/9903298"
+ },
+ {
+  "key": "diaz2014",
+  "citation": "Diaz, J. D., Koposov, S. E., Irwin, M., Belokurov, V., & Evans, N. W. 2014, MNRAS, 443, 1688, 'Balancing mass and momentum in the Local Group'",
+  "doi": "10.1093/mnras/stu1210",
+  "bibcode": "2014MNRAS.443.1688D",
+  "url": "https://arxiv.org/abs/1405.3662"
+ },
+ {
+  "key": "vandermarel2012",
+  "citation": "van der Marel, R. P., Fardal, M., Besla, G., et al. 2012, ApJ, 753, 8, 'The M31 Velocity Vector. II. Radial Orbit toward the Milky Way and Implied Local Group Mass'",
+  "doi": "10.1088/0004-637X/753/1/8",
+  "bibcode": "2012ApJ...753....8V",
+  "url": "https://arxiv.org/abs/1205.6864"
+ },
+ {
+  "key": "fixsen1996",
+  "citation": "Fixsen, D. J., Cheng, E. S., Gales, J. M., et al. 1996, ApJ, 473, 576, 'The Cosmic Microwave Background Spectrum from the Full COBE FIRAS Data Set'",
+  "doi": "10.1086/178173",
+  "bibcode": "1996ApJ...473..576F",
+  "url": "https://arxiv.org/abs/astro-ph/9605054"
+ },
+ {
+  "key": "kogut1993",
+  "citation": "Kogut, A., Lineweaver, C., Smoot, G. F., et al. 1993, ApJ, 419, 1, 'Dipole Anisotropy in the COBE Differential Microwave Radiometers First-Year Sky Maps'",
+  "doi": "10.1086/173453",
+  "bibcode": "1993ApJ...419....1K",
+  "url": "https://arxiv.org/abs/astro-ph/9312056"
+ },
+ {
+  "key": "bennett2003",
+  "citation": "Bennett, C. L., et al. 2003, ApJS, 148, 1, 'First-Year Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Preliminary Maps and Basic Results' (as cited by Greisen et al. 2006 for FITS CMBDIPOL; not independently checked)",
+  "doi": "10.1086/377253",
+  "bibcode": "2003ApJS..148....1B"
+ },
+ {
+  "key": "mould2000",
+  "citation": "Mould, J. R., Huchra, J. P., Freedman, W. L., et al. 2000, ApJ, 529, 786, 'The Hubble Space Telescope Key Project on the Extragalactic Distance Scale. XXVIII. Combining the Constraints on the Hubble Constant' (eqs. 1-2, A1-A2, Table A1)",
+  "doi": "10.1086/308304",
+  "bibcode": "2000ApJ...529..786M",
+  "url": "https://arxiv.org/abs/astro-ph/9909260"
+ },
+ {
+  "key": "tully2008",
+  "citation": "Tully, R. B., Shaya, E. J., Karachentsev, I. D., et al. 2008, ApJ, 676, 184, 'Our Peculiar Motion Away from the Local Void'",
+  "doi": "10.1086/527428",
+  "bibcode": "2008ApJ...676..184T",
+  "url": "https://arxiv.org/abs/0705.4139"
+ },
+ {
+  "key": "tully2023",
+  "citation": "Tully, R. B., et al. 2023, ApJ, 944, 94, 'Cosmicflows-4'",
+  "doi": "10.3847/1538-4357/ac94d8",
+  "bibcode": "2023ApJ...944...94T",
+  "url": "https://arxiv.org/abs/2209.11238"
+ },
+ {
+  "key": "davis2011",
+  "citation": "Davis, T. M., Hui, L., Frieman, J. A., et al. 2011, ApJ, 741, 67, 'The Effect of Peculiar Velocities on Supernova Cosmology'",
+  "doi": "10.1088/0004-637X/741/1/67",
+  "bibcode": "2011ApJ...741...67D",
+  "url": "https://arxiv.org/abs/1012.2912"
+ },
+ {
+  "key": "carr2022",
+  "citation": "Carr, A., Davis, T. M., Scolnic, D., et al. 2022, PASA, 39, e046, 'The Pantheon+ analysis: improving the redshifts and peculiar velocities of Type Ia supernovae used in cosmological analyses'",
+  "doi": "10.1017/pasa.2022.41",
+  "bibcode": "2022PASA...39...46C",
+  "url": "https://arxiv.org/abs/2112.01471"
+ },
+ {
+  "key": "wollaston1802",
+  "citation": "Wollaston, W.H. 1802, A method of examining refractive and dispersive powers, by prismatic reflection, Phil. Trans. R. Soc. Lond. 92, 365-380",
+  "doi": "10.1098/rstl.1802.0014",
+  "url": "https://doi.org/10.1098/rstl.1802.0014"
+ },
+ {
+  "key": "fraunhofer1817",
+  "citation": "Fraunhofer, J. 1817, Bestimmung des Brechungs- und Farbenzerstreuungs-Vermögens verschiedener Glasarten, in Bezug auf die Vervollkommnung achromatischer Fernröhre, Denkschriften der Königlichen Akademie der Wissenschaften zu München 5 (für 1814-1815), 193-226",
+  "url": "https://www.zobodat.at/pdf/Denk-Aka-Wiss-Muenchen_05_0193-0226.pdf"
+ },
+ {
+  "key": "ames1898",
+  "citation": "Ames, J.S. (transl. & ed.) 1898, Prismatic and Diffraction Spectra: Memoirs by Joseph von Fraunhofer, Harper's Scientific Memoirs (New York: Harper & Brothers)",
+  "url": "https://archive.org/details/cu31924012330118"
+ },
+ {
+  "key": "rowland1895",
+  "citation": "Rowland, H.A. 1895-1897, A preliminary table of solar-spectrum wave-lengths, Astrophysical Journal vols. 1-6 (as reprinted in the Smithsonian Physical Tables)"
+ },
+ {
+  "key": "fowle1921",
+  "citation": "Fowle, F.E. (prep.) 1921, Smithsonian Physical Tables, 7th revised ed., Smithsonian Miscellaneous Collections 71(1), Publ. 2539: Table 312 'Wave-lengths of Fraunhofer lines' (Rowland scale) and Table 321 (Rowland-to-international corrections)",
+  "url": "https://archive.org/details/smithsphystables00smitrich"
+ },
+ {
+  "key": "moore1966",
+  "citation": "Moore, C.E., Minnaert, M.G.J. & Houtgast, J. 1966, The Solar Spectrum 2935 Å to 8770 Å: Second Revision of Rowland's Preliminary Table of Solar Spectrum Wavelengths, NBS Monograph 61 (Washington: US GPO)",
+  "doi": "10.6028/NBS.MONO.61",
+  "bibcode": "1966sst..book.....M",
+  "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/MONO/nbsmonograph61.pdf"
+ },
+ {
+  "key": "babcock1947",
+  "citation": "Babcock, H.D. & Moore, C.E. 1947, The Solar Spectrum, λ6600 to λ13495, Carnegie Institution of Washington Publ. 579",
+  "bibcode": "1947PMtW....8....1B",
+  "url": ""
+ },
+ {
+  "key": "pietrow2026",
+  "citation": "Pietrow, A.G.M. 2026, HelioSpectrotron 5000: an interactive multi-resolution solar spectral atlas, Open Journal of Astrophysics 9; data: GitHub AlexPietrow/HelioSpectrotron5000 (commit d2d89f33, 2026-11-21, Apache-2.0)",
+  "doi": "10.33232/001c.158273",
+  "url": "https://github.com/AlexPietrow/HelioSpectrotron5000"
+ },
+ {
+  "key": "kurucz1984",
+  "citation": "Kurucz, R.L., Furenlid, I., Brault, J. & Testerman, L. 1984, Solar Flux Atlas from 296 to 1300 nm, National Solar Observatory Atlas No. 1",
+  "bibcode": "1984sfat.book.....K",
+  "url": "http://kurucz.harvard.edu/sun/fluxatlas/"
+ },
+ {
+  "key": "brault1987",
+  "citation": "Brault, J.W. & Neckel, H. 1987, Spectral Atlas of Solar Absolute Disk-Averaged and Disk-Center Intensity from 3290 to 12510 Å (unpublished; described in Neckel, H. 1999, Sol. Phys. 184, 421)",
+  "bibcode": "1999SoPh..184..421N"
+ },
+ {
+  "key": "allendeprieto1998a",
+  "citation": "Allende Prieto, C. & García López, R.J. 1998, A catalogue of accurate wavelengths in the optical spectrum of the Sun, A&AS 131, 431 (VizieR J/A+AS/131/431)",
+  "doi": "10.1051/aas:1998280",
+  "bibcode": "1998A&AS..131..431A",
+  "url": "https://arxiv.org/abs/astro-ph/9803262"
+ },
+ {
+  "key": "allendeprieto1998b",
+  "citation": "Allende Prieto, C. & García López, R.J. 1998, Fe I line shifts in the optical spectrum of the Sun, A&AS 129, 41 (VizieR J/A+AS/129/41)",
+  "doi": "10.1051/aas:1998173",
+  "bibcode": "1998A&AS..129...41A",
+  "url": "https://ui.adsabs.harvard.edu/abs/1998A&AS..129...41A"
+ },
+ {
+  "key": "reiners2016",
+  "citation": "Reiners, A., Mrotzek, N., Lemke, U., Hinrichs, J. & Reinsch, K. 2016, The IAG solar flux atlas: Accurate wavelengths and absolute convective blueshift in standard solar spectra, A&A 587, A65 (VizieR J/A+A/587/A65)",
+  "doi": "10.1051/0004-6361/201527530",
+  "bibcode": "2016A&A...587A..65R",
+  "url": "https://arxiv.org/abs/1511.03014"
+ },
+ {
+  "key": "nave1994",
+  "citation": "Nave, G., Johansson, S., Learner, R.C.M., Thorne, A.P. & Brault, J.W. 1994, A new multiplet table for Fe I, ApJS 94, 221",
+  "doi": "10.1086/192079",
+  "bibcode": "1994ApJS...94..221N",
+  "url": "https://ui.adsabs.harvard.edu/abs/1994ApJS...94..221N"
+ },
+ {
+  "key": "kramida2024",
+  "citation": "Kramida, A., Ralchenko, Yu., Reader, J. & NIST ASD Team 2024, NIST Atomic Spectra Database (ver. 5.12), National Institute of Standards and Technology, Gaithersburg, MD (queried 2026-11-23)",
+  "doi": "10.18434/T4W30F",
+  "url": "https://physics.nist.gov/asd"
+ },
+ {
+  "key": "gordon2022",
+  "citation": "Gordon, I.E., Rothman, L.S., Hargreaves, R.J., et al. 2022, The HITRAN2020 molecular spectroscopic database, JQSRT 277, 107949",
+  "doi": "10.1016/j.jqsrt.2021.107949",
+  "url": "https://hitran.org"
+ },
+ {
+  "key": "gordon2026",
+  "citation": "Gordon, I.E., Rothman, L.S., Hargreaves, R.J., Gomez, F.M., Bertin, T., Hill, C., et al. 2026, The HITRAN2024 molecular spectroscopic database, JQSRT 353, 109807 (data via https://hitran.org/lbl/api, downloaded 2026-11-23)",
+  "doi": "10.1016/j.jqsrt.2026.109807",
+  "url": "https://hitran.org"
+ },
+ {
+  "key": "gamache2025",
+  "citation": "Gamache, R.R., Vispoel, B., Tennyson, J., Yurchenko, S.N., Polyansky, O.L., Gordon, I.E., et al. 2025, Partition sums for molecules and their isotopologues for HITRAN2024 (TIPS-2025), JQSRT 345, 109568",
+  "doi": "10.1016/j.jqsrt.2025.109568",
+  "url": "https://hitran.org/data/Q/"
+ },
+ {
+  "key": "anderson1986",
+  "citation": "Anderson, G.P., Clough, S.A., Kneizys, F.X., Chetwynd, J.H. & Shettle, E.P. 1986, AFGL Atmospheric Constituent Profiles (0-120 km), AFGL-TR-86-0110 (tables as packaged in joseki 2.7.0)",
+  "bibcode": "1986afgl.rept.....A",
+  "url": "https://apps.dtic.mil/sti/pdfs/ADA175173.pdf"
+ },
+ {
+  "key": "lan2025",
+  "citation": "Lan, X., Tans, P., Thoning, K.W. et al., NOAA Global Monitoring Laboratory, Trends in globally-averaged CO2, CH4 and N2O (global annual means; files co2/ch4/n2o_annmean_gl.txt, downloaded 2026-11-23; 2025 values used)",
+  "url": "https://gml.noaa.gov/ccgg/trends/"
+ },
+ {
+  "key": "peck1972",
+  "citation": "Peck, E.R. & Reeder, K. 1972, Dispersion of air, J. Opt. Soc. Am. 62, 958",
+  "doi": "10.1364/JOSA.62.000958"
+ },
+ {
+  "key": "figueira2010",
+  "citation": "Figueira, P., Pepe, F., Lovis, C. & Mayor, M. 2010, Evaluating the stability of atmospheric lines with HARPS, A&A 515, A106",
+  "doi": "10.1051/0004-6361/201014005",
+  "bibcode": "2010A&A...515A.106F",
+  "url": "https://arxiv.org/abs/1003.0541"
+ },
+ {
+  "key": "serdyuchenko2014",
+  "citation": "Serdyuchenko, A., Gorshelev, V., Weber, M., Chehade, W. & Burrows, J.P. 2014, High spectral resolution ozone absorption cross-sections - Part 2: Temperature dependence, Atmos. Meas. Tech. 7, 625 (data doi:10.5281/zenodo.5793207)",
+  "doi": "10.5194/amt-7-625-2014",
+  "url": "https://zenodo.org/records/5793207"
+ },
+ {
+  "key": "karman2019",
+  "citation": "Karman, T., Gordon, I.E., van der Avoird, A., et al. 2019, Update of the HITRAN collision-induced absorption section, Icarus 328, 160-175 (HITRAN CIA files O2-O2_2024, O2-air_2024, N2-air_2018)",
+  "doi": "10.1016/j.icarus.2019.02.034",
+  "url": "https://hitran.org/cia/"
+ },
+ {
+  "key": "tran2006",
+  "citation": "Tran, H., Boulet, C. & Hartmann, J.-M. 2006, Line mixing and collision-induced absorption by oxygen in the A band, J. Geophys. Res. 111, D15210",
+  "doi": "10.1029/2005JD006869"
+ },
+ {
+  "key": "spiering2011",
+  "citation": "Spiering, F.R., Kiseleva, M.B., Filippov, N.N., van Kesteren, H.C.J. & van der Zande, W.J. 2011, Collision-induced absorption in the O2 B-band region near 670 nm, Phys. Chem. Chem. Phys. 13, 9616",
+  "doi": "10.1039/C1CP20403C"
+ },
+ {
+  "key": "spiering2012",
+  "citation": "Spiering, F.R. & van der Zande, W.J. 2012, Collision induced absorption in the a1Δg(v=2) ← X3Σg−(v=0) band of molecular oxygen, Phys. Chem. Chem. Phys. 14, 9923",
+  "doi": "10.1039/c2cp40961e"
+ },
+ {
+  "key": "karman2018",
+  "citation": "Karman, T., Koenis, M.A.J., Banerjee, A., Parker, D.H., Gordon, I.E., van der Avoird, A., van der Zande, W.J. & Groenenboom, G.C. 2018, O2-O2 and O2-N2 collision-induced absorption mechanisms unravelled, Nature Chemistry 10, 549",
+  "doi": "10.1038/s41557-018-0015-x"
+ },
+ {
+  "key": "thalman2013",
+  "citation": "Thalman, R. & Volkamer, R. 2013, Temperature dependent absorption cross-sections of O2-O2 collision pairs between 340 and 630 nm and at atmospherically relevant pressure, Phys. Chem. Chem. Phys. 15, 15371",
+  "doi": "10.1039/c3cp50968k"
+ },
+ {
+  "key": "finkenzeller2022",
+  "citation": "Finkenzeller, H. & Volkamer, R. 2022, O2-O2 CIA in the gas phase: Cross-section of weak bands, and continuum absorption between 297-500 nm, JQSRT 279, 108063",
+  "doi": "10.1016/j.jqsrt.2021.108063"
+ },
+ {
+  "key": "adkins2023",
+  "citation": "Adkins, E. M., Karman, T., Campargue, A., Mondelain, D. & Hodges, J. T. 2023, Parameterized model to approximate theoretical collision-induced absorption band shapes for O2–O2 and O2–N2, JQSRT 310, 108732 (cited as the HITRAN CIA 2024 O2–air 1.27 µm reference)",
+  "doi": "10.1016/j.jqsrt.2023.108732"
+ },
+ {
+  "key": "hartmann2017",
+  "citation": "Hartmann, J.-M., Boulet, C. & Toon, G.C. 2017, Collision-induced absorption by N2 near 2.16 µm: Calculations, model, and consequences for atmospheric remote sensing, J. Geophys. Res. Atmos. 122, 2419",
+  "doi": "10.1002/2016JD025677"
+ },
+ {
+  "key": "schott2003",
+  "citation": "SCHOTT AG 2003, Optical Glass catalogue (complete), Section 9, Table 9.1 'Wavelengths for a selection of frequently used spectral lines', p. 42",
+  "url": "https://wp.optics.arizona.edu/optomech/wp-content/uploads/sites/53/2016/10/catalog_optical_glass_complete_2003.pdf"
+ },
+ {
+  "key": "gonzalezhernandez2020",
+  "citation": "González Hernández, J.I., Rebolo, R., Pasquini, L., Lo Curto, G., et al. 2020, The solar gravitational redshift from HARPS-LFC Moon spectra, A&A 643, A146",
+  "doi": "10.1051/0004-6361/202038937",
+  "url": "https://arxiv.org/abs/2009.10558"
+ },
+ {
+  "key": "lindegren2003",
+  "citation": "Lindegren, L. & Dravins, D. 2003, The fundamental definition of 'radial velocity', A&A 401, 1185",
+  "doi": "10.1051/0004-6361:20030181",
+  "url": "https://arxiv.org/abs/astro-ph/0302522"
+ },
+ {
+  "key": "lohnerbottcher2018",
+  "citation": "Löhner-Böttcher, J., Schmidt, W., Stief, F., Steinmetz, T. & Holzwarth, R. 2018, LARS: an absolute reference spectrograph for solar observations - Convective blueshifts in the solar atmosphere, A&A 611, A4",
+  "doi": "10.1051/0004-6361/201732107"
+ },
+ {
+  "key": "noll2025",
+  "citation": "Noll, S., Schmidt, C., Hannawald, P., Kausch, W., & Kimeswenger, S. 2025, PALACE v1.0: Paranal Airglow Line And Continuum Emission model, Geosci. Model Dev. 18, 4353–4398 (data and code: Zenodo doi:10.5281/zenodo.14064023)",
+  "doi": "10.5194/gmd-18-4353-2025",
+  "url": "https://gmd.copernicus.org/articles/18/4353/2025/"
+ },
+ {
+  "key": "hanuschik2003",
+  "citation": "Hanuschik, R. W. 2003, A flux-calibrated, high-resolution atlas of optical sky emission from UVES, Astron. Astrophys. 407, 1157–1164 (CDS J/A+A/407/1157)",
+  "doi": "10.1051/0004-6361:20030885",
+  "bibcode": "2003A&A...407.1157H",
+  "url": "https://www.aanda.org/articles/aa/pdf/2003/33/aa3874.pdf"
+ },
+ {
+  "key": "cosby2006",
+  "citation": "Cosby, P. C., Sharpee, B. D., Slanger, T. G., Huestis, D. L., & Hanuschik, R. W. 2006, High-resolution terrestrial nightglow emission line atlas from UVES/VLT: Positions, intensities, and identifications for 2808 lines at 314–1043 nm, J. Geophys. Res. 111, A12307",
+  "doi": "10.1029/2006JA012023",
+  "bibcode": "2006JGRA..11112307C",
+  "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2006JA012023"
+ },
+ {
+  "key": "osterbrock1996",
+  "citation": "Osterbrock, D. E., Fulbright, J. P., Martel, A. R., Keane, M. J., Trager, S. C., & Basri, G. 1996, Night-Sky High-Resolution Spectral Atlas of OH and O2 Emission Lines for Echelle Spectrograph Wavelength Calibration, PASP 108, 277–308 (VizieR III/211)",
+  "doi": "10.1086/133722",
+  "bibcode": "1996PASP..108..277O",
+  "url": "https://iopscience.iop.org/article/10.1086/133722/pdf"
+ },
+ {
+  "key": "abrams1994",
+  "citation": "Abrams, M. C., Davis, S. P., Rao, M. L. P., Engleman, R. Jr., & Brault, J. W. 1994, High-resolution Fourier transform spectroscopy of the Meinel system of OH, ApJS 93, 351",
+  "bibcode": "1994ApJS...93..351A"
+ },
+ {
+  "key": "noll2012",
+  "citation": "Noll, S., Kausch, W., Barden, M., Jones, A. M., Szyszka, C., Kimeswenger, S., & Vinther, J. 2012, An atmospheric radiation model for Cerro Paranal. I. The optical spectral range, A&A 543, A92",
+  "doi": "10.1051/0004-6361/201219040"
+ },
+ {
+  "key": "gordon2022",
+  "citation": "Gordon, I. E., Rothman, L. S., Hargreaves, R. J., et al. 2022, The HITRAN2020 molecular spectroscopic database, J. Quant. Spectrosc. Radiat. Transf. 277, 107949",
+  "doi": "10.1016/j.jqsrt.2021.107949",
+  "url": "https://hitran.org/media/refs/HITRAN-2020.pdf"
+ },
+ {
+  "key": "gordon2026",
+  "citation": "Gordon, I. E., Rothman, L. S., Hargreaves, R. J., et al. 2026, The HITRAN2024 molecular spectroscopic database, J. Quant. Spectrosc. Radiat. Transf. 353, 109807",
+  "doi": "10.1016/j.jqsrt.2026.109807",
+  "bibcode": "2026JQSRT.35309807G",
+  "url": "https://hitran.org/media/refs/HITRAN-2024.pdf"
+ },
+ {
+  "key": "brooke2016",
+  "citation": "Brooke, J. S. A., Bernath, P. F., Western, C. M., Sneden, C., Afşar, M., Li, G., & Gordon, I. E. 2016, Line strengths of rovibrational and rotational transitions in the X²Π ground state of OH, J. Quant. Spectrosc. Radiat. Transf. 168, 142–157",
+  "doi": "10.1016/j.jqsrt.2015.07.021",
+  "bibcode": "2016JQSRT.168..142B",
+  "url": "https://arxiv.org/abs/1503.08420"
+ },
+ {
+  "key": "noll2020",
+  "citation": "Noll, S., Winkler, H., Goussev, O., & Proxauf, B. 2020, OH level populations and accuracies of Einstein-A coefficients from hundreds of measured lines, Atmos. Chem. Phys. 20, 5269–5292",
+  "doi": "10.5194/acp-20-5269-2020"
+ },
+ {
+  "key": "adkins2025",
+  "citation": "Adkins, E. M., Hodges, J. T., Bielska, K., et al. 2025, Survey of the updated O2 line list in the HITRAN2024 spectroscopic database, J. Quant. Spectrosc. Radiat. Transf. 347, 109629",
+  "doi": "10.1016/j.jqsrt.2025.109629"
+ },
+ {
+  "key": "oliva2015",
+  "citation": "Oliva, E., Origlia, L., Scuderi, S., et al. 2015, Lines and continuum sky emission in the near infrared: observational constraints from deep high spectral resolution spectra with GIANO-TNG, A&A 581, A47 (VizieR J/A+A/581/A47)",
+  "doi": "10.1051/0004-6361/201526291",
+  "bibcode": "2015A&A...581A..47O",
+  "url": "https://arxiv.org/abs/1506.09004"
+ },
+ {
+  "key": "rousselot2000",
+  "citation": "Rousselot, P., Lidman, C., Cuby, J.-G., Moreels, G., & Monnet, G. 2000, Night-sky spectral atlas of OH emission lines in the near-infrared, A&A 354, 1134–1150 (ESO ISAAC list_v2.0.dat)",
+  "bibcode": "2000A&A...354.1134R",
+  "url": "https://articles.adsabs.harvard.edu/pdf/2000A%26A...354.1134R"
+ },
+ {
+  "key": "bernath2009",
+  "citation": "Bernath, P. F., & Colin, R. 2009, Revised molecular constants and term values for the X²Π and B²Σ⁺ states of OH, J. Mol. Spectrosc. 257, 20–23",
+  "doi": "10.1016/j.jms.2009.06.003"
+ },
+ {
+  "key": "morton2000",
+  "citation": "Morton, D. C. 2000, Atomic data for resonance absorption lines. II. Wavelengths longward of the Lyman limit for heavy elements, ApJS 130, 403",
+  "doi": "10.1086/317349",
+  "bibcode": "2000ApJS..130..403M"
+ },
+ {
+  "key": "rothman2005",
+  "citation": "Rothman, L. S., Jacquemart, D., Barbe, A., et al. 2005, The HITRAN 2004 molecular spectroscopic database, J. Quant. Spectrosc. Radiat. Transf. 96, 139–204 (uncertainty-code definitions)",
+  "doi": "10.1016/j.jqsrt.2004.10.008",
+  "bibcode": "2005JQSRT..96..139R",
+  "url": "https://hitran.org/docs/uncertainties/"
+ },
+ {
+  "key": "edlen1966",
+  "citation": "Edlén, B. 1966, The refractive index of air, Metrologia 2, 71",
+  "doi": "10.1088/0026-1394/2/2/002",
+  "bibcode": "1966Metro...2...71E"
+ },
+ {
+  "key": "peck1972",
+  "citation": "Peck, E. R., & Reeder, K. 1972, Dispersion of air, J. Opt. Soc. Am. 62, 958",
+  "doi": "10.1364/JOSA.62.000958",
+  "bibcode": "1972JOSA...62..958P"
+ },
+ {
+  "key": "kramida2024",
+  "citation": "Kramida, A., Ralchenko, Yu., Reader, J., & NIST ASD Team 2024, NIST Atomic Spectra Database (ver. 5.12, released 7 Nov 2024), National Institute of Standards and Technology, Gaithersburg, MD (queried 2026-11-23)",
+  "doi": "10.18434/T4W30F",
+  "url": "https://physics.nist.gov/asd"
+ },
+ {
+  "key": "meier1991",
+  "citation": "Meier, R. R. 1991, Ultraviolet spectroscopy and remote sensing of the upper atmosphere, Space Sci. Rev. 58, 1–185",
+  "doi": "10.1007/BF01206000",
+  "bibcode": "1991SSRv...58....1M",
+  "url": "https://articles.adsabs.harvard.edu/pdf/1991SSRv...58....1M"
+ },
+ {
+  "key": "noxon1968",
+  "citation": "Noxon, J. F. 1968, Day airglow, Space Sci. Rev. 8, 92–134",
+  "bibcode": "1968SSRv....8...92N",
+  "url": "https://articles.adsabs.harvard.edu/pdf/1968SSRv....8...92N",
+  "doi": "10.1007/BF00362572"
+ },
+ {
+  "key": "hunten1967",
+  "citation": "Hunten, D. M. 1967, Spectroscopic studies of the twilight airglow, Space Sci. Rev. 6, 493–573",
+  "bibcode": "1967SSRv....6..493H",
+  "url": "https://articles.adsabs.harvard.edu/pdf/1967SSRv....6..493H",
+  "doi": "10.1007/BF00173704"
+ },
+ {
+  "key": "whiter2023",
+  "citation": "Whiter, D. K., Partamies, N., Gustavsson, B., & Kauristie, K. 2023, The altitude of green OI 557.7 nm and blue N2+ 427.8 nm aurora, Ann. Geophys. 41, 1–12",
+  "doi": "10.5194/angeo-41-1-2023"
+ },
+ {
+  "key": "ivanescu2021",
+  "citation": "Ivănescu, L., Baibakov, K., O'Neill, N. T., Blanchet, J.-P., & Schulz, K.-H. 2021, Accuracy in starphotometry, Atmos. Meas. Tech. 14, 6561–6599 (IBC classes after Chamberlain 1995)",
+  "doi": "10.5194/amt-14-6561-2021"
+ },
+ {
+  "key": "barthelemy2025",
+  "citation": "Barthélemy, M., Robert, E., & Lamy, H. 2025, Synthetic spectra of the aurora: N2, N2+, N, N+, O2+ and O emissions, J. Space Weather Space Clim. 15, 19",
+  "doi": "10.1051/swsc/2025013"
+ },
+ {
+  "key": "moorhead2019",
+  "citation": "Moorhead, A., Cooke, B., Blaauw, R., Moser, D., & Ehlert, S. 2019, A Meteoroid Handbook for Aerospace Engineers and Managers, NASA/TM-2019-220142 (NTRS 20200000049)",
+  "url": "https://ntrs.nasa.gov/api/citations/20200000049/downloads/20200000049.pdf"
+ },
+ {
+  "key": "borovicka1993",
+  "citation": "Borovička, J. 1993, A fireball spectrum analysis, A&A 279, 627–645",
+  "bibcode": "1993A&A...279..627B"
+ },
+ {
+  "key": "borovicka1994",
+  "citation": "Borovička, J. 1994, Line identifications in a fireball spectrum, A&AS 103, 83–96",
+  "bibcode": "1994A&AS..103...83B"
+ },
+ {
+  "key": "imo",
+  "citation": "International Meteor Organization, IMO Photographic Handbook, Part 3: Meteor Spectra, Table 3-7 (lines frequently found in meteor spectra, relative intensities)",
+  "url": "https://www.imo.net/docs/03spectra.pdf"
+ },
+ {
+  "key": "fuse",
+  "citation": "FUSE Archive Instrument Handbook, Chapter 9: Airglow Appendix, MAST/STScI",
+  "url": "https://archive.stsci.edu/fuse/instrumenthandbook/chapter9.html"
+ },
+ {
+  "key": "gardner2017",
+  "citation": "Gardner, D. D., Mierkiewicz, E. J., Roesler, F. L., Nossal, S. M., & Haffner, L. M. 2017, Constraining Balmer alpha fine structure excitation measured in geocoronal hydrogen observations, J. Geophys. Res. Space Phys. 122, 10727 (cited via Noll et al. 2025)",
+  "doi": "10.1002/2017JA024055"
+ },
+ {
+  "key": "anderson1971",
+  "citation": "Anderson, J. G. & Barth, C. A. 1971, Rocket investigation of the Mg I and Mg II dayglow, J. Geophys. Res. 76, 3723–3732 (cited via Meier 1991)",
+  "doi": "10.1029/JA076i016p03723"
+ },
+ {
+  "key": "sharpee2005",
+  "citation": "Sharpee, B. D., Slanger, T. G., Cosby, P. C., & Huestis, D. L. 2005, The N(²D–⁴S) 520 nm forbidden doublet in the nightglow: an experimental test of the theoretical intensity ratio, Geophys. Res. Lett. 32, L12106 (cited via Noll et al. 2025)",
+  "doi": "10.1029/2005GL023044"
+ },
+ {
+  "key": "lofthus1977",
+  "citation": "Lofthus, A., & Krupenie, P. H. 1977, The spectrum of molecular nitrogen, J. Phys. Chem. Ref. Data 6, 113",
+  "doi": "10.1063/1.555546",
+  "bibcode": "1977JPCRD...6..113L",
+  "url": "https://srd.nist.gov/jpcrdreprint/1.555546.pdf"
+ },
+ {
+  "key": "krupenie1972",
+  "citation": "Krupenie, P. H. 1972, The spectrum of molecular oxygen, J. Phys. Chem. Ref. Data 1, 423",
+  "doi": "10.1063/1.3253101",
+  "bibcode": "1972JPCRD...1..423K",
+  "url": "https://srd.nist.gov/jpcrdreprint/1.3253101.pdf"
+ },
+ {
+  "key": "huber1979",
+  "citation": "Huber, K. P., & Herzberg, G. 1979, Molecular Spectra and Molecular Structure IV. Constants of Diatomic Molecules (Van Nostrand Reinhold), as served by the NIST Chemistry WebBook SRD 69 (OH X²Π G(v) polynomial of Maillard, Chauville et al. 1976, valid v ≤ 5)",
+  "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C3352576&Mask=1000"
+ },
+ {
+  "key": "evans2010",
+  "citation": "Evans, W. F. J., Gattinger, R. L., Slanger, T. G., Saran, D. V., Degenstein, D. A., & Llewellyn, E. J. 2010, Discovery of the FeO orange bands in the terrestrial night airglow spectrum obtained with OSIRIS on the Odin spacecraft, Geophys. Res. Lett. 37, L22105 (cited via Noll et al. 2025)",
+  "doi": "10.1029/2010GL045310"
+ },
+ {
+  "key": "gattinger2010",
+  "citation": "Gattinger, R. L., et al. 2010, NO2 air afterglow and O and NO densities from Odin-OSIRIS night and ACE-FTS sunset observations in the Antarctic MLT region, J. Geophys. Res. 115, D12301 (cited via Noll et al. 2025)",
+  "doi": "10.1029/2009JD013205"
+ }
+]

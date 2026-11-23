@@ -1,0 +1,95 @@
+<p class="lede">A solar wavelength is a laboratory wavelength multiplied by three factors: the gravitational redshift between the solar surface and the observer, the convective shift of the line, and whatever line-of-sight velocity between the emitting surface and the observer has not been removed. At 5000 Å each term is worth several mÅ.</p>
+
+<div class="eq"><span class="tag">(6.2)</span><math display="block"><mfrac><msub><mi>λ</mi><mo>⊙</mo></msub><msub><mi>λ</mi><mtext>lab</mtext></msub></mfrac><mo>=</mo><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi>v</mi><mi>g</mi></msub><mi>c</mi></mfrac><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><mrow><msub><mi>v</mi><mtext>cb</mtext></msub><mo>(</mo><mi>d</mi><mo>,</mo><mi>μ</mi><mo>)</mo></mrow><mi>c</mi></mfrac><mo>)</mo></mrow><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi>v</mi><mi>r</mi></msub><mi>c</mi></mfrac><mo>)</mo></mrow><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><mi>Δ</mi><mi>v</mi><mo>≡</mo><mi>c</mi><mrow><mo>(</mo><mfrac><msub><mi>λ</mi><mo>⊙</mo></msub><msub><mi>λ</mi><mtext>lab</mtext></msub></mfrac><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>≈</mo><msub><mi>v</mi><mi>g</mi></msub><mo>+</mo><msub><mi>v</mi><mtext>cb</mtext></msub><mo>+</mo><msub><mi>v</mi><mi>r</mi></msub></math></div>
+<div class="eq"><span class="tag">(6.3)</span><math display="block"><msub><mi>v</mi><mi>g</mi></msub><mo>=</mo><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mo>⊙</mo></msub></mrow><mi>c</mi></mfrac><mrow><mo>(</mo><mfrac><mn>1</mn><msub><mi>R</mi><mo>⊙</mo></msub></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>)</mo></mrow><mo>=</mo><mn>636.31</mn><mo>−</mo><mn>2.96</mn><mo>=</mo><mn>633.35</mn><mtext>&#160;m&#160;s⁻¹</mtext><mspace width="0.6em"/><mtext>at&#160;</mtext><mi>r</mi><mo>=</mo><mn>1</mn><mtext>&#160;au</mtext></math></div>
+<p class="small">Symbols in eq. (6.2):</p>
+<ul class="tight small">
+<li>v<sub>cb</sub> is the convective shift. It is negative (a blueshift) except in the deepest lines, and depends on the line depth d and on the position on the disc, μ = cos θ.</li>
+<li>v<sub>r</sub> is the residual radial velocity between the emitting surface and the observer: Earth's orbit and rotation and, for resolved spectra, solar rotation. Solar atlases remove it with an ephemeris.</li>
+<li>The cross terms are ~10⁻³ m/s, and the same ratio holds in air and in vacuum (derived).</li>
+</ul>
+<p class="small">Eq. (6.3) uses the IAU 2015 nominal GM⊙ and R⊙. The Earth's own potential lowers v<sub>g</sub> to 633.14 m/s at the geoid (all derived). Reiners et al. (2016) and APGL98b adopt 636 m/s; the 3 m/s difference is 0.05 mÅ at 5000 Å.</p>
+
+<h4>The size of each term at 5000 Å</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Term</th><th class="num">Velocity</th><th class="num">Δλ at 5000 Å</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Gravitational redshift, surface → ∞</td><td class="num">+636.31 m/s</td><td class="num">+10.61 mÅ</td><td>derived (IAU 2015 nominal values)</td></tr>
+<tr><td>… seen from 1 au</td><td class="num">+633.35 m/s</td><td class="num">+10.56 mÅ</td><td>derived; same value in <a class="cite" href="#ref-gonzalezhernandez2020">González Hernández et al. 2020</a></td></tr>
+<tr><td>… measured: HARPS-LFC spectra of the Moon, 15 strong Fe I lines (EW 150–550 mÅ)</td><td class="num">+639 ± 14 m/s</td><td class="num">+10.7 mÅ</td><td><a class="cite" href="#ref-gonzalezhernandez2020">González Hernández et al. 2020</a></td></tr>
+<tr><td>… for a line formed 2 Mm (top of the chromosphere) / 30 Mm above the photosphere</td><td class="num">−1.8 / −26 m/s less</td><td class="num">−0.03 / −0.44 mÅ</td><td>derived; “some 20 m/s” for 30 Mm in <a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins 2003</a></td></tr>
+<tr><td>Convective shift, Fe I flux lines, relative depth 0.1 → 0.9</td><td class="num">−547 → +2 m/s</td><td class="num">−9.12 → +0.03 mÅ</td><td><a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>, Table 5</td></tr>
+<tr><td>Net solar flux − lab, Fe I, median of 1 445 lines</td><td class="num">+236 m/s (s.d. 284)</td><td class="num">+3.9 mÅ</td><td>derived from <a class="cite" href="#ref-allendeprieto1998b">Allende Prieto &amp; García López 1998b</a></td></tr>
+<tr><td>Earth–Sun radial velocity from the orbital eccentricity (e = 0.0167)</td><td class="num">up to ±0.50 km/s</td><td class="num">±8.3 mÅ</td><td>derived; removed in atlases</td></tr>
+<tr><td>Earth rotation (at the equator; × cos φ elsewhere)</td><td class="num">up to ±465 m/s</td><td class="num">±7.8 mÅ</td><td>derived; removed in atlases</td></tr>
+<tr><td>Wavelength scale: Kitt Peak flux atlas / IAG atlas</td><td class="num">≲ 100 / ±10 m/s</td><td class="num">1.7 / 0.17 mÅ</td><td><a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a></td></tr>
+</tbody></table></div>
+
+<div class="cols2">
+<div>
+<h4>Convective blueshift against line depth (IAG)</h4>
+<p class="small">Absolute convective shift of 1 252 Fe I lines in the IAG flux atlas, after subtracting 636 m/s (<a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>, Table 5). Granules are bright and rising, intergranular lanes dark and sinking, so the disc-integrated line is blueshifted. Deep lines form higher in the atmosphere, where the blueshift is weaker.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th class="num">Relative depth</th><th class="num">Mean v<sub>cb</sub> (m/s)</th><th class="num">σ (m/s)</th><th class="num">at 5000 Å (mÅ)</th></tr></thead>
+<tbody>
+<tr><td class="num">0.1</td><td class="num">−547</td><td class="num">303</td><td class="num">−9.1</td></tr>
+<tr><td class="num">0.2</td><td class="num">−513</td><td class="num">199</td><td class="num">−8.6</td></tr>
+<tr><td class="num">0.3</td><td class="num">−515</td><td class="num">232</td><td class="num">−8.6</td></tr>
+<tr><td class="num">0.4</td><td class="num">−491</td><td class="num">155</td><td class="num">−8.2</td></tr>
+<tr><td class="num">0.5</td><td class="num">−450</td><td class="num">284</td><td class="num">−7.5</td></tr>
+<tr><td class="num">0.6</td><td class="num">−419</td><td class="num">224</td><td class="num">−7.0</td></tr>
+<tr><td class="num">0.7</td><td class="num">−334</td><td class="num">215</td><td class="num">−5.6</td></tr>
+<tr><td class="num">0.8</td><td class="num">−207</td><td class="num">193</td><td class="num">−3.5</td></tr>
+<tr><td class="num">0.9</td><td class="num">+2</td><td class="num">128</td><td class="num">+0.03</td></tr>
+</tbody></table></div>
+<p class="small muted">The last column is derived. The per-bin σ of 128–303 m/s (2.1–5.1 mÅ at 5000 Å) is real line-to-line scatter. A solar wavelength predicted from depth alone is therefore good only to a few mÅ: use the line's own IAG value (§6.2) where one exists.</p>
+</div>
+<div>
+<h4>Measured solar flux − laboratory, Fe I</h4>
+<p class="small">Kitt Peak flux wavelengths (APGL98, APGL98b) against the laboratory wavelengths of <a class="cite" href="#ref-nave1994">Nave et al. 1994</a>, binned by disc-centre EW (derived from the §6.2 CSV; 1 445 distinct lines, 25 without EW). The shift is v<sub>g</sub> + v<sub>cb</sub>. It rises with line strength, and the strongest lines approach the pure gravitational redshift.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th class="num">EW (mÅ)</th><th class="num">Lines</th><th class="num">Median Δv (m/s)</th><th class="num">at 5000 Å (mÅ)</th></tr></thead>
+<tbody>
+<tr><td class="num">&lt; 25</td><td class="num">384</td><td class="num">+140</td><td class="num">+2.3</td></tr>
+<tr><td class="num">25–50</td><td class="num">279</td><td class="num">+167</td><td class="num">+2.8</td></tr>
+<tr><td class="num">50–100</td><td class="num">470</td><td class="num">+284.5</td><td class="num">+4.7</td></tr>
+<tr><td class="num">100–150</td><td class="num">179</td><td class="num">+450</td><td class="num">+7.5</td></tr>
+<tr><td class="num">150–250</td><td class="num">74</td><td class="num">+568.5</td><td class="num">+9.5</td></tr>
+<tr><td class="num">&gt; 250</td><td class="num">34</td><td class="num">+638</td><td class="num">+10.6</td></tr>
+<tr><td class="num"><b>all</b></td><td class="num"><b>1 445</b></td><td class="num"><b>+236</b></td><td class="num"><b>+3.9</b></td></tr>
+</tbody></table></div>
+<p class="small muted">A Nave wavelength is attached only where the excitation potentials agree (§6.2). Three of these lines are attached to two APGL98 entries each (same EP, different log gf). Counting those rows, 1 448 in all, gives +236.5 m/s.</p>
+</div>
+</div>
+
+<h4>Strong and chromospheric lines</h4>
+<ul class="tight">
+<li><b>Mg I b and Na I D exceed the gravitational redshift.</b> The values below are derived from the §6.1 table and are not resolved here. Possible causes include the laboratory values (NIST gives no uncertainty for Mg I b), core asymmetry, chromospheric contributions to the cores, and the sensitivity of a core fit to the fit window in saturated profiles.
+<ul class="tight">
+<li>b<sub>1</sub>, b<sub>2</sub>, b<sub>4</sub>: +779 to +787 m/s above NIST in the IAG core fits and +753 to +798 m/s in APGL98, i.e. ≈ 150 m/s above v<sub>g</sub>.</li>
+<li>Na D<sub>2</sub>: +816 m/s (IAG) but +466 m/s (APGL98).</li>
+<li>Na D<sub>1</sub>: +684 and +552 m/s.</li>
+</ul></li>
+<li><b>Balmer lines</b> are broad, with asymmetric chromospheric cores, and have no single wavelength at 1 mÅ. NIST ASD gives two composite Hα values. The gA-weighted centroid of the seven fine-structure components (blend row c69, used in §6.1) is 6562.795 ± 0.009 Å, i.e. ±0.41 km/s. The n = 2–3 multiplet line (Ritz, used in §4) is 6562.819 ± 0.007 Å, 24 mÅ (1.1 km/s) longer. The difference comes from how the components are combined. IAG core fits give +1160 (Hα), +921 (Hβ) and +967 m/s (Hγ) relative to the NIST centroids (derived).</li>
+<li><b>Ca II H and K</b> have chromospheric cores, and NIST gives their wavelengths to only 3 decimals. MMH places the disc-centre cores +1.74 km/s (H) and +1.45 km/s (K) from them (derived).</li>
+</ul>
+
+<h4>Disc centre versus flux</h4>
+<p>A disc-centre spectrum (μ = 1) looks straight down onto the granulation and has no rotational broadening. A flux (Sun-as-a-star) spectrum averages over the disc, where the convective blueshift weakens toward the limb. With a laser-comb-calibrated spectrograph, the bisectors of the Fe I lines at 6301 and 6302 Å show convective blueshifts of up to −450 m/s in the line wings at disc centre, while toward the limb the line cores level off at a redshift of about +100 m/s (<a class="cite" href="#ref-lohnerbottcher2018">Löhner-Böttcher et al. 2018</a>). The two modes therefore give different wavelengths for the same line. For the 5 008 APGL98 and APGL98b rows the flux − disc-centre difference has a median of 0 m/s, with 68 % between −143 and +119 m/s (derived). That spread also contains the independent scale errors of the two FTS atlases (<a class="cite" href="#ref-kurucz1984">Kurucz et al. 1984</a>; <a class="cite" href="#ref-brault1987">Brault &amp; Neckel 1987</a>). MMH and Babcock &amp; Moore are disc-centre data; APGL98, IAG and the §6.1 IAG fits are flux data.</p>
+
+<h4>Earth's rotation and orbit in solar atlases</h4>
+<p>A ground-based solar spectrum is Doppler-shifted by the Earth–Sun radial velocity, which reaches ≈ ±1 km/s (≈ ±16 mÅ at 5000 Å) from the two terms in the table above. Atlases remove this shift, by different methods (<a class="cite" href="#ref-reiners2016">Reiners et al. 2016</a>):</p>
+<ul class="tight">
+<li><b>IAG.</b> The wavenumber axis is scaled with telluric O₂ lines. Each 10-scan package is then corrected for the Sun–telescope velocity from JPL Horizons.</li>
+<li><b>First Kitt Peak flux atlas.</b> The correction uses the middle time of each observation, and the scan length broadens the lines by 0.2 km/s.</li>
+<li><b>Second Kitt Peak flux atlas.</b> The Doppler correction was determined empirically, by shifting solar Fe I lines onto the Nave et al. laboratory wavelengths. That removes the gravitational redshift and the mean convective blueshift too, so its wavelengths are <i>not</i> absolute solar wavelengths. Against IAG it is off by about 200 m/s redward of 700 nm, with a 100 m/s jump at 570 nm; against the first Kitt Peak atlas it differs by up to 600 m/s at 300 nm.</li>
+</ul>
+<p>In every atlas reduced to the solar frame the telluric lines are displaced from their rest positions by the applied correction (§6.3). A raw ground-based solar spectrum has the opposite problem: its solar lines move between observations.</p>
+
+<div class="note"><b>Recipe.</b>
+<ol class="tight">
+<li>For a rest wavelength, use the laboratory values (§4, or the lab columns of §6.1 and §6.2).</li>
+<li>To predict where an Fe I line falls in a solar flux spectrum, compute λ<sub>lab</sub> × (1 + (636 m/s + v<sub>cb</sub>)/c), taking the IAG v<sub>cb</sub> of that line (with 636 m/s, the value its v<sub>cb</sub> was referred to). Without a measured v<sub>cb</sub>, the Table 5 value for the line depth carries a ± 2–5 mÅ scatter.</li>
+<li>To calibrate a spectrum of the Sun or of reflected sunlight, use solar wavelengths from the same mode (flux with flux, disc centre with disc centre), after removing the radial velocities between the Sun, any reflecting body and the observer.</li>
+<li>Never mix solar-atlas and laboratory wavelengths in one wavelength solution: the median difference is +2 to +11 mÅ at 5000 Å, depending on line strength (derived from the EW bins above), and individual lines scatter by several mÅ around it.</li>
+</ol></div>

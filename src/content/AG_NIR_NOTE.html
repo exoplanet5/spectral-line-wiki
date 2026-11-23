@@ -1,0 +1,60 @@
+<p>This is one merged, de-duplicated list of <b>15 802 lines</b>, one row per Λ-doublet component or O₂ line. HITRAN lists the electric-quadrupole and magnetic-dipole O₂ lines separately (387 rows are E2), so some O₂ rows share a wavelength. Up to 2.5 µm it holds 13 466 lines: 11 545 ¹⁶OH and 12 ¹⁸OH lines at 9000–25 000 Å, and 1434 ¹⁶O₂, 462 ¹⁶O¹⁸O and 13 ¹⁶O¹⁷O lines at 7400–25 000 Å. The O₂ bands are a–X (0–0) at 1.27 µm, (0–1) at 1.58 µm, (1–0) and (1–1); b–X (0–0) at 762 nm, (0–1) at 865 nm and weak hot bands; and the Noxon b–a (0–0) band at 1.91 µm. Of these, 3851 OH lines (2233 ≥ 10 R, 769 ≥ 100 R) and 557 O₂ lines have reference intensities ≥ 1 R. Beyond 2.5 µm the list adds 2336 ¹⁶OH lines at 2.50–4.20 µm, without intensities: the fundamental (Δv = 1) bands (1–0) to (9–8), and 69 high-N lines of the Δv = 2 bands (7–5) to (9–7) (see the OH fundamental section below).</p>
+
+<div class="cols2">
+<div>
+<h4>Positions: HITRAN2024</h4>
+<ul class="tight small">
+<li>Positions come from HITRANonline line-by-line data, HITRAN2024 edition <a class="cite" href="#ref-gordon2026">Gordon et al. 2026</a>. Wavenumbers are kept verbatim, and λ<sub>vac</sub> = 10⁸/ν̃ is derived and printed to 4 decimals.</li>
+<li>¹⁶OH Meinel positions are unchanged since HITRAN2020 <a class="cite" href="#ref-gordon2022">Gordon et al. 2022</a>. They are a PGOPHER line list from the global X²Π fit of <a class="cite" href="#ref-brooke2016">Brooke et al. 2016</a>, refitted with the UVES airglow lines of <a class="cite" href="#ref-noll2020">Noll et al. 2020</a>. Those lines agreed with Brooke's list except at the higher rotational levels of v = 5 and 6.</li>
+<li>O₂ follows the HITRAN2024 update <a class="cite" href="#ref-adkins2025">Adkins et al. 2025</a>. The a–X (0–0) positions moved by up to 2.7 mÅ from the HITRAN2020 values used in PALACE (median −0.04 mÅ), and the Noxon band (74 lines) is new. For the 13 ¹⁶O¹⁷O b–X (0–0) lines, PALACE − HITRAN2024 is +0.4 to +11 mÅ (derived).</li>
+<li>242 rows (230 O₂ b–X lines, mostly hot and sequence bands, and 12 ¹⁸OH) exist only in PALACE. Their positions are the Cosby et al. 2006 model values, with no stated uncertainty.</li>
+</ul>
+</div>
+<div>
+<h4>Intensities: PALACE v1.0</h4>
+<ul class="tight small">
+<li>“I (R)” is the PALACE reference intensity <a class="cite" href="#ref-noll2025">Noll et al. 2025</a>: Cerro Paranal, zenith, nocturnal annual mean, 100 sfu, above lower-atmosphere absorption. 13 150 PALACE lines match HITRAN by quantum-number ID. Multiply I by the zenith transmission T<sub>zen</sub> (2.5 mm PWV) to get the ground-level value.</li>
+<li>Summed reference intensities are ≈ 7.1 × 10⁵ R for OH (0.9–2.5 µm) and ≈ 1.66 × 10⁵ R for O₂, dominated by a–X (0–0) with 1.55 × 10⁵ R (derived). The a–X (0–0) and b–X (0–0) bands are strongly self-absorbed at ground level. The Noxon band is dayglow, lies in a strong H₂O band and has no PALACE intensity.</li>
+<li>The brightest OH lines are (4–2) Q1e/Q1f(1.5) at 15 833.3747 and 15 833.1582 Å (vacuum), ≈ 6.68 kR each.</li>
+<li>The A column holds HITRAN2024 values. PALACE used corrected HITRAN2020 A values, so A and I are not mutually consistent at the per-cent level.</li>
+</ul>
+</div>
+</div>
+
+<h4>OH fundamental bands (Δv = 1), 2.5–4.2 µm</h4>
+<ul class="tight small">
+<li>Bands with Δv = 1 lie outside the X-shooter range on which PALACE is built <a class="cite" href="#ref-noll2025">Noll et al. 2025</a>. These rows therefore have HITRAN2024 positions, A and E″ <a class="cite" href="#ref-gordon2026">Gordon et al. 2026</a> but no intensity (note “no PALACE intensity”), and setting the “I ≥” filter hides them. HITRAN2024 kept the HITRAN2020 ¹⁶OH wavenumbers and replaced the intensities.</li>
+<li><b>Selection</b>: ¹⁶OH, v′ ≤ 9, 2.5 &lt; λ<sub>vac</sub> ≤ 4.2 µm, N″ ≤ 20 and A ≥ 0.01 s⁻¹. This gives 2267 Δv = 1 lines (1455 main-branch, 812 satellite) and the 69 Δv = 2 lines. The cuts are set with the PALACE intensities of the Δv = 2–3 bands, which share most of the upper levels: N″ ≤ 15 keeps 97.8 % of the intensity and N″ ≤ 20 keeps 99.1 %. The A cut removes only weak satellites and high-J Q lines; the brightest PALACE line it would remove has 3.8 R, against 6.68 kR for the brightest line (derived).</li>
+<li><b>Bands</b>: (1–0) 297, (2–1) 313, (3–2) 313, (4–3) 295, (5–4) 275, (6–5) 263, (7–6) 240, (8–7) 169 and (9–8) 102 lines. The P branches continue beyond the 4.2 µm limit: with the same cuts another 12 lines of (3–2) and 134 of (9–8) lie at 4.2–5.0 µm. The bands from (3–2) upward are therefore truncated, (8–7) and (9–8) severely.</li>
+<li><b>Accuracy</b>: 660 rows have position code 3, 1590 code 2 and 86 code 1. By eq. (5.3) the upper bounds are 0.07–0.18 Å, 0.6–1.8 Å and 6–17 Å. At 3.5 µm 1 mÅ is 8.6 m s⁻¹, and the thermal FWHM of OH at 190 K is 0.084 Å (derived).</li>
+<li><b>From the ground</b>, much of 2.5–2.9 µm and 4.2–4.4 µm is opaque (H₂O, CO₂), and beyond ≈ 3.5 µm the thermal emission of the atmosphere and telescope increasingly dominates the background. The thermal-IR emitters (NO 5.3 µm, CO₂ 4.3 and 15 µm, O₃ 9.6 µm) are out of scope here.</li>
+</ul>
+
+<h4>Accuracy against the 1 mÅ target</h4>
+<p>HITRAN quotes wavenumber uncertainty codes (code 2 = 0.01–0.1 cm⁻¹, 3 = 0.001–0.01 cm⁻¹, and so on <a class="cite" href="#ref-rothman2005">Rothman et al. 2005</a>). In wavelength:</p>
+<div class="eq"><span class="tag">(5.3)</span><math display="block"><mi>Δ</mi><mi>λ</mi><mo>=</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>8</mn></mrow></msup><mspace width="0.15em"/><msup><mi>λ</mi><mn>2</mn></msup><mspace width="0.15em"/><mi>Δ</mi><mover accent="true"><mi>ν</mi><mo>~</mo></mover><mspace width="1.5em"/><mrow><mo>(</mo><mi>λ</mi><mtext>&#160;in&#160;Å,&#160;</mtext><mover accent="true"><mi>ν</mi><mo>~</mo></mover><mtext>&#160;in&#160;cm⁻¹</mtext><mo>)</mo></mrow></math></div>
+<ul class="tight small">
+<li><b>O₂ meets the target.</b> Almost all lines of the a–X (0–0), (0–1), b–X (0–0), (0–1), (1–1) and Noxon bands have codes 5–6 (≤ 1.6 × 10⁻⁴ Å at 1.27 µm; b–X (0–1) &lt; 7.5 × 10⁻⁵ Å). a–X (1–0) and (1–1), plus 20 other lines, have code 4, whose upper bound is 1.6 mÅ at 1.27 µm.</li>
+<li><b>OH does not, formally.</b> Up to 2.5 µm, 9724 OH rows have code 2, 1685 code 3 and 136 code 1. At 1.58 µm codes 3–2 mean 2.5–250 mÅ. The Brooke et al. fit has an average line-position residual of 0.026 cm⁻¹ over all data, including the UV B–X lines (≈ 6.5 mÅ at 1.58 µm, derived). The vibrational term values are known to ≈ 10⁻³ cm⁻¹.</li>
+<li><b>Realistic scale for OH: 1–6 mÅ at low J.</b> Independent model lists agree with HITRAN at this level (table below). These lists rest on overlapping laboratory data (FTS of <a class="cite" href="#ref-abrams1994">Abrams et al. 1994</a> and later), so the agreement is internal consistency, not an absolute accuracy. At high J the older lists fail.</li>
+</ul>
+
+<div class="tscroll"><table class="t">
+<thead><tr><th>Comparison (other − HITRAN2024)</th><th class="num">N</th><th class="num">median (mÅ)</th><th class="num">68 % of |Δ| ≤</th><th class="num">95 % of |Δ| ≤</th><th class="num">max |Δ|</th></tr></thead>
+<tbody>
+<tr><td>Oliva et al. 2015, OH, J″ ≤ 8.5</td><td class="num">856</td><td class="num">+0.8</td><td class="num">2.5</td><td class="num">6.1</td><td class="num">14.7</td></tr>
+<tr><td>Oliva et al. 2015, OH, all 1206 components</td><td class="num">1206</td><td class="num">+1.0</td><td class="num">3.8</td><td class="num">21.9</td><td class="num">738</td></tr>
+<tr><td>Oliva et al. 2015, OH, J″ ≥ 12.5</td><td class="num">238</td><td class="num">+3.3</td><td class="num">14.6</td><td class="num">146</td><td class="num">738</td></tr>
+<tr><td>Rousselot et al. 2000, OH P/R, J″ ≤ 8.5</td><td class="num">1102</td><td class="num">−0.1</td><td class="num">6.3</td><td class="num">25.2</td><td class="num">78.3</td></tr>
+<tr><td>Rousselot et al. 2000, OH Λ-doublet means</td><td class="num">1544</td><td class="num">−0.1</td><td class="num">16.7</td><td class="num">100</td><td class="num">299</td></tr>
+<tr><td>Rousselot − Oliva, OH P/R</td><td class="num">912</td><td class="num">0.0</td><td class="num">8.0</td><td class="num">81</td><td class="num">429</td></tr>
+<tr><td>PALACE (HITRAN2020), O₂ a–X (0–0)</td><td class="num">472</td><td class="num">−0.04</td><td class="num"></td><td class="num"></td><td class="num">2.7</td></tr>
+<tr><td>Oliva et al. 2015, O₂ measured (GIANO, 2 decimals)</td><td class="num">121</td><td class="num">+15.7</td><td class="num">35</td><td class="num">123</td><td class="num">237</td></tr>
+<tr><td>Rousselot et al. 2000, O₂ a–X (0–0) (Herzberg &amp; Herzberg 1947)</td><td class="num">89</td><td class="num">−27.1</td><td class="num">67</td><td class="num">132</td><td class="num">201</td></tr>
+</tbody></table></div>
+<p class="small muted">All comparisons are derived. Lines are matched by quantum-number label (Oliva) or by Λ-doublet matching (Rousselot, whose list has no labels). <a class="cite" href="#ref-oliva2015">Oliva et al. 2015</a> OH wavelengths are computed from the <a class="cite" href="#ref-bernath2009">Bernath &amp; Colin 2009</a> constants, not measured; the GIANO calibration itself was ≈ 0.07 Å rms. <a class="cite" href="#ref-rousselot2000">Rousselot et al. 2000</a> computed theirs from Abrams et al. levels and state an accuracy of “a few hundredths of Å”. The −0.74 Å outlier, (5–3) P1f(22.5), lies in the high-J v′ = 5–6 levels that HITRAN2020 refitted with airglow data.</p>
+
+<div class="note warn">Rousselot's Q-branch Λ splittings are wrong. Individual Q components can be off by up to ≈ 24 Å at high J, so for Q lines use the Λ-doublet-mean difference, not the component column. Unresolved OH doublets are blends whose centroid depends on the e/f intensity ratio. For 1 mÅ work on OH, prefer resolved, low-J P/R lines and treat the HITRAN code interval as the formal bound.</div>
+
+<h4>Air wavelengths</h4>
+<p>The list is native in vacuum. The λ<sub>air</sub> column is derived with <a class="cite" href="#ref-peck1972">Peck &amp; Reeder 1972</a>, the page's default conversion, and beyond 1.69 µm this extrapolates the formula. The curated file also holds a <a class="cite" href="#ref-morton2000">Morton 2000</a> conversion for every row and Rousselot's own air values for his Table 3 OH and Table 2 O₂ lines (948 rows); the table does not show either. Peck &amp; Reeder − Morton is +0.17, +0.29 and +0.40 mÅ at 1.0, 1.6 and 2.2 µm, and Edlén 1966 (the PALACE formula) − Peck &amp; Reeder is −0.04, −0.07 and −0.10 mÅ (derived). Rousselot's OH air values minus the Morton conversion have a median of +0.36 mÅ (max 1.0 mÅ). The vacuum − air difference itself is 2.741, 4.370 and 6.003 Å at the same wavelengths. For the 2.5–4.2 µm rows every formula is extrapolated: Peck &amp; Reeder − Morton grows to +0.64 mÅ at 3.5 µm and +0.77 mÅ at 4.2 µm, and <a class="cite" href="#ref-ciddor1996">Ciddor 1996</a> − Peck &amp; Reeder is −0.43 and −0.52 mÅ (derived), so use vacuum there. In velocity, 1 mÅ is 33.3, 23.6, 18.7, 13.6 and 8.6 m s⁻¹ at 0.9, 1.27, 1.6, 2.2 and 3.5 µm. The thermal FWHM at 190 K is 0.038 Å for OH at 1.6 µm and 0.022 Å for O₂ at 1.27 µm (derived).</p>

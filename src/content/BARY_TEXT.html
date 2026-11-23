@@ -1,0 +1,147 @@
+<p>The barycentric correction z<sub>B</sub> converts a redshift measured at the telescope into the redshift that a fictitious observer <i>at rest at the Solar-System barycentre (SSB) and at zero gravitational potential</i> would measure — the reference observer of IAU 2000 Resolution C1 <a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins 2003</a>. It is dominated by the Earth's orbital motion (±30 km/s) and rotation (≤ 0.47 km/s), and contains a nearly constant +4.65 m/s relativistic clock term. Two rules matter more than any formula: evaluate it at the <b>flux-weighted epoch of the exposure</b>, and apply it <b>multiplicatively</b> <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>.</p>
+
+<div class="kpis">
+<div class="kpi"><div class="v">29.78 km/s</div><div class="l">mean orbital speed of the geocentre (29.26–30.31)</div></div>
+<div class="kpi"><div class="v">465.10 m/s</div><div class="l">equatorial rotation speed, ω a</div></div>
+<div class="kpi"><div class="v">≤ 16.1 m/s</div><div class="l">heliocentric − barycentric (Sun about the SSB)</div></div>
+<div class="kpi"><div class="v">4.648 m/s</div><div class="l">mean observer-clock term = L<sub>B</sub> c</div></div>
+<div class="kpi"><div class="v">≈ 3 m/s</div><div class="l">cross term lost if v<sub>B</sub> is simply added</div></div>
+<div class="kpi"><div class="v">3.4 cm/s per s</div><div class="l">fastest change of v<sub>B</sub> (rotation)</div></div>
+</div>
+
+<h4>Size of each term</h4>
+<p class="small muted">Ranges are <b>derived</b> from JPL DE440s <a class="cite" href="#ref-park2021">Park et al. 2021</a> for 1990–2066, the span of the calculator below, unless a reference is given. "Needed at" is the RV precision at which the term can no longer be ignored.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Term</th><th class="num">Size (m/s)</th><th class="num">Δλ at 5000 Å</th><th>Period</th><th>Needed at</th></tr></thead>
+<tbody>
+<tr><td>Earth (geocentre) orbital velocity, <b>v</b><sub>⊕</sub>·n̂</td><td class="num">29 263 – 30 312 × cos β<sub>ecl</sub></td><td class="num">≤ 0.506 Å</td><td>1 yr</td><td>always</td></tr>
+<tr><td>· of which: Earth about the Earth–Moon barycentre (lunar reflex)</td><td class="num">11.7 – 13.4</td><td class="num">≤ 0.22 mÅ</td><td>1 month</td><td>10 m/s</td></tr>
+<tr><td>Earth rotation, <b>v</b><sub>rot</sub>·n̂ (eq. 7.4.1)</td><td class="num">≤ 465.10 cos φ′ cos δ</td><td class="num">≤ 7.76 mÅ</td><td>1 sidereal day</td><td>always at 1 mÅ</td></tr>
+<tr><td>Sun about the SSB (heliocentric vs barycentric frame)</td><td class="num">8.5 – 16.1</td><td class="num">≤ 0.27 mÅ</td><td>11.9 yr (Jupiter)</td><td>10 m/s</td></tr>
+<tr><td>Time dilation of the observer, (γ − 1) c ≈ v²/2c</td><td class="num">1.43 – 1.53 (geocentre; rotation ± 0.05)</td><td class="num">0.026 mÅ</td><td>1 yr</td><td>1 m/s (absolute)</td></tr>
+<tr><td>Gravitational blueshift at the observer, Σ GM<sub>i</sub>/(c d<sub>i</sub>): Sun · Earth · Jupiter · Moon</td><td class="num">2.91 – 3.01 · 0.208 · 5×10⁻⁴ · 4×10⁻⁵</td><td class="num">0.053 mÅ</td><td>1 yr</td><td>1 m/s (absolute)</td></tr>
+<tr><td>Sum of the two clock terms (mean = L<sub>B</sub> c)</td><td class="num">4.548 – 4.751 (geocentre)</td><td class="num">0.078 mÅ</td><td>1 yr (0.20 m/s p-p)</td><td>cm/s (variation)</td></tr>
+<tr><td>Cross term v<sub>meas</sub> z<sub>B</sub> of the multiplicative correction</td><td class="num">≈ c β² ≈ 3</td><td class="num">0.05 mÅ</td><td>1 yr</td><td>1 m/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Parallax × proper-motion cross term (nearby high-velocity stars)</td><td class="num">≤ 0.19 (Kapteyn's star)</td><td class="num">—</td><td>1 yr</td><td>10 cm/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Shapiro delay of starlight by the Sun</td><td class="num">≤ 0.0023 (≥ 30° from the Sun)</td><td class="num">—</td><td>1 yr</td><td>&lt; 1 cm/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+</tbody></table></div>
+<p class="small">At the 1 mÅ precision of this wiki the rotation term (7.8 mÅ) and the orbital term are resolved, while the lunar reflex, the solar reflex and all relativistic terms stay below one unit of the last digit. They matter for m/s-class radial velocities, where 1 m/s ≙ 1.67×10⁻⁵ Å at 5000 Å.</p>
+
+<h4>Earth rotation</h4>
+<p>The observer's rotational velocity component <i>toward</i> a target at hour angle H (positive west) and declination δ is</p>
+<div class="eq"><span class="tag">(7.4.1)</span><math display="block"><msub><mi>v</mi><mtext>rot</mtext></msub><mo>=</mo><mo>−</mo><mi>ω</mi><mspace width="0.17em"/><mi>ρ</mi><mspace width="0.17em"/><mi>cos</mi><mspace width="0.17em"/><msup><mi>φ</mi><mo>′</mo></msup><mspace width="0.17em"/><mi>cos</mi><mspace width="0.17em"/><mi>δ</mi><mspace width="0.17em"/><mi>sin</mi><mspace width="0.17em"/><mi>H</mi><mo>,</mo><mspace width="1.2em"/><mi>ρ</mi><mspace width="0.17em"/><mi>cos</mi><mspace width="0.17em"/><msup><mi>φ</mi><mo>′</mo></msup><mo>=</mo><mo stretchy="false">(</mo><mi>N</mi><mo>+</mo><mi>h</mi><mo stretchy="false">)</mo><mspace width="0.17em"/><mi>cos</mi><mspace width="0.17em"/><mi>φ</mi><mo>,</mo><mspace width="1.2em"/><mi>N</mi><mo>=</mo><mfrac><mi>a</mi><msqrt><mn>1</mn><mo>−</mo><msup><mi>e</mi><mn>2</mn></msup><msup><mi>sin</mi><mn>2</mn></msup><mi>φ</mi></msqrt></mfrac></math></div>
+<ul class="tight">
+<li>ω = 7.292115×10⁻⁵ rad/s and a = 6 378 137 m <a class="cite" href="#ref-petit2010">Petit &amp; Luzum 2010</a> give ω a = <b>465.10 m/s</b> at the equator (derived); ρ cos φ′ is the distance from the rotation axis (6006.2 km and 437.98 m/s at Mauna Kea). φ is the geodetic latitude and h the ellipsoidal height (WGS84).</li>
+<li><b>Sign.</b> v<sub>rot</sub> is the correction to <i>add</i>, in the convention of astropy and of eq. (7.4.3): positive for rising targets (H &lt; 0, observer approaching), negative for setting targets. The observed RV of a setting star therefore contains +ω ρ cos φ′ cos δ sin H.</li>
+<li><b>Rate.</b> dv<sub>rot</sub>/dt = −ω² ρ cos φ′ cos δ cos H, largest at meridian transit, where v<sub>rot</sub> itself is zero: ≤ ω² a = <b>3.39 cm/s per second</b>, i.e. ≤ 2.03 m/s per minute (derived; Wright &amp; Eastman quote 3.4 cm/s/s).</li>
+<li>H and δ refer to the true equator of date, so precession and nutation must be applied; precession matters already at 1 m/s and nutation at ≈ 3 cm/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>. Use the catalogue (BCRS) direction, not the aberrated apparent place.</li>
+</ul>
+
+<h4>Earth orbit, lunar reflex and the Sun's barycentric motion</h4>
+<ul class="tight">
+<li>The geocentre moves at 29.26–30.31 km/s (mean 29.78 km/s) relative to the SSB, and its acceleration is 5.70–6.17 mm/s² (derived, DE440s). The projected term has an annual semi-amplitude of ≈ 29.8 cos β<sub>ecl</sub> km/s. It changes by ≤ 0.62 cm/s per second, ≤ 0.37 m/s per minute.</li>
+<li>The geocentric vector already contains the Earth's monthly motion about the Earth–Moon barycentre, 11.7–13.4 m/s (mean 12.4 m/s). Codes that use the EMB instead of the geocentre miss this term.</li>
+<li>The Sun moves 8.5–16.1 m/s about the SSB, mostly the 12.4 m/s reflex of Jupiter. A <i>heliocentric</i> correction therefore differs from the barycentric one by up to 16.1 m/s. Heliocentric corrections are usually Galilean (astropy's <code>kind='heliocentric'</code> is), so they also lack the 4.65 m/s clock term. In the worked example below, barycentric minus heliocentric is −4.22 m/s: −8.94 m/s from the Sun's motion plus +4.71 m/s of relativistic terms. IAU 2000 C1 specifies the barycentre.</li>
+</ul>
+
+<h4>Relativistic terms and the full correction</h4>
+<p>To first order in v/c and in the potentials, the correction is the observer's velocity toward the target plus a direction-independent clock term:</p>
+<div class="eq"><span class="tag">(7.4.2)</span><math display="block"><mi>c</mi><mspace width="0.17em"/><msub><mi>z</mi><mi>B</mi></msub><mo>≈</mo><mrow><mo stretchy="false">(</mo><msub><mover accent="true"><mi>v</mi><mo>→</mo></mover><mo>⊕</mo></msub><mo>+</mo><msub><mover accent="true"><mi>v</mi><mo>→</mo></mover><mtext>rot</mtext></msub><mo stretchy="false">)</mo></mrow><mo>·</mo><mover accent="true"><mi>n</mi><mo>^</mo></mover><mo>+</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>c</mi></mrow></mfrac><mo>+</mo><munder><mo>∑</mo><mi>i</mi></munder><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>i</mi></msub></mrow><mrow><mi>c</mi><mspace width="0.17em"/><msub><mi>d</mi><mi>i</mi></msub></mrow></mfrac><mo>,</mo><mspace width="1.2em"/><mrow><mo>⟨</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mrow><mn>2</mn><mi>c</mi></mrow></mfrac><mo>+</mo><munder><mo>∑</mo><mi>i</mi></munder><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>i</mi></msub></mrow><mrow><mi>c</mi><mspace width="0.17em"/><msub><mi>d</mi><mi>i</mi></msub></mrow></mfrac><mo>⟩</mo></mrow><mo>=</mo><msub><mi>L</mi><mi>B</mi></msub><mspace width="0.17em"/><mi>c</mi><mo>=</mo><mn>4.648</mn><mtext>&#160;m/s</mtext></math></div>
+<p>The clock term is the same rate offset that separates TDB from TCB (§7.5): its DE440s mean, 4.648 m/s, equals L<sub>B</sub> c, of which L<sub>G</sub> c = 0.209 m/s is the Earth's own potential (derived). Its annual modulation by the orbital eccentricity, amplitude 2e GM<sub>⊙</sub>/(a c) ≈ 0.1 m/s <a class="cite" href="#ref-lindegren2003">Lindegren &amp; Dravins 2003</a> or 0.20 m/s peak-to-peak (DE440s, derived), is what matters for RV time series; the mean matters for absolute RVs and for comparing stellar or solar lines with laboratory wavelengths. The exact form, Wright &amp; Eastman (2014) eq. 28, is</p>
+<div class="eq"><span class="tag">(7.4.3)</span><math display="block"><msub><mi>z</mi><mi>B</mi></msub><mo>=</mo><msub><mi>γ</mi><mo>⊕</mo></msub><mspace width="0.17em"/><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mover accent="true"><mi>β</mi><mo>→</mo></mover><mo>⊕</mo></msub><mo>·</mo><mover accent="true"><mi>ρ</mi><mo>^</mo></mover></mrow><mrow><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>GR</mtext></msub></mrow></mfrac><mspace width="0.17em"/><mfrac><mrow><mn>1</mn><mo>+</mo><msub><mover accent="true"><mi>β</mi><mo>→</mo></mover><mi>s</mi></msub><mo>·</mo><msub><mover accent="true"><mi>r</mi><mo>^</mo></mover><mn>0</mn></msub></mrow><mrow><mn>1</mn><mo>+</mo><msub><mover accent="true"><mi>β</mi><mo>→</mo></mover><mi>s</mi></msub><mo>·</mo><mover accent="true"><mi>ρ</mi><mo>^</mo></mover></mrow></mfrac><mo>−</mo><mn>1</mn><mo>−</mo><msub><mi>z</mi><mtext>LT</mtext></msub><mo>−</mo><msub><mi>z</mi><mtext>SD</mtext></msub><mo>,</mo><mspace width="1.2em"/><msub><mi>z</mi><mtext>GR</mtext></msub><mo>=</mo><mo>−</mo><munder><mo>∑</mo><mi>i</mi></munder><mfrac><mrow><mi>G</mi><msub><mi>M</mi><mi>i</mi></msub></mrow><mrow><msup><mi>c</mi><mn>2</mn></msup><msub><mi>d</mi><mi>i</mi></msub></mrow></mfrac></math></div>
+<ul class="tight">
+<li><b>β</b><sub>⊕</sub> is the observer's barycentric velocity / c (orbit + rotation) and γ<sub>⊕</sub> its Lorentz factor. ρ̂ is the direction from the observer to the star, corrected for proper motion and parallax, and r̂<sub>0</sub> the catalogue direction at the reference epoch. d<sub>i</sub> is the distance from the observer to body i; at 1 cm/s only the Sun and the Earth matter.</li>
+<li>The second fraction, with the star's systemic velocity <b>β</b><sub>s</sub>, carries the secular acceleration (0.3 m/s per year for a star at 10 ly with μ = 2″/yr) and the parallax × proper-motion cross term. z<sub>LT</sub> (light-travel time of the moving star) and z<sub>SD</sub> (Shapiro delay, ≤ 1.5 mm/s for τ Ceti) are needed only below 1 cm/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>.</li>
+<li>astropy's <code>SkyCoord.radial_velocity_correction</code> evaluates the first fraction with Sun, Jupiter, Moon and Earth in z<sub>GR</sub>. It adds the star term only for a SkyCoord with full space motion, and omits z<sub>LT</sub> and z<sub>SD</sub> <a class="cite" href="#ref-astropy2022">Astropy Collaboration 2022</a>.</li>
+</ul>
+<div class="note warn"><b>Same symbol, different quantity.</b> In Wright &amp; Eastman (2014) and in astropy, z<sub>B</sub> is the <i>correction</i> (eq. 7.4.3). In IAU 2000 C1 and Lindegren &amp; Dravins (2003), z<sub>B</sub> is the <i>corrected</i> barycentric redshift of the source, and c z<sub>B</sub> is the "barycentric radial-velocity measure", a spectroscopic quantity rather than a physical velocity.</div>
+
+<h4>Applying the correction</h4>
+<div class="eq"><span class="tag">(7.4.4)</span><math display="block"><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>true</mtext></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mtext>meas</mtext></msub><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mi>B</mi></msub><mo stretchy="false">)</mo><mspace width="1em"/><mo>⇔</mo><mspace width="1em"/><msub><mi>λ</mi><mtext>bary</mtext></msub><mo>=</mo><msub><mi>λ</mi><mtext>obs</mtext></msub><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>z</mi><mi>B</mi></msub><mo stretchy="false">)</mo><mspace width="1em"/><mo>⇒</mo><mspace width="1em"/><msub><mi>v</mi><mtext>true</mtext></msub><mo>=</mo><msub><mi>v</mi><mtext>meas</mtext></msub><mo>+</mo><msub><mi>v</mi><mi>B</mi></msub><mo>+</mo><mfrac><mrow><msub><mi>v</mi><mtext>meas</mtext></msub><msub><mi>v</mi><mi>B</mi></msub></mrow><mi>c</mi></mfrac></math></div>
+<ul class="tight">
+<li>Here v ≡ c z in the optical convention, and v<sub>B</sub> = c z<sub>B</sub> is the value printed by the calculator and returned by astropy. Wright &amp; Eastman's eqs. 10–11 stress that the correction is multiplicative, not additive.</li>
+<li><b>Error of simply adding v<sub>B</sub>:</b> the cross term v<sub>meas</sub> v<sub>B</sub>/c. For most stars z<sub>meas</sub> is dominated by −z<sub>B</sub>, so the term is ≈ −c β² ≈ <b>−3 m/s</b> (2.96 m/s for the mean orbital speed, derived) <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>. With v<sub>B</sub> = −16.5 km/s it is −0.55, −2.75 and −16.5 m/s for v<sub>meas</sub> = 10, 50 and 300 km/s (derived).</li>
+<li>Scale <b>vacuum</b> wavelengths (or frequencies) by (1 + z<sub>B</sub>). Scaling air wavelengths directly ignores the dispersion of air and, for |v<sub>B</sub>| = 30 km/s, errs by 0.4 m/s at 5000 Å and 1.3 m/s at 3000 Å (derived with <a class="cite" href="#ref-ciddor1996">Ciddor 1996</a>).</li>
+<li>Sunlight reflected by Solar-System bodies (the Moon, asteroids, the day sky) needs a different correction: the Sun→reflector and reflector→observer Doppler factors both enter, and eq. (7.4.3) does not apply.</li>
+</ul>
+
+<h4>Exposure timing</h4>
+<p>A spectrum integrates z<sub>B</sub>(t) over the exposure, weighted by the detected flux F(t). The correction to apply is the flux-weighted mean:</p>
+<div class="eq"><span class="tag">(7.4.5)</span><math display="block"><msub><mover accent="true"><mi>z</mi><mo>¯</mo></mover><mi>B</mi></msub><mo>=</mo><mfrac><mrow><mo>∫</mo><mi>F</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mspace width="0.17em"/><msub><mi>z</mi><mi>B</mi></msub><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mspace width="0.17em"/><mi>d</mi><mi>t</mi></mrow><mrow><mo>∫</mo><mi>F</mi><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo><mspace width="0.17em"/><mi>d</mi><mi>t</mi></mrow></mfrac><mo>≈</mo><msub><mi>z</mi><mi>B</mi></msub><mo stretchy="false">(</mo><msub><mover accent="true"><mi>t</mi><mo>¯</mo></mover><mi>F</mi></msub><mo stretchy="false">)</mo><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mover accent="true"><mi>z</mi><mo>¨</mo></mover><mi>B</mi></msub><mspace width="0.17em"/><msubsup><mi>σ</mi><mi>t</mi><mn>2</mn></msubsup><mo>,</mo><mspace width="1.2em"/><msubsup><mi>σ</mi><mi>t</mi><mn>2</mn></msubsup><mo>=</mo><mfrac><msup><mi>T</mi><mn>2</mn></msup><mn>12</mn></mfrac><mtext>&#160;for constant flux</mtext></math></div>
+<ul class="tight">
+<li><b>Flux-weighted midpoint.</b> An exposure meter behind the slit or fibre records F(t). Its photocentre is the right epoch. A geometric midpoint can be off by more than 250 ms in variable seeing or with guiding errors, and 250 ms is the tolerance for 1 cm/s <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a>.</li>
+<li><b>Timing errors</b> (derived): a 1 s error gives ≤ 3.4 cm/s (rotation) + ≤ 0.6 cm/s (orbit), and a 1 min error gives <b>≤ 2.0 + 0.37 m/s</b>. If a cloud covers half of a 30 min exposure, the photocentre moves by 7.5 min, worth up to 18 m/s.</li>
+<li><b>Curvature.</b> Even at the correct photocentre, evaluating z<sub>B</sub> once misses the second-order term, T² z̈<sub>B</sub>/24 for constant flux. For the rotation term c z̈ ≤ ω³ ρ cos φ′ cos δ |sin H| ≤ 2.47×10⁻⁶ m/s³, which gives ≤ 3.7 cm/s, 0.33 m/s and 1.3 m/s for T = 10, 30 and 60 min (derived). The typical size is 10 cm/s, and some realistic cases exceed 1 m/s, so the exposure-meter curve should be stored and used as photon weights <a class="cite" href="#ref-tronsgaard2019">Tronsgaard et al. 2019</a>.</li>
+<li><b>Chromatic weighting.</b> Airmass-dependent slit or fibre losses make F(t), and hence the effective epoch, depend on wavelength. This causes errors of at least several cm/s, and at least four exposure-meter channels across 380–680 nm are needed for 10 cm/s <a class="cite" href="#ref-blackman2017">Blackman et al. 2017</a>. With EXPRES the measured effect reached up to ≈ 1 m/s <a class="cite" href="#ref-blackman2019">Blackman et al. 2019</a>.</li>
+</ul>
+
+<h4>Error budget</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Omission or input error</th><th>RV error</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Heliocentric instead of barycentric correction</td><td class="num">≤ 16.1 m/s (+ 4.65 m/s if Galilean)</td><td>derived (DE440s)</td></tr>
+<tr><td>Correction added instead of multiplied</td><td class="num">v<sub>meas</sub>v<sub>B</sub>/c, ≈ 3 m/s</td><td><a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>v<sub>B</sub> evaluated at BJD instead of at the observation (Rømer delay ≤ 511.5 s)</td><td class="num">≤ 17 m/s rot. + 3.2 m/s orbit</td><td>derived</td></tr>
+<tr><td>UTC passed to the ephemeris as TDB (69.184 s)</td><td class="num">≤ 0.43 m/s</td><td>derived</td></tr>
+<tr><td>TT used instead of UT1 for the Earth's rotation (69.2 s)</td><td class="num">≤ 2.3 m/s</td><td>derived</td></tr>
+<tr><td>UT1 − UTC ignored (|UT1 − UTC| ≤ 0.9 s)</td><td class="num">≤ 3.1 cm/s (≈ 2 cm/s in practice)</td><td>derived; <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Precession / nutation ignored</td><td class="num">&gt; 1 m/s / ≈ 3 cm/s</td><td><a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Polar motion ignored; predicted instead of measured precession–nutation</td><td class="num">&lt; 1 mm/s</td><td><a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Target position error</td><td class="num">0.144 m/s per arcsec (69 mas per cm/s)</td><td>derived; <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Aberrated (apparent) direction in the first-order formula</td><td class="num">≤ v²/c ≤ 3.06 m/s</td><td>derived</td></tr>
+<tr><td>Observatory position wrong by 100 m</td><td class="num">&lt; 1 cm/s</td><td><a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Stellar space-motion term omitted (parallax × proper motion)</td><td class="num">≤ 0.19 m/s (Kapteyn's star; 0.12 m/s Barnard's star)</td><td>derived; <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Shapiro delay omitted</td><td class="num">≤ 1.5 mm/s (τ Ceti)</td><td><a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>Single-epoch instead of flux-integrated correction, 30 / 60 min</td><td class="num">≤ 0.33 / 1.3 m/s</td><td>derived; <a class="cite" href="#ref-tronsgaard2019">Tronsgaard et al. 2019</a></td></tr>
+</tbody></table></div>
+
+<h4>Worked example (astropy 7.2 + DE440s)</h4>
+<p class="small">Target RA = 10ʰ, Dec = +20°, observed from Mauna Kea (Keck) at 2026-03-20T10:00:00 UTC, hour angle +1.474 h, altitude 69°. Values are derived (data/notes/velocity_frames.md) and are in m/s, to be added to the measured RV.</p>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Component</th><th class="num">m/s</th></tr></thead>
+<tbody>
+<tr><td>EMB orbital motion · n̂</td><td class="num">−16 334.260</td></tr>
+<tr><td>Earth about the EMB · n̂</td><td class="num">−10.481</td></tr>
+<tr><td>Earth rotation · n̂ (eq. 7.4.1 with apparent H, δ: −155.005)</td><td class="num">−155.037</td></tr>
+<tr><td>Relativistic remainder: (γ − 1) c = +1.533; GM/(cd): Sun +2.971, Earth +0.208, Jupiter +0.0006</td><td class="num">+4.713</td></tr>
+<tr><td><b>Barycentric correction v<sub>B</sub></b></td><td class="num"><b>−16 495.065</b></td></tr>
+<tr><td>Heliocentric correction (Galilean); Sun about the SSB · n̂ = −8.938</td><td class="num">−16 490.840</td></tr>
+<tr><td>dv<sub>B</sub>/dt; curvature term for a 30 min uniform exposure</td><td class="num">−0.0327 per s; +0.111</td></tr>
+<tr><td>Change if v<sub>B</sub> is evaluated at t + Rømer delay (406.6 s)</td><td class="num">−13.246</td></tr>
+</tbody></table></div>
+
+<h4>What the calculator computes</h4>
+<div class="cols2">
+<div>
+<p class="small"><b>Included</b></p>
+<ul class="tight small">
+<li>UTC → TAI (leap-second table; TAI − UTC = 37 s since 2017-01-01) → TT → TDB (leading terms of <a class="cite" href="#ref-fairhead1990">Fairhead &amp; Bretagnon 1990</a>, ≈ 10 µs). UT1 = UTC + the entered UT1 − UTC.</li>
+<li>Geocentre position and velocity relative to the SSB, including the lunar reflex, from a Chebyshev fit to DE440s for 1990–2066.</li>
+<li>Site: WGS84 geodetic to ITRS coordinates. GCRS orientation from the Earth rotation angle and the CIO-based matrix, with IAU 2006 precession and the largest IAU 2000A nutation terms; the truncation (≈ 0.1″) costs &lt; 0.3 mm/s. v<sub>rot</sub> = <b>ω</b> × <b>r</b>.</li>
+<li>z<sub>B</sub> = γ(1 + <b>β</b>·n̂)/(1 + z<sub>GR</sub>) − 1 with the Sun, Earth, Jupiter (fixed 5.2 au, ≤ 0.2 mm/s) and Moon potentials, i.e. eq. (7.4.3) with <b>β</b><sub>s</sub> = 0, exactly as astropy implements it.</li>
+<li>Diagnostics: the orbital, rotational and relativistic parts (their sum equals v<sub>B</sub> to ≲ 0.5 mm/s), the Galilean heliocentric correction, the Rømer delay, BJD<sub>TDB</sub> (§7.5), and a year-long curve of v<sub>B</sub> for the target.</li>
+</ul>
+</div>
+<div>
+<p class="small"><b>Omitted</b></p>
+<ul class="tight small">
+<li>Shapiro delay z<sub>SD</sub> (1.5 mm/s for τ Ceti; ≤ 2.3 mm/s at ≥ 30° from the Sun) and light-travel term z<sub>LT</sub>.</li>
+<li>Proper motion, parallax and the stellar space-motion factor; enter coordinates at the epoch of observation. For nearby high-velocity stars this omits up to 0.19 m/s (Kapteyn's star; derived).</li>
+<li>Polar motion (&lt; 1 mm/s). UT1 − UTC defaults to 0, which costs ≤ 3 cm/s.</li>
+<li>Exposure integration and chromatic weighting: enter the flux-weighted mid-time.</li>
+</ul>
+<p class="small"><b>Validation.</b> Against astropy 7.2 <code>radial_velocity_correction</code> with DE440s, over 300 random targets, sites and epochs (1990–2030): 0.26 mm/s rms, 0.68 mm/s maximum. Ten further cases for 1995–2060, including polar and Arctic sites: 0.27 mm/s rms, 0.59 mm/s maximum.</p>
+</div>
+</div>
+
+<h4>Accuracy of available tools</h4>
+<div class="tscroll"><table class="t">
+<thead><tr><th>Tool</th><th>Algorithm</th><th>Accuracy</th></tr></thead>
+<tbody>
+<tr><td>barycorrpy <a class="cite" href="#ref-kanodia2018">Kanodia &amp; Wright 2018</a></td><td>WE14 eq. 28 incl. star, Shapiro and light-travel terms; automatic leap-second updates</td><td>"well below 1 cm/s"</td></tr>
+<tr><td>BARYCORR / ZBARYCORR (IDL, EXOFAST) <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td><td>WE14 eq. 28, JPL ephemeris, IERS EOP</td><td>vs TEMPO2: 0.037 cm/s rms, 0.24 cm/s peak-to-peak</td></tr>
+<tr><td>Pre-2014 California Planet Survey code</td><td>no parallax × proper-motion term</td><td>vs TEMPO2: 3 cm/s rms, &gt; 16 cm/s p-p <a class="cite" href="#ref-wright2014">Wright &amp; Eastman 2014</a></td></tr>
+<tr><td>astropy <code>radial_velocity_correction</code> <a class="cite" href="#ref-astropy2022">Astropy Collaboration 2022</a></td><td>WE14 eq. 28 without z<sub>SD</sub>, z<sub>LT</sub></td><td>"mm/s level" (docstring). The default built-in ephemeris (ERFA epv00) differs from DE440s by up to 0.48 cm/s in the Earth's velocity (1990–2066, derived), so set a JPL kernel. With DE440s it agrees with an independent eq.-28 code to 0.12 mm/s; this check shares astropy's Earth orientation.</td></tr>
+<tr><td>This page</td><td>as astropy</td><td>0.26 mm/s rms vs astropy + DE440s</td></tr>
+</tbody></table></div>
+<div class="note">For 1 mÅ line work, any correctly applied barycentric code is adequate. For m/s and cm/s radial velocities the dominant errors are not the formula but the inputs: the flux-weighted epoch, UT1, target coordinates and proper motion, and multiplicative application.</div>

@@ -1,0 +1,305 @@
+test,source,inputs,quantity,published,computed,diff,unit,tol,expect,status,note
+Ciddor1996 Table1 (Eq.5),"Ciddor 1996 AO 35,1566 Table 1",t=20C p=80kPa dry 450ppm 633nm,1e8(n-1),21458.0,21458.041827049,0.041827049,1e-8,0.06,match,PASS,
+Ciddor1996 Table1 (Eq.5),"Ciddor 1996 AO 35,1566 Table 1",t=20C p=100kPa dry 450ppm 633nm,1e8(n-1),26824.4,26824.433307326,0.033307326,1e-8,0.06,match,PASS,
+Ciddor1996 Table1 (Eq.5),"Ciddor 1996 AO 35,1566 Table 1",t=20C p=120kPa dry 450ppm 633nm,1e8(n-1),32191.6,32191.572027251,-0.027972749,1e-8,0.06,match,PASS,
+Ciddor1996 Table1 (Eq.5),"Ciddor 1996 AO 35,1566 Table 1",t=10C p=100kPa dry 450ppm 633nm,1e8(n-1),27774.7,27774.687528881,-0.012471119,1e-8,0.06,match,PASS,
+Ciddor1996 Table1 (Eq.5),"Ciddor 1996 AO 35,1566 Table 1",t=30C p=100kPa dry 450ppm 633nm,1e8(n-1),25937.2,25937.238987783,0.038987783,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.526 p=102094.8 pw=1065 xc=510,1e8(n-1),27392.9,27392.942749604,0.042749604,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.517 p=102096.8 pw=1065 xc=510,1e8(n-1),27394.0,27394.32525638,0.32525638,1e-8,0.06,misprint?,NOTE,printed 27394.0; row-to-row change of Ciddor's own Ref.4 column (+1.4) and of B&D 1993 Table 4 (+1.4) implies ~27394.3 = our value
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.173 p=102993.0 pw=641 xc=450,1e8(n-1),27682.4,27682.454293498,0.054293498,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.173 p=103006.0 pw=642 xc=440,1e8(n-1),27685.8,27685.76908585,-0.03091415,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.188 p=102918.8 pw=706 xc=450,1e8(n-1),27658.7,27658.684993903,-0.015006097,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.189 p=102927.8 pw=708 xc=440,1e8(n-1),27660.8,27660.791983997,-0.008016003,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.532 p=103603.2 pw=986 xc=600,1e8(n-1),27802.0,27802.023131973,0.023131973,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.534 p=103596.2 pw=962 xc=600,1e8(n-1),27800.8,27800.826333957,0.026333957,1e-8,0.06,match,PASS,
+Ciddor1996 Table2 (Eq.5),Ciddor 1996 Table 2,t=19.534 p=103599.2 pw=951 xc=610,1e8(n-1),27802.2,27802.181263858,-0.018736142,1e-8,0.06,match,PASS,
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=20 p=80kPa RH=75% pw=1754,1e8(n-1),21394.0,21393.999949426,-5.0574e-05,1e-8,0.06,match,PASS,
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=20 p=80kPa pw=1754,1e8(n-1),21394.8,21394.798703901,-0.001296099,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=20 p=80kPa pw=1754,1e8(n-1),21394.8,21393.970563888,-0.829436112,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=20 p=120kPa RH=75% pw=1754,1e8(n-1),32127.8,32127.786894121,-0.013105879,1e-8,0.06,match,PASS,
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=20 p=120kPa pw=1754,1e8(n-1),32129.2,32129.305264858,0.105264858,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=20 p=120kPa pw=1754,1e8(n-1),32129.2,32128.062852887,-1.137147113,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=40 p=80kPa RH=75% pw=5539,1e8(n-1),19996.5,19896.494365645,-100.005634355,1e-8,0.06,misprint?,NOTE,printed 19996.5 conflicts with printed B&D 19883.6 and difference -12.9 -> 19896.5 implied (= our 19896.49)
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=40 p=80kPa pw=5539,1e8(n-1),19883.6,19883.613827358,0.013827358,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=40 p=80kPa pw=5539,1e8(n-1),19883.6,19882.838698937,-0.761301063,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=40 p=120kPa RH=75% pw=5539,1e8(n-1),29941.8,29941.802669131,0.002669131,1e-8,0.06,match,PASS,
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=40 p=120kPa pw=5539,1e8(n-1),29928.6,29928.632847499,0.032847499,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=40 p=120kPa pw=5539,1e8(n-1),29928.6,29927.47005619,-1.12994381,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=50 p=80kPa RH=100% pw=12352,1e8(n-1),19058.4,19058.415482021,0.015482021,1e-8,0.06,match,PASS,
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=50 p=80kPa pw=12352,1e8(n-1),19012.9,19012.950636113,0.050636113,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=50 p=80kPa pw=12352,1e8(n-1),19012.9,19012.199552781,-0.700447219,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+Ciddor1996 Table3 (Eq.5),Ciddor 1996 Table 3,t=50 p=120kPa RH=100% pw=12352,1e8(n-1),28792.4,28792.366592412,-0.033407588,1e-8,0.06,match,PASS,
+Ciddor Tab3 B&D column (reconstructed),"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=50 p=120kPa pw=12352,1e8(n-1),28745.2,28745.230626394,0.030626394,1e-8,0.15,match,PASS,"reproduced with Edlen1966 x 1.0000799 dispersion, D=96094.69 (footnote d), B&D water term"
+BirchDowns1994 (as published) vs Tab3,"Ciddor 1996 Table 3, col. Refs. 3 and 4",t=50 p=120kPa pw=12352,1e8(n-1),28745.2,28744.103949574,-1.096050426,1e-8,1.2,info,NOTE,B&D 1994 constants give values 0.7-1.2e-8 lower (dispersion factor 1.0000486 vs 1.0000799)
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=0 p=101.325kPa lam=633nm,1e8(n-1),27180.0,27179.983163506,-0.016836494,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=0 p=101.325kPa lam=633nm,1e8(n-1),27179.9,27179.897104568,-0.002895432,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=0 p=60kPa lam=633nm,1e8(n-1),16092.4,16092.400172418,0.000172418,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=0 p=60kPa lam=633nm,1e8(n-1),16092.0,16091.980468702,-0.019531298,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=0 p=120kPa lam=633nm,1e8(n-1),32191.6,32191.572027251,-0.027972749,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=0 p=120kPa lam=633nm,1e8(n-1),32191.8,32191.810621507,0.010621507,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=50 RH=0 p=100kPa lam=633nm,1e8(n-1),24328.5,24328.484499203,-0.015500797,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=50 RH=0 p=100kPa lam=633nm,1e8(n-1),24327.0,24326.96371284,-0.03628716,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=5 RH=0 p=100kPa lam=633nm,1e8(n-1),28275.6,28275.601098859,0.001098859,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=5 RH=0 p=100kPa lam=633nm,1e8(n-1),28275.0,28275.026982372,0.026982372,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=-40 RH=0 p=100kPa lam=633nm,1e8(n-1),33758.0,33758.015897667,0.015897667,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=-40 RH=0 p=100kPa lam=633nm,1e8(n-1),33747.1,33747.115940419,0.015940419,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=50 RH=100 p=120kPa lam=633nm,1e8(n-1),28792.4,28792.389815679,-0.010184321,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=50 RH=100 p=120kPa lam=633nm,1e8(n-1),28786.4,28786.360014976,-0.039985024,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=40 RH=75 p=120kPa lam=633nm,1e8(n-1),29941.8,29941.825375568,0.025375568,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=40 RH=75 p=120kPa lam=633nm,1e8(n-1),29940.6,29940.607421275,0.007421275,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=100 p=100kPa lam=633nm,1e8(n-1),26739.4,26739.387834263,-0.012165737,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=100 p=100kPa lam=633nm,1e8(n-1),26739.4,26739.427443068,0.027443068,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=40 RH=100 p=110kPa lam=1700nm,1e8(n-1),27024.7,27024.638969064,-0.061030936,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=40 RH=100 p=110kPa lam=1700nm,1e8(n-1),27023.7,27023.660912939,-0.039087061,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=0 p=101.325kPa lam=1700nm,1e8(n-1),26847.9,26847.93989165,0.03989165,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=0 p=101.325kPa lam=1700nm,1e8(n-1),26848.3,26848.282146585,-0.017853415,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=40 RH=100 p=110kPa lam=300nm,1e8(n-1),28900.0,28900.007536836,0.007536836,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=40 RH=100 p=110kPa lam=300nm,1e8(n-1),28892.2,28892.235997846,0.035997846,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=20 RH=0 p=101.325kPa lam=300nm,1e8(n-1),28658.1,28658.100403134,0.000403134,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=20 RH=0 p=101.325kPa lam=300nm,1e8(n-1),28657.9,28657.923539388,0.023539388,1e-8,0.1,match,PASS,
+NIST EMToolBox Ciddor,emtoolbox.nist.gov Wavelength/Documentation.asp Table 1,t=-40 RH=0 p=120kPa lam=300nm,1e8(n-1),42723.3,42723.328588989,0.028588989,1e-8,0.1,match,PASS,
+NIST EMToolBox mod. Edlen,emtoolbox Table 1,t=-40 RH=0 p=120kPa lam=300nm,1e8(n-1),42707.2,42707.160816091,-0.039183909,1e-8,0.1,match,PASS,
+NIST EMToolBox svp (IAPWS),emtoolbox Table 2,t=100C,svp Pa,101418,101417.977923466,-0.022076534,Pa,0.6,match,PASS,
+NIST EMToolBox svp (IAPWS),emtoolbox Table 2,t=50C,svp Pa,12351,12351.270434159,0.270434159,Pa,0.6,match,PASS,
+NIST EMToolBox svp (IAPWS),emtoolbox Table 2,t=40C,svp Pa,7384,7384.427487131,0.427487131,Pa,0.6,match,PASS,
+NIST EMToolBox svp (IAPWS),emtoolbox Table 2,t=20C,svp Pa,2339,2339.214766782,0.214766782,Pa,0.6,match,PASS,
+NIST EMToolBox svp (IAPWS),emtoolbox Table 2,t=-10C,svp Pa,260,259.903915231,-0.096084769,Pa,0.6,match,PASS,
+"Edlen1966 T,p (B&D93 Tab3 orig.)",Birch & Downs 1993 Table 3,p=80kPa t=20 dry 632.991nm,1e8(n-1),21456.8,21456.790327856,-0.009672144,1e-8,0.15,match,PASS,
+BirchDowns1993 (Tab3 revised),Birch & Downs 1993 Table 3,p=80kPa t=20 dry 632.991nm,1e8(n-1),21459.0,21459.038810256,0.038810256,1e-8,0.15,match,PASS,
+"Edlen1966 T,p (B&D93 Tab3 orig.)",Birch & Downs 1993 Table 3,p=100kPa t=20 dry 632.991nm,1e8(n-1),26823.2,26823.204114046,0.004114046,1e-8,0.15,match,PASS,
+BirchDowns1993 (Tab3 revised),Birch & Downs 1993 Table 3,p=100kPa t=20 dry 632.991nm,1e8(n-1),26826.0,26825.979114831,-0.020885169,1e-8,0.15,match,PASS,
+"Edlen1966 T,p (B&D93 Tab3 orig.)",Birch & Downs 1993 Table 3,p=120kPa t=20 dry 632.991nm,1e8(n-1),32190.5,32190.504381924,0.004381924,1e-8,0.15,match,PASS,
+BirchDowns1993 (Tab3 revised),Birch & Downs 1993 Table 3,p=120kPa t=20 dry 632.991nm,1e8(n-1),32193.8,32193.791660173,-0.008339827,1e-8,0.15,match,PASS,
+"Edlen1966 T,p (B&D93 Tab3 orig.)",Birch & Downs 1993 Table 3,p=100kPa t=10 dry 632.991nm,1e8(n-1),27773.3,27773.289561339,-0.010438661,1e-8,0.15,match,PASS,
+BirchDowns1993 (Tab3 revised),Birch & Downs 1993 Table 3,p=100kPa t=10 dry 632.991nm,1e8(n-1),27776.1,27776.091850806,-0.008149194,1e-8,0.15,match,PASS,
+"Edlen1966 T,p (B&D93 Tab3 orig.)",Birch & Downs 1993 Table 3,p=100kPa t=30 dry 632.991nm,1e8(n-1),25935.7,25935.799668741,0.099668741,1e-8,0.15,match,PASS,
+BirchDowns1993 (Tab3 revised),Birch & Downs 1993 Table 3,p=100kPa t=30 dry 632.991nm,1e8(n-1),25938.5,25938.549181181,0.049181181,1e-8,0.15,match,PASS,
+Edlen1966 (n-1)s 633nm,Birch & Downs 1993 App. A.1,"632.991 nm, 300 ppm",1e6(n-1),276.5175,276.517547796,4.7796e-05,1e-6,0.0003,match,PASS,
+Edlen1966+CO2 eq17 633nm,Birch & Downs 1993 App. A.1,"632.991 nm, 450 ppm",1e6(n-1),276.5399,276.540058054,0.000158054,1e-6,0.0003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=1.6945208um,1e8(n-1),27314.19,27314.192438147,0.002438147,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=1.6945208um,1e8(n-1),27314.71,27314.716726193,0.006726193,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=1.5300153um,1e8(n-1),27326.37,27326.368652301,-0.001347699,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=1.5300153um,1e8(n-1),27326.87,27326.870280573,0.000280573,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=1.3722327um,1e8(n-1),27342.42,27342.422772333,0.002772333,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=1.3722327um,1e8(n-1),27342.89,27342.895430804,0.005430804,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=1.0142573um,1e8(n-1),27410.9,27410.903492659,0.003492659,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=1.0142573um,1e8(n-1),27411.26,27411.263741543,0.003741543,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.7247163um,1e8(n-1),27557.37,27557.372914544,0.002914544,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.7247163um,1e8(n-1),27557.55,27557.548121273,-0.001878727,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.6440249um,1e8(n-1),27638.092,27638.09239541,0.00039541,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.6440249um,1e8(n-1),27638.194,27638.193995146,-4.854e-06,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.5462271um,1e8(n-1),27789.843,27789.842673432,-0.000326568,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.5462271um,1e8(n-1),27789.852,27789.851215561,-0.000784439,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.5017074um,1e8(n-1),27891.525,27891.524529798,-0.000470202,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.5017074um,1e8(n-1),27891.499,27891.49812482,-0.00087518,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.4923304um,1e8(n-1),27916.714,27916.713919617,-8.0383e-05,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.4923304um,1e8(n-1),27916.682,27916.681689037,-0.000310963,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.4472732um,1e8(n-1),28062.082,28062.082131395,0.000131395,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.4472732um,1e8(n-1),28062.034,28062.034168726,0.000168726,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.4359562um,1e8(n-1),28106.335,28106.335384212,0.000384212,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.4359562um,1e8(n-1),28106.287,28106.287643324,0.000643324,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.4047714um,1e8(n-1),28249.611,28249.611647744,0.000647744,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.4047714um,1e8(n-1),28249.575,28249.575779148,0.000779148,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.3889751um,1e8(n-1),28336.843,28336.842900409,-9.9591e-05,1e-8,0.0015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.3889751um,1e8(n-1),28336.82,28336.819808838,-0.000191162,1e-8,0.003,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.339168um,1e8(n-1),28705.9,28705.9002719,0.0002719,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.339168um,1e8(n-1),28705.93,28705.933598783,0.003598783,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.29263um,1e8(n-1),29264.37,29264.367853623,-0.002146377,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.29263um,1e8(n-1),29264.35,29264.343050391,-0.006949609,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.267575um,1e8(n-1),29719.74,29719.737499047,-0.002500953,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.267575um,1e8(n-1),29719.51,29719.506582688,-0.003417312,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.246482um,1e8(n-1),30246.41,30246.405608202,-0.004391798,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.246482um,1e8(n-1),30246.05,30246.040720132,-0.009279868,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(2),Peck & Reeder 1972 Table III,lam_vac=0.230289um,1e8(n-1),30787.68,30787.678056374,-0.001943626,1e-8,0.015,match,PASS,
+Edlen1966 = P&R Eq.(1),Peck & Reeder 1972 Table III (Eq2 + [Eq1-Eq2]),lam_vac=0.230289um,1e8(n-1),30788.13,30788.127601528,-0.002398472,1e-8,0.03,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.214506um,1e8(n-1),31496.6,31496.593566391,-0.006433609,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.214506um,1e8(n-1),31491.3,31491.29704737,-0.00295263,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.214506um,1e8(n-1),31497.1,31497.109647511,0.009647511,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.202605um,1e8(n-1),32217.4,32217.39128834,-0.00871166,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.202605um,1e8(n-1),32196.0,32196.020196166,0.020196166,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.202605um,1e8(n-1),32218.4,32218.450098391,0.050098391,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.199052um,1e8(n-1),32478.5,32478.479233917,-0.020766083,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.199052um,1e8(n-1),32446.8,32446.783660567,-0.016339433,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.199052um,1e8(n-1),32479.9,32479.883310894,-0.016689106,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.193585um,1e8(n-1),32937.5,32937.454564645,-0.045435355,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.193585um,1e8(n-1),32879.3,32879.300774703,0.000774703,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.193585um,1e8(n-1),32939.8,32939.825508677,0.025508677,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.186277um,1e8(n-1),33702.7,33702.698168835,-0.001831165,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.186277um,1e8(n-1),33568.4,33568.343047105,-0.056952895,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.186277um,1e8(n-1),33708.5,33708.509373454,0.009373454,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(3) 5-param,Peck & Reeder 1972 Table V,lam=0.185473um,1e8(n-1),33801.4,33801.414098903,0.014098903,1e-8,0.06,match,PASS,
+PeckReeder1972 Eq.(2) far-UV,P&R 1972 Table V (Data-[Data-Eq2]),lam=0.185473um,1e8(n-1),33653.5,33653.583953732,0.083953732,1e-8,0.6,match,PASS,
+Edlen1966 far-UV,P&R 1972 Table V (Data-[Data-Eq1]),lam=0.185473um,1e8(n-1),33807.9,33807.923446305,0.023446305,1e-8,0.06,match,PASS,
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=2.411,1e8(n-1),27633.6,27633.596026134,-0.003973866,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=3.3516,1e8(n-1),27785.6,27785.566809021,-0.033190979,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=5.2616,1e8(n-1),28102.4,28102.409792172,0.009792172,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=10.1905,1e8(n-1),28977.3,28977.274441114,-0.025558886,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=16.4601,1e8(n-1),30240.1,30240.094675267,-0.005324733,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=21.733,1e8(n-1),31491.0,31490.958809331,-0.041190669,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 / 1.000162 vs Tab.I,"Edlen 1953 JOSA 43,339 Table I",sigma2=28.8192,1e8(n-1),33697.3,33697.234695237,-0.065304763,1e-8,0.1,match,PASS,Table I compares with CO2-free air: standard-air formula / 1.000162 (Edlen 1966 p.79)
+Edlen1953 (Morton 1991),"Morton 1991 ApJS 77,119 p.~121",lam_air=2000 A,lam_vac A,2000.648,2000.648055379,5.5379e-05,A,0.0005,match,PASS,
+NIST ASD (P&R),ASD lineshelp: 200.0648 nm vac = 200.0000 nm air,lam_vac=2000.648 A,lam_air A,2000.0,1999.999971959,-2.8041e-05,A,0.0005,match,PASS,
+NIST ASD (P&R),ASD lineshelp: 199.9352 nm air = 200.0000 nm vac,lam_vac=2000.000 A,lam_air A,1999.352,1999.352084608,8.4608e-05,A,0.0005,match,PASS,
+"NIST ASD (P&R eq2, 4-param)","same, testing 4-param alternative",lam_vac=2000.000 A,lam_air A,1999.352,1999.352655008,0.000655008,A,0.0005,differ,PASS,
+IDL vactoair (Ciddor),IDLAstro vactoair.pro header example,lam_vac=2000 A,lam_air A,1999.353,1999.352623045,-0.000376955,A,0.0005,match,PASS,
+IDL airtovac (Ciddor),IDLAstro airtovac.pro header example (Kr line),lam_air=6056.125 A,lam_vac A,6057.8019,6057.801930991,3.0991e-05,A,5e-05,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=200nm,1e8(n-1),32409,32409.160966084,0.160966084,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=200nm,lam_vac-lam_air nm,0.0648,0.064797322,-2.678e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=300nm,1e8(n-1),29157,29156.85734708,-0.14265292,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=300nm,lam_vac-lam_air nm,0.08745,0.087445076,-4.924e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=400nm,1e8(n-1),28276,28276.136807276,0.136807276,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=400nm,lam_vac-lam_air nm,0.11307,0.113072575,2.575e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=500nm,1e8(n-1),27897,27897.340177378,0.340177378,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=500nm,lam_vac-lam_air nm,0.13945,0.139447799,-2.201e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=600nm,1e8(n-1),27698,27698.3711176,0.3711176,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=600nm,lam_vac-lam_air nm,0.16614,0.166144207,4.207e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=700nm,1e8(n-1),27581,27580.589848109,-0.410151891,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=700nm,lam_vac-lam_air nm,0.19301,0.193010895,8.95e-07,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=800nm,1e8(n-1),27505,27505.001277702,0.001277702,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=800nm,lam_vac-lam_air nm,0.21998,0.219979505,-4.95e-07,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=900nm,1e8(n-1),27454,27453.560217831,-0.439782169,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=900nm,lam_vac-lam_air nm,0.24701,0.247014228,4.228e-06,nm,6e-06,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=1000nm,1e8(n-1),27417,27416.953143523,-0.046856477,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=1000nm,lam_vac-lam_air nm,0.2741,0.274094383,-5.617e-06,nm,6e-05,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=1500nm,1e8(n-1),27331,27330.870894907,-0.129105093,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=1500nm,lam_vac-lam_air nm,0.4099,0.409851048,-4.8952e-05,nm,6e-05,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=2000nm,1e8(n-1),27301,27300.945342147,-0.054657853,1e-8,0.6,match,PASS,
+CRC87 table (B&D 1994),CRC Handbook 87th ed. p.10-252,lam_vac=2000nm,lam_vac-lam_air nm,0.5459,0.545869879,-3.0121e-05,nm,6e-05,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,Hbeta vac=4862.683,lam_air A,4861.325,4861.324978965,-2.1035e-05,A,0.001,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[OIII] vac=4960.295,lam_air A,4958.911,4958.911068156,6.8156e-05,A,0.001,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[OIII] vac=5008.239,lam_air A,5006.843,5006.842330562,-0.000669438,A,0.001,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[NII] vac=6549.86,lam_air A,6548.05,6548.050991532,0.000991532,A,0.01,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,Halpha vac=6564.614,lam_air A,6562.801,6562.801026282,2.6282e-05,A,0.001,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[NII] vac=6585.27,lam_air A,6583.45,6583.451474377,0.001474377,A,0.01,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[SII] vac=6718.29,lam_air A,6716.44,6716.435709205,-0.004290795,A,0.01,match,PASS,
+SDSS DR17 table (Ciddor),sdss4.org/dr17/spectro/spectro_basics,[SII] vac=6732.68,lam_air A,6730.82,6730.821838929,0.001838929,A,0.01,match,PASS,
+SDSS DR7 table vs DR7 poly,classic.sdss.org/dr7/products/spectra/vacwavelength,Hbeta vac=4862.721,lam_air A,4861.363,4861.361909119,-0.001090881,A,0.0005,differ,PASS,the DR7 table pairs are NOT generated by the DR7 polynomial (poly is 1-3 mA low)
+SDSS DR7 table vs Ciddor,classic.sdss.org/dr7/products/spectra/vacwavelength,Hbeta vac=4862.721,lam_air A,4861.363,4861.362968884,-3.1116e-05,A,0.05,match,PASS,DR7 Hbeta air 4861.363 is the older (pre-NIST-2009) air value; vac 4862.721 not 4862.683
+SDSS DR7 table vs DR7 poly,classic.sdss.org/dr7/products/spectra/vacwavelength,[OIII] vac=5008.239,lam_air A,5006.843,5006.841106267,-0.001893733,A,0.0005,differ,PASS,the DR7 table pairs are NOT generated by the DR7 polynomial (poly is 1-3 mA low)
+SDSS DR7 table vs Ciddor,classic.sdss.org/dr7/products/spectra/vacwavelength,[OIII] vac=5008.239,lam_air A,5006.843,5006.842330562,-0.000669438,A,0.001,match,PASS,DR7 Hbeta air 4861.363 is the older (pre-NIST-2009) air value; vac 4862.721 not 4862.683
+SDSS DR7 table vs DR7 poly,classic.sdss.org/dr7/products/spectra/vacwavelength,Halpha vac=6564.614,lam_air A,6562.801,6562.797965438,-0.003034562,A,0.0005,differ,PASS,the DR7 table pairs are NOT generated by the DR7 polynomial (poly is 1-3 mA low)
+SDSS DR7 table vs Ciddor,classic.sdss.org/dr7/products/spectra/vacwavelength,Halpha vac=6564.614,lam_air A,6562.801,6562.801026282,2.6282e-05,A,0.001,match,PASS,DR7 Hbeta air 4861.363 is the older (pre-NIST-2009) air value; vac 4862.721 not 4862.683
+ASD Na D: P&R eq3 (5p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 obs vac=5891.583264,lam_air A,5889.95095,5889.950953505,3.505e-06,A,1.01e-05,match,PASS,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: P&R eq2 (4p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 obs vac=5891.583264,lam_air A,5889.95095,5889.950947532,-2.468e-06,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Ciddor,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 obs vac=5891.583264,lam_air A,5889.95095,5889.950866765,-8.3235e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Morton2000,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 obs vac=5891.583264,lam_air A,5889.95095,5889.950864703,-8.5297e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Edlen1953,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 obs vac=5891.583264,lam_air A,5889.95095,5889.950941285,-8.715e-06,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: P&R eq3 (5p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 Ritz vac=5891.583253,lam_air A,5889.95094,5889.950942508,2.508e-06,A,1.01e-05,match,PASS,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: P&R eq2 (4p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 Ritz vac=5891.583253,lam_air A,5889.95094,5889.950936535,-3.465e-06,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Ciddor,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 Ritz vac=5891.583253,lam_air A,5889.95094,5889.950855768,-8.4232e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Morton2000,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 Ritz vac=5891.583253,lam_air A,5889.95094,5889.950853706,-8.6294e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Edlen1953,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D2 Ritz vac=5891.583253,lam_air A,5889.95094,5889.950930287,-9.713e-06,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: P&R eq3 (5p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D1 obs vac=5897.558147,lam_air A,5895.92424,5895.924236592,-3.408e-06,A,1.01e-05,match,PASS,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: P&R eq2 (4p),NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D1 obs vac=5897.558147,lam_air A,5895.92424,5895.924230614,-9.386e-06,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Ciddor,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D1 obs vac=5897.558147,lam_air A,5895.92424,5895.924149767,-9.0233e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Morton2000,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D1 obs vac=5897.558147,lam_air A,5895.92424,5895.924147669,-9.2331e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+ASD Na D: Edlen1953,NIST ASD lines1.pl show_av=3 vs 2 (2026-11-23),Na D1 obs vac=5897.558147,lam_air A,5895.92424,5895.924224451,-1.5549e-05,A,1.01e-05,info,NOTE,tolerance = half ULP of vac (1e-6) + air (1e-5) rounding
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=2000.0,lam_vac A,2000.6481529,2000.648152901,1e-09,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=2000.0,lam_vac A,2000.6480554,2000.648152901,9.7501e-05,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=3000.0,lam_vac A,3000.8746722,3000.874672239,3.9e-08,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=3000.0,lam_vac A,3000.8746352,3000.874672239,3.7039e-05,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=5000.0,lam_vac A,5001.394819,5001.394819006,6e-09,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=5000.0,lam_vac A,5001.3948006,5001.394819006,1.8406e-05,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=6562.8,lam_vac A,6564.6128941,6564.612894064,-3.6e-08,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=6562.8,lam_vac A,6564.6128806,6564.612894064,1.3464e-05,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=10000.0,lam_vac A,10002.7414817,10002.741481724,2.4e-08,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=10000.0,lam_vac A,10002.7414732,10002.741481724,8.524e-06,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=20000.0,lam_vac A,20005.4596764,20005.459676417,1.7e-08,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=20000.0,lam_vac A,20005.4596722,20005.459676417,4.217e-06,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+astropy.wcs AWAV->WAVE vs wcslib,astropy 7.2.0 wcs.sptr(WAVE-A2W),lam_air=25000.0,lam_vac A,25006.8211278,25006.821127806,6e-09,A,2e-06,match,PASS,live call; reference column is our re-implementation of spx.c
+astropy.wcs AWAV->WAVE vs Edlen1953 exact,Edlen 1953 (vacuum-argument),lam_air=25000.0,lam_vac A,25006.8211244,25006.821127806,3.406e-06,A,0.0002,match,PASS,difference = effect of WCSLIB evaluating Edlen 1953 at the air wavenumber
+specutils vac_to_air Morton2000,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.3520268,1999.352026783,-1.7e-08,A,1e-06,match,PASS,
+specutils vac_to_air Morton2000,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.1255492,2999.125549242,4.2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Morton2000,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.605522,4998.605522013,1.3e-08,A,1e-06,match,PASS,
+specutils vac_to_air Morton2000,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.2590562,9997.259056169,-3.1e-08,A,1e-06,match,PASS,
+specutils vac_to_air Morton2000,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.5413012,19994.541301208,8e-09,A,1e-06,match,PASS,
+specutils air_to_vac inversion Morton2000,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6480858,2000.648183219,9.7419e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Morton2000,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.8746686,3000.87470572,3.712e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Morton2000,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.3948486,5001.394867009,1.8409e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Morton2000,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.7416868,10002.741695314,8.514e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Morton2000,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.4601849,20005.460189068,4.168e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration Morton2000,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6480858,2000.648085757,-4.3e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Morton2000,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746686,3000.874668625,2.5e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Morton2000,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3948486,5001.394848639,3.9e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Morton2000,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7416868,10002.741686779,-2.1e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Morton2000,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.4601849,20005.460184876,-2.4e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1953,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.3520571,1999.352057082,-1.8e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1953,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.1255827,2999.125582704,4e-09,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1953,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.60557,4998.605569989,-1.1e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1953,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.2592696,9997.259269642,4.2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1953,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.5418136,19994.541813579,-2.1e-08,A,1e-06,match,PASS,
+specutils air_to_vac inversion Edlen1953,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6480554,2000.648152901,9.7501e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1953,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.8746352,3000.874672239,3.7039e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1953,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.3948006,5001.394819006,1.8406e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1953,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.7414732,10002.741481724,8.524e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1953,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.4596722,20005.459676417,4.217e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration Edlen1953,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6480554,2000.648055379,-2.1e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1953,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746352,3000.874635191,-9e-09,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1953,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3948006,5001.394800609,9e-09,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1953,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7414732,10002.74147316,-4e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1953,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.4596722,20005.459672208,8e-09,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1966,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.3520587,1999.352058687,-1.3e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1966,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.1255921,2999.12559212,2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1966,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.6055903,4998.605590337,3.7e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1966,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.2591904,9997.259190432,3.2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Edlen1966,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.5415686,19994.541568583,-1.7e-08,A,1e-06,match,PASS,
+specutils air_to_vac inversion Edlen1966,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6480538,2000.648151295,9.7495e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1966,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.8746257,3000.874662817,3.7117e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1966,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.3947803,5001.394798648,1.8348e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1966,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.7415524,10002.741560978,8.578e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Edlen1966,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.4599174,20005.459921547,4.147e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration Edlen1966,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6480538,2000.648053842,4.2e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1966,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746257,3000.874625725,2.5e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1966,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3947803,5001.39478028,-2e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1966,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7415524,10002.741552443,4.3e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Edlen1966,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.4599174,20005.459917355,-4.5e-08,A,1e-06,match,PASS,
+specutils vac_to_air PeckReeder1972,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.352655,1999.352655008,8e-09,A,1e-06,match,PASS,
+specutils vac_to_air PeckReeder1972,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.1255923,2999.125592305,5e-09,A,1e-06,match,PASS,
+specutils vac_to_air PeckReeder1972,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.605589,4998.605588961,-3.9e-08,A,1e-06,match,PASS,
+specutils vac_to_air PeckReeder1972,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.2592258,9997.259225782,-1.8e-08,A,1e-06,match,PASS,
+specutils vac_to_air PeckReeder1972,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.5416792,19994.541679183,-1.7e-08,A,1e-06,match,PASS,
+specutils air_to_vac inversion PeckReeder1972,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6474614,2000.647554587,9.3187e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion PeckReeder1972,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.8746255,3000.874662633,3.7133e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion PeckReeder1972,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.3947817,5001.394800023,1.8323e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion PeckReeder1972,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.7415171,10002.741525609,8.509e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion PeckReeder1972,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.4598067,20005.459810887,4.187e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration PeckReeder1972,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6474614,2000.647461439,3.9e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration PeckReeder1972,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746255,3000.874625532,3.2e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration PeckReeder1972,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3947817,5001.394781651,-4.9e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration PeckReeder1972,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7415171,10002.741517061,-3.9e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration PeckReeder1972,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.4598067,20005.459806687,-1.3e-08,A,1e-06,match,PASS,
+specutils vac_to_air Ciddor1996,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.352623,1999.352623045,4.5e-08,A,1e-06,match,PASS,
+specutils vac_to_air Ciddor1996,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.1255491,2999.125549064,-3.6e-08,A,1e-06,match,PASS,
+specutils vac_to_air Ciddor1996,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.60552,4998.60551997,-3e-08,A,1e-06,match,PASS,
+specutils vac_to_air Ciddor1996,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.2590902,9997.259090153,-4.7e-08,A,1e-06,match,PASS,
+specutils vac_to_air Ciddor1996,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.5414091,19994.541409063,-3.7e-08,A,1e-06,match,PASS,
+specutils air_to_vac inversion Ciddor1996,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6474934,2000.647586571,9.3171e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Ciddor1996,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.8746688,3000.874705899,3.7099e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Ciddor1996,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.3948507,5001.394869053,1.8353e-05,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Ciddor1996,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.7416528,10002.741661312,8.512e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Ciddor1996,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.460077,20005.460081154,4.154e-06,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration Ciddor1996,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6474934,2000.647493414,1.4e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Ciddor1996,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746688,3000.874668794,-6e-09,A,1e-06,match,PASS,
+specutils air_to_vac iteration Ciddor1996,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3948507,5001.394850679,-2.1e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Ciddor1996,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7416528,10002.741652764,-3.6e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Ciddor1996,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.460077,20005.460076954,-4.6e-08,A,1e-06,match,PASS,
+specutils vac_to_air Greisen2006,specutils 2.4.0 wcs_utils (executed),lam_vac=2000.0,lam_air A,1999.3265523,1999.326552342,4.2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Greisen2006,specutils 2.4.0 wcs_utils (executed),lam_vac=3000.0,lam_air A,2999.0781042,2999.078104181,-1.9e-08,A,1e-06,match,PASS,
+specutils vac_to_air Greisen2006,specutils 2.4.0 wcs_utils (executed),lam_vac=5000.0,lam_air A,4998.5286902,4998.528690178,-2.2e-08,A,1e-06,match,PASS,
+specutils vac_to_air Greisen2006,specutils 2.4.0 wcs_utils (executed),lam_vac=10000.0,lam_air A,9997.1082568,9997.10825676,-4e-08,A,1e-06,match,PASS,
+specutils vac_to_air Greisen2006,specutils 2.4.0 wcs_utils (executed),lam_vac=20000.0,lam_air A,19994.2411873,19994.241187324,2.4e-08,A,1e-06,match,PASS,
+specutils air_to_vac inversion Greisen2006,specutils 2.4.0 (executed) vs exact inverse,lam_air=2000.0,lam_vac A,2000.6736745,2000.6736745,0.0,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Greisen2006,specutils 2.4.0 (executed) vs exact inverse,lam_air=3000.0,lam_vac A,3000.9221792,3000.922179204,4e-09,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Greisen2006,specutils 2.4.0 (executed) vs exact inverse,lam_air=5000.0,lam_vac A,5001.4717429,5001.4717429,0.0,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Greisen2006,specutils 2.4.0 (executed) vs exact inverse,lam_air=10000.0,lam_vac A,10002.8925797,10002.8925797,0.0,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac inversion Greisen2006,specutils 2.4.0 (executed) vs exact inverse,lam_air=20000.0,lam_vac A,20005.7604714,20005.76047135,-5e-08,A,0.0002,match,PASS,"difference = error of the ""inversion"" scheme (n evaluated at the air wavelength)"
+specutils air_to_vac iteration Greisen2006,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6735968,2000.673596785,-1.5e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Greisen2006,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.9221397,3000.922139652,-4.8e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Greisen2006,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.4717225,5001.47172245,-5e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Greisen2006,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.8925701,10002.892570124,2.4e-08,A,1e-06,match,PASS,
+specutils air_to_vac iteration Greisen2006,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.7604666,20005.760466641,4.1e-08,A,1e-06,match,PASS,
+specutils air_to_vac Piskunov,specutils 2.4.0 (executed),lam_air=2000.0,lam_vac A,2000.6480858,2000.648085763,-3.7e-08,A,1e-06,match,PASS,
+specutils air_to_vac Piskunov,specutils 2.4.0 (executed),lam_air=3000.0,lam_vac A,3000.8746686,3000.874668619,1.9e-08,A,1e-06,match,PASS,
+specutils air_to_vac Piskunov,specutils 2.4.0 (executed),lam_air=5000.0,lam_vac A,5001.3948486,5001.394848638,3.8e-08,A,1e-06,match,PASS,
+specutils air_to_vac Piskunov,specutils 2.4.0 (executed),lam_air=10000.0,lam_vac A,10002.7416868,10002.741686782,-1.8e-08,A,1e-06,match,PASS,
+specutils air_to_vac Piskunov,specutils 2.4.0 (executed),lam_air=20000.0,lam_vac A,20005.4601849,20005.460184878,-2.2e-08,A,1e-06,match,PASS,
